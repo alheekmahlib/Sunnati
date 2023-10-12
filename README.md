@@ -1,4 +1,4 @@
-# sunti
+# sunnti
 
 Hadiths App
 
