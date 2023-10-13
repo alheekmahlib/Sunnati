@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:sunti/features/splashScreen/splash_screen.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 import 'core/utils/helpers/app_themes.dart';
 import 'core/utils/helpers/languages/app_constants.dart';
 import 'core/utils/helpers/languages/language_controller.dart';
 import 'core/utils/helpers/languages/messages.dart';
-import 'features/main/main_screen.dart';
 
 class MyApp extends StatelessWidget {
   final Map<String, Map<String, String>> languages;
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                     theme: ThemeProvider.themeOf(themeContext).data,
                     home: const Directionality(
                       textDirection: TextDirection.rtl,
-                      child: MainScreen(),
+                      child: SplashScreen(),
                     ),
                   );
                 });

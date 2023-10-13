@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
 
 import '../../../core/services/controllers/searchController.dart';
 import '../../../core/services/services_locator.dart';
@@ -8,6 +7,7 @@ import '../../../core/utils/constants/lottie.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../widgets/widgets.dart';
 import '../widgets/search_options.dart';
+import '/core/utils/constants/extensions.dart';
 
 class Search extends StatelessWidget {
   Search({super.key});

@@ -9,13 +9,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
 
 import '../../core/services/controllers/general_controller.dart';
 import '../../core/services/services_locator.dart';
 import '../../core/services/shared_pref_services.dart';
 import '../../core/utils/constants/shared_preferences_constants.dart';
 import '../../core/utils/constants/svg_picture.dart';
+import '/core/utils/constants/extensions.dart';
 
 orientation(BuildContext context, var n1, n2) {
   Orientation orientation = MediaQuery.orientationOf(context);

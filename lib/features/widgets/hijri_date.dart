@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sunti/features/widgets/widgets.dart';
+
+import '/features/widgets/widgets.dart';
 
 class HijriDate extends StatelessWidget {
   const HijriDate({super.key});

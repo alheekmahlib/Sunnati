@@ -1,8 +1,6 @@
 import 'package:expansion_tile_card/expansion_tile_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
-import 'package:sunti/features/books/read_view.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 import '../../core/services/controllers/searchController.dart';
@@ -10,6 +8,8 @@ import '../../core/services/services_locator.dart';
 import '../../core/utils/constants/svg_picture.dart';
 import '../search/screen/search_screen.dart';
 import '../widgets/widgets.dart';
+import '/core/utils/constants/extensions.dart';
+import '/features/books/read_view.dart';
 
 class DetailsScreen extends StatelessWidget {
   final String arAndEnName;

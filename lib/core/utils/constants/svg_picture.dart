@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
+
+import '/core/utils/constants/extensions.dart';
 
 home(BuildContext context) {
   return SvgPicture.asset(
@@ -182,5 +183,14 @@ sunti_logo(BuildContext context, {double? height, double? width}) {
     'assets/svg/sunti_logo.svg',
     height: height,
     width: width,
+  );
+}
+
+alheekmah_logo(BuildContext context, {double? height, double? width}) {
+  return SvgPicture.asset(
+    'assets/svg/alheekmah_logo.svg',
+    height: height,
+    width: width,
+    colorFilter: const ColorFilter.mode(Color(0xff3C2A21), BlendMode.srcIn),
   );
 }

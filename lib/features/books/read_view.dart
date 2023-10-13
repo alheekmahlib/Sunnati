@@ -2,7 +2,6 @@ import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:sunti/features/books/data/models/bookmark_model.dart';
 
 import '../../core/services/controllers/bookmark_controller.dart';
 import '../../core/services/controllers/general_controller.dart';
@@ -13,6 +12,7 @@ import '../../core/utils/constants/svg_picture.dart';
 import '../share/ayah_to_images.dart';
 import '../widgets/text_overflow_detector.dart';
 import '../widgets/widgets.dart';
+import '/features/books/data/models/bookmark_model.dart';
 
 class ReadView extends StatelessWidget {
   final String title;

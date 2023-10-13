@@ -15,6 +15,7 @@ import 'controllers/bookmark_controller.dart';
 import 'controllers/general_controller.dart';
 import 'controllers/searchController.dart';
 import 'controllers/settings_controller.dart';
+import 'controllers/splashScreen_controller.dart';
 import 'shared_pref_services.dart';
 
 final sl = GetIt.instance;
@@ -54,6 +55,10 @@ class ServicesLocator {
 
     sl.registerLazySingleton<BookmarkController>(() =>
         Get.put<BookmarkController>(BookmarkController(), permanent: true));
+
+    sl.registerLazySingleton<SplashScreenController>(() =>
+        Get.put<SplashScreenController>(SplashScreenController(),
+            permanent: true));
 
     UiHelper.rateMyApp.init();
 
