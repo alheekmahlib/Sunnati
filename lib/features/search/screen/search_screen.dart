@@ -62,7 +62,10 @@ class Search extends StatelessWidget {
                       children: [
                         SizedBox(
                           height: 50,
-                          width: MediaQuery.sizeOf(context).width * .7,
+                          width: orientation(
+                              context,
+                              MediaQuery.sizeOf(context).width * .7,
+                              MediaQuery.sizeOf(context).width * .5),
                           child: TextField(
                             controller: textSerachController,
                             decoration: InputDecoration(

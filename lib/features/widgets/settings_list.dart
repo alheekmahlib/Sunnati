@@ -15,7 +15,7 @@ class SettingsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    return Column(
+    return ListView(
       children: [
         Container(
           width: orientation(context, width, 381.0),

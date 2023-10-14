@@ -28,7 +28,7 @@ class SettingsController extends GetxController {
     print(
         'Lang code: $langCode'); // Add this line to debug the value of langCode
 
-    if (langCode == null || langCode.isEmpty) {
+    if (langCode.isEmpty) {
       initialLang = const Locale('ar', 'AE');
     } else {
       initialLang = Locale(

@@ -1,15 +1,15 @@
-import 'package:expansion_tile_card/expansion_tile_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:theme_provider/theme_provider.dart';
+import 'package:sunti/features/details/widgets/chapter_list.dart';
 
 import '../../core/services/controllers/searchController.dart';
 import '../../core/services/services_locator.dart';
 import '../../core/utils/constants/svg_picture.dart';
+import '../details/widgets/book_name.dart';
 import '../search/screen/search_screen.dart';
 import '../widgets/widgets.dart';
 import '/core/utils/constants/extensions.dart';
-import '/features/books/read_view.dart';
+import 'widgets/about_book.dart';
 
 class DetailsScreen extends StatelessWidget {
   final String arAndEnName;
@@ -25,9 +25,6 @@ class DetailsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
-      statusBarColor: Colors.green, // Set status bar color
-    ));
     double height = MediaQuery.sizeOf(context).height;
     double width = MediaQuery.sizeOf(context).width;
     return Directionality(
@@ -66,141 +63,71 @@ class DetailsScreen extends StatelessWidget {
           ],
         ),
         body: Container(
-          height: height,
-          width: width,
-          margin: const EdgeInsets.only(top: 16.0),
-          decoration: BoxDecoration(
-              color: Theme.of(context).colorScheme.background,
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(20.0),
-                topRight: Radius.circular(20.0),
-              )),
-          child: ListView(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(16),
-                child: book_name(context, bookName, context.textDarkColor,
-                    height: 90),
+            height: height,
+            width: width,
+            margin: const EdgeInsets.only(top: 16.0),
+            decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.background,
+                borderRadius: const BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                )),
+            child: orientation(
+              context,
+              ListView(
+                children: [
+                  BookName(bookName: bookName, arAndEnName: arAndEnName),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 16.0, vertical: 8.0),
+                    child: AboutBook(
+                      bookDetails: bookDetails,
+                    ),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 8.0),
+                      child: ChapterList(
+                          arAndEnName: arAndEnName,
+                          bookNumber: '$bookNumber',
+                          bookName: bookName))
+                ],
               ),
-              Text(
-                arAndEnName,
-                style: TextStyle(
-                  fontFamily: 'kufi',
-                  fontSize: 18,
-                  color: ThemeProvider.themeOf(context).id == 'dark'
-                      ? Colors.white
-                      : Theme.of(context).primaryColorDark,
-                ),
-                textAlign: TextAlign.center,
-              ),
               Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: beigeContainer(
-                  context,
-                  ExpansionTileCard(
-                    elevation: 0.0,
-                    initialElevation: 0.0,
-                    expandedTextColor: context.textDarkColor,
-                    title: SizedBox(
-                      width: 100.0,
-                      child: Text(
-                        'عن الكتاب',
-                        style: TextStyle(
-                          fontFamily: 'kufi',
-                          fontSize: 16,
-                          color: ThemeProvider.themeOf(context).id == 'dark'
-                              ? Colors.white
-                              : Theme.of(context).primaryColorDark,
+                padding: const EdgeInsets.symmetric(horizontal: 48.0),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 8.0),
+                        child: SingleChildScrollView(
+                          child: ChapterList(
+                              arAndEnName: arAndEnName,
+                              bookNumber: '$bookNumber',
+                              bookName: bookName),
+                        )),
+                    SingleChildScrollView(
+                      child: Flexible(
+                        child: Column(
+                          children: [
+                            BookName(
+                                bookName: bookName, arAndEnName: arAndEnName),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 16.0, vertical: 8.0),
+                              child: AboutBook(
+                                bookDetails: bookDetails,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                    baseColor: Theme.of(context).colorScheme.background,
-                    expandedColor: Theme.of(context).colorScheme.background,
-                    children: <Widget>[
-                      const Divider(
-                        thickness: 1.0,
-                        height: 1.0,
-                      ),
-                      ButtonBar(
-                          alignment: MainAxisAlignment.spaceAround,
-                          buttonHeight: 42.0,
-                          buttonMinWidth: 90.0,
-                          children: [
-                            Text(
-                              bookDetails,
-                              style: TextStyle(
-                                fontFamily: 'naskh',
-                                fontSize: 20,
-                                color:
-                                    ThemeProvider.themeOf(context).id == 'dark'
-                                        ? Colors.white
-                                        : Theme.of(context).primaryColorDark,
-                              ),
-                            ),
-                          ]),
-                    ],
-                  ),
-                  width: orientation(context, width, 381.0),
+                  ],
                 ),
               ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-                child: beigeContainer(
-                  context,
-                  Column(
-                    children: List.generate(
-                        20,
-                        (index) => GestureDetector(
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      child: Icon(
-                                    Icons.list,
-                                    size: 20,
-                                    color: Theme.of(context).primaryColorDark,
-                                  )),
-                                  Expanded(
-                                    flex: 8,
-                                    child: whiteContainer(
-                                      context,
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          ' كتاب بدء الوحي $index',
-                                          style: TextStyle(
-                                            fontFamily: 'naskh',
-                                            fontSize: 20,
-                                            color:
-                                                ThemeProvider.themeOf(context)
-                                                            .id ==
-                                                        'dark'
-                                                    ? Colors.white
-                                                    : Theme.of(context)
-                                                        .primaryColorDark,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              onTap: () => Navigator.of(context)
-                                  .push(animatRoute(ReadView(
-                                title: ' كتاب بدء الوحي',
-                                bookName: arAndEnName,
-                                bookNumber: '$bookNumber',
-                                bookOtherNumber: bookName,
-                              ))),
-                            )),
-                  ),
-                  width: orientation(context, width, 381.0),
-                ),
-              )
-            ],
-          ),
-        ),
+            )),
       ),
     );
   }

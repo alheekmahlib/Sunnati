@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../core/utils/constants/extensions.dart';
-import '../../core/utils/constants/svg_picture.dart';
-import 'widgets.dart';
+import '../../../core/utils/constants/extensions.dart';
+import '../../../core/utils/constants/svg_picture.dart';
+import '../../widgets/widgets.dart';
 
 class LastRead extends StatelessWidget {
   const LastRead({super.key});

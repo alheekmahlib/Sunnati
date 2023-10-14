@@ -19,57 +19,63 @@ class BookmarksScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).primaryColorDark,
       body: Directionality(
         textDirection: TextDirection.rtl,
-        child: Padding(
-          padding: const EdgeInsets.only(top: 20.0),
-          child: Stack(
-            children: [
-              Container(
-                padding: const EdgeInsets.only(top: 140.0),
-                decoration: BoxDecoration(
-                    color: Theme.of(context).colorScheme.background,
-                    borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(20.0),
-                    )),
-                child: ListView(
-                  padding: EdgeInsets.zero,
-                  children: [
-                    Obx(
+        child: SingleChildScrollView(
+          controller: sl<BookmarkController>().scrollController,
+          child: Padding(
+            padding: const EdgeInsets.only(top: 20.0),
+            child: Stack(
+              children: [
+                Container(
+                  height: MediaQuery.sizeOf(context).height,
+                  decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.background,
+                      borderRadius: const BorderRadius.only(
+                        topLeft: Radius.circular(20.0),
+                      )),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 140.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Theme.of(context).colorScheme.background,
+                    ),
+                    child: Obx(
                       () {
                         if (sl<BookmarkController>().bookmark.isEmpty) {
-                          return Center(
-                            child: Text('No persons added yet!'),
+                          return const Center(
+                            child: Text('No bookmarks added yet!'),
                           );
                         }
                         return const BookmarkCard();
                       },
                     ),
-                  ],
-                ),
-              ),
-              Align(
-                alignment: Alignment.topRight,
-                child: Transform.translate(
-                  offset: const Offset(19, -20),
-                  child: bookmark_logo(context, height: 130),
-                ),
-              ),
-              Align(
-                alignment: Alignment.topCenter,
-                child: Transform.translate(
-                  offset: const Offset(0, 55),
-                  child: Text(
-                    'bookmark'.tr,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'kufi',
-                      fontWeight: FontWeight.w600,
-                      color: context.surfaceDarkColor,
-                    ),
-                    textDirection: TextDirection.rtl,
                   ),
                 ),
-              ),
-            ],
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Transform.translate(
+                    offset: const Offset(19, -20),
+                    child: bookmark_logo(context, height: 130),
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.topCenter,
+                  child: Transform.translate(
+                    offset: const Offset(0, 55),
+                    child: Text(
+                      'bookmark'.tr,
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontFamily: 'kufi',
+                        fontWeight: FontWeight.w600,
+                        color: context.surfaceDarkColor,
+                      ),
+                      textDirection: TextDirection.rtl,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

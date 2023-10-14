@@ -91,5 +91,10 @@
   "@readLess": {
     "type": "text",
     "placeholders": {}
+  },
+  "aboutBook": "عن الكتاب",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
   }
 }

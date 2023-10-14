@@ -1,3 +1,4 @@
+import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:get/get.dart';
@@ -12,6 +13,7 @@ class GeneralController extends GetxController {
   RxDouble fontSizeArabic = 24.0.obs;
   PageController controller = PageController();
   GlobalKey<SliderDrawerState> key = GlobalKey<SliderDrawerState>();
+  final ArabicNumbers arabicNumbers = ArabicNumbers();
 
   /// Greeting
   updateGreeting() {

@@ -1,5 +1,5 @@
 {
-  "appName": "Sunti",
+  "appName": "Sunnti",
   "@appName": {
     "description": "The App Name"
   },
@@ -89,6 +89,11 @@
   },
   "readLess": "Read Less",
   "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "About Book",
+  "@aboutBook": {
     "type": "text",
     "placeholders": {}
   }

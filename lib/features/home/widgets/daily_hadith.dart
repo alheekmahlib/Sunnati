@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../core/utils/constants/extensions.dart';
-import '../../core/utils/constants/svg_picture.dart';
-import 'widgets.dart';
+import '../../../core/utils/constants/extensions.dart';
+import '../../../core/utils/constants/svg_picture.dart';
+import '../../widgets/widgets.dart';
 
 class DailyHadith extends StatelessWidget {
   const DailyHadith({super.key});
