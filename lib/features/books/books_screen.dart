@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 import '../../core/utils/constants/lists.dart';
@@ -12,13 +11,14 @@ class Books extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = MediaQuery.sizeOf(context).width;
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColorDark,
       body: SingleChildScrollView(
         child: Container(
           width: MediaQuery.sizeOf(context).width,
           margin: const EdgeInsets.only(top: 20.0),
+          padding: orientation(
+              context, null, const EdgeInsets.symmetric(horizontal: 40.0)),
           decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.background,
               borderRadius: const BorderRadius.only(
@@ -63,7 +63,7 @@ class Books extends StatelessWidget {
                                       child: Text(
                                         booksList[index]['name'],
                                         style: TextStyle(
-                                          fontSize: 13.0.sp,
+                                          fontSize: 15.0,
                                           fontFamily: 'kufi',
                                           fontWeight: FontWeight.w600,
                                           color: Theme.of(context)

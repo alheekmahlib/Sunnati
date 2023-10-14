@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
 import 'package:theme_provider/theme_provider.dart';
+
+import '/core/utils/constants/extensions.dart';
 
 class ThemeChange extends StatelessWidget {
   const ThemeChange({Key? key}) : super(key: key);

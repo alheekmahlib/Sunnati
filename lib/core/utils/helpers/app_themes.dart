@@ -44,7 +44,7 @@ class AppThemes {
         cupertinoOverrideTheme: const CupertinoThemeData(
           primaryColor: Color(0xff3C2A21),
         ),
-      ).copyWith(useMaterial3: true));
+      ).copyWith());
 
   static final AppTheme dark = AppTheme(
     id: 'dark',
@@ -84,7 +84,7 @@ class AppThemes {
       cupertinoOverrideTheme: const CupertinoThemeData(
         primaryColor: Color(0xff3C2A21),
       ),
-    ).copyWith(useMaterial3: true),
+    ).copyWith(),
   );
 
   static List<AppTheme> get list => [AppThemes.brown, AppThemes.dark];

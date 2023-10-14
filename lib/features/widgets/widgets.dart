@@ -9,13 +9,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
 
 import '../../core/services/controllers/general_controller.dart';
 import '../../core/services/services_locator.dart';
 import '../../core/services/shared_pref_services.dart';
 import '../../core/utils/constants/shared_preferences_constants.dart';
 import '../../core/utils/constants/svg_picture.dart';
+import '/core/utils/constants/extensions.dart';
 
 orientation(BuildContext context, var n1, n2) {
   Orientation orientation = MediaQuery.orientationOf(context);
@@ -75,7 +75,7 @@ optionsModalBottomSheet(BuildContext context, Widget child, {double? height}) {
 
 Widget hijriDate(BuildContext context) {
   ArabicNumbers arabicNumber = ArabicNumbers();
-  var _today = HijriCalendar.now();
+  var today = HijriCalendar.now();
   // AppLocalizations.of(context)!.appName == "سُنتي"
   //     ? HijriCalendar.setLocal('ar')
   //     : HijriCalendar.setLocal('en');
@@ -89,7 +89,7 @@ Widget hijriDate(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              arabicNumber.convert('${_today.hDay}'),
+              arabicNumber.convert('${today.hDay}'),
               style: TextStyle(
                 fontSize: orientation(context, 30.0, 20.0),
                 fontFamily: 'kufi',
@@ -98,7 +98,7 @@ Widget hijriDate(BuildContext context) {
               textAlign: TextAlign.center,
             ),
             Text(
-              arabicNumber.convert('${_today.hMonth} / ${_today.hYear} هـ'),
+              arabicNumber.convert('${today.hMonth} / ${today.hYear} هـ'),
               style: TextStyle(
                 fontSize: orientation(context, 20.0, 20.0),
                 fontFamily: 'kufi',
@@ -111,14 +111,14 @@ Widget hijriDate(BuildContext context) {
         Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SvgPicture.asset('assets/svg/hijri/${_today.hMonth}.svg',
+            SvgPicture.asset('assets/svg/hijri/${today.hMonth}.svg',
                 height: orientation(context, 70.0, 100.0),
                 colorFilter:
                     ColorFilter.mode(context.textDarkColor, BlendMode.srcIn)),
             Transform.translate(
               offset: const Offset(-25, -5),
               child: Text(
-                arabicNumber.convert(_today.dayWeName),
+                arabicNumber.convert(today.dayWeName),
                 style: TextStyle(
                   fontSize: orientation(context, 22.0, 20.0),
                   fontFamily: 'kufi',

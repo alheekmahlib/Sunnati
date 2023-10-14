@@ -38,7 +38,7 @@ class MainScreen extends StatelessWidget {
               isNeedSafeArea
                   ? const EdgeInsets.only(top: 64.0)
                   : const EdgeInsets.only(top: 16.0),
-              const EdgeInsets.symmetric(horizontal: 32.0)),
+              const EdgeInsets.all(0)),
           child: SliderDrawer(
             key: sl<GeneralController>().key,
             splashColor: Theme.of(context).primaryColorDark,
@@ -52,7 +52,10 @@ class MainScreen extends StatelessWidget {
             isDraggable: true,
             appBar: SliderAppBar(
               appBarColor: Theme.of(context).primaryColorDark,
-              appBarPadding: const EdgeInsets.symmetric(horizontal: 16.0).r,
+              appBarPadding: orientation(
+                  context,
+                  const EdgeInsets.symmetric(horizontal: 16.0),
+                  const EdgeInsets.symmetric(horizontal: 40.0)),
               drawerIconColor: Theme.of(context).colorScheme.secondary,
               drawerIcon: IconButton(
                 icon: Icon(
@@ -97,7 +100,7 @@ class MainScreen extends StatelessWidget {
                 title: Text(
                   'home'.tr,
                   style: TextStyle(
-                    fontSize: 12.sp,
+                    fontSize: 16,
                     fontFamily: 'kufi',
                     color: Theme.of(context).colorScheme.surface,
                   ),
@@ -113,7 +116,7 @@ class MainScreen extends StatelessWidget {
                 title: Text(
                   'books'.tr,
                   style: TextStyle(
-                    fontSize: 12.sp,
+                    fontSize: 16,
                     fontFamily: 'kufi',
                     color: Theme.of(context).colorScheme.surface,
                   ),
@@ -129,7 +132,7 @@ class MainScreen extends StatelessWidget {
                   title: Text(
                     'bookmark'.tr,
                     style: TextStyle(
-                      fontSize: 12.sp,
+                      fontSize: 16,
                       fontFamily: 'kufi',
                       color: Theme.of(context).colorScheme.surface,
                     ),
@@ -155,8 +158,8 @@ class MainScreen extends StatelessWidget {
           ),
         ),
         floatingActionButton: SizedBox(
-          height: 40.h,
-          width: 40.h,
+          height: 50.0,
+          width: 50.0,
           child: FloatingActionButton(
             onPressed: () {
               screenModalBottomSheet(

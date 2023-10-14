@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 
@@ -7,6 +8,7 @@ import '../../utils/constants/assets_data.dart';
 class BookmarkController extends GetxController {
   var bookmark = <Bookmark>[].obs;
   var box;
+  ScrollController scrollController = ScrollController();
 
   @override
   void onInit() async {

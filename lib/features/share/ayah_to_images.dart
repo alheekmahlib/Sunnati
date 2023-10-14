@@ -41,7 +41,7 @@ Future<Uint8List> createHadithImage(
       textAlign: TextAlign.justify);
   textHadith.layout(maxWidth: 800);
 
-  final padding = 32.0;
+  const padding = 32.0;
   // final imagePadding = 20.0;
 
   // Load the PNG image
@@ -60,11 +60,11 @@ Future<Uint8List> createHadithImage(
   final imageWidth = pngImage.width.toDouble() / 1.0;
   final imageHeight = pngImage.height.toDouble() / 1.0;
   final imageX = (canvasWidth - imageWidth) / 2; // Center the first image
-  final imageY = padding - 20;
+  const imageY = padding - 20;
 
   final image2Width = pngImage2.width.toDouble() / 8.0;
   final image2Height = pngImage2.height.toDouble() / 8.0;
-  final image2X = padding + 750; // Center the second image
+  const image2X = padding + 750; // Center the second image
   final image2Y = imageHeight + padding - 55; // Adjust this value as needed
 
   // Set the text position
@@ -111,8 +111,8 @@ Future<Uint8List> createHadithImage(
       textAlign: TextAlign.right);
   nameBook.layout(maxWidth: 400);
 
-  final nameBookX = padding + 10;
-  final nameBookY = padding + 50;
+  const nameBookX = padding + 10;
+  const nameBookY = padding + 50;
 
   // Create the new text painter
   final numberHadith = TextPainter(
@@ -129,10 +129,10 @@ Future<Uint8List> createHadithImage(
       textAlign: TextAlign.justify);
   numberHadith.layout(maxWidth: 800);
 
-  final numberHadithX = padding + 50;
+  const numberHadithX = padding + 50;
   final numberHadithY = textY + textHadith.height + padding + 10;
 
-  var image3Y;
+  double image3Y;
   // Calculate the position of the new image to be below the new text
   hadithNumber == ""
       ? (image3Y = textY + textHadith.height + 40)
@@ -164,7 +164,7 @@ Future<Uint8List> createHadithImage(
       Rect.fromLTWH(
           0, 0, canvasWidth, canvasHeight)); // Add Rect to fix the canvas size
 
-  final borderRadius = 25.0;
+  const borderRadius = 25.0;
   final borderPaint = Paint()
     ..color = const Color(0xff3C2A21)
     ..style = PaintingStyle.stroke
@@ -173,11 +173,11 @@ Future<Uint8List> createHadithImage(
   final backgroundPaint = Paint()..color = const Color(0xffF7F1EC);
 
   final rRect = RRect.fromLTRBR(
-      0, 0, canvasWidth, canvasHeight, Radius.circular(borderRadius));
+      0, 0, canvasWidth, canvasHeight, const Radius.circular(borderRadius));
 
   canvas.drawRRect(rRect, backgroundPaint);
   canvas.drawRRect(rRect, borderPaint);
-  nameBook.paint(canvas, Offset(nameBookX, nameBookY));
+  nameBook.paint(canvas, const Offset(nameBookX, nameBookY));
   textHadith.paint(canvas, Offset(textX, textY));
   canvas.drawImageRect(
     pngImage,
@@ -216,7 +216,7 @@ Future<Uint8List> createHadithImage(
               7.1 * padding)
           .toInt();
 
-  final imgScaleFactor = 1; // Increase this value for a higher resolution image
+  const imgScaleFactor = 1; // Increase this value for a higher resolution image
   final imgScaled = await picture.toImage(
       imgWidth * imgScaleFactor, imgHeight * imgScaleFactor);
 
@@ -276,7 +276,7 @@ Future<Uint8List> createHadithWithTranslateImage(
       textAlign: TextAlign.justify);
   textZkr.layout(maxWidth: 800);
 
-  final padding = 32.0;
+  const padding = 32.0;
   // final imagePadding = 20.0;
 
   // Load the PNG image
@@ -295,11 +295,11 @@ Future<Uint8List> createHadithWithTranslateImage(
   final imageWidth = pngImage.width.toDouble() / 1.0;
   final imageHeight = pngImage.height.toDouble() / 1.0;
   final imageX = (canvasWidth - imageWidth) / 2; // Center the first image
-  final imageY = padding - 20;
+  const imageY = padding - 20;
 
   final image2Width = pngImage2.width.toDouble() / 8.0;
   final image2Height = pngImage2.height.toDouble() / 8.0;
-  final image2X = padding + 750; // Center the second image
+  const image2X = padding + 750; // Center the second image
   final image2Y = imageHeight + padding - 50; // Adjust this value as needed
 
   // Set the text position
@@ -346,8 +346,8 @@ Future<Uint8List> createHadithWithTranslateImage(
       textAlign: TextAlign.right);
   nameBook.layout(maxWidth: 400);
 
-  final nameBookX = padding + 10;
-  final nameBookY = padding + 50;
+  const nameBookX = padding + 10;
+  const nameBookY = padding + 50;
 
   final numberHadith = TextPainter(
       text: TextSpan(
@@ -364,7 +364,7 @@ Future<Uint8List> createHadithWithTranslateImage(
       textAlign: TextAlign.center);
   numberHadith.layout(maxWidth: 800);
 
-  final numberHadithX = padding + 150;
+  const numberHadithX = padding + 150;
 
   final numberBook = TextPainter(
       text: TextSpan(
@@ -381,8 +381,8 @@ Future<Uint8List> createHadithWithTranslateImage(
       textAlign: TextAlign.right);
   numberBook.layout(maxWidth: 400);
 
-  final numberBookX = padding + 150;
-  final numberBookY = padding + 50;
+  const numberBookX = padding + 150;
+  const numberBookY = padding + 50;
 
   // Calculate the position of the new image to be below the new text
   // final image3Y = numberHadithY + numberHadith.height + padding - 20;
@@ -420,10 +420,10 @@ Future<Uint8List> createHadithWithTranslateImage(
       textAlign: TextAlign.justify);
   translateHadith.layout(maxWidth: 800);
 
-  final translateHadithX = padding + 50;
+  const translateHadithX = padding + 50;
   final translateHadithY = textY + textZkr.height + padding + 40;
 
-  var image3Y;
+  double image3Y;
   // Calculate the position of the new image to be below the new text
   hadithTranslate == ""
       ? (image3Y = textY + textZkr.height + 40)
@@ -453,7 +453,7 @@ Future<Uint8List> createHadithWithTranslateImage(
       Rect.fromLTWH(
           0, 0, canvasWidth, canvasHeight)); // Add Rect to fix the canvas size
 
-  final borderRadius = 25.0;
+  const borderRadius = 25.0;
   final borderPaint = Paint()
     ..color = const Color(0xff3C2A21)
     ..style = PaintingStyle.stroke
@@ -462,12 +462,12 @@ Future<Uint8List> createHadithWithTranslateImage(
   final backgroundPaint = Paint()..color = const Color(0xffF5EFE7);
 
   final rRect = RRect.fromLTRBR(
-      0, 0, canvasWidth, canvasHeight, Radius.circular(borderRadius));
+      0, 0, canvasWidth, canvasHeight, const Radius.circular(borderRadius));
 
   canvas.drawRRect(rRect, backgroundPaint);
   canvas.drawRRect(rRect, borderPaint);
-  nameBook.paint(canvas, Offset(nameBookX, nameBookY));
-  numberBook.paint(canvas, Offset(numberBookX, numberBookY));
+  nameBook.paint(canvas, const Offset(nameBookX, nameBookY));
+  numberBook.paint(canvas, const Offset(numberBookX, numberBookY));
   textZkr.paint(canvas, Offset(textX, textY));
   canvas.drawImageRect(
     pngImage,
@@ -507,7 +507,7 @@ Future<Uint8List> createHadithWithTranslateImage(
               7.1 * padding)
           .toInt();
 
-  final imgScaleFactor = 1; // Increase this value for a higher resolution image
+  const imgScaleFactor = 1; // Increase this value for a higher resolution image
   final imgScaled = await picture.toImage(
       imgWidth * imgScaleFactor, imgHeight * imgScaleFactor);
 
@@ -533,7 +533,7 @@ shareText(String hadithText, String bookName, int hadithNumber) {
       '﴿$hadithText﴾ '
       '[$bookName-'
       '$hadithNumber]',
-      subject: '$bookName');
+      subject: bookName);
 }
 
 Future<void> shareHadithWithTranslate(int hadithNumber, int bookNumber,
@@ -603,7 +603,7 @@ Future<void> showHadithOptionsBottomSheet(
         ),
         Flexible(
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
             decoration: BoxDecoration(
                 color: Theme.of(context).colorScheme.background,
                 borderRadius: const BorderRadius.all(
@@ -615,10 +615,10 @@ Future<void> showHadithOptionsBottomSheet(
                 Align(
                   alignment: Alignment.topCenter,
                   child: Container(
-                      margin: EdgeInsets.all(16.0),
+                      margin: const EdgeInsets.all(16.0),
                       decoration: BoxDecoration(
                           color: Theme.of(context).primaryColorDark,
-                          borderRadius: BorderRadius.all(Radius.circular(8))),
+                          borderRadius: const BorderRadius.all(Radius.circular(8))),
                       child: shareLottie(width: 140.0)),
                 ),
                 Padding(
@@ -740,7 +740,7 @@ Future<void> showHadithOptionsBottomSheet(
                               },
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 32.0,
                           ),
                           Expanded(

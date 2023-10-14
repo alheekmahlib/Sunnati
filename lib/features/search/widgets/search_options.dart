@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
-import 'package:sunti/features/widgets/widgets.dart';
 
 import '../../../core/services/controllers/searchController.dart';
 import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/lists.dart';
 import '../../../core/utils/constants/svg_picture.dart';
+import '/core/utils/constants/extensions.dart';
+import '/features/widgets/widgets.dart';
 import 'check_box_tile.dart';
 
 class SearchOptions extends StatelessWidget {

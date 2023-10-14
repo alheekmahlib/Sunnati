@@ -12,10 +12,10 @@ import 'package:sunti/my_app.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    Map<String, Map<String, String>> _languages = await dep.init();
+    Map<String, Map<String, String>> languages = await dep.init();
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp(
-      languages: _languages,
+      languages: languages,
     ));
 
     // Verify that our counter starts at 0.

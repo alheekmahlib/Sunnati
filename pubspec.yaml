@@ -54,12 +54,26 @@ dev_dependencies:
 
   flutter_lints: ^2.0.0
   build_runner: ^2.4.6
+  flutter_native_splash: ^2.2.15
+
+flutter_native_splash:
+  color: "#F7F1EC"
+  color_dark: "#F7F1EC"
+  image: assets/images/sunti_logo.png
+  image_dark: assets/images/sunti_logo.png
+
+  android_12:
+    image: assets/images/sunti_logo.png
+    icon_background_color: "#F7F1EC"
+    image_dark: assets/images/sunti_logo.png
+    icon_background_color_dark: "#F7F1EC"
 
 
 flutter:
 
   generate: true
   uses-material-design: true
+
 
   # To add assets to your application, add an assets section, like this:
   assets:

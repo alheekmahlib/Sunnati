@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
-import 'package:sunti/features/widgets/widgets.dart';
+
+import '/core/utils/constants/extensions.dart';
+import '/features/widgets/widgets.dart';
 
 class CheckBoxTile extends StatelessWidget {
   const CheckBoxTile({

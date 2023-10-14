@@ -1,129 +1,135 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-import '/home_page.dart';
-import '../services_locator.dart';
+import '../../core/services/services_locator.dart';
+import '../../core/utils/constants/lottie.dart';
+import '../../core/utils/constants/svg_picture.dart';
+import '/core/services/controllers/splashScreen_controller.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
-}
-
-class _SplashScreenState extends State<SplashScreen>
-    with TickerProviderStateMixin {
-  bool animate = false;
-
-  @override
-  initState() {
-    startTime();
-    super.initState();
-  }
-
-  Future startTime() async {
-    await Future.delayed(const Duration(seconds: 1));
-    setState(() {
-      animate = true;
-    });
-    await Future.delayed(const Duration(seconds: 3));
-    // Get.off(() => OnboardingScreen());
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      navigationPage();
-    });
-  }
-
-  Widget? myWidget;
-  void navigationPage() async {
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    print('is_first_time ${prefs.getBool("is_first_time")}');
-    if (prefs.getBool("is_first_time") == null) {
-      Get.off(() => const OnboardingScreen());
-      prefs.setBool("is_first_time", false);
-    } else {
-      Get.off(() => const HomePage());
-    }
-    // Get.off(() => OnboardingScreen());
-    // Navigator.of(context).pushReplacementNamed(routeName);
-  }
-
-  @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      // debugShowMaterialGrid: true,
-      home: Scaffold(
-        backgroundColor: const Color(0xfff3efdf),
-        body: Directionality(
-          textDirection: TextDirection.rtl,
-          child: Stack(
-            children: [
-              Align(
-                alignment: Alignment.center,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SvgPicture.asset(
-                      'assets/svg/splash_icon.svg',
-                      height: 120,
-                      width: 120,
-                    ),
-                    const SizedBox(
-                      height: 16,
-                    ),
-                    ClipPath(
-                        clipper: const ShapeBorderClipper(
-                            shape: RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(4)))),
+    sl<SplashScreenController>().startTime();
+    return Scaffold(
+      backgroundColor: const Color(0xffF7F1EC),
+      body: Directionality(
+        textDirection: TextDirection.rtl,
+        child: Stack(
+          children: [
+            Align(
+              alignment: Alignment.topRight,
+              child: sunti_iconR(context, width: 100),
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Transform.translate(
+                        offset: const Offset(0, -40),
+                        child: Stack(
+                          children: [
+                            Container(
+                              height: 140,
+                              width: MediaQuery.sizeOf(context).width,
+                              color: const Color(0xffE6DAC8),
+                            ),
+                            Container(
+                              height: 10,
+                              width: MediaQuery.sizeOf(context).width,
+                              margin: const EdgeInsets.only(top: 8.0),
+                              color: const Color(0xffF7F1EC),
+                            ),
+                          ],
+                        ),
+                      ),
+                      sunti_logo(
+                        context,
+                        height: 100,
+                        width: 100,
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  Obx(
+                    () => AnimatedContainer(
+                      height: 70,
+                      width:
+                          sl<SplashScreenController>().animate.value ? 300 : 10,
+                      duration: const Duration(milliseconds: 600),
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 2.0, vertical: 2.0),
+                        decoration: const BoxDecoration(
+                            color: Color(0xffE6DAC8),
+                            borderRadius: BorderRadius.all(
+                              Radius.circular(8.0),
+                            )),
+                        alignment: Alignment.center,
                         child: Container(
+                          margin: const EdgeInsets.symmetric(
+                              horizontal: 16.0, vertical: 4.0),
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 8, vertical: 4),
-                          decoration: BoxDecoration(
-                              color: const Color(0xff91a57d).withOpacity(.2),
-                              border: const Border.symmetric(
-                                  vertical: BorderSide(
-                                      color: Color(0xff91a57d), width: 2))),
-                          child: AnimatedOpacity(
-                            duration: const Duration(seconds: 1),
-                            opacity: animate ? 1 : 0,
-                            child: const Text(
-                              'وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا',
-                              style: TextStyle(
-                                  fontFamily: 'kufi',
-                                  color: Color(0xff39412a),
-                                  fontSize: 18),
+                              horizontal: 8.0, vertical: 8.0),
+                          decoration: const BoxDecoration(
+                              color: Color(0xffF7F1EC),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(8.0),
+                              )),
+                          alignment: Alignment.center,
+                          child: Obx(
+                            () => AnimatedOpacity(
+                              duration: const Duration(seconds: 1),
+                              opacity:
+                                  sl<SplashScreenController>().animate.value
+                                      ? 1
+                                      : 0,
+                              child: const Text(
+                                'فعليكم بسُنَّتي وسُنَّةِ الخُلَفاءِ الرَّاشِدينَ المَهْدِيِّينَ',
+                                style: TextStyle(
+                                    fontFamily: 'kufi',
+                                    color: Color(0xff3C2A21),
+                                    fontSize: 16),
+                                textAlign: TextAlign.center,
+                              ),
                             ),
                           ),
-                        )),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    alheekmah_logo(
+                      context,
+                      width: 90,
+                    ),
+                    RotatedBox(
+                      quarterTurns: 2,
+                      child: Transform.translate(
+                          offset: const Offset(0, -25),
+                          child: loading(width: 125.0)),
+                    ),
                   ],
                 ),
               ),
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      SvgPicture.asset(
-                        'assets/svg/alheekmah_logo.svg',
-                        colorFilter: const ColorFilter.mode(
-                            Color(0xff39412a), BlendMode.srcIn),
-                        width: 90,
-                      ),
-                      RotatedBox(
-                        quarterTurns: 2,
-                        child: loading(140.0, 30.0),
-                      ),
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
+            )
+          ],
         ),
       ),
     );

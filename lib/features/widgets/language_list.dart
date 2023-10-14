@@ -1,7 +1,6 @@
 import 'package:expansion_tile_card/expansion_tile_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sunti/core/utils/constants/extensions.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 import '../../core/services/controllers/settings_controller.dart';
@@ -9,6 +8,7 @@ import '../../core/services/services_locator.dart';
 import '../../core/services/shared_pref_services.dart';
 import '../../core/utils/constants/shared_preferences_constants.dart';
 import '../../core/utils/helpers/languages/language_controller.dart';
+import '/core/utils/constants/extensions.dart';
 
 class LanguageList extends StatelessWidget {
   const LanguageList({super.key});
