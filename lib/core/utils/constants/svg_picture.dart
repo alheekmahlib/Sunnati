@@ -22,6 +22,15 @@ bookmark(BuildContext context) {
   );
 }
 
+bookmark2(BuildContext context, {double? height, double? width}) {
+  return SvgPicture.asset(
+    'assets/svg/bookmark2.svg',
+    height: height,
+    width: width,
+    colorFilter: ColorFilter.mode(context.surfaceDarkColor, BlendMode.srcIn),
+  );
+}
+
 books(BuildContext context) {
   return SvgPicture.asset(
     'assets/svg/books.svg',
