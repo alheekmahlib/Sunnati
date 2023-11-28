@@ -8,14 +8,14 @@ import 'package:hive_flutter/adapters.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
-import '../../features/books/data/models/bookmark_model.dart';
+import '../../presentation/controllers/bookmark_controller.dart';
+import '../../presentation/controllers/general_controller.dart';
+import '../../presentation/controllers/searchController.dart';
+import '../../presentation/controllers/settings_controller.dart';
+import '../../presentation/controllers/splashScreen_controller.dart';
+import '../../presentation/screens/books/data/models/bookmark_model.dart';
 import '../utils/constants/assets_data.dart';
 import '../utils/helpers/ui_helper.dart';
-import 'controllers/bookmark_controller.dart';
-import 'controllers/general_controller.dart';
-import 'controllers/searchController.dart';
-import 'controllers/settings_controller.dart';
-import 'controllers/splashScreen_controller.dart';
 import 'shared_pref_services.dart';
 
 final sl = GetIt.instance;
