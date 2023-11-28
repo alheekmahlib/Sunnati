@@ -1,153 +1,153 @@
 {
-  "appName": "Sunnti",
+  "appName": "সুন্নী",
   "@appName": {
     "description": "The App Name"
   },
-  "lastRead": "Last Read",
+  "lastRead": "শেষ পড়া",
   "@lastRead": {
     "description": "The Last Read"
   },
-  "appLang": "App Language",
+  "appLang": "অ্যাপের ভাষা",
   "@appLang": {
     "type": "text",
     "placeholders": {}
   },
-  "lang": "English",
+  "lang": "বাংলা",
   "@lang": {
     "type": "text",
     "placeholders": {}
   },
-  "bookmark": "Bookmark",
+  "bookmark": "বুকমার্ক",
   "@bookmark": {
     "type": "text",
     "placeholders": {}
   },
-  "search": "Search",
+  "search": "অনুসন্ধান",
   "@search": {
     "type": "text",
     "placeholders": {}
   },
-  "searchHintText": "Search To Hadith",
+  "searchHintText": "হাদিসে অনুসন্ধান",
   "@searchHintText": {
     "type": "text",
     "placeholders": {}
   },
-  "lastSearch": "Last Search",
+  "lastSearch": "শেষ অনুসন্ধান",
   "@lastSearch": {
     "type": "text",
     "placeholders": {}
   },
-  "save": "Save",
+  "save": "সংরক্ষণ করুন",
   "@save": {
     "type": "text",
     "placeholders": {}
   },
-  "changeTheme": "Change Theme",
+  "changeTheme": "থিম পরিবর্তন করুন",
   "@changeTheme": {
     "type": "text",
     "placeholders": {}
   },
-  "brown": "Brown Mode",
+  "brown": "বাদামী মোড",
   "@brown": {
     "type": "text",
     "placeholders": {}
   },
-  "dark": "Dark Mode",
+  "dark": "অন্ধকার মোড",
   "@dark": {
     "type": "text",
     "placeholders": {}
   },
-  "books": "Books",
+  "books": "বই",
   "@books": {
     "type": "text",
     "placeholders": {}
   },
-  "home": "Home",
+  "home": "হোম",
   "@home": {
     "type": "text",
     "placeholders": {}
   },
-  "copiedHadith": "The hadith has been copied",
+  "copiedHadith": "হাদিসটি কপি করা হয়েছে",
   "@copiedHadith": {
     "type": "text",
     "placeholders": {}
   },
-  "shareText": "As text",
+  "shareText": "টেক্সট হিসেবে",
   "@shareText": {
     "type": "text",
     "placeholders": {}
   },
-  "shareImage": "As an image",
+  "shareImage": "একটি চিত্র হিসেবে",
   "@shareImage": {
     "type": "text",
     "placeholders": {}
   },
-  "shareImageWTrans": "As an image with additional content",
+  "shareImageWTrans": "একটি চিত্র সহ অতিরিক্ত বিষয়বস্তু হিসেবে",
   "@shareImageWTrans": {
     "type": "text",
     "placeholders": {}
   },
-  "readMore": "Read More",
+  "readMore": "আরও পড়ুন",
   "@readMore": {
     "type": "text",
     "placeholders": {}
   },
-  "readLess": "Read Less",
+  "readLess": "কম পড়ুন",
   "@readLess": {
     "type": "text",
     "placeholders": {}
   },
-  "aboutBook": "About Book",
+  "aboutBook": "বই কাটুন",
   "@aboutBook": {
     "type": "text",
     "placeholders": {}
   },
-  "Saturday": "Saturday",
+  "Saturday": "শনিবার",
   "@Saturday": {
     "type": "text",
     "placeholders": {}
   },
-  "Sunday": "Sunday",
+  "Sunday": "রবিবার",
   "@Sunday": {
     "type": "text",
     "placeholders": {}
   },
-  "Monday": "Monday",
+  "Monday": "সোমবার",
   "@Monday": {
     "type": "text",
     "placeholders": {}
   },
-  "Tuesday": "Tuesday",
+  "Tuesday": "মঙ্গলবার",
   "@Tuesday": {
     "type": "text",
     "placeholders": {}
   },
-  "Wednesday": "Wednesday",
+  "Wednesday": "বুধবার",
   "@Wednesday": {
     "type": "text",
     "placeholders": {}
   },
-  "Thursday": "Thursday",
+  "Thursday": "বৃহস্পতিবার",
   "@Thursday": {
     "type": "text",
     "placeholders": {}
   },
-  "Friday": "Friday",
-  "@Friday": {
+  "friday": "শুক্রবার",
+  "@friday": {
     "type": "text",
     "placeholders": {}
   },
-  "morning": "Good morning!",
+  "morning": "শুভ সকাল!",
   "@morning": {
     "type": "text",
     "placeholders": {}
   },
-  "evening": "Good evening!",
+  "evening": "শুভ সন্ধ্যা!",
   "@evening": {
     "type": "text",
     "placeholders": {}
   },
-  "dailyHadith": "Daily Hadith",
+  "dailyHadith": "দৈনিক হাদীস",
   "@dailyHadith": {
     "type": "text",
     "placeholders": {}

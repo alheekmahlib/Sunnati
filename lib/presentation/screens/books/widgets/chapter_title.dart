@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sunti/core/services/services_locator.dart';
 import 'package:sunti/presentation/controllers/general_controller.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../../../core/widgets/widgets.dart';
+import '/core/utils/constants/extensions.dart';
 import 'hadith_inArabic.dart';
 import 'hadith_translate.dart';
 
@@ -36,8 +36,7 @@ class ChapterTitle extends StatelessWidget {
                         flex: 1,
                         child: Text(
                           sl<GeneralController>()
-                              .arabicNumbers
-                              .convert(index + 1),
+                              .convertNumbers('${index + 1}'),
                           style: TextStyle(
                             fontFamily: 'naskh',
                             fontSize: 24,

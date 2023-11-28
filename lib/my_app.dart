@@ -6,7 +6,7 @@ import 'package:theme_provider/theme_provider.dart';
 
 import 'core/utils/helpers/app_themes.dart';
 import 'core/utils/helpers/languages/app_constants.dart';
-import 'core/utils/helpers/languages/language_controller.dart';
+import 'core/utils/helpers/languages/localization_controller.dart';
 import 'core/utils/helpers/languages/messages.dart';
 import 'presentation/screens/splashScreen/splash_screen.dart';
 

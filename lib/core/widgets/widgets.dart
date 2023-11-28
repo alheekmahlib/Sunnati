@@ -10,12 +10,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../presentation/controllers/general_controller.dart';
 import '../services/services_locator.dart';
 import '../services/shared_pref_services.dart';
 import '../utils/constants/shared_preferences_constants.dart';
 import '../utils/constants/svg_picture.dart';
+import '/core/utils/constants/extensions.dart';
 
 orientation(BuildContext context, var n1, n2) {
   Orientation orientation = MediaQuery.orientationOf(context);
@@ -79,7 +79,7 @@ Widget hijriDate(BuildContext context) {
   // AppLocalizations.of(context)!.appName == "سُنتي"
   //     ? HijriCalendar.setLocal('ar')
   //     : HijriCalendar.setLocal('en');
-  HijriCalendar.setLocal('ar');
+  // HijriCalendar.setLocal('ar');
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 16.0),
     child: Row(
@@ -89,7 +89,7 @@ Widget hijriDate(BuildContext context) {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              arabicNumber.convert('${today.hDay}'),
+              sl<GeneralController>().convertNumbers('${today.hDay}'),
               style: TextStyle(
                 fontSize: orientation(context, 30.0, 20.0),
                 fontFamily: 'kufi',
@@ -98,7 +98,8 @@ Widget hijriDate(BuildContext context) {
               textAlign: TextAlign.center,
             ),
             Text(
-              arabicNumber.convert('${today.hMonth} / ${today.hYear} هـ'),
+              sl<GeneralController>()
+                  .convertNumbers('${today.hMonth} / ${today.hYear} هـ'),
               style: TextStyle(
                 fontSize: orientation(context, 20.0, 20.0),
                 fontFamily: 'kufi',
@@ -118,7 +119,7 @@ Widget hijriDate(BuildContext context) {
             Transform.translate(
               offset: const Offset(-25, -5),
               child: Text(
-                arabicNumber.convert(today.dayWeName),
+                today.dayWeName.tr,
                 style: TextStyle(
                   fontSize: orientation(context, 22.0, 20.0),
                   fontFamily: 'kufi',

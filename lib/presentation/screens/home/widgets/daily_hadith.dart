@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../core/utils/constants/extensions.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
@@ -17,7 +18,7 @@ class DailyHadith extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 8.0),
             child: Text(
-              '| حديث اليوم |',
+              '| ${'dailyHadith'.tr} |',
               style: TextStyle(
                 fontSize: 16.0,
                 fontFamily: 'kufi',
