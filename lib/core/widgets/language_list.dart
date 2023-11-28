@@ -3,12 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:theme_provider/theme_provider.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../presentation/controllers/settings_controller.dart';
 import '../services/services_locator.dart';
-import '../services/shared_pref_services.dart';
-import '../utils/constants/shared_preferences_constants.dart';
-import '../utils/helpers/languages/language_controller.dart';
+import '../utils/helpers/languages/app_constants.dart';
+import '../utils/helpers/languages/localization_controller.dart';
+import '/core/utils/constants/extensions.dart';
 
 class LanguageList extends StatelessWidget {
   const LanguageList({super.key});
@@ -46,8 +45,7 @@ class LanguageList extends StatelessWidget {
                 alignment: MainAxisAlignment.spaceAround,
                 buttonHeight: 42.0,
                 buttonMinWidth: 90.0,
-                children: List.generate(
-                    sl<SettingsController>().languageList.length, (index) {
+                children: List.generate(AppConstants.languages.length, (index) {
                   final lang = sl<SettingsController>().languageList[index];
                   return InkWell(
                     child: Container(
@@ -92,20 +90,7 @@ class LanguageList extends StatelessWidget {
                       ),
                     ),
                     onTap: () async {
-                      // sl<SettingsController>().setLocale(
-                      //     Locale.fromSubtags(languageCode: lang['lang']));
-                      localizationController
-                          .setLanguage(Locale(lang['lang'], ''));
-                      await sl<SharedPrefServices>()
-                          .saveString(LANG, lang['lang']);
-                      await sl<SharedPrefServices>()
-                          .saveString(LANG_NAME, lang['name']);
-                      await sl<SharedPrefServices>()
-                          .saveString(LANGUAGE_FONT, lang['font']);
-                      sl<SettingsController>().languageName.value =
-                          lang['name'];
-                      sl<SettingsController>().languageFont.value =
-                          lang['font'];
+                      localizationController.changeLangOnTap(index);
                     },
                   );
                 })),

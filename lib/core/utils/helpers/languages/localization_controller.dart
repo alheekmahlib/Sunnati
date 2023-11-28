@@ -3,6 +3,10 @@ import 'dart:ui';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../../presentation/controllers/settings_controller.dart';
+import '../../../services/services_locator.dart';
+import '../../../services/shared_pref_services.dart';
+import '../../constants/shared_preferences_constants.dart';
 import 'app_constants.dart';
 import 'language_models.dart';
 
@@ -56,5 +60,15 @@ class LocalizationController extends GetxController implements GetxService {
     sharedPreferences.setString(
         AppConstants.LANGUAGE_CODE, locale.languageCode);
     sharedPreferences.setString(AppConstants.COUNTRY_CODE, locale.countryCode!);
+  }
+
+  Future<void> changeLangOnTap(int index) async {
+    final lang = sl<SettingsController>().languageList[index];
+    setLanguage(Locale(lang['lang'], ''));
+    await sl<SharedPrefServices>().saveString(LANG, lang['lang']);
+    await sl<SharedPrefServices>().saveString(LANG_NAME, lang['name']);
+    await sl<SharedPrefServices>().saveString(LANGUAGE_FONT, lang['font']);
+    sl<SettingsController>().languageName.value = lang['name'];
+    sl<SettingsController>().languageFont.value = lang['font'];
   }
 }

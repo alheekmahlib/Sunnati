@@ -18,7 +18,7 @@ class AppConstants {
     LanguageModel(
       languageName: 'বাংলা',
       countryCode: '',
-      languageCode: 'be',
+      languageCode: 'bn',
     ),
   ];
 }

@@ -20,7 +20,7 @@ class LastRead extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.only(top: 8.0),
               child: Text(
-                '| Last Read |'.tr,
+                '| ${'lastRead'.tr} |',
                 style: TextStyle(
                   fontSize: 16.0,
                   fontFamily: 'kufi',
