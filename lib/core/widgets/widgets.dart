@@ -308,3 +308,109 @@ customSnackBar(BuildContext context, String text) {
   );
   ScaffoldMessenger.of(context).showSnackBar(snackBar);
 }
+
+Widget delete(BuildContext context) {
+  return Container(
+    // height: 55,
+    width: MediaQuery.sizeOf(context).width,
+    decoration: const BoxDecoration(
+        color: Colors.red, borderRadius: BorderRadius.all(Radius.circular(8))),
+    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+    child: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.close_outlined,
+              color: Colors.white,
+              size: 18,
+            ),
+            Text(
+              'delete'.tr,
+              style: const TextStyle(
+                  color: Colors.white, fontSize: 14, fontFamily: 'kufi'),
+            )
+          ],
+        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const Icon(
+              Icons.close_outlined,
+              color: Colors.white,
+              size: 18,
+            ),
+            Text(
+              'delete'.tr,
+              style: const TextStyle(
+                  color: Colors.white, fontSize: 14, fontFamily: 'kufi'),
+            )
+          ],
+        ),
+      ],
+    ),
+  );
+}
+
+Widget vDivider(BuildContext context, {double? height}) {
+  return Container(
+    height: height ?? 20,
+    width: 2,
+    margin: const EdgeInsets.symmetric(horizontal: 8.0),
+    color: Theme.of(context).colorScheme.surface,
+  );
+}
+
+Widget hDivider(BuildContext context, {double? width}) {
+  return Container(
+    height: 1,
+    width: width ?? MediaQuery.sizeOf(context).width,
+    margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+    color: Theme.of(context).colorScheme.surface,
+  );
+}
+
+Widget container(BuildContext context, Widget myWidget, bool show,
+    {double? height, double? width, Color? color}) {
+  return ClipRRect(
+    child: Container(
+      height: height,
+      width: width!,
+      alignment: Alignment.bottomCenter,
+      decoration: BoxDecoration(
+        color: color ?? Theme.of(context).colorScheme.secondary,
+      ),
+      child: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          show == true
+              ? Transform.translate(
+                  offset: const Offset(0, -10),
+                  child: Opacity(
+                    opacity: .05,
+                    child: sunti_logo(
+                      context,
+                      width: MediaQuery.sizeOf(context).width,
+                    ),
+                  ),
+                )
+              : Container(),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 15,
+              width: MediaQuery.sizeOf(context).width,
+              color: Theme.of(context).colorScheme.surface,
+            ),
+          ),
+          Align(
+            alignment: Alignment.center,
+            child: myWidget,
+          )
+        ],
+      ),
+    ),
+  );
+}

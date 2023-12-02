@@ -6,7 +6,7 @@ import '../../books/read_view.dart';
 
 class ChapterList extends StatelessWidget {
   final String arAndEnName;
-  final String bookNumber;
+  final int bookNumber;
   final String bookName;
   const ChapterList(
       {super.key,
@@ -54,10 +54,9 @@ class ChapterList extends StatelessWidget {
                     ],
                   ),
                   onTap: () => Navigator.of(context).push(animatRoute(ReadView(
-                    title: ' كتاب بدء الوحي',
                     bookName: arAndEnName,
+                    bookOtherNumber: 'كتاب بدء الوحي',
                     bookNumber: bookNumber,
-                    bookOtherNumber: bookName,
                   ))),
                 )),
       ),

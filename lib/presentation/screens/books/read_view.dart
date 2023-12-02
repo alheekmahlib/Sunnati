@@ -1,4 +1,3 @@
-import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -9,18 +8,15 @@ import 'widgets/book_other_name.dart';
 import 'widgets/chapter_title.dart';
 
 class ReadView extends StatelessWidget {
-  final String title;
   final String bookName;
-  final String bookNumber;
   final String bookOtherNumber;
-  ReadView(
-      {super.key,
-      required this.title,
-      required this.bookName,
-      required this.bookNumber,
-      required this.bookOtherNumber});
-
-  final ArabicNumbers arabicNumbers = ArabicNumbers();
+  final int bookNumber;
+  const ReadView({
+    super.key,
+    required this.bookName,
+    required this.bookOtherNumber,
+    required this.bookNumber,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -68,11 +64,12 @@ class ReadView extends StatelessWidget {
                   child: Column(
                     children: [
                       BookOtherName(
-                        title: title,
+                        title: bookOtherNumber,
                       ),
                       ChapterTitle(
-                        title: title,
                         bookName: bookName,
+                        bookOtherNumber: bookOtherNumber,
+                        chapterName: 'باب',
                         bookNumber: bookNumber,
                       )
                     ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sunti/presentation/controllers/onboarding_controller.dart';
 
+import '../../../core/services/services_locator.dart';
 import '../../../core/widgets/widgets.dart';
 import 'widgets/daily_hadith.dart';
 import 'widgets/hijri_date.dart';
@@ -10,6 +12,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    sl<OnboardingController>().startOnboarding();
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColorDark,
       body: Container(

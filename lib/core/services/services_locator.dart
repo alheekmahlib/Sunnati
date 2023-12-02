@@ -10,8 +10,11 @@ import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import '../../presentation/controllers/bookmark_controller.dart';
 import '../../presentation/controllers/general_controller.dart';
+import '../../presentation/controllers/onboarding_controller.dart';
+import '../../presentation/controllers/ourApps_controller.dart';
 import '../../presentation/controllers/searchController.dart';
 import '../../presentation/controllers/settings_controller.dart';
+import '../../presentation/controllers/share_controller.dart';
 import '../../presentation/controllers/splashScreen_controller.dart';
 import '../../presentation/screens/books/data/models/bookmark_model.dart';
 import '../utils/constants/assets_data.dart';
@@ -59,6 +62,15 @@ class ServicesLocator {
     sl.registerLazySingleton<SplashScreenController>(() =>
         Get.put<SplashScreenController>(SplashScreenController(),
             permanent: true));
+
+    sl.registerLazySingleton<OnboardingController>(() =>
+        Get.put<OnboardingController>(OnboardingController(), permanent: true));
+
+    sl.registerLazySingleton<OurAppsController>(
+        () => Get.put<OurAppsController>(OurAppsController(), permanent: true));
+
+    sl.registerLazySingleton<ShareController>(
+        () => Get.put<ShareController>(ShareController(), permanent: true));
 
     UiHelper.rateMyApp.init();
 

@@ -59,7 +59,7 @@ class LastRead extends StatelessWidget {
                 ),
                 Expanded(
                     flex: 2,
-                    child: book_name(context, 'bukhari', context.textDarkColor,
+                    child: book_name(context, '1', context.textDarkColor,
                         height: 60)),
               ],
             ),
