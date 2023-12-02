@@ -106,18 +106,28 @@ class BookmarkCard extends StatelessWidget {
                                           width:
                                               MediaQuery.sizeOf(context).width),
                                     ),
-                                    GestureDetector(
-                                      child: Text(
-                                        bookmark[chapterIndex].hadith,
-                                        style: TextStyle(
-                                          fontFamily: 'naskh',
-                                          fontSize: 20,
-                                          color: context.textDarkColor,
+                                    Dismissible(
+                                      background: delete(context),
+                                      key: ValueKey<String>(
+                                          bookmark[chapterIndex].hadith),
+                                      onDismissed:
+                                          (DismissDirection direction) {
+                                        sl<BookmarkController>().box.delete(
+                                            bookmark[chapterIndex].hadith);
+                                      },
+                                      child: GestureDetector(
+                                        child: Text(
+                                          bookmark[chapterIndex].hadith,
+                                          style: TextStyle(
+                                            fontFamily: 'naskh',
+                                            fontSize: 20,
+                                            color: context.textDarkColor,
+                                          ),
+                                          textAlign: TextAlign.justify,
+                                          textDirection: TextDirection.rtl,
                                         ),
-                                        textAlign: TextAlign.justify,
-                                        textDirection: TextDirection.rtl,
+                                        onTap: () {},
                                       ),
-                                      onTap: () {},
                                     )
                                   ],
                                 ),

@@ -46,6 +46,12 @@ dependencies:
   hive: ^2.2.3
   hive_flutter: ^1.1.0
   hive_generator: ^2.0.1
+  horizontal_stepper_step: ^0.0.5
+  http: ^1.1.2
+  url_launcher: ^6.2.1
+  device_info_plus: ^9.1.1
+  gap: ^3.0.1
+  screenshot: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -83,6 +89,7 @@ flutter:
     - assets/locales/
     - assets/lottie/
     - assets/images/
+    - assets/images/onboarding/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

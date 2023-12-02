@@ -8,13 +8,15 @@ import 'hadith_inArabic.dart';
 import 'hadith_translate.dart';
 
 class ChapterTitle extends StatelessWidget {
-  final String title;
   final String bookName;
-  final String bookNumber;
+  final String bookOtherNumber;
+  final String chapterName;
+  final int bookNumber;
   const ChapterTitle(
       {super.key,
-      required this.title,
       required this.bookName,
+      required this.bookOtherNumber,
+      required this.chapterName,
       required this.bookNumber});
 
   @override
@@ -69,8 +71,9 @@ class ChapterTitle extends StatelessWidget {
                       return Column(
                         children: [
                           HadithInArabic(
-                            title: title,
                             bookName: bookName,
+                            bookOtherNumber: bookOtherNumber,
+                            chapterName: chapterName,
                             bookNumber: bookNumber,
                           ),
                           const HadithTranslate(),

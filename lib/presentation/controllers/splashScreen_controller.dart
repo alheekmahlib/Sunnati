@@ -1,9 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/animation.dart';
 import 'package:get/get.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../core/services/services_locator.dart';
-import '../../core/utils/constants/shared_preferences_constants.dart';
 import '../screens/main/main_screen.dart';
 
 class SplashScreenController extends GetxController {
@@ -13,17 +10,9 @@ class SplashScreenController extends GetxController {
     await Future.delayed(const Duration(seconds: 1));
     animate.value = true;
     await Future.delayed(const Duration(seconds: 3));
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      navigationPage();
-    });
-  }
-
-  Future<void> navigationPage() async {
-    if (sl<SharedPreferences>().getBool(IS_FIRST_TIME) == null) {
-      // Get.off(() => const OnboardingScreen());
-      sl<SharedPreferences>().setBool(IS_FIRST_TIME, false);
-    } else {
-      Get.off(() => const MainScreen());
-    }
+    Get.off(() => const MainScreen(),
+        transition: Transition.downToUp,
+        duration: const Duration(milliseconds: 800),
+        curve: Curves.easeInOut);
   }
 }

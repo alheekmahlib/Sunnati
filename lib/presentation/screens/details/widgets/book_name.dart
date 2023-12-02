@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:theme_provider/theme_provider.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
+import '/core/utils/constants/extensions.dart';
 
 class BookName extends StatelessWidget {
-  final String bookName;
+  final int bookNumber;
   final String arAndEnName;
   const BookName(
-      {super.key, required this.bookName, required this.arAndEnName});
+      {super.key, required this.bookNumber, required this.arAndEnName});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class BookName extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(16),
-          child:
-              book_name(context, bookName, context.textDarkColor, height: 90),
+          child: book_name(context, '$bookNumber', context.textDarkColor,
+              height: 90),
         ),
         Text(
           arAndEnName,

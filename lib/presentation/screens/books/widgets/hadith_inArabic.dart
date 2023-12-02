@@ -5,20 +5,22 @@ import 'package:sunti/core/utils/constants/extensions.dart';
 
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
-import '../../../../core/widgets/share/ayah_to_images.dart';
+import '../../../../core/widgets/share/hadith_to_images.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/bookmark_controller.dart';
 import '../../../controllers/general_controller.dart';
 import '../data/models/bookmark_model.dart';
 
 class HadithInArabic extends StatelessWidget {
-  final String title;
   final String bookName;
-  final String bookNumber;
+  final String bookOtherNumber;
+  final String chapterName;
+  final int bookNumber;
   const HadithInArabic(
       {super.key,
-      required this.title,
       required this.bookName,
+      required this.bookOtherNumber,
+      required this.chapterName,
       required this.bookNumber});
 
   @override
@@ -40,12 +42,15 @@ class HadithInArabic extends StatelessWidget {
                         child: share(context, height: 25),
                         onTap: () {
                           showHadithOptionsBottomSheet(
-                              context,
-                              1,
-                              2,
-                              'حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ ، قَالَ : حَدَّثَنَا سُفْيَانُ ، قَالَ : حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الْأَنْصَارِيُّ ، قَالَ : أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ ، يَقُولُ : سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى الْمِنْبَرِ، قَالَ : سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، يَقُولُ : " إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ "',
-                              'I heard Allahs Messenger (ﷺ) saying, "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for."',
-                              title);
+                            context,
+                            bookName,
+                            bookOtherNumber,
+                            chapterName,
+                            1,
+                            bookNumber,
+                            'حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ ، قَالَ : حَدَّثَنَا سُفْيَانُ ، قَالَ : حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الْأَنْصَارِيُّ ، قَالَ : أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ ، يَقُولُ : سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى الْمِنْبَرِ، قَالَ : سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، يَقُولُ : " إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ "',
+                            'I heard Allahs Messenger (ﷺ) saying, "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for."',
+                          );
                         },
                       ),
                       const SizedBox(
@@ -69,8 +74,8 @@ class HadithInArabic extends StatelessWidget {
                         onTap: () {
                           sl<BookmarkController>().box.add(Bookmark(
                               bookName: bookName,
-                              bookNumber: bookNumber,
-                              bookOtherName: title,
+                              bookNumber: '$bookNumber',
+                              bookOtherName: bookOtherNumber,
                               chapterTitle: 'chapterTitle',
                               hadith: 'hadith',
                               hadithNumber: 'hadithNumber'));

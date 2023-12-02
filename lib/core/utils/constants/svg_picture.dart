@@ -80,10 +80,10 @@ sunti_icon(BuildContext context,
   );
 }
 
-book_name(BuildContext context, String name, Color color,
+book_name(BuildContext context, String number, Color color,
     {double? height, double? width}) {
   return SvgPicture.asset(
-    'assets/svg/book_name/$name.svg',
+    'assets/svg/book_name/$number.svg',
     height: height,
     width: width,
     colorFilter: ColorFilter.mode(color, BlendMode.srcIn),
@@ -201,5 +201,13 @@ alheekmah_logo(BuildContext context, {double? height, double? width}) {
     height: height,
     width: width,
     colorFilter: const ColorFilter.mode(Color(0xff3C2A21), BlendMode.srcIn),
+  );
+}
+
+Widget frame(BuildContext context, {double? height, double? width}) {
+  return SvgPicture.asset(
+    'assets/svg/frame.svg',
+    height: height,
+    width: width,
   );
 }

@@ -57,7 +57,7 @@ class DailyHadith extends StatelessWidget {
               ),
               Expanded(
                   flex: 2,
-                  child: book_name(context, 'muslim', context.textDarkColor,
+                  child: book_name(context, '1', context.textDarkColor,
                       height: 60)),
             ],
           ),

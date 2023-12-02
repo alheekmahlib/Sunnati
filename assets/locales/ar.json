@@ -151,5 +151,15 @@
   "@dailyHadith": {
     "type": "text",
     "placeholders": {}
+  },
+  "skip": "تخطي",
+  "@skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ourApps": "تطبيقاتنا",
+  "@ourApps": {
+    "type": "text",
+    "placeholders": {}
   }
 }

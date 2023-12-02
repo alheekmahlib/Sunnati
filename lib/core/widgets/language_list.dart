@@ -68,7 +68,7 @@ class LanguageList extends StatelessWidget {
                                           .colorScheme
                                           .background,
                                   width: 3),
-                              color: const Color(0xff39412a),
+                              color: const Color(0xff3C2A21),
                             ),
                             child: 'appLang'.tr == lang['appLang']
                                 ? Icon(Icons.done,
