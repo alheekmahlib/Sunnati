@@ -1,0 +1,155 @@
+{
+  "appName": "Sunnti",
+  "@appName": {
+    "description": "The App Name"
+  },
+  "lastRead": "Last Read",
+  "@lastRead": {
+    "description": "The Last Read"
+  },
+  "appLang": "App Language",
+  "@appLang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lang": "English",
+  "@lang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark": "Bookmark",
+  "@bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "Search",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintText": "Search To Hadith",
+  "@searchHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastSearch": "Last Search",
+  "@lastSearch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "Save",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeTheme": "Change Theme",
+  "@changeTheme": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brown": "Brown Mode",
+  "@brown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "Dark Mode",
+  "@dark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "books": "Books",
+  "@books": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "Home",
+  "@home": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedHadith": "The hadith has been copied",
+  "@copiedHadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareText": "As text",
+  "@shareText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImage": "As an image",
+  "@shareImage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImageWTrans": "As an image with additional content",
+  "@shareImageWTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readMore": "Read More",
+  "@readMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readLess": "Read Less",
+  "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "About Book",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Saturday": "Saturday",
+  "@Saturday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunday": "Sunday",
+  "@Sunday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Monday": "Monday",
+  "@Monday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tuesday": "Tuesday",
+  "@Tuesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wednesday": "Wednesday",
+  "@Wednesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thursday": "Thursday",
+  "@Thursday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Friday": "Friday",
+  "@Friday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "morning": "Good morning!",
+  "@morning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "evening": "Good evening!",
+  "@evening": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyHadith": "Daily Hadith",
+  "@dailyHadith": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

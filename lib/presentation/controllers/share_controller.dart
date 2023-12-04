@@ -73,6 +73,7 @@ class ShareController extends GetxController {
   }
 
   Future<void> shareHadithWithTranslate() async {
+    /// FIXME: can't be null!
     if (translateToImageBytes! != null) {
       final directory = await getTemporaryDirectory();
       final imagePath =
@@ -83,6 +84,7 @@ class ShareController extends GetxController {
   }
 
   Future<void> shareVerse(BuildContext context) async {
+    /// FIXME: can't be null!
     if (hadithToImageBytes! != null) {
       final directory = await getTemporaryDirectory();
       final imagePath =

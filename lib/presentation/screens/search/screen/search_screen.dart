@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/lottie.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/searchController.dart';
 import '../widgets/search_options.dart';
+import '/core/utils/constants/extensions.dart';
 
 class Search extends StatelessWidget {
   Search({super.key});
 
-  TextEditingController textSerachController = TextEditingController();
+  final TextEditingController textSerachController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -171,7 +171,7 @@ class Search extends StatelessWidget {
                   Expanded(
                     child: Obx(() {
                       return sl<SearchControllers>().searchHistory.isEmpty
-                          ? search_loading(height: 100.0)
+                          ? searchLoading(height: 100.0)
                           : ListView.builder(
                               itemCount:
                                   sl<SearchControllers>().searchHistory.length,

@@ -1,0 +1,155 @@
+{
+  "appName": "سُنتي",
+  "@appName": {
+    "description": "The App Name"
+  },
+  "lastRead": "آخر قراءة",
+  "@lastRead": {
+    "description": "The Last Read"
+  },
+  "appLang": "لغة التطبيق",
+  "@appLang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lang": "العربية",
+  "@lang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark": "المفضلة",
+  "@bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "البحث",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintText": "إبحث عن الحديث",
+  "@searchHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastSearch": "آخر بحث",
+  "@lastSearch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "حفظ",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeTheme": "تغيير النمط",
+  "@changeTheme": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brown": "النمط البني",
+  "@brown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "النمط الداكن",
+  "@dark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "books": "الكتب",
+  "@books": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "الرئيسية",
+  "@home": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedHadith": "تم نسخ الحديث",
+  "@copiedHadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareText": "كنص",
+  "@shareText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImage": "كصورة",
+  "@shareImage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImageWTrans": "كصورة مع محتوى إضافي",
+  "@shareImageWTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readMore": "إقرأ المزيد",
+  "@readMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readLess": "إقرأ أقل",
+  "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "عن الكتاب",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Saturday": "السبت",
+  "@Saturday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunday": "الأحد",
+  "@Sunday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Monday": "الاثنين",
+  "@Monday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tuesday": "الثلاثاء",
+  "@Tuesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wednesday": "الأربعاء",
+  "@Wednesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thursday": "الخميس",
+  "@Thursday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Friday": "الجمعة",
+  "@Friday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "morning": "صبحكم الله بالخير",
+  "@morning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "evening": "مساكم الله بالخير",
+  "@evening": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyHadith": "حديث اليوم",
+  "@dailyHadith": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

@@ -33,6 +33,8 @@ class MyApp extends StatelessWidget {
                 Brightness platformBrightness = SchedulerBinding
                         .instance.platformDispatcher.platformBrightness ??
                     Brightness.light;
+
+                /// FIXME: can't be null
                 if (platformBrightness == Brightness.dark) {
                   controller.setTheme('dark');
                 } else {

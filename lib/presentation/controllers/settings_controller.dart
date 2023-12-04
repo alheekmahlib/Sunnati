@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:get/get.dart';
 
 import '../../core/services/services_locator.dart';
@@ -22,10 +23,12 @@ class SettingsController extends GetxController {
     String? langName = await sl<SharedPrefServices>()
         .getString("langName", defaultValue: 'العربية');
     String? langFont = await sl<SharedPrefServices>().getString("languageFont");
+
+    /// FIXME: value isn't used
     String? langFont2 =
         await sl<SharedPrefServices>().getString("languageFont2");
 
-    print(
+    debugPrint(
         'Lang code: $langCode'); // Add this line to debug the value of langCode
 
     if (langCode.isEmpty) {
@@ -39,7 +42,7 @@ class SettingsController extends GetxController {
     languageFont.value = langFont;
     // languageFont2.value = langFont2;
 
-    print('get lang $initialLang');
+    debugPrint('get lang $initialLang');
   }
 
   List languageList = [
