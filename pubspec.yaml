@@ -52,6 +52,7 @@ dependencies:
   device_info_plus: ^9.1.1
   gap: ^3.0.1
   screenshot: ^2.1.0
+  info_popup: ^4.3.1
 
 dev_dependencies:
   flutter_test:
@@ -84,6 +85,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/svg/
+    - assets/json/
     - assets/svg/hijri/
     - assets/svg/book_name/
     - assets/locales/

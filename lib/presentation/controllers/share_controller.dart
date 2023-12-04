@@ -18,7 +18,7 @@ class ShareController extends GetxController {
   Uint8List? hadithToImageBytes;
   Uint8List? translateToImageBytes;
   RxString? translateName;
-  RxString currentTranslate = 'English'.obs;
+  RxString currentTranslate = 'Nothing'.obs;
   RxString? textTafseer;
   RxBool isTranslate = false.obs;
   RxInt shareTransValue = 0.obs;
