@@ -9,6 +9,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sqflite_common_ffi/sqflite_ffi.dart';
 
 import '../../presentation/controllers/bookmark_controller.dart';
+import '../../presentation/controllers/books_controller.dart';
 import '../../presentation/controllers/general_controller.dart';
 import '../../presentation/controllers/onboarding_controller.dart';
 import '../../presentation/controllers/ourApps_controller.dart';
@@ -71,6 +72,9 @@ class ServicesLocator {
 
     sl.registerLazySingleton<ShareController>(
         () => Get.put<ShareController>(ShareController(), permanent: true));
+
+    sl.registerLazySingleton<BooksController>(
+        () => Get.put<BooksController>(BooksController(), permanent: true));
 
     UiHelper.rateMyApp.init();
 
