@@ -186,5 +186,10 @@
   "@otherBooks": {
     "type": "text",
     "placeholders": {}
+  },
+  "start": "শুরু",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
   }
 }

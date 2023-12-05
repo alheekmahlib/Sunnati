@@ -68,7 +68,6 @@ class LocalizationController extends GetxController implements GetxService {
     await sl<SharedPrefServices>().saveString(LANG, lang['lang']);
     await sl<SharedPrefServices>().saveString(LANG_NAME, lang['name']);
     await sl<SharedPrefServices>().saveString(LANGUAGE_FONT, lang['font']);
-    sl<SettingsController>().languageName.value = lang['name'];
     sl<SettingsController>().languageFont.value = lang['font'];
   }
 }

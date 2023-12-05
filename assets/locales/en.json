@@ -186,5 +186,10 @@
   "@otherBooks": {
     "type": "text",
     "placeholders": {}
+  },
+  "start": "Start",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
   }
 }
