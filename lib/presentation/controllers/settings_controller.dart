@@ -7,7 +7,6 @@ import '../../core/services/shared_pref_services.dart';
 
 class SettingsController extends GetxController {
   Locale? initialLang;
-  RxString languageName = 'العربية'.obs;
   RxString languageFont = 'naskh'.obs;
   // RxString languageFont2 = 'kufi'.obs;
   RxBool settingsSelected = false.obs;
@@ -19,11 +18,9 @@ class SettingsController extends GetxController {
 
   Future<void> loadLang() async {
     String? langCode = await sl<SharedPrefServices>().getString("lang");
-    String? langName = await sl<SharedPrefServices>()
-        .getString("langName", defaultValue: 'العربية');
     String? langFont = await sl<SharedPrefServices>().getString("languageFont");
-    String? langFont2 =
-        await sl<SharedPrefServices>().getString("languageFont2");
+    // String? langFont2 =
+    //     await sl<SharedPrefServices>().getString("languageFont2");
 
     print(
         'Lang code: $langCode'); // Add this line to debug the value of langCode
@@ -35,7 +32,6 @@ class SettingsController extends GetxController {
           langCode, ''); // Make sure langCode is not null or invalid here
     }
 
-    languageName.value = langName;
     languageFont.value = langFont;
     // languageFont2.value = langFont2;
 

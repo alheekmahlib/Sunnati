@@ -11,7 +11,7 @@ import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/settings_list.dart';
 import '../../../core/widgets/widgets.dart';
 import '../../controllers/general_controller.dart';
-import '../../controllers/searchController.dart';
+import '../../controllers/search_controller.dart';
 import '../../controllers/settings_controller.dart';
 import '../bookmark/bookmarks_screen.dart';
 import '../books/books_screen.dart';
@@ -24,69 +24,70 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.sizeOf(context).height;
-    sl<SettingsController>().loadLang();
-    sl<GeneralController>().updateGreeting();
+    final general = sl<GeneralController>();
+    final settings = sl<SettingsController>();
+    settings.loadLang();
+    general.updateGreeting();
     bool isNeedSafeArea = MediaQuery.viewPaddingOf(context).bottom > 0;
-    return Directionality(
-      textDirection: TextDirection.ltr,
-      child: Scaffold(
-        extendBody: false,
-        backgroundColor: Theme.of(context).primaryColorDark,
-        body: Padding(
-          padding: orientation(
-              context,
-              isNeedSafeArea
-                  ? const EdgeInsets.only(top: 64.0)
-                  : const EdgeInsets.only(top: 16.0),
-              const EdgeInsets.all(0)),
-          child: SliderDrawer(
-            key: sl<GeneralController>().key,
-            splashColor: Theme.of(context).primaryColorDark,
-            slideDirection: orientation(context, SlideDirection.TOP_TO_BOTTOM,
-                SlideDirection.LEFT_TO_RIGHT),
-            sliderOpenSize: platformView(
-                orientation(
-                    context, height / 1 / 2 * 1.1, height / 1 / 2 * 1.5),
-                height / 1 / 2 * 1.1),
-            isCupertino: true,
-            isDraggable: true,
-            appBar: SliderAppBar(
-              appBarColor: Theme.of(context).primaryColorDark,
-              appBarPadding: orientation(
-                  context,
-                  const EdgeInsets.symmetric(horizontal: 16.0),
-                  const EdgeInsets.symmetric(horizontal: 40.0)),
-              drawerIconColor: Theme.of(context).colorScheme.secondary,
-              drawerIcon: IconButton(
-                icon: Icon(
-                  Icons.menu,
-                  size: 24.h,
-                  color: Theme.of(context).colorScheme.surface,
-                ),
-                onPressed: () =>
-                    sl<GeneralController>().key.currentState?.toggle(),
+    return Scaffold(
+      extendBody: false,
+      backgroundColor: Theme.of(context).primaryColorDark,
+      body: Padding(
+        padding: orientation(
+            context,
+            isNeedSafeArea
+                ? const EdgeInsets.only(top: 64.0)
+                : const EdgeInsets.only(top: 16.0),
+            const EdgeInsets.all(0)),
+        child: SliderDrawer(
+          key: sl<GeneralController>().key,
+          splashColor: Theme.of(context).primaryColorDark,
+          slideDirection: orientation(context, SlideDirection.TOP_TO_BOTTOM,
+              SlideDirection.LEFT_TO_RIGHT),
+          sliderOpenSize: platformView(
+              orientation(context, height / 1 / 2 * 1.1, height / 1 / 2 * 1.5),
+              height / 1 / 2 * 1.1),
+          isCupertino: true,
+          isDraggable: true,
+          appBar: SliderAppBar(
+            appBarColor: Theme.of(context).primaryColorDark,
+            appBarPadding: orientation(
+                context,
+                const EdgeInsets.symmetric(horizontal: 16.0),
+                const EdgeInsets.symmetric(horizontal: 40.0)),
+            drawerIconColor: Theme.of(context).colorScheme.secondary,
+            drawerIcon: IconButton(
+              icon: Icon(
+                Icons.menu,
+                size: 24.h,
+                color: Theme.of(context).colorScheme.surface,
               ),
-              appBarHeight: 40.h,
-              title: Container(),
-              trailing: sunti_icon(context,
-                  height: 20, color: context.iconsDarkColor),
+              onPressed: () =>
+                  sl<GeneralController>().key.currentState?.toggle(),
             ),
-            slider: const SettingsList(),
-            child: PageView(
-              controller: sl<GeneralController>().controller,
-              onPageChanged: (index) {
-                sl<GeneralController>().selected.value = index;
-                print('selected ${sl<GeneralController>().selected.value}');
-              },
-              children: [
-                const HomeScreen(),
-                const Books(),
-                BookmarksScreen(),
-              ],
-            ),
+            appBarHeight: 40.h,
+            title: Container(),
+            trailing:
+                sunti_icon(context, height: 20, color: context.iconsDarkColor),
+          ),
+          slider: const SettingsList(),
+          child: PageView(
+            controller: sl<GeneralController>().controller,
+            onPageChanged: (index) {
+              sl<GeneralController>().selected.value = index;
+              print('selected ${sl<GeneralController>().selected.value}');
+            },
+            children: [
+              const HomeScreen(),
+              const Books(),
+              BookmarksScreen(),
+            ],
           ),
         ),
-        bottomNavigationBar: Obx(
+      ),
+      bottomNavigationBar: Directionality(
+        textDirection: TextDirection.ltr,
+        child: Obx(
           () => StylishBottomBar(
             items: [
               BottomBarItem(
@@ -157,39 +158,39 @@ class MainScreen extends StatelessWidget {
             elevation: 80,
           ),
         ),
-        floatingActionButton: SizedBox(
-          height: 50.0,
-          width: 50.0,
-          child: FloatingActionButton(
-            onPressed: () {
-              screenModalBottomSheet(
-                context,
-                Search(),
-              );
-              sl<SearchControllers>().booksSelected = [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9,
-                10,
-                11,
-                12,
-                13,
-                14
-              ];
-            },
-            backgroundColor: Theme.of(context).primaryColorDark,
-            child: search(context),
-          ),
-        ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       ),
+      floatingActionButton: SizedBox(
+        height: 50.0,
+        width: 50.0,
+        child: FloatingActionButton(
+          onPressed: () {
+            screenModalBottomSheet(
+              context,
+              const Search(),
+            );
+            sl<SearchControllers>().booksSelected = [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ];
+          },
+          backgroundColor: Theme.of(context).primaryColorDark,
+          child: search(context),
+        ),
+      ),
+      floatingActionButtonLocation: general.checkFloatingRtlLayout(),
     );
   }
 }

@@ -66,13 +66,13 @@ dev_dependencies:
 flutter_native_splash:
   color: "#F7F1EC"
   color_dark: "#F7F1EC"
-  image: assets/images/sunti_logo.png
-  image_dark: assets/images/sunti_logo.png
+  image: assets/images/sunti_logo300.png
+  image_dark: assets/images/sunti_logo300.png
 
   android_12:
-    image: assets/images/sunti_logo.png
+    image: assets/images/sunti_logo300.png
     icon_background_color: "#F7F1EC"
-    image_dark: assets/images/sunti_logo.png
+    image_dark: assets/images/sunti_logo300.png
     icon_background_color_dark: "#F7F1EC"
 
 

@@ -2,7 +2,9 @@ import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:get/get.dart';
+import 'package:sunti/presentation/controllers/share_controller.dart';
 
+import '../../core/services/services_locator.dart';
 import '../screens/home/data/models/time_now.dart';
 
 class GeneralController extends GetxController {
@@ -85,5 +87,13 @@ class GeneralController extends GetxController {
     }
 
     return inputStr;
+  }
+
+  FloatingActionButtonLocation checkFloatingRtlLayout() {
+    if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
+      return FloatingActionButtonLocation.startDocked;
+    } else {
+      return FloatingActionButtonLocation.endDocked;
+    }
   }
 }

@@ -148,4 +148,4 @@ List<String> onboardingTitle = <String>[
   'شارك الذكر كنص أو كصورة بكل سهولة',
 ];
 
-List<String> rtlLang = <String>['العربية', 'עברית', 'فارسی', 'اردو', 'کوردی'];
+List<String> rtlLang = <String>['العربية', 'فارسی', 'اردو', 'کوردی'];

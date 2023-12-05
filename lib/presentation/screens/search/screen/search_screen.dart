@@ -5,7 +5,7 @@ import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/lottie.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
-import '../../../controllers/searchController.dart';
+import '../../../controllers/search_controller.dart';
 import '../widgets/search_options.dart';
 import '/core/utils/constants/extensions.dart';
 
