@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,6 +14,7 @@ class SearchControllers extends GetxController {
   var searchHistory = <SearchItem>[].obs;
   List<int> booksSelected = [];
   late GroupButtonController checkboxesController;
+  TextEditingController textSerachController = TextEditingController();
 
   @override
   void onInit() {

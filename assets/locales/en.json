@@ -171,5 +171,20 @@
   "@aboutAzkaryApp3": {
     "type": "text",
     "placeholders": {}
+  },
+  "sixBooks": "The Six Books",
+  "@sixBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nineBooks": "The Nine Books",
+  "@nineBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherBooks": "Other Books",
+  "@otherBooks": {
+    "type": "text",
+    "placeholders": {}
   }
 }

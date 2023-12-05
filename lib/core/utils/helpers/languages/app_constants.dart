@@ -20,5 +20,10 @@ class AppConstants {
       countryCode: '',
       languageCode: 'bn',
     ),
+    LanguageModel(
+      languageName: 'اردو',
+      countryCode: '',
+      languageCode: 'ur',
+    ),
   ];
 }

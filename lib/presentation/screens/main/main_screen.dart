@@ -13,7 +13,7 @@ import '../../../core/widgets/widgets.dart';
 import '../../controllers/general_controller.dart';
 import '../../controllers/searchController.dart';
 import '../../controllers/settings_controller.dart';
-import '../bookmark_screen/bookmarks_screen.dart';
+import '../bookmark/bookmarks_screen.dart';
 import '../books/books_screen.dart';
 import '../home/home_screen.dart';
 import '../search/screen/search_screen.dart';

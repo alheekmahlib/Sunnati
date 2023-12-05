@@ -32,10 +32,8 @@ screenModalBottomSheet(BuildContext context, Widget child) {
   showModalBottomSheet(
       context: context,
       constraints: BoxConstraints(
-          maxWidth: platformView(
-              orientation(context, wid, wid * .7), wid / 1 / 2 * 1.5),
-          maxHeight:
-              orientation(context, hei * .9, platformView(hei, hei * 3 / 4))),
+          maxWidth: platformView(orientation(context, wid, wid * .7), wid * .6),
+          maxHeight: orientation(context, hei * .9, hei)),
       elevation: 0.0,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
