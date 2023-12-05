@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
 
 import '../../../core/services/services_locator.dart';
@@ -27,45 +28,42 @@ class Books extends StatelessWidget {
                 topLeft: Radius.circular(20.0),
                 topRight: Radius.circular(20.0),
               )),
-          child: Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.only(top: 20.0),
-                decoration: BoxDecoration(
-                    color: context.beigeDarkColor.withOpacity(.6),
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(8.0),
-                    )),
-                child: BooksCover(
-                  title: 'الكتب الستة',
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      color: context.beigeDarkColor.withOpacity(.6),
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(8.0),
+                      )),
+                  child: BooksCover(
+                    title: 'sixBooks'.tr,
+                    length: 6,
+                    adjustedIndex: 0,
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      color: context.beigeDarkColor.withOpacity(.4),
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(8.0),
+                        bottomRight: Radius.circular(8.0),
+                      )),
+                  child: BooksCover(
+                    title: 'nineBooks'.tr,
+                    length: 3,
+                    adjustedIndex: 6,
+                  ),
+                ),
+                BooksCover(
+                  title: 'otherBooks'.tr,
                   length: 6,
-                  adjustedIndex: 0,
+                  adjustedIndex: 9,
                 ),
-              ),
-              Container(
-                width: MediaQuery.sizeOf(context).width,
-                margin: orientation(
-                    context,
-                    const EdgeInsets.symmetric(horizontal: 32.0),
-                    const EdgeInsets.symmetric(horizontal: 60.0)),
-                decoration: BoxDecoration(
-                    color: context.beigeDarkColor.withOpacity(.4),
-                    borderRadius: const BorderRadius.only(
-                      bottomLeft: Radius.circular(8.0),
-                      bottomRight: Radius.circular(8.0),
-                    )),
-                child: BooksCover(
-                  title: 'الكتب التسعة',
-                  length: 3,
-                  adjustedIndex: 6,
-                ),
-              ),
-              BooksCover(
-                title: 'الكتب الآخرى',
-                length: 6,
-                adjustedIndex: 9,
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),

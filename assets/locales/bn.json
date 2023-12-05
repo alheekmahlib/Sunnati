@@ -171,5 +171,20 @@
   "@aboutAzkaryApp3": {
     "type": "text",
     "placeholders": {}
+  },
+  "sixBooks": "ছয়টি বই",
+  "@sixBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nineBooks": "নয়টি বই",
+  "@nineBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherBooks": "অন্যান্য বই",
+  "@otherBooks": {
+    "type": "text",
+    "placeholders": {}
   }
 }

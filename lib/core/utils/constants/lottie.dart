@@ -14,3 +14,8 @@ Widget loading({double? width, double? height}) {
   return Lottie.asset('assets/lottie/splash_loading.json',
       width: width, height: height);
 }
+
+Widget bookmarkLottie({double? width, double? height}) {
+  return Lottie.asset('assets/lottie/bookmark.json',
+      width: width, height: height);
+}

@@ -25,17 +25,14 @@ class OnboardingController extends GetxController {
   }
 
   Future<void> startOnboarding() async {
-    print('is_first_time ${sl<SharedPreferences>().getBool("is_first_time")}');
-    if (sl<SharedPreferences>().getBool(IS_FIRST_TIME) == null) {
+    debugPrint(
+        'is_first_time ${sl<SharedPreferences>().getBool("is_first_time")}');
+    if (sl<SharedPreferences>().getBool(IS_FIRST_TIME) == false) {
       await Future.delayed(const Duration(seconds: 2));
       Get.bottomSheet(
         OnboardingScreen(),
         isScrollControlled: true,
       );
-      // screenModalBottomSheet(
-      //   context,
-      //   OnboardingScreen(),
-      // );
       sl<SharedPreferences>().setBool(IS_FIRST_TIME, false);
     }
   }

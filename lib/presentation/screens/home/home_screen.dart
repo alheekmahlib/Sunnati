@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:sunti/presentation/controllers/onboarding_controller.dart';
 
 import '../../../core/services/services_locator.dart';
@@ -35,27 +36,22 @@ class HomeScreen extends StatelessWidget {
                   HijriDate(),
                   LastRead(),
                   DailyHadith(),
-                  SizedBox(
-                    height: 32.0,
-                  )
+                  Gap(32)
                 ],
               ),
               ListView(
                 padding: EdgeInsets.zero,
                 children: const [
-                  Row(
+                  Wrap(
                     children: [
-                      Expanded(child: LastRead()),
-                      SizedBox(
-                        width: 32.0,
-                      ),
-                      Expanded(child: HijriDate()),
+                      LastRead(),
+                      Gap(32),
+                      HijriDate(),
                     ],
                   ),
+                  Gap(16),
                   DailyHadith(),
-                  SizedBox(
-                    height: 32.0,
-                  )
+                  Gap(32)
                 ],
               )),
         ),

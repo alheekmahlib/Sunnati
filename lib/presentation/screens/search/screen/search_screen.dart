@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/lottie.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/searchController.dart';
 import '../widgets/search_options.dart';
+import '/core/utils/constants/extensions.dart';
 
 class Search extends StatelessWidget {
-  Search({super.key});
-
-  TextEditingController textSerachController = TextEditingController();
+  const Search({super.key});
 
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.sizeOf(context).height;
     double width = MediaQuery.sizeOf(context).width;
+    final searchController = sl<SearchControllers>();
     return Column(
       children: [
         Stack(
@@ -67,7 +66,7 @@ class Search extends StatelessWidget {
                               MediaQuery.sizeOf(context).width * .7,
                               MediaQuery.sizeOf(context).width * .5),
                           child: TextField(
-                            controller: textSerachController,
+                            controller: searchController.textSerachController,
                             decoration: InputDecoration(
                               hintText: 'searchHintText'.tr,
                               enabledBorder: OutlineInputBorder(
@@ -101,7 +100,7 @@ class Search extends StatelessWidget {
                                   color: context.textDarkColor,
                                 ),
                                 onPressed: () {
-                                  textSerachController.clear();
+                                  searchController.textSerachController.clear();
                                 },
                               ),
                               labelText: 'searchHintText'.tr,
@@ -113,9 +112,8 @@ class Search extends StatelessWidget {
                               ),
                             ),
                             onSubmitted: (query) async {
-                              await sl<SearchControllers>()
-                                  .addSearchItem(query);
-                              textSerachController.clear();
+                              await searchController.addSearchItem(query);
+                              searchController.textSerachController.clear();
                             },
                             onTapOutside: (event) {
                               FocusManager.instance.primaryFocus?.unfocus();
@@ -170,14 +168,13 @@ class Search extends StatelessWidget {
                   ),
                   Expanded(
                     child: Obx(() {
-                      return sl<SearchControllers>().searchHistory.isEmpty
+                      return searchController.searchHistory.isEmpty
                           ? search_loading(height: 100.0)
                           : ListView.builder(
-                              itemCount:
-                                  sl<SearchControllers>().searchHistory.length,
+                              itemCount: searchController.searchHistory.length,
                               itemBuilder: (context, index) {
-                                final item = sl<SearchControllers>()
-                                    .searchHistory[index];
+                                final item =
+                                    searchController.searchHistory[index];
                                 return Padding(
                                   padding: const EdgeInsets.symmetric(
                                       vertical: 8.0, horizontal: 16.0),
@@ -238,10 +235,9 @@ class Search extends StatelessWidget {
                                             Expanded(
                                               flex: 1,
                                               child: IconButton(
-                                                  onPressed: () => sl<
-                                                          SearchControllers>()
+                                                  onPressed: () => searchController
                                                       .removeSearchItem(
-                                                          sl<SearchControllers>()
+                                                          searchController
                                                                   .searchHistory[
                                                               index]),
                                                   icon: Icon(

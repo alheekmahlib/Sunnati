@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 
 import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/extensions.dart';
+import '../../../core/utils/constants/lottie.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../controllers/bookmark_controller.dart';
 import 'widget/bookmark_card.dart';
@@ -42,8 +43,8 @@ class BookmarksScreen extends StatelessWidget {
                     child: Obx(
                       () {
                         if (sl<BookmarkController>().bookmark.isEmpty) {
-                          return const Center(
-                            child: Text('No bookmarks added yet!'),
+                          return Center(
+                            child: bookmarkLottie(height: 150.0),
                           );
                         }
                         return const BookmarkCard();

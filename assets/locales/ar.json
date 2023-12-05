@@ -171,5 +171,20 @@
   "@aboutAzkaryApp3": {
     "type": "text",
     "placeholders": {}
+  },
+  "sixBooks": "الكتب الستة",
+  "@sixBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nineBooks": "الكتب التسعة",
+  "@nineBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherBooks": "كتب أخرى",
+  "@otherBooks": {
+    "type": "text",
+    "placeholders": {}
   }
 }

@@ -55,7 +55,7 @@ class DetailsScreen extends StatelessWidget {
                   sl<SearchControllers>().booksSelected = [bookNumber];
                   screenModalBottomSheet(
                     context,
-                    Search(),
+                    const Search(),
                   );
                 },
               ),
@@ -96,19 +96,24 @@ class DetailsScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 48.0),
                 child: Row(
+                  mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                        padding: const EdgeInsets.symmetric(
-                            horizontal: 16.0, vertical: 8.0),
-                        child: SingleChildScrollView(
-                          child: ChapterList(
-                              arAndEnName: arAndEnName,
-                              bookNumber: bookNumber,
-                              bookName: bookName),
-                        )),
-                    SingleChildScrollView(
-                      child: Flexible(
+                    Expanded(
+                      flex: 4,
+                      child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 16.0, vertical: 8.0),
+                          child: SingleChildScrollView(
+                            child: ChapterList(
+                                arAndEnName: arAndEnName,
+                                bookNumber: bookNumber,
+                                bookName: bookName),
+                          )),
+                    ),
+                    Expanded(
+                      flex: 4,
+                      child: SingleChildScrollView(
                         child: Column(
                           children: [
                             BookName(
