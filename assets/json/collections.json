@@ -199,26 +199,26 @@
             "totalAvailableHadith": 0
         },
         {
-            "name": "nawawi40",
-            "bookName": "الأربعون النووية",
-            "arAndEnName": "الأربعون النووية - Forty Hadith of an-Nawawi",
+            "name": "forty",
+            "bookName": "الأربعينات",
+            "arAndEnName": "الأربعينات - Forty Hadith",
             "bookNumber": "9",
-            "hasBooks": false,
+            "hasBooks": true,
             "hasChapters": false,
             "collection": [
                 {
                     "lang": "en",
-                    "title": "An-Nawawi's 40 Hadith",
+                    "title": "Collections of Forty",
                     "shortIntro": ""
                 },
                 {
                     "lang": "ar",
-                    "title": "\u0627\u0644\u0623\u0631\u0628\u0639\u0648\u0646 \u0627\u0644\u0646\u0648\u0648\u064a\u0629",
+                    "title": "الأربعينات",
                     "shortIntro": ""
                 }
             ],
-            "totalHadith": 42,
-            "totalAvailableHadith": 42
+            "totalHadith": 0,
+            "totalAvailableHadith": 122
         },
         {
             "name": "riyadussalihin",
