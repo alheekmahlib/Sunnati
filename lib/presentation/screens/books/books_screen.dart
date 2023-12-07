@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
 
-import '../../../core/services/services_locator.dart';
 import '../../../core/widgets/widgets.dart';
-import '/presentation/controllers/books_controller.dart';
 import 'widgets/books_cover.dart';
 
 class Books extends StatelessWidget {
@@ -11,8 +9,6 @@ class Books extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final books = sl<BooksController>();
-    books.loadData();
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColorDark,
       body: SingleChildScrollView(
@@ -36,7 +32,7 @@ class Books extends StatelessWidget {
                     borderRadius: const BorderRadius.all(
                       Radius.circular(8.0),
                     )),
-                child: BooksCover(
+                child: const BooksCover(
                   title: 'الكتب الستة',
                   length: 6,
                   adjustedIndex: 0,
@@ -54,13 +50,13 @@ class Books extends StatelessWidget {
                       bottomLeft: Radius.circular(8.0),
                       bottomRight: Radius.circular(8.0),
                     )),
-                child: BooksCover(
+                child: const BooksCover(
                   title: 'الكتب التسعة',
                   length: 3,
                   adjustedIndex: 6,
                 ),
               ),
-              BooksCover(
+              const BooksCover(
                 title: 'الكتب الآخرى',
                 length: 6,
                 adjustedIndex: 9,

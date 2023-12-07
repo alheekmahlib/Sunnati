@@ -1,0 +1,201 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.alheekmahlib.suntiapp.sunti"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14
+15    <permission
+15-->[androidx.core:core:1.10.1] /Users/helal/.gradle/caches/transforms-3/889ce5bd12f1117e5357d5fcdb5e1305/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
+16        android:name="com.alheekmahlib.suntiapp.sunti.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.10.1] /Users/helal/.gradle/caches/transforms-3/889ce5bd12f1117e5357d5fcdb5e1305/transformed/core-1.10.1/AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.10.1] /Users/helal/.gradle/caches/transforms-3/889ce5bd12f1117e5357d5fcdb5e1305/transformed/core-1.10.1/AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.alheekmahlib.suntiapp.sunti.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.10.1] /Users/helal/.gradle/caches/transforms-3/889ce5bd12f1117e5357d5fcdb5e1305/transformed/core-1.10.1/AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.10.1] /Users/helal/.gradle/caches/transforms-3/889ce5bd12f1117e5357d5fcdb5e1305/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
+20
+21    <application
+22        android:name="android.app.Application"
+22-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:4:9-42
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.10.1] /Users/helal/.gradle/caches/transforms-3/889ce5bd12f1117e5357d5fcdb5e1305/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:5:9-43
+25        android:label="sunti" >
+25-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:3:9-30
+26        <activity
+26-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:6:9-26:20
+27            android:name="com.alheekmahlib.suntiapp.sunti.MainActivity"
+27-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:7:13-41
+28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:11:13-163
+29            android:exported="true"
+29-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:8:13-36
+30            android:hardwareAccelerated="true"
+30-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:12:13-47
+31            android:launchMode="singleTop"
+31-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:9:13-43
+32            android:theme="@style/LaunchTheme"
+32-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:10:13-47
+33            android:windowSoftInputMode="adjustResize" >
+33-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:13:13-55
+34
+35            <!--
+36                 Specifies an Android theme to apply to this Activity as soon as
+37                 the Android process has started. This theme is visible to the user
+38                 while the Flutter UI initializes. After that, this theme continues
+39                 to determine the Window background behind the Flutter UI.
+40            -->
+41            <meta-data
+41-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:18:13-21:17
+42                android:name="io.flutter.embedding.android.NormalTheme"
+42-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:19:15-70
+43                android:resource="@style/NormalTheme" />
+43-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:20:15-52
+44
+45            <intent-filter>
+45-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:22:13-25:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:23:17-68
+46-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:23:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:24:17-76
+48-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:24:27-74
+49            </intent-filter>
+50        </activity>
+51        <!--
+52             Don't delete the meta-data below.
+53             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+54        -->
+55        <meta-data
+55-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:29:9-31:33
+56            android:name="flutterEmbedding"
+56-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:30:13-44
+57            android:value="2" />
+57-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:31:13-30
+58
+59        <queries>
+59-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:32:9-47:19
+60
+61            <!-- If your app checks for SMS support -->
+62            <intent>
+62-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:34:13-37:22
+63                <action android:name="android.intent.action.VIEW" />
+63-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:35:17-69
+63-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:35:25-66
+64
+65                <data android:scheme="sms" />
+65-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:36:17-46
+65-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:36:23-43
+66            </intent>
+67            <!-- If your app checks for call support -->
+68            <intent>
+68-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:39:13-42:22
+69                <action android:name="android.intent.action.VIEW" />
+69-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:35:17-69
+69-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:35:25-66
+70
+71                <data android:scheme="tel" />
+71-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:36:17-46
+71-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:36:23-43
+72            </intent>
+73            <!-- If your application checks for inAppBrowserView launch mode support -->
+74            <intent>
+74-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:44:13-46:22
+75                <action android:name="android.support.customtabs.action.CustomTabsService" />
+75-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:45:17-94
+75-->/Users/helal/Development/FlutterProjects/sunnati/android/app/src/main/AndroidManifest.xml:45:25-91
+76            </intent>
+77        </queries>
+78        <!--
+79           Declares a provider which allows us to store files to share in
+80           '.../caches/share_plus' and grant the receiving action access
+81        -->
+82        <provider
+82-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-23:20
+83            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+83-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-77
+84            android:authorities="com.alheekmahlib.suntiapp.sunti.flutter.share_provider"
+84-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-74
+85            android:exported="false"
+85-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-37
+86            android:grantUriPermissions="true" >
+86-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-47
+87            <meta-data
+87-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:20:13-22:68
+88                android:name="android.support.FILE_PROVIDER_PATHS"
+88-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:21:17-67
+89                android:resource="@xml/flutter_share_file_paths" />
+89-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:22:17-65
+90        </provider>
+91        <!--
+92           This manifest declared broadcast receiver allows us to use an explicit
+93           Intent when creating a PendingItent to be informed of the user's choice
+94        -->
+95        <receiver
+95-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:28:9-34:20
+96            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
+96-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:29:13-82
+97            android:exported="false" >
+97-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:30:13-37
+98            <intent-filter>
+98-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:31:13-33:29
+99                <action android:name="EXTRA_CHOSEN_COMPONENT" />
+99-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:32:17-65
+99-->[:share_plus] /Users/helal/Development/FlutterProjects/sunnati/build/share_plus/intermediates/merged_manifest/release/AndroidManifest.xml:32:25-62
+100            </intent-filter>
+101        </receiver>
+102
+103        <activity
+103-->[:url_launcher_android] /Users/helal/Development/FlutterProjects/sunnati/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+104            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+104-->[:url_launcher_android] /Users/helal/Development/FlutterProjects/sunnati/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+105            android:exported="false"
+105-->[:url_launcher_android] /Users/helal/Development/FlutterProjects/sunnati/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+106            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+106-->[:url_launcher_android] /Users/helal/Development/FlutterProjects/sunnati/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+107
+108        <uses-library
+108-->[androidx.window:window:1.0.0-beta04] /Users/helal/.gradle/caches/transforms-3/076eb9235982ee06112d76594ea8585f/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+109            android:name="androidx.window.extensions"
+109-->[androidx.window:window:1.0.0-beta04] /Users/helal/.gradle/caches/transforms-3/076eb9235982ee06112d76594ea8585f/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+110            android:required="false" />
+110-->[androidx.window:window:1.0.0-beta04] /Users/helal/.gradle/caches/transforms-3/076eb9235982ee06112d76594ea8585f/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+111        <uses-library
+111-->[androidx.window:window:1.0.0-beta04] /Users/helal/.gradle/caches/transforms-3/076eb9235982ee06112d76594ea8585f/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+112            android:name="androidx.window.sidecar"
+112-->[androidx.window:window:1.0.0-beta04] /Users/helal/.gradle/caches/transforms-3/076eb9235982ee06112d76594ea8585f/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+113            android:required="false" />
+113-->[androidx.window:window:1.0.0-beta04] /Users/helal/.gradle/caches/transforms-3/076eb9235982ee06112d76594ea8585f/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+114
+115        <meta-data
+115-->[com.google.android.gms:play-services-basement:18.1.0] /Users/helal/.gradle/caches/transforms-3/55b4e390742817dc4b9653e42d791034/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+116            android:name="com.google.android.gms.version"
+116-->[com.google.android.gms:play-services-basement:18.1.0] /Users/helal/.gradle/caches/transforms-3/55b4e390742817dc4b9653e42d791034/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+117            android:value="@integer/google_play_services_version" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+117-->[com.google.android.gms:play-services-basement:18.1.0] /Users/helal/.gradle/caches/transforms-3/55b4e390742817dc4b9653e42d791034/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+118        <activity
+118-->[com.google.android.play:core-common:2.0.2] /Users/helal/.gradle/caches/transforms-3/ced5f8a4a3aab860e3a6b9efb39f8de3/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:14:9-18:65
+119            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+119-->[com.google.android.play:core-common:2.0.2] /Users/helal/.gradle/caches/transforms-3/ced5f8a4a3aab860e3a6b9efb39f8de3/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:15:13-93
+120            android:exported="false"
+120-->[com.google.android.play:core-common:2.0.2] /Users/helal/.gradle/caches/transforms-3/ced5f8a4a3aab860e3a6b9efb39f8de3/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:16:13-37
+121            android:stateNotNeeded="true"
+121-->[com.google.android.play:core-common:2.0.2] /Users/helal/.gradle/caches/transforms-3/ced5f8a4a3aab860e3a6b9efb39f8de3/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:17:13-42
+122            android:theme="@style/Theme.PlayCore.Transparent" />
+122-->[com.google.android.play:core-common:2.0.2] /Users/helal/.gradle/caches/transforms-3/ced5f8a4a3aab860e3a6b9efb39f8de3/transformed/jetified-core-common-2.0.2/AndroidManifest.xml:18:13-62
+123    </application>
+124
+125</manifest>

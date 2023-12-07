@@ -4,7 +4,9 @@ import 'package:flutter/services.dart';
 import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/widgets.dart';
+import '../../controllers/books_controller.dart';
 import '../../controllers/searchController.dart';
+import '../books/data/models/book_model.dart';
 import '../search/screen/search_screen.dart';
 import '/core/utils/constants/extensions.dart';
 import 'widgets/about_book.dart';
@@ -12,16 +14,18 @@ import 'widgets/book_name.dart';
 import 'widgets/chapter_list.dart';
 
 class DetailsScreen extends StatelessWidget {
-  final String arAndEnName;
-  final String bookName;
-  final String bookDetails;
-  final int bookNumber;
-  const DetailsScreen(
-      {super.key,
-      required this.arAndEnName,
-      required this.bookName,
-      required this.bookDetails,
-      required this.bookNumber});
+  // final String arAndEnName;
+  // final String bookName;
+  // final String bookDetails;
+  // final int bookNumber;
+  DetailsScreen({
+    super.key,
+    // required this.arAndEnName,
+    // required this.bookName,
+    // required this.bookDetails,
+    // required this.bookNumber
+  });
+  final Book currentBook = sl<BooksController>().currentBook;
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +56,9 @@ class DetailsScreen extends StatelessWidget {
               child: GestureDetector(
                 child: search(context),
                 onTap: () {
-                  sl<SearchControllers>().booksSelected = [bookNumber];
+                  sl<SearchControllers>().booksSelected = [
+                    currentBook.bookNumber
+                  ];
                   screenModalBottomSheet(
                     context,
                     Search(),
@@ -76,21 +82,24 @@ class DetailsScreen extends StatelessWidget {
               context,
               ListView(
                 children: [
-                  BookName(bookNumber: bookNumber, arAndEnName: arAndEnName),
+                  BookName(
+                      bookNumber: currentBook.bookNumber,
+                      arAndEnName: currentBook.arAndEnName),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 16.0, vertical: 8.0),
                     child: AboutBook(
-                      bookDetails: bookDetails,
+                      bookDetails: currentBook.currentBookAbout,
                     ),
                   ),
                   Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 16.0, vertical: 8.0),
                       child: ChapterList(
-                          arAndEnName: arAndEnName,
-                          bookNumber: bookNumber,
-                          bookName: bookName))
+                        arAndEnName: currentBook.arAndEnName,
+                        bookNumber: currentBook.bookNumber,
+                        bookName: currentBook.bookName,
+                      ))
                 ],
               ),
               Padding(
@@ -103,22 +112,24 @@ class DetailsScreen extends StatelessWidget {
                             horizontal: 16.0, vertical: 8.0),
                         child: SingleChildScrollView(
                           child: ChapterList(
-                              arAndEnName: arAndEnName,
-                              bookNumber: bookNumber,
-                              bookName: bookName),
+                            arAndEnName: currentBook.arAndEnName,
+                            bookNumber: currentBook.bookNumber,
+                            bookName: currentBook.bookName,
+                          ),
                         )),
                     SingleChildScrollView(
                       child: Flexible(
                         child: Column(
                           children: [
                             BookName(
-                                bookNumber: bookNumber,
-                                arAndEnName: arAndEnName),
+                              arAndEnName: currentBook.arAndEnName,
+                              bookNumber: currentBook.bookNumber,
+                            ),
                             Padding(
                               padding: const EdgeInsets.symmetric(
                                   horizontal: 16.0, vertical: 8.0),
                               child: AboutBook(
-                                bookDetails: bookDetails,
+                                bookDetails: currentBook.currentBookAbout,
                               ),
                             ),
                           ],

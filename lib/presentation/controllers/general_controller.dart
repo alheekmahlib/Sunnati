@@ -2,7 +2,10 @@ import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 import 'package:get/get.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../core/services/services_locator.dart';
+import '../../core/utils/helpers/languages/app_constants.dart';
 import '../screens/home/data/models/time_now.dart';
 
 class GeneralController extends GetxController {
@@ -14,6 +17,11 @@ class GeneralController extends GetxController {
   PageController controller = PageController();
   GlobalKey<SliderDrawerState> key = GlobalKey<SliderDrawerState>();
   final ArabicNumbers arabicNumbers = ArabicNumbers();
+  final prefs = sl<SharedPreferences>();
+
+  String get currentLang => prefs.getString(AppConstants.LANGUAGE_CODE) ?? 'ar';
+  Future<void> setCurrentlang(String newLangCode) async =>
+      await prefs.setString(AppConstants.LANGUAGE_CODE, newLangCode);
 
   /// Greeting
   updateGreeting() {
