@@ -4,7 +4,6 @@ import 'package:another_xlider/another_xlider.dart';
 import 'package:another_xlider/models/handler.dart';
 import 'package:another_xlider/models/handler_animation.dart';
 import 'package:another_xlider/models/trackbar.dart';
-import 'package:arabic_numbers/arabic_numbers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -72,7 +71,6 @@ optionsModalBottomSheet(BuildContext context, Widget child, {double? height}) {
 }
 
 Widget hijriDate(BuildContext context) {
-  ArabicNumbers arabicNumber = ArabicNumbers();
   var today = HijriCalendar.now();
   // AppLocalizations.of(context)!.appName == "سُنتي"
   //     ? HijriCalendar.setLocal('ar')
