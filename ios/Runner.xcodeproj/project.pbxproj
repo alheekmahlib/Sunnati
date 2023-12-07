@@ -61,6 +61,10 @@
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FF809FF13A8BFBD5C9E5D73 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 		AB32D4FC321088A99993D0DD /* Pods-RunnerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.debug.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D43A3AC92B1FDADB00D228CB /* bfq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bfq; path = bfq.lproj/Main.strings; sourceTree = "<group>"; };
+		D43A3ACA2B1FDADB00D228CB /* bfq */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bfq; path = bfq.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		D43A3ACB2B1FDB2500D228CB /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/Main.strings; sourceTree = "<group>"; };
+		D43A3ACC2B1FDB2500D228CB /* ur */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ur; path = ur.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		D47E6C562B1E9015004D0CE1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		D47E6C572B1E9016004D0CE1 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DADA61D1753BDDA604CEC405 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
@@ -232,12 +236,14 @@
 			};
 			buildConfigurationList = 97C146E91CF9000F007C117D /* Build configuration list for PBXProject "Runner" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = ar;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 				ar,
+				bfq,
+				ur,
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
@@ -400,6 +406,8 @@
 			children = (
 				97C146FB1CF9000F007C117D /* Base */,
 				D47E6C562B1E9015004D0CE1 /* ar */,
+				D43A3AC92B1FDADB00D228CB /* bfq */,
+				D43A3ACB2B1FDB2500D228CB /* ur */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -409,6 +417,8 @@
 			children = (
 				97C147001CF9000F007C117D /* Base */,
 				D47E6C572B1E9016004D0CE1 /* ar */,
+				D43A3ACA2B1FDADB00D228CB /* bfq */,
+				D43A3ACC2B1FDB2500D228CB /* ur */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
