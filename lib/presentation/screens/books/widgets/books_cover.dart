@@ -140,7 +140,7 @@ class BooksCover extends StatelessWidget {
                                     arAndEnName: book.arAndEnName,
                                     bookName: book.bookName,
                                     bookDetails: langInfo.shortIntro,
-                                    bookNumber: index,
+                                    bookNumber: int.parse(book.bookNumber),
                                   ))),
                                 ),
                               ),
