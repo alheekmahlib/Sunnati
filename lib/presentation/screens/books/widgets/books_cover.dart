@@ -114,7 +114,18 @@ class BooksCover extends StatelessWidget {
                                       textDirection: TextDirection.rtl,
                                     ),
                                   ),
+<<<<<<< HEAD
                                 ],
+=======
+                                  onTap: () => Navigator.of(context)
+                                      .push(animatRoute(DetailsScreen(
+                                    arAndEnName: book.arAndEnName,
+                                    bookName: book.bookName,
+                                    bookDetails: langInfo.shortIntro,
+                                    bookNumber: int.parse(book.bookNumber),
+                                  ))),
+                                ),
+>>>>>>> 8254a710b02d6098c266f7ceb20b7ab2450f1895
                               ),
                             ),
                             onTap: () {

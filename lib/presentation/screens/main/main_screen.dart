@@ -86,8 +86,16 @@ class MainScreen extends StatelessWidget {
             ),
           ),
         ),
+<<<<<<< HEAD
         bottomNavigationBar: Obx(
           () => StylishBottomBar(
+=======
+      ),
+      bottomNavigationBar: Obx(
+        () => Directionality(
+          textDirection: TextDirection.ltr,
+          child: StylishBottomBar(
+>>>>>>> 8254a710b02d6098c266f7ceb20b7ab2450f1895
             items: [
               BottomBarItem(
                 icon: Opacity(
