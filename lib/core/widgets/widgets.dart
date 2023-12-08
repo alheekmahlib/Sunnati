@@ -73,11 +73,6 @@ optionsModalBottomSheet(BuildContext context, Widget child, {double? height}) {
 }
 
 Widget hijriDate(BuildContext context) {
-<<<<<<< HEAD
-  /// FIXME: value isn't used!.
-  ArabicNumbers arabicNumber = ArabicNumbers();
-=======
->>>>>>> 8254a710b02d6098c266f7ceb20b7ab2450f1895
   var today = HijriCalendar.now();
   // AppLocalizations.of(context)!.appName == "سُنتي"
   //     ? HijriCalendar.setLocal('ar')
