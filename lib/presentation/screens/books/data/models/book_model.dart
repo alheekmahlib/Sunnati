@@ -1,6 +1,6 @@
-import 'book_lang.dart';
+import 'collection_lang.dart';
 
-class Book {
+class Collection {
   final String name;
   final String bookName;
   final String arAndEnName;
@@ -11,7 +11,7 @@ class Book {
   final int totalHadith;
   final int totalAvailableHadith;
 
-  Book({
+  Collection({
     required this.name,
     required this.bookName,
     required this.arAndEnName,
@@ -23,8 +23,8 @@ class Book {
     required this.totalAvailableHadith,
   });
 
-  factory Book.fromJson(Map<String, dynamic> json) {
-    return Book(
+  factory Collection.fromJson(Map<String, dynamic> json) {
+    return Collection(
       name: json['name'],
       bookName: json['bookName'] ?? 'book name',
       arAndEnName: json['arAndEnName'] ?? 'book ar and en name',

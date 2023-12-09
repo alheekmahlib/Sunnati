@@ -10,18 +10,13 @@ import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/bookmark_controller.dart';
 import '../../../controllers/general_controller.dart';
 import '../data/models/bookmark_model.dart';
+import '../data/models/hadith_model.dart';
 
 class HadithInArabic extends StatelessWidget {
-  final String bookName;
-  final String bookOtherNumber;
-  final String chapterName;
-  final int bookNumber;
+  final HadithArabicModel arabicHadith;
+  final HadithBaseModel secondHadith;
   const HadithInArabic(
-      {super.key,
-      required this.bookName,
-      required this.bookOtherNumber,
-      required this.chapterName,
-      required this.bookNumber});
+      {super.key, required this.arabicHadith, required this.secondHadith});
 
   @override
   Widget build(BuildContext context) {
@@ -43,13 +38,13 @@ class HadithInArabic extends StatelessWidget {
                         onTap: () {
                           showHadithOptionsBottomSheet(
                             context,
-                            bookName,
-                            bookOtherNumber,
-                            chapterName,
+                            arabicHadith.bookName ?? 'no book name',
+                            'bookOtherNumber',
+                            arabicHadith.babName ?? 'no chapter title',
                             1,
-                            bookNumber,
-                            'حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ ، قَالَ : حَدَّثَنَا سُفْيَانُ ، قَالَ : حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الْأَنْصَارِيُّ ، قَالَ : أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ ، يَقُولُ : سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى الْمِنْبَرِ، قَالَ : سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، يَقُولُ : " إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ "',
-                            'I heard Allahs Messenger (ﷺ) saying, "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for."',
+                            arabicHadith.bookNumber,
+                            arabicHadith.hadithText,
+                            secondHadith.hadithText,
                           );
                         },
                       ),
@@ -73,9 +68,9 @@ class HadithInArabic extends StatelessWidget {
                         child: bookmark2(context, height: 25),
                         onTap: () {
                           sl<BookmarkController>().box.add(Bookmark(
-                              bookName: bookName,
-                              bookNumber: '$bookNumber',
-                              bookOtherName: bookOtherNumber,
+                              bookName: arabicHadith.bookName ?? 'no book name',
+                              bookNumber: arabicHadith.bookNumber.toString(),
+                              bookOtherName: 'bookOtherNumber',
                               chapterTitle: 'chapterTitle',
                               hadith: 'hadith',
                               hadithNumber: 'hadithNumber'));
@@ -91,7 +86,7 @@ class HadithInArabic extends StatelessWidget {
                   const EdgeInsets.only(bottom: 8.0, right: 8.0, left: 8.0),
               child: Obx(
                 () => Text(
-                  'حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ ، قَالَ : حَدَّثَنَا سُفْيَانُ ، قَالَ : حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الْأَنْصَارِيُّ ، قَالَ : أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ ، يَقُولُ : سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى الْمِنْبَرِ، قَالَ : سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، يَقُولُ : " إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ "',
+                  arabicHadith.hadithText,
                   style: TextStyle(
                     fontFamily: 'naskh',
                     fontSize: sl<GeneralController>().fontSizeArabic.value,

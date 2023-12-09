@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:theme_provider/theme_provider.dart';
 
+import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
+import '../../../controllers/books_controller.dart';
 import '/core/utils/constants/extensions.dart';
 
 class BookName extends StatelessWidget {
-  final int bookNumber;
-  final String arAndEnName;
-  const BookName(
-      {super.key, required this.bookNumber, required this.arAndEnName});
+  BookName({super.key});
+  final currentCollection = sl<BooksController>().currentCollection;
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +16,12 @@ class BookName extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.all(16),
-          child: book_name(context, '$bookNumber', context.textDarkColor,
+          child: book_name(
+              context, '${currentCollection.bookNumber}', context.textDarkColor,
               height: 90),
         ),
         Text(
-          arAndEnName,
+          currentCollection.arAndEnName,
           style: TextStyle(
             fontFamily: 'kufi',
             fontSize: 18,

@@ -19,7 +19,7 @@ class GeneralController extends GetxController {
   final ArabicNumbers arabicNumbers = ArabicNumbers();
   final prefs = sl<SharedPreferences>();
 
-  String get currentLang => prefs.getString(AppConstants.LANGUAGE_CODE) ?? 'ar';
+  String get currentLang => prefs.getString(AppConstants.LANGUAGE_CODE) ?? 'en';
   Future<void> setCurrentlang(String newLangCode) async =>
       await prefs.setString(AppConstants.LANGUAGE_CODE, newLangCode);
 

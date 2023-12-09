@@ -4,12 +4,13 @@ import 'package:get/get.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
 import 'package:theme_provider/theme_provider.dart';
 
+import '../../../../core/services/services_locator.dart';
 import '../../../../core/widgets/widgets.dart';
+import '../../../controllers/books_controller.dart';
 
 class AboutBook extends StatelessWidget {
-  final String bookDetails;
-  const AboutBook({super.key, required this.bookDetails});
-
+  AboutBook({super.key});
+  final bookDetails = sl<BooksController>().currentCollection.currentBookAbout;
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;

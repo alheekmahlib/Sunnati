@@ -6,8 +6,7 @@ import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
-import '../../details/details_screen.dart';
-import '../data/models/book_model.dart';
+import '../../details/collection_details_screen.dart';
 
 class BooksCover extends StatelessWidget {
   final String title;
@@ -43,10 +42,11 @@ class BooksCover extends StatelessWidget {
             length,
             (index) {
               adjustedIndex + index;
-              if (adjustedIndex >= booksCtrl.allBooks.length) {
+              if (adjustedIndex >= booksCtrl.allCollections.length) {
                 return const SizedBox.shrink();
               }
-              final Book book = booksCtrl.allBooks[adjustedIndex + index];
+              final collection =
+                  booksCtrl.allCollections[adjustedIndex + index];
 
               return Column(
                 children: [
@@ -83,7 +83,7 @@ class BooksCover extends StatelessWidget {
                                           height: 70,
                                           width: 70,
                                           child: Text(
-                                            book.bookName,
+                                            collection.bookName,
                                             style: TextStyle(
                                               fontSize: 15.0,
                                               fontFamily: 'kufi',
@@ -102,7 +102,7 @@ class BooksCover extends StatelessWidget {
                                   FittedBox(
                                     fit: BoxFit.scaleDown,
                                     child: Text(
-                                      book.bookName,
+                                      collection.bookName,
                                       style: TextStyle(
                                         fontSize: 12.0,
                                         fontFamily: 'kufi',
@@ -118,9 +118,10 @@ class BooksCover extends StatelessWidget {
                               ),
                             ),
                             onTap: () {
-                              sl<BooksController>().currentBookIndex = index;
+                              sl<BooksController>().currentCollectionIndex =
+                                  index;
                               Navigator.of(context)
-                                  .push(animatRoute(DetailsScreen()));
+                                  .push(animatRoute(CollectionDetailsScreen()));
                             },
                           ),
                         ),

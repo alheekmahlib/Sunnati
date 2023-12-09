@@ -1,22 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/extensions.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/widgets.dart';
+import '../../controllers/books_controller.dart';
 import 'widgets/book_other_name.dart';
 import 'widgets/chapter_title.dart';
 
 class ReadView extends StatelessWidget {
-  final String bookName;
-  final String bookOtherNumber;
-  final int bookNumber;
-  const ReadView({
-    super.key,
-    required this.bookName,
-    required this.bookOtherNumber,
-    required this.bookNumber,
-  });
+  ReadView({super.key});
+  final currentCollection = sl<BooksController>().currentCollection;
 
   @override
   Widget build(BuildContext context) {
@@ -63,15 +58,10 @@ class ReadView extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      BookOtherName(
-                        title: bookOtherNumber,
+                      const BookOtherName(
+                        title: 'bookOtherNumber',
                       ),
-                      ChapterTitle(
-                        bookName: bookName,
-                        bookOtherNumber: bookOtherNumber,
-                        chapterName: 'باب',
-                        bookNumber: bookNumber,
-                      )
+                      ChapterTitle()
                     ],
                   ),
                 ),
