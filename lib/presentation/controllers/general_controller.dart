@@ -96,4 +96,12 @@ class GeneralController extends GetxController {
       return FloatingActionButtonLocation.endDocked;
     }
   }
+
+  RotatedBox checkWidgetRtlLayout(Widget myWidget) {
+    if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
+      return RotatedBox(quarterTurns: 0, child: myWidget);
+    } else {
+      return RotatedBox(quarterTurns: 2, child: myWidget);
+    }
+  }
 }
