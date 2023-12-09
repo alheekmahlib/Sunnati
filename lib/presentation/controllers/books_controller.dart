@@ -179,15 +179,16 @@ extension Utils on BooksController {
 
   Future<int> countFilesInDirectory(String directoryPath) async {
     try {
-      List<String> files = await rootBundle
-          .loadStructuredData<List<String>>(directoryPath, (String data) async {
-        return data.split('\n').where((e) => e.isNotEmpty).toList();
-      });
-      int fileCount = files.length;
+      String indexData =
+          await rootBundle.loadString('$directoryPath/index.json');
+      List<String> fileNames = json.decode(indexData).cast<String>();
+
+      int fileCount = fileNames.length;
+      log('fileCount: $fileCount');
       return fileCount;
     } catch (e) {
       log('Error reading directory: $e');
-      return 10;
+      return 15;
     }
   }
 
