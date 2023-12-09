@@ -6,6 +6,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/services/services_locator.dart';
 import '../../core/utils/helpers/languages/app_constants.dart';
+import '../controllers/share_controller.dart';
 import '../screens/home/data/models/time_now.dart';
 
 class GeneralController extends GetxController {
@@ -81,5 +82,21 @@ class GeneralController extends GetxController {
     }
 
     return inputStr;
+  }
+
+  FloatingActionButtonLocation checkFloatingRtlLayout() {
+    if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
+      return FloatingActionButtonLocation.startDocked;
+    } else {
+      return FloatingActionButtonLocation.endDocked;
+    }
+  }
+
+  RotatedBox checkWidgetRtlLayout(Widget myWidget) {
+    if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
+      return RotatedBox(quarterTurns: 0, child: myWidget);
+    } else {
+      return RotatedBox(quarterTurns: 2, child: myWidget);
+    }
   }
 }
