@@ -120,7 +120,7 @@ class BooksCover extends StatelessWidget {
                                         FittedBox(
                                           fit: BoxFit.scaleDown,
                                           child: Text(
-                                            book.bookName,
+                                            langInfo.title,
                                             style: TextStyle(
                                               fontSize: 12.0,
                                               fontFamily: 'kufi',
@@ -137,7 +137,8 @@ class BooksCover extends StatelessWidget {
                                   ),
                                   onTap: () => Navigator.of(context)
                                       .push(animatRoute(DetailsScreen(
-                                    arAndEnName: book.arAndEnName,
+                                    arAndEnName:
+                                        '${book.bookName} - ${langInfo.title}',
                                     bookName: book.bookName,
                                     bookDetails: langInfo.shortIntro,
                                     bookNumber: int.parse(book.bookNumber),

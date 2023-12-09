@@ -53,6 +53,7 @@ class AboutBook extends StatelessWidget {
                         ? Colors.white
                         : Theme.of(context).primaryColorDark,
                   ),
+                  textAlign: TextAlign.justify,
                 ),
               ]),
         ],
