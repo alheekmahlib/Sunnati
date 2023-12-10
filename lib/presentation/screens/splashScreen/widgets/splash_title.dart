@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../core/services/services_locator.dart';
-import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/splashScreen_controller.dart';
 
 class SplashTitle extends StatelessWidget {
@@ -15,11 +14,22 @@ class SplashTitle extends StatelessWidget {
         height: 70,
         width: sl<SplashScreenController>().animate.value ? 300 : 10,
         duration: const Duration(milliseconds: 600),
-        child: beigeContainer(
-          context,
-          whiteContainer(
-            context,
-            Obx(
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 2.0),
+          decoration: const BoxDecoration(
+              color: Color(0xffE6DAC8),
+              borderRadius: BorderRadius.all(
+                Radius.circular(8.0),
+              )),
+          child: Container(
+            margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            decoration: const BoxDecoration(
+                color: Color(0xffF7F1EC),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(8.0),
+                )),
+            child: Obx(
               () => AnimatedOpacity(
                 duration: const Duration(seconds: 1),
                 opacity: sl<SplashScreenController>().animate.value ? 1 : 0,

@@ -9,12 +9,14 @@ import 'hadith_translate.dart';
 
 class ChapterTitle extends StatelessWidget {
   final String bookName;
+  final String arAndEnName;
   final String bookOtherNumber;
   final String chapterName;
   final int bookNumber;
   const ChapterTitle(
       {super.key,
       required this.bookName,
+      required this.arAndEnName,
       required this.bookOtherNumber,
       required this.chapterName,
       required this.bookNumber});
@@ -72,9 +74,11 @@ class ChapterTitle extends StatelessWidget {
                         children: [
                           HadithInArabic(
                             bookName: bookName,
-                            bookOtherNumber: bookOtherNumber,
+                            arAndEnName: arAndEnName,
+                            bookOtherName: bookOtherNumber,
                             chapterName: chapterName,
                             bookNumber: bookNumber,
+                            hadithNumber: index,
                           ),
                           const HadithTranslate(),
                         ],

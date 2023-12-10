@@ -191,5 +191,25 @@
   "@start": {
     "type": "text",
     "placeholders": {}
+  },
+  "hadithNumber": "رقم الحديث",
+  "@hadithNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadith": "الحديث",
+  "@hadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithWithTranslate": "الحديث مع الترجمة",
+  "@hadithWithTranslate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translationOfHadith": "ترجمة الحديث",
+  "@translationOfHadith": {
+    "type": "text",
+    "placeholders": {}
   }
 }

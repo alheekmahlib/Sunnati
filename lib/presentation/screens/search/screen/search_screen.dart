@@ -22,7 +22,10 @@ class Search extends StatelessWidget {
         Stack(
           alignment: Alignment.center,
           children: [
-            button_curve(context),
+            Transform.translate(
+              offset: const Offset(0, 1),
+              child: button_curve(context),
+            ),
             GestureDetector(
               child: close(context, height: 30.0),
               onTap: () => Navigator.pop(context),
@@ -67,6 +70,12 @@ class Search extends StatelessWidget {
                               MediaQuery.sizeOf(context).width * .5),
                           child: TextField(
                             controller: searchController.textSerachController,
+                            style: TextStyle(
+                              fontSize: 14.0,
+                              fontFamily: 'kufi',
+                              fontWeight: FontWeight.w600,
+                              color: context.textDarkColor.withOpacity(.7),
+                            ),
                             decoration: InputDecoration(
                               hintText: 'searchHintText'.tr,
                               enabledBorder: OutlineInputBorder(

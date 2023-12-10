@@ -59,20 +59,34 @@ class ExpandableText extends StatelessWidget {
                       ),
                       textDirection: TextDirection.ltr,
                     )
-                  : Text(
-                      text,
-                      softWrap: true,
-                      overflow: TextOverflow.fade,
-                      textAlign: textAlign,
-                      style: TextStyle(
-                        fontSize:
-                            sl<GeneralController>().fontSizeArabic.value - 10,
-                        fontFamily: 'kufi',
-                        color: ThemeProvider.themeOf(context).id == 'dark'
-                            ? Colors.white
-                            : Colors.black,
+                  : ShaderMask(
+                      shaderCallback: (Rect bounds) {
+                        return LinearGradient(
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                          colors: [
+                            Colors.transparent.withOpacity(.1),
+                            Colors.black.withOpacity(.1),
+                            Colors.black,
+                            Colors.transparent
+                          ],
+                          stops: const [0.0, 0.1, 1.0, 1.0],
+                        ).createShader(bounds);
+                      },
+                      blendMode: BlendMode.dstIn,
+                      child: SelectableText(
+                        text,
+                        textAlign: textAlign,
+                        style: TextStyle(
+                          fontSize:
+                              sl<GeneralController>().fontSizeArabic.value - 10,
+                          fontFamily: 'kufi',
+                          color: ThemeProvider.themeOf(context).id == 'dark'
+                              ? Colors.white
+                              : Colors.black,
+                        ),
+                        textDirection: TextDirection.ltr,
                       ),
-                      textDirection: TextDirection.ltr,
                     ),
             ),
           ),

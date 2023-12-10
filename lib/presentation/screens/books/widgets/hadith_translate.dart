@@ -23,7 +23,7 @@ class HadithTranslate extends StatelessWidget {
           fontFamily: sl<SettingsController>().languageFont.value,
           color: context.textDarkColor,
         ),
-        textAlign: TextAlign.center,
+        textAlign: TextAlign.justify,
         readMoreText: 'readMore'.tr,
         readLessText: 'readLess'.tr,
         buttonTextStyle: TextStyle(

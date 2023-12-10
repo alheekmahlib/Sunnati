@@ -89,9 +89,7 @@ class ReadMoreLess extends StatelessWidget {
                     iconColor: iconColor,
                     buttonTextStyle: buttonTextStyle,
                   )
-                : Text(text,
-                    softWrap: true,
-                    overflow: TextOverflow.fade,
+                : SelectableText(text,
                     textAlign: textAlign,
                     textDirection: TextDirection.ltr,
                     style:

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
 
@@ -13,18 +14,23 @@ import '../data/models/bookmark_model.dart';
 
 class HadithInArabic extends StatelessWidget {
   final String bookName;
-  final String bookOtherNumber;
+  final String arAndEnName;
+  final String bookOtherName;
   final String chapterName;
   final int bookNumber;
+  final int hadithNumber;
   const HadithInArabic(
       {super.key,
       required this.bookName,
-      required this.bookOtherNumber,
+      required this.arAndEnName,
+      required this.bookOtherName,
       required this.chapterName,
-      required this.bookNumber});
+      required this.bookNumber,
+      required this.hadithNumber});
 
   @override
   Widget build(BuildContext context) {
+    final general = sl<GeneralController>();
     return whiteContainer(
         context,
         Column(
@@ -44,7 +50,7 @@ class HadithInArabic extends StatelessWidget {
                           showHadithOptionsBottomSheet(
                             context,
                             bookName,
-                            bookOtherNumber,
+                            bookOtherName,
                             chapterName,
                             1,
                             bookNumber,
@@ -53,21 +59,52 @@ class HadithInArabic extends StatelessWidget {
                           );
                         },
                       ),
-                      const SizedBox(
-                        width: 16.0,
+                      const Gap(
+                        16,
                       ),
-                      GestureDetector(
+                      PopupMenuButton(
+                        position: PopupMenuPosition.under,
+                        color: Theme.of(context).colorScheme.background,
                         child: copy(context, height: 25),
-                        onTap: () {
-                          Clipboard.setData(const ClipboardData(
-                                  text:
-                                      'حَدَّثَنَا الْحُمَيْدِيُّ عَبْدُ اللَّهِ بْنُ الزُّبَيْرِ ، قَالَ : حَدَّثَنَا سُفْيَانُ ، قَالَ : حَدَّثَنَا يَحْيَى بْنُ سَعِيدٍ الْأَنْصَارِيُّ ، قَالَ : أَخْبَرَنِي مُحَمَّدُ بْنُ إِبْرَاهِيمَ التَّيْمِيُّ ، أَنَّهُ سَمِعَ عَلْقَمَةَ بْنَ وَقَّاصٍ اللَّيْثِيَّ ، يَقُولُ : سَمِعْتُ عُمَرَ بْنَ الْخَطَّابِ رَضِيَ اللَّهُ عَنْهُ عَلَى الْمِنْبَرِ، قَالَ : سَمِعْتُ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، يَقُولُ : " إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى، فَمَنْ كَانَتْ هِجْرَتُهُ إِلَى دُنْيَا يُصِيبُهَا أَوْ إِلَى امْرَأَةٍ يَنْكِحُهَا، فَهِجْرَتُهُ إِلَى مَا هَاجَرَ إِلَيْهِ "'))
-                              .then((value) =>
-                                  customSnackBar(context, 'copiedHadith'.tr));
-                        },
+                        itemBuilder: (BuildContext context) => [
+                          PopupMenuItem<Widget>(
+                            child: Text(
+                              'hadith'.tr,
+                              style: TextStyle(
+                                  fontFamily: 'kufi',
+                                  fontSize: 18,
+                                  color: context.surfaceDarkColor),
+                            ),
+                            onTap: () => Clipboard.setData(ClipboardData(
+                                    text: general.copyHadith(
+                                        bookName,
+                                        bookOtherName,
+                                        chapterName,
+                                        hadithNumber)))
+                                .then((value) =>
+                                    customSnackBar(context, 'copiedHadith'.tr)),
+                          ),
+                          PopupMenuItem<Widget>(
+                            child: Text(
+                              'hadithWithTranslate'.tr,
+                              style: TextStyle(
+                                  fontFamily: 'kufi',
+                                  fontSize: 18,
+                                  color: context.surfaceDarkColor),
+                            ),
+                            onTap: () => Clipboard.setData(ClipboardData(
+                                    text: general.copyHadithWithTranslate(
+                                        arAndEnName,
+                                        bookOtherName,
+                                        chapterName,
+                                        hadithNumber)))
+                                .then((value) =>
+                                    customSnackBar(context, 'copiedHadith'.tr)),
+                          ),
+                        ],
                       ),
-                      const SizedBox(
-                        width: 16.0,
+                      const Gap(
+                        16,
                       ),
                       GestureDetector(
                         child: bookmark2(context, height: 25),
@@ -75,7 +112,7 @@ class HadithInArabic extends StatelessWidget {
                           sl<BookmarkController>().box.add(Bookmark(
                               bookName: bookName,
                               bookNumber: '$bookNumber',
-                              bookOtherName: bookOtherNumber,
+                              bookOtherName: bookOtherName,
                               chapterTitle: 'chapterTitle',
                               hadith: 'hadith',
                               hadithNumber: 'hadithNumber'));
