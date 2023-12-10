@@ -66,47 +66,57 @@ class TranslateImageCreator extends StatelessWidget {
                     )),
                 child: Column(
                   children: [
-                    whiteContainer(
-                      context,
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: [
-                            book_name(
-                                context, '$bookNumber', const Color(0xff3C2A21),
-                                height: 50),
-                            vDivider(context, height: 30),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  bookOtherNumber,
-                                  style: const TextStyle(
-                                    fontSize: 18,
-                                    fontFamily: 'naskh',
-                                    color: Color(0xff3C2A21),
-                                  ),
+                    Container(
+                      margin: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 4.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 8.0),
+                      decoration: const BoxDecoration(
+                          color: Color(0xffF7F1EC),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(8.0),
+                          )),
+                      child: Row(
+                        children: [
+                          book_name(
+                              context, '$bookNumber', const Color(0xff3C2A21),
+                              height: 50),
+                          vDivider(context, height: 30),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                bookOtherNumber,
+                                style: const TextStyle(
+                                  fontSize: 18,
+                                  fontFamily: 'naskh',
+                                  color: Color(0xff3C2A21),
                                 ),
-                                const Gap(4),
-                                beigeContainer(
-                                  context,
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 4.0),
-                                    child: Text(
-                                      chapterName,
-                                      style: const TextStyle(
-                                        fontSize: 12,
-                                        fontFamily: 'naskh',
-                                        color: Color(0xff3C2A21),
-                                      ),
+                              ),
+                              const Gap(4),
+                              Container(
+                                padding: const EdgeInsets.all(2.0),
+                                decoration: const BoxDecoration(
+                                    color: Color(0xffE6DAC8),
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(8.0),
+                                    )),
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 4.0),
+                                  child: Text(
+                                    chapterName,
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      fontFamily: 'naskh',
+                                      color: Color(0xff3C2A21),
                                     ),
                                   ),
-                                )
-                              ],
-                            )
-                          ],
-                        ),
+                                ),
+                              )
+                            ],
+                          )
+                        ],
                       ),
                     ),
                     Text(

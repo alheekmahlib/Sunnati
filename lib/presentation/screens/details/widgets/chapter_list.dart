@@ -54,7 +54,8 @@ class ChapterList extends StatelessWidget {
                     ],
                   ),
                   onTap: () => Navigator.of(context).push(animatRoute(ReadView(
-                    bookName: arAndEnName,
+                    bookName: bookName,
+                    arAndEnName: arAndEnName,
                     bookOtherNumber: 'كتاب بدء الوحي',
                     bookNumber: bookNumber,
                   ))),

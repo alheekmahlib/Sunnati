@@ -191,5 +191,25 @@
   "@start": {
     "type": "text",
     "placeholders": {}
+  },
+  "hadithNumber": "حدیث کا نمبر",
+  "@hadithNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadith": "حدیث",
+  "@hadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithWithTranslate": "ترجمہ کے ساتھ حدیث",
+  "@hadithWithTranslate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translationOfHadith": "حدیث کا ترجمہ",
+  "@translationOfHadith": {
+    "type": "text",
+    "placeholders": {}
   }
 }

@@ -88,7 +88,9 @@ class SettingsList extends StatelessWidget {
                           children: [
                             Expanded(
                                 flex: 2,
-                                child: alheekmah_logo(context, width: 60.0)),
+                                child: alheekmah_logo(context,
+                                    width: 60.0,
+                                    color: context.surfaceDarkColor)),
                             vDivider(context),
                             Expanded(
                               flex: 8,

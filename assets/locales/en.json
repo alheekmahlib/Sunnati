@@ -191,5 +191,25 @@
   "@start": {
     "type": "text",
     "placeholders": {}
+  },
+  "hadithNumber": "Hadith Number",
+  "@hadithNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadith": "Hadith",
+  "@hadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithWithTranslate": "Hadith With Translate",
+  "@hadithWithTranslate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translationOfHadith": "Translation of the Hadith",
+  "@translationOfHadith": {
+    "type": "text",
+    "placeholders": {}
   }
 }

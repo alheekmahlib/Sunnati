@@ -195,12 +195,14 @@ sunti_logo(BuildContext context, {double? height, double? width}) {
   );
 }
 
-alheekmah_logo(BuildContext context, {double? height, double? width}) {
+alheekmah_logo(BuildContext context,
+    {double? height, double? width, Color? color}) {
   return SvgPicture.asset(
     'assets/svg/alheekmah_logo.svg',
     height: height,
     width: width,
-    colorFilter: const ColorFilter.mode(Color(0xff3C2A21), BlendMode.srcIn),
+    colorFilter:
+        ColorFilter.mode(color ?? const Color(0xff3C2A21), BlendMode.srcIn),
   );
 }
 
