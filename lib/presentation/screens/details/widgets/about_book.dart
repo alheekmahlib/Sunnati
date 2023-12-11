@@ -18,7 +18,7 @@ class AboutBook extends StatelessWidget {
       ExpansionTileCard(
         elevation: 0.0,
         initialElevation: 0.0,
-        expandedTextColor: context.textDarkColor,
+        expandedTextColor: context.surfaceDarkColor,
         title: SizedBox(
           width: 100.0,
           child: Text(
