@@ -178,7 +178,7 @@ class MainScreen extends StatelessWidget {
               11,
               12,
               13,
-              14
+              14,
             ];
           },
           backgroundColor: Theme.of(context).primaryColorDark,
