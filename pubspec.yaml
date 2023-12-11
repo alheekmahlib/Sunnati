@@ -94,6 +94,9 @@ flutter:
     - assets/images/onboarding/
     - assets/json/books_data/
     - assets/json/books_data/muslim_books/arabic/
+    - assets/json/books_data/muslim_books/english/
+    - assets/json/books_data/bukhari_books/arabic/
+    - assets/json/books_data/bukhari_books/english/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

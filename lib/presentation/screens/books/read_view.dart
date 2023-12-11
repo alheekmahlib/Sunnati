@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/extensions.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/widgets.dart';
-import '../../controllers/books_controller.dart';
 import 'widgets/book_other_name.dart';
 import 'widgets/chapter_title.dart';
 
+// read hadiths inside the book and chapters
 class ReadView extends StatelessWidget {
-  ReadView({super.key});
-  final currentCollection = sl<BooksController>().currentCollection;
+  const ReadView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -57,12 +55,7 @@ class ReadView extends StatelessWidget {
                     )),
                 child: SingleChildScrollView(
                   child: Column(
-                    children: [
-                      const BookOtherName(
-                        title: 'bookOtherNumber',
-                      ),
-                      ChapterTitle()
-                    ],
+                    children: [BookOtherName(), ChapterTitle()],
                   ),
                 ),
               ),

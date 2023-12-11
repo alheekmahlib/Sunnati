@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
 
+import '../../../core/utils/constants/lists.dart';
 import '../../../core/widgets/widgets.dart';
 import 'widgets/books_cover.dart';
 
@@ -32,11 +33,7 @@ class Books extends StatelessWidget {
                     borderRadius: const BorderRadius.all(
                       Radius.circular(8.0),
                     )),
-                child: const BooksCover(
-                  title: 'الكتب الستة',
-                  length: 6,
-                  adjustedIndex: 0,
-                ),
+                child: BooksCover(title: Constants.collectionsGroupsTitles[0]),
               ),
               Container(
                 width: MediaQuery.sizeOf(context).width,
@@ -50,17 +47,9 @@ class Books extends StatelessWidget {
                       bottomLeft: Radius.circular(8.0),
                       bottomRight: Radius.circular(8.0),
                     )),
-                child: const BooksCover(
-                  title: 'الكتب التسعة',
-                  length: 3,
-                  adjustedIndex: 6,
-                ),
+                child: BooksCover(title: Constants.collectionsGroupsTitles[1]),
               ),
-              const BooksCover(
-                title: 'الكتب الآخرى',
-                length: 6,
-                adjustedIndex: 9,
-              ),
+              BooksCover(title: Constants.collectionsGroupsTitles[2]),
             ],
           ),
         ),

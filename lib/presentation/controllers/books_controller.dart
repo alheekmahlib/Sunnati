@@ -6,7 +6,8 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
 import '../../core/services/services_locator.dart';
-import '../screens/books/data/models/book_model.dart';
+import '../../core/utils/constants/lists.dart';
+import '../screens/books/data/models/collection_model.dart';
 import '../screens/books/data/models/hadith_model.dart';
 import 'general_controller.dart';
 
@@ -21,7 +22,7 @@ class BooksController extends GetxController {
   RxList<HadithBaseModel> tempHadithsForSecondLang = <HadithBaseModel>[].obs;
 
   int currentCollectionIndex = 0;
-  int currentBookIndex = 0;
+  int currentBookNumber = 1;
 
   @override
   void onInit() async {
@@ -37,26 +38,44 @@ class BooksController extends GetxController {
   // Hadith get hadithOfTheDay => ...
 
   // * [All Collections]
+
   List<Collection> get allCollections => _allCollections;
-  List<List<HadithBaseModel>> get currentBookChapters {
-    final Map<String, List<HadithBaseModel>> groupedMap = {};
+  set currentBookChapters(hadiths) {}
+  List<List<HadithArabicModel>> get currentBookChapters {
+    final Map<String, List<HadithArabicModel>> groupedMap = {};
     for (var hadith in _tempArabicHadiths) {
       if (groupedMap.containsKey(hadith.babNumber)) {
-        groupedMap[hadith.babNumber!]!.add(hadith);
+        groupedMap[hadith.babNumber]!.add(hadith);
       } else {
-        groupedMap[hadith.babNumber!] = [hadith];
+        groupedMap[hadith.babNumber] = [hadith];
       }
     }
-    return List.generate(groupedMap.length, (i) => groupedMap[i] ?? []);
+    log('message');
+    final List<List<HadithArabicModel>> hadiths = [];
+    hadiths.addAll(groupedMap.values);
+    return hadiths;
   }
 
   // * [All Books]
   String get currentBookDir =>
       'assets/json/books_data/${_allCollections[currentCollectionIndex].name}_books';
-  Future<int> getBooksLength() async =>
-      await countFilesInDirectory('$currentBookDir/arabic');
+  // Future<List<String>> getCurrentCollectionBooks() async{
+  //   try {
+  //     final String data =
+  //         await rootBundle.loadString('assets/json/collections.json');
+  //     final List jsonData = json.decode(data);
+  //     _allCollections
+  //         .assignAll((jsonData).map((item) => Collection.fromJson(item)));
+  //     log("Collections Length: ${_allCollections.length}");
+  //   } catch (e) {
+  //     log('Error loading data: $e');
+  //   }
+  // };
+
+  String get currentBookName => currentCollection.booksNames.firstWhere(
+      (e) => int.parse(e['book_number']) == currentBookNumber)["book_name"];
   // * [Book Screen]
-  Collection get currentCollection => _allCollections[currentBookIndex];
+  Collection get currentCollection => _allCollections[currentCollectionIndex];
 
   //* book chapters
   List<HadithArabicModel> get arabicHadiths => _tempArabicHadiths;
@@ -121,6 +140,22 @@ extension MoreDetails on Collection {
       'NO_ABOUT_ERROR';
 }
 
+extension Getters on BooksController {
+  List<Collection> getCollectionsGroupByTitle(title) {
+    if (title == Constants.collectionsGroupsTitles[0]) {
+      return theSixBooksCollection;
+    } else if (title == Constants.collectionsGroupsTitles[1]) {
+      return theNineBooksCollection;
+    } else {
+      return theOtherBooksCollection;
+    }
+  }
+
+  List<Collection> get theSixBooksCollection => _allCollections.sublist(0, 6);
+  List<Collection> get theNineBooksCollection => _allCollections.sublist(6, 10);
+  List<Collection> get theOtherBooksCollection => _allCollections.sublist(10);
+}
+
 extension Utils on BooksController {
   void copyHadithText() {}
   void shareHadith() {}
@@ -128,10 +163,9 @@ extension Utils on BooksController {
     try {
       final String data =
           await rootBundle.loadString('assets/json/collections.json');
-      final Map<String, dynamic> jsonData = json.decode(data);
-      _allCollections.assignAll((jsonData['data'] as List)
-          .map((item) => Collection.fromJson(item))
-          .toList());
+      final List jsonData = json.decode(data);
+      _allCollections
+          .assignAll((jsonData).map((item) => Collection.fromJson(item)));
       log("Collections Length: ${_allCollections.length}");
     } catch (e) {
       log('Error loading data: $e');
@@ -149,45 +183,33 @@ extension Utils on BooksController {
     };
   }
 
-  Future<void> getHadithsForTheCurrentBook() async {
-    final String arJsonPath =
-        '$currentBookDir/arabic/${currentBookIndex + 1}.json';
+  Future<List<HadithArabicModel>> getHadithsForTheCurrentBook() async {
+    final String arJsonPath = '$currentBookDir/arabic/$currentBookNumber.json';
 
     final data =
         json.decode(await rootBundle.loadString(arJsonPath, cache: false));
-    _tempArabicHadiths = List.generate(data.length, (i) => data[i]);
+    final hadiths =
+        List.generate(data.length, (i) => HadithArabicModel.fromJson(data[i]));
+    _tempArabicHadiths = hadiths;
+    return hadiths;
   }
 
   Future<void> getHadithsForTheCurrentBookFor2ndLang() async {
     tempHadithsForSecondLang.clear();
     final currentLang = getCurrentLangName();
     final String secondJsonPath =
-        '$currentBookDir/$currentLang/${currentBookIndex + 1}.json';
+        '$currentBookDir/$currentLang/$currentBookNumber.json';
     try {
       final data = json
           .decode(await rootBundle.loadString(secondJsonPath, cache: false));
       tempHadithsForSecondLang.value = List.generate(data.length, (i) {
         return switch (currentLang) {
-          'english' => HadithBaseModel.fromJson(data[i]),
+          'english' => HadithEnglishModel.fromJson(data[i]),
           _ => HadithBaseModel.fromJson(data[i]),
         };
       });
     } catch (e) {
-      log(e.toString());
-    }
-  }
-
-  Future<int> countFilesInDirectory(String directoryPath) async {
-    try {
-      List<String> files = await rootBundle
-          .loadStructuredData<List<String>>(directoryPath, (String data) async {
-        return data.split('\n').where((e) => e.isNotEmpty).toList();
-      });
-      int fileCount = files.length;
-      return fileCount;
-    } catch (e) {
-      log('Error reading directory: $e');
-      return 10;
+      log("error");
     }
   }
 
@@ -196,5 +218,6 @@ extension Utils on BooksController {
       getHadithsForTheCurrentBook(),
       getHadithsForTheCurrentBookFor2ndLang()
     ]);
+    currentBookChapters = _tempArabicHadiths;
   }
 }

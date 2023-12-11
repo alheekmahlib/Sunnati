@@ -1,4 +1,12 @@
-List booksList = [
+class Constants {
+  static const List<String> collectionsGroupsTitles = [
+    'الكتب الستة',
+    'الكتب التسعة',
+    'الكتب الآخرى'
+  ];
+}
+
+const List booksList = [
   {
     'name': 'صحيح البخاري',
     'arAndEnName': 'صحيح البخاري - Sahih al-Bukhari',

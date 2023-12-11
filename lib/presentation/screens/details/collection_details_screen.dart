@@ -77,9 +77,9 @@ class CollectionDetailsScreen extends StatelessWidget {
                         horizontal: 16.0, vertical: 8.0),
                     child: AboutBook(),
                   ),
-                  const Padding(
-                      padding:
-                          EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+                  Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16.0, vertical: 8.0),
                       child: BooksList())
                 ],
               ),
@@ -88,8 +88,8 @@ class CollectionDetailsScreen extends StatelessWidget {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Padding(
-                        padding: EdgeInsets.symmetric(
+                    Padding(
+                        padding: const EdgeInsets.symmetric(
                             horizontal: 16.0, vertical: 8.0),
                         child: SingleChildScrollView(
                           child: BooksList(),

@@ -73,8 +73,8 @@ class ServicesLocator {
     sl.registerLazySingleton<ShareController>(
         () => Get.put<ShareController>(ShareController(), permanent: true));
 
-    sl.registerLazySingleton<BooksController>(
-        () => Get.put<BooksController>(BooksController(), permanent: true));
+    sl.registerSingleton<BooksController>(
+        Get.put<BooksController>(BooksController(), permanent: true));
 
     UiHelper.rateMyApp.init();
 

@@ -10,17 +10,13 @@ import '../../details/collection_details_screen.dart';
 
 class BooksCover extends StatelessWidget {
   final String title;
-  final int length;
-  final int adjustedIndex;
-  const BooksCover(
-      {super.key,
-      required this.title,
-      required this.length,
-      required this.adjustedIndex});
 
+  BooksCover({super.key, required this.title});
+
+  final booksCtrl = sl<BooksController>();
   @override
   Widget build(BuildContext context) {
-    final booksCtrl = sl<BooksController>();
+    final collectionGroup = booksCtrl.getCollectionsGroupByTitle(title);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
@@ -39,15 +35,8 @@ class BooksCover extends StatelessWidget {
         Wrap(
           alignment: WrapAlignment.center,
           children: List.generate(
-            length,
+            collectionGroup.length,
             (index) {
-              adjustedIndex + index;
-              if (adjustedIndex >= booksCtrl.allCollections.length) {
-                return const SizedBox.shrink();
-              }
-              final collection =
-                  booksCtrl.allCollections[adjustedIndex + index];
-
               return Column(
                 children: [
                   AnimationLimiter(
@@ -83,7 +72,7 @@ class BooksCover extends StatelessWidget {
                                           height: 70,
                                           width: 70,
                                           child: Text(
-                                            collection.bookName,
+                                            collectionGroup[index].bookName,
                                             style: TextStyle(
                                               fontSize: 15.0,
                                               fontFamily: 'kufi',
@@ -102,7 +91,7 @@ class BooksCover extends StatelessWidget {
                                   FittedBox(
                                     fit: BoxFit.scaleDown,
                                     child: Text(
-                                      collection.bookName,
+                                      collectionGroup[index].bookName,
                                       style: TextStyle(
                                         fontSize: 12.0,
                                         fontFamily: 'kufi',
@@ -118,8 +107,8 @@ class BooksCover extends StatelessWidget {
                               ),
                             ),
                             onTap: () {
-                              sl<BooksController>().currentCollectionIndex =
-                                  index;
+                              booksCtrl.currentCollectionIndex =
+                                  collectionGroup[index].bookNumber;
                               Navigator.of(context)
                                   .push(animatRoute(CollectionDetailsScreen()));
                             },

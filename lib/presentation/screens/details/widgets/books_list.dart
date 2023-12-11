@@ -7,60 +7,56 @@ import '../../../controllers/books_controller.dart';
 import '../../books/read_view.dart';
 
 class BooksList extends StatelessWidget {
-  const BooksList({super.key});
-
+  BooksList({super.key});
+  final booksCtrl = sl<BooksController>();
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
+    final booksNames = booksCtrl.currentCollection.booksNames;
     return beigeContainer(
       context,
-      FutureBuilder<int>(
-          future: sl<BooksController>().getBooksLength(),
-          builder: (context, snap) {
-            return snap.connectionState != ConnectionState.done
-                ? const Center(child: CircularProgressIndicator.adaptive())
-                : Column(
-                    children: List.generate(
-                        snap.data!,
-                        (index) => GestureDetector(
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                      child: Icon(
-                                    Icons.list,
-                                    size: 20,
-                                    color: Theme.of(context).primaryColorDark,
-                                  )),
-                                  Expanded(
-                                    flex: 8,
-                                    child: whiteContainer(
-                                      context,
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          // ' كتاب بدء الوحي $index', TODO get the book name
-                                          'Book Name $index',
-                                          style: TextStyle(
-                                            fontFamily: 'naskh',
-                                            fontSize: 20,
-                                            color:
-                                                ThemeProvider.themeOf(context)
-                                                            .id ==
-                                                        'dark'
-                                                    ? Colors.white
-                                                    : Theme.of(context)
-                                                        .primaryColorDark,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              onTap: () => Navigator.of(context)
-                                  .push(animatRoute(ReadView())),
-                            )),
-                  );
+      ListView.builder(
+          shrinkWrap: true,
+          itemCount: booksNames.length,
+          itemBuilder: (context, i) {
+            return GestureDetector(
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Icon(
+                    Icons.list,
+                    size: 20,
+                    color: Theme.of(context).primaryColorDark,
+                  )),
+                  Expanded(
+                    flex: 8,
+                    child: whiteContainer(
+                      context,
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          booksNames[i]['book_name'],
+                          style: TextStyle(
+                            fontFamily: 'naskh',
+                            fontSize: 20,
+                            color: ThemeProvider.themeOf(context).id == 'dark'
+                                ? Colors.white
+                                : Theme.of(context).primaryColorDark,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              onTap: () {
+                booksCtrl.currentBookNumber =
+                    int.tryParse(booksNames[i]['book_number']) ?? 404;
+                Navigator.of(context).push(animatRoute(
+                  const ReadView(),
+                ));
+              },
+            );
           }),
       width: orientation(context, width, 381.0),
     );
