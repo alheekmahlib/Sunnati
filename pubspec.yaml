@@ -92,11 +92,21 @@ flutter:
     - assets/lottie/
     - assets/images/
     - assets/images/onboarding/
-    - assets/json/books_data/
-    - assets/json/books_data/muslim_books/arabic/
-    - assets/json/books_data/muslim_books/english/
-    - assets/json/books_data/bukhari_books/arabic/
-    - assets/json/books_data/bukhari_books/english/
+    - assets/json/books_data/abudawud_books/
+    - assets/json/books_data/adab_books/
+    - assets/json/books_data/ahmad_books/
+    - assets/json/books_data/bukhari_books/
+    - assets/json/books_data/bulugh_books/
+    - assets/json/books_data/darimi_books/
+    - assets/json/books_data/forty_books/
+    - assets/json/books_data/ibnmajah_books/
+    - assets/json/books_data/malik_books/
+    - assets/json/books_data/mishkat_books/
+    - assets/json/books_data/muslim_books/
+    - assets/json/books_data/nasai_books/
+    - assets/json/books_data/riyadussalihin_books/
+    - assets/json/books_data/shamail_books/
+    - assets/json/books_data/tirmidhi_books/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

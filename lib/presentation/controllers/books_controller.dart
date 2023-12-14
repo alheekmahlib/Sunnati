@@ -174,17 +174,18 @@ extension Utils on BooksController {
 
   String getCurrentLangName() {
     final lang = generalCtrl.currentLang.toLowerCase();
-    return switch (lang) {
-      'ar' => 'arabic',
-      'en' => 'english',
-      'bn' => 'bangla',
-      'ur' => 'urdu',
-      _ => 'arabic'
-    };
+    return lang;
+    // return switch (lang) {
+    //   'ar' => 'arabic',
+    //   'en' => 'english',
+    //   'bn' => 'bangla',
+    //   'ur' => 'urdu',
+    //   _ => 'arabic'
+    // };
   }
 
   Future<List<HadithArabicModel>> getHadithsForTheCurrentBook() async {
-    final String arJsonPath = '$currentBookDir/arabic/$currentBookNumber.json';
+    final String arJsonPath = '$currentBookDir/ar_$currentBookNumber.json';
 
     final data =
         json.decode(await rootBundle.loadString(arJsonPath, cache: false));
@@ -198,14 +199,16 @@ extension Utils on BooksController {
     tempHadithsForSecondLang.clear();
     final currentLang = getCurrentLangName();
     final String secondJsonPath =
-        '$currentBookDir/$currentLang/$currentBookNumber.json';
+        '$currentBookDir/${currentLang}_$currentBookNumber.json';
     try {
       final data = json
           .decode(await rootBundle.loadString(secondJsonPath, cache: false));
       tempHadithsForSecondLang.value = List.generate(data.length, (i) {
         return switch (currentLang) {
           'english' => HadithEnglishModel.fromJson(data[i]),
-          _ => HadithBaseModel.fromJson(data[i]),
+          'urdu' => HadithUrduModel.fromJson(data[i]),
+          'bangla' => HadithBanglaModel.fromJson(data[i]),
+          _ => HadithEnglishModel.fromJson(data[i]),
         };
       });
     } catch (e) {

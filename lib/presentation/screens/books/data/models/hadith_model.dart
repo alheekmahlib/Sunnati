@@ -27,10 +27,10 @@ abstract class HadithBaseModel {
     required this.lastUpdated,
   });
 
-  factory HadithBaseModel.fromJson(Map<String, dynamic> json) {
-    throw UnimplementedError(
-        'fromJson is not implemented for the base class HadithBaseModel');
-  }
+  // factory HadithBaseModel.fromJson(Map<String, dynamic> json) {
+  //   throw UnimplementedError(
+  //       'fromJson is not implemented for the base class HadithBaseModel');
+  // }
 }
 
 class HadithArabicModel extends HadithBaseModel {
@@ -68,7 +68,7 @@ class HadithArabicModel extends HadithBaseModel {
           matchingArabicURN: matchingArabicURN,
           lastUpdated: lastUpdated,
         );
-  @override
+
   factory HadithArabicModel.fromJson(Map<String, dynamic> json) {
     return HadithArabicModel(
       arabicURN: json['arabicURN'],
@@ -82,7 +82,7 @@ class HadithArabicModel extends HadithBaseModel {
       bookName: json['bookName'],
       babNumber: json['babNumber'],
       babName: json['babName'],
-      hadithNumber: int.tryParse(json['hadithNumber']) ?? 404,
+      hadithNumber: int.tryParse(json['hadithNumber'].toString()) ?? 404,
       hadithText: json['hadithText'],
       bookID: json['bookID'],
       ourHadithNumber: json['ourHadithNumber'],
@@ -130,7 +130,6 @@ class HadithEnglishModel extends HadithBaseModel {
           lastUpdated: lastUpdated,
         );
 
-  @override
   factory HadithEnglishModel.fromJson(Map<String, dynamic> json) {
     return HadithEnglishModel(
       englishURN: json['englishURN'],
@@ -139,16 +138,16 @@ class HadithEnglishModel extends HadithBaseModel {
       comments: json['comments'],
       collection: json['collection'],
       volumeNumber: json['volumeNumber'],
-      bookNumber: json['bookNumber'] ?? 404, // errror
+      bookNumber: json['bookNumber'],
       bookName: json['bookName'],
-      babNumber: json['babNumber'] ?? '404',
-      babName: json['babName'] ?? 'Chapter',
-      hadithNumber: json['hadithNumber'],
+      babNumber: json['babNumber'] ?? '',
+      babName: json['babName'],
+      hadithNumber: int.tryParse(json['hadithNumber'].toString()) ?? 404,
       hadithText: json['hadithText'],
       bookID: json['bookID'],
       ourHadithNumber: json['ourHadithNumber'],
       matchingArabicURN: json['matchingArabicURN'],
-      lastUpdated: json['last_updated'],
+      lastUpdated: json['last_updated'] ?? '',
     );
   }
 }
@@ -189,7 +188,6 @@ class HadithBanglaModel extends HadithBaseModel {
           lastUpdated: lastUpdated,
         );
 
-  @override
   factory HadithBanglaModel.fromJson(Map<String, dynamic> json) {
     return HadithBanglaModel(
       banglaURN: json['banglaURN'],
@@ -197,16 +195,16 @@ class HadithBanglaModel extends HadithBaseModel {
       grade: json['grade'],
       collection: json['collection'],
       volumeNumber: json['volumeNumber'],
-      bookNumber: json['bookNumber'] ?? 404, // errror
+      bookNumber: json['bookNumber'],
       bookName: json['bookName'],
-      babNumber: json['babNumber'] ?? '404',
-      babName: json['babName'] ?? 'Chapter',
-      hadithNumber: json['hadithNumber'],
+      babNumber: json['babNumber'],
+      babName: json['babName'],
+      hadithNumber: int.tryParse(json['hadithNumber'].toString()) ?? 404,
       hadithText: json['hadithText'],
       bookID: json['bookID'],
       ourHadithNumber: json['ourHadithNumber'],
       matchingArabicURN: json['matchingArabicURN'],
-      lastUpdated: json['last_updated'],
+      lastUpdated: json['last_updated'] ?? '',
     );
   }
 }
@@ -246,7 +244,7 @@ class HadithUrduModel extends HadithBaseModel {
           matchingArabicURN: matchingArabicURN,
           lastUpdated: lastUpdated,
         );
-  @override
+
   factory HadithUrduModel.fromJson(Map<String, dynamic> json) {
     return HadithUrduModel(
       urduURN: json['urduURN'],
@@ -254,16 +252,16 @@ class HadithUrduModel extends HadithBaseModel {
       grade: json['grade'],
       collection: json['collection'],
       volumeNumber: json['volumeNumber'],
-      bookNumber: json['bookNumber'] ?? 404, // errror
+      bookNumber: json['bookNumber'],
       bookName: json['bookName'],
-      babNumber: json['babNumber'] ?? '404',
-      babName: json['babName'] ?? 'Chapter',
-      hadithNumber: json['hadithNumber'],
+      babNumber: json['babNumber'],
+      babName: json['babName'],
+      hadithNumber: int.tryParse(json['hadithNumber'].toString()) ?? 404,
       hadithText: json['hadithText'],
       bookID: json['bookID'],
       ourHadithNumber: json['ourHadithNumber'],
       matchingArabicURN: json['matchingArabicURN'],
-      lastUpdated: json['last_updated'],
+      lastUpdated: json['last_updated'] ?? '',
     );
   }
 }
