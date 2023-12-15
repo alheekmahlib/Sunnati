@@ -11,29 +11,32 @@ import '../data/models/hadith_model.dart';
 
 class HadithTranslate extends StatelessWidget {
   final HadithBaseModel hadithTranslation;
+
   const HadithTranslate({super.key, required this.hadithTranslation});
 
   @override
   Widget build(BuildContext context) {
     return whiteContainer(
       context,
-      ReadMoreLess(
-        text: hadithTranslation.hadithText,
-        textStyle: TextStyle(
-          fontSize: sl<GeneralController>().fontSizeArabic.value - 10,
-          fontFamily: sl<SettingsController>().languageFont.value,
-          color: context.textDarkColor,
-        ),
-        textAlign: TextAlign.justify,
-        readMoreText: 'readMore'.tr,
-        readLessText: 'readLess'.tr,
-        buttonTextStyle: TextStyle(
-          fontSize: 12,
-          fontFamily: 'kufi',
-          color: context.textDarkColor,
-        ),
-        iconColor: context.textDarkColor,
-      ),
+      Obx(() {
+        return ReadMoreLess(
+          text: hadithTranslation.hadithText,
+          textStyle: TextStyle(
+            fontSize: sl<GeneralController>().fontSizeArabic.value - 5,
+            fontFamily: sl<SettingsController>().languageFont.value,
+            color: context.textDarkColor,
+          ),
+          textAlign: TextAlign.justify,
+          readMoreText: 'readMore'.tr,
+          readLessText: 'readLess'.tr,
+          buttonTextStyle: TextStyle(
+            fontSize: 12,
+            fontFamily: 'kufi',
+            color: context.textDarkColor,
+          ),
+          iconColor: context.textDarkColor,
+        );
+      }),
     );
   }
 }

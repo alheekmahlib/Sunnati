@@ -23,16 +23,18 @@ class LanguageList extends StatelessWidget {
           expandedTextColor: Theme.of(context).primaryColorDark,
           title: SizedBox(
             width: 100.0,
-            child: Text(
-              sl<SettingsController>().languageName.value,
-              style: TextStyle(
-                fontFamily: sl<SettingsController>().languageFont.value,
-                fontSize: 18,
-                color: ThemeProvider.themeOf(context).id == 'dark'
-                    ? Colors.white
-                    : Theme.of(context).primaryColorDark,
-              ),
-            ),
+            child: Obx(() {
+              return Text(
+                'lang'.tr,
+                style: TextStyle(
+                  fontFamily: sl<SettingsController>().languageFont.value,
+                  fontSize: 18,
+                  color: ThemeProvider.themeOf(context).id == 'dark'
+                      ? Colors.white
+                      : Theme.of(context).primaryColorDark,
+                ),
+              );
+            }),
           ),
           baseColor: Theme.of(context).colorScheme.background,
           expandedColor: Theme.of(context).colorScheme.background,

@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		ogQy3hAVXAlE1REapPa70iuFpb0=
+		CCQ9o4pJrk7yRLCbgDQp1CeYeZI=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		rH27PcTnQfaVVHhd32vWNrSN+Ic=
+		UgSH3EyC8VYePVcJo9/uFxooAC4=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -47,6 +47,10 @@
 		<key>flutter_assets/assets/images/sunti_logo.png</key>
 		<data>
 		wYT6yOCWxUXOjHCcUmSAjKBB7Mg=
+		</data>
+		<key>flutter_assets/assets/json/.DS_Store</key>
+		<data>
+		xBZtQMZyZ5xTInuZQ45A6C0M7aY=
 		</data>
 		<key>flutter_assets/assets/json/books_data/.DS_Store</key>
 		<data>
@@ -1012,6 +1016,10 @@
 		<data>
 		rVk9n7O4k9+wFPlceZd0AnEClPM=
 		</data>
+		<key>flutter_assets/assets/json/books_data/bukhari_books/.DS_Store</key>
+		<data>
+		ng0SxoI1BZrcqhUxzcZClcudr6Y=
+		</data>
 		<key>flutter_assets/assets/json/books_data/bukhari_books/ar_1.json</key>
 		<data>
 		hSJNaPJ4HUNp767eagQs43kS7Tg=
@@ -1791,6 +1799,10 @@
 		<key>flutter_assets/assets/json/books_data/bukhari_books/arabic/97.json</key>
 		<data>
 		XvOCn47PBFWxGbH+L2fu/d/I3dg=
+		</data>
+		<key>flutter_assets/assets/json/books_data/bukhari_books/arabic/index.json</key>
+		<data>
+		WEeSOoJ+bW+yTMNEHNiPcvzoQcQ=
 		</data>
 		<key>flutter_assets/assets/json/books_data/bukhari_books/en_1.json</key>
 		<data>
@@ -4940,6 +4952,234 @@
 		<data>
 		l+Xp67hWQ6xIM1thOn4vVqG0BoA=
 		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/0.json</key>
+		<data>
+		C+mPOvazrK0wzdyisW+KY5aj+hs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/1.json</key>
+		<data>
+		m3lQrfPJHyq0ImfHua2ZvOI0o7k=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/10.json</key>
+		<data>
+		yuaPY7oq9hoJX8/csrQ1G0bxnAg=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/11.json</key>
+		<data>
+		0Gvm6/bDaf4XjWIHp7yMCJDr2uQ=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/12.json</key>
+		<data>
+		7nHA1mh5JqMKuB/bQmLmjzFosdQ=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/13.json</key>
+		<data>
+		YestpzS5rwMv47pyx+Xle+9ZxYs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/14.json</key>
+		<data>
+		JfqYYX9QuOJcOtPZKLdBT1z0ntk=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/15.json</key>
+		<data>
+		k8VwUhwbtRoyVXtsiV20F0IjmVw=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/16.json</key>
+		<data>
+		aXYvvrTNhjhM7rnEJ4vjK1OqarU=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/17.json</key>
+		<data>
+		gq13sWT18hOUumMUy6MGovJeniI=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/18.json</key>
+		<data>
+		UmKz4iEy2MO8elC16D0c3X/dvxo=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/19.json</key>
+		<data>
+		CjQWsXPc9ve09p4+O84NpGt+V0U=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/2.json</key>
+		<data>
+		0z+z4MY2ydupqWhkdz5MZBcoNbM=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/20.json</key>
+		<data>
+		hE01aw6ofzUkGQ0xhhiCfO6Yvek=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/21.json</key>
+		<data>
+		CdQUng6eZSocdFFMxMQFuolbJzA=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/22.json</key>
+		<data>
+		9rbstTgNo2ElFe7PxJjYlBGPuG4=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/23.json</key>
+		<data>
+		FiE4cTNz/7+opTtMraCZ0HbBhIw=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/24.json</key>
+		<data>
+		O0fuTy865gtIc3UVETR9lAn0Xxg=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/25.json</key>
+		<data>
+		kOxnRJwAKJAr9SNaStenaxgTbh0=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/26.json</key>
+		<data>
+		FBR/OTVCWu+zzoiBxjEmiWTXm6k=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/27.json</key>
+		<data>
+		fqJ4zQNSHHWY3b+7C6B77WHMAIs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/28.json</key>
+		<data>
+		kZq+nzg2/LRccoDb4DLWPphQtQY=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/29.json</key>
+		<data>
+		SXFxB/3soAmlzZybxc+1XHeqGWs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/3.json</key>
+		<data>
+		IhQvV5H5FsUsyBFASfZYvSb+zBs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/30.json</key>
+		<data>
+		69/3tCEiFqr4n+RK9xVX7B6jPe4=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/31.json</key>
+		<data>
+		d6EBXU1/b/DplyCjRBDSHUAuigs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/32.json</key>
+		<data>
+		qrf0/hNxMH0rMbCFr5p+iDRtQbU=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/33.json</key>
+		<data>
+		a320WVdfRboy6VBNSAzRExK1nog=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/34.json</key>
+		<data>
+		aVeLsvUqRzABiVkSYfijntvqPMQ=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/35.json</key>
+		<data>
+		MR7xtCg8J116NrAnd5DqDXXMdGs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/36.json</key>
+		<data>
+		vADzNMBgeqSco62U9UMvdTjvIBc=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/37.json</key>
+		<data>
+		PozAz7uH+aGVYq7+wtrOaMFOAu8=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/38.json</key>
+		<data>
+		gY0fpKHfdUAvGZPgc2MgvBhfivw=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/39.json</key>
+		<data>
+		A3jaCl1HUbdcNdauSgY1lv+IILY=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/4.json</key>
+		<data>
+		9hPRt7pYucA6O7h1FgrsbsY4V/w=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/40.json</key>
+		<data>
+		hrgfyHvhyuvn8yBsQ7VpPSHK/5E=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/41.json</key>
+		<data>
+		aPk2t0re4wxiVHJH02mA6mh2I7A=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/42.json</key>
+		<data>
+		Wz5KDG5tMjNuYy4jXmUJUWOLUYI=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/43.json</key>
+		<data>
+		6f6Tt3dsymS22DyzvGgQmzMGxuQ=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/44.json</key>
+		<data>
+		hDbDrtKE9Cj3pMc08gy6nCoCDP8=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/45.json</key>
+		<data>
+		q5Mp+XB5QToHLTAuVvpvSpCni/k=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/46.json</key>
+		<data>
+		h2JSKSwqDXzRvgthxgOZlyEFmuQ=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/47.json</key>
+		<data>
+		aQ72VCw6CY3nT+rCTRM6EMQFpEs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/48.json</key>
+		<data>
+		JgrFQp10ujjMoRsUe9eOBauEnc8=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/49.json</key>
+		<data>
+		XQLB1LwzPiqNFaGjCyCBg49T9+g=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/5.json</key>
+		<data>
+		cinIKD03Ks4heNKozuvfmN1cnGU=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/50.json</key>
+		<data>
+		GSxL/Is4A1x9dV3xrkr9dVWskss=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/51.json</key>
+		<data>
+		ULw8Ke/LJVhJ276yzWQkFV3vIcs=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/52.json</key>
+		<data>
+		qYH6BdVvlgLQvQXtxE1GSUCDx5g=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/53.json</key>
+		<data>
+		8u9mR3X2CIX+JkoLykUGhLBcTMA=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/54.json</key>
+		<data>
+		3HaYDcbJbca9etUOKyXsfA7/4MI=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/55.json</key>
+		<data>
+		+4U/LyZnhLDtCBfGJCsAOfP91oA=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/56.json</key>
+		<data>
+		c9IQfKb/cc0hFyLOctSLBrvB2hk=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/6.json</key>
+		<data>
+		GRpl8gTpcnvFg3vZXvoKQ8RmSCM=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/7.json</key>
+		<data>
+		hujUf5r41IMXDqMU8N8kK8vpNZ4=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/8.json</key>
+		<data>
+		AmOWw9B4898v/3v0xdceY8DVe+I=
+		</data>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/9.json</key>
+		<data>
+		l+Xp67hWQ6xIM1thOn4vVqG0BoA=
+		</data>
 		<key>flutter_assets/assets/json/books_data/nasai_books/ar_1.json</key>
 		<data>
 		eozdDVCsxeKJ5aTH7pSx+u+1dbQ=
@@ -6388,6 +6628,10 @@
 		<data>
 		z5DaqlVZ6EaBE1xE5VO5mc433Bo=
 		</data>
+		<key>flutter_assets/assets/svg/.DS_Store</key>
+		<data>
+		V52MaQQTr1hxAP9dB9MjP8DKmGo=
+		</data>
 		<key>flutter_assets/assets/svg/24-hours.svg</key>
 		<data>
 		6C49gJzfo+9Qx/rH4gn0amPRvxI=
@@ -6606,7 +6850,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		KMnlDN+efPgeoWXJ5ItX65o9N84=
+		zOWYaJrdv74ndl5uCVd00MdMLxc=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -6627,14 +6871,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OISjm4BX/YAtjtgjrXe1RoH/laqWk8KFTi2obXroHLg=
+			sqUwPNDZ2eFCqTzY14VfEJ2UvkghqTlLrgOZKtTJ/m4=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVtWjM7PVrbErV3pxyuZ//3tq9A3f9J5CZXuwMGwmyY=
+			Gv+28kCCrhWjnAInYb6jhzRHVLaSVQZUL/SQMlsV1VE=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -9736,6 +9980,13 @@
 			<key>hash2</key>
 			<data>
 			JvjAPA8ZcnVhsurSATI71JareGsrIa086GbE2wNwkwY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/bukhari_books/arabic/index.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XAkYSKEKkbsmUUq45HU/pp4yK5/IToew9ss8eAskSeg=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/json/books_data/bukhari_books/en_1.json</key>
@@ -15247,6 +15498,405 @@
 			JIsSey2B+Uth5V57PlG8hjazCT0qLh2i+X7sWxwIKaw=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/0.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XVdsXScCAOkHJ6PNQ703IvgLH6lj5Y9ekXulmjVBssI=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/1.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yxiy3lgETbAat66hXLXsAmysSM9pk3i1ten1qKm9W7c=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/10.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iUOBGKog3QRH08VN137NHPgUGKTAVt2OIwXKnuXRGOc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/11.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aktNKjaASHsRiEyRN2EXTxn8AXuo404NZR5Uf4ODHuE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/12.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7nFvO/Jp3jeY7Pb1cg0Xrs4cfUB+alFkAWeX70qagpg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/13.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			41AlvPEueuANOkST5HNe8WlvhNKIL76OXWz48k95k1Q=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/14.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jrQ/ShGKOuTcx5d/hdA+JhTWOJBH8A9GIf/rKPmaWKw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/15.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8GL+kTsT7Id+rhH2J8FjizomiikqFcV8ukz2dIG3hAw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/16.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fiO+ZoYIiZZKiI4jWAL4ifkXqfHTIgGOcJQpwlF3M+s=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/17.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fxiS/zowikw52vON0xCH+36R6/FZNagZvtBMJ6ixlLg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/18.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L50bnzI3V7F5PH2X6eZ0/DFCboxdYGuHTjEWC5NcpTo=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/19.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4SDgGNOXhqEwfcSZNFTtSxFySAeb33Ogc8x/zUoqXhU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/2.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kU21NlZVAWRSFHSX6ajRgt5x+3NqdPtGVP+Z7uhV7UI=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/20.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P2cp404hWghQCQ438pjYr06gL0BX+f1uKTr1i5Emwyc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/21.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aISuLEGBRu1IptkFEBu7tT58titzNI0lWY3m7K10Qz0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/22.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			piFgU7J8ukDmvwGv8FidNNbAQrKY1F1+yBNyO+/VrUA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/23.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			20blXabwq+NkebKWblNrSCEvVHtg+98ap2xLtDjE5rs=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/24.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S730VUXFQRSxRxHiQPFtPI9DKi4JRT29pZOQ08sEbww=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/25.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zwqx1aE21Wo9ERs1jY5YgD+8JF980W9h04PyRlToRe8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/26.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PpDCKV492Rg1cPFQqcXprKJf4iLxE0mi7JW7cmLzz9Q=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/27.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5dyrs7Ck/cU3rgmhlt9D01R9Qbv6PrkmQJDwH1BijVQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/28.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JK9Z0/gyEdbNuCwYbnT5XZoMOmlYznSZK4gKiatkJns=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/29.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tIrUZC3/44ZV+Rboy/jHM9RXLZE9wxiVgbbqrf2Rd2M=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/3.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			94bCNO9Iyn4f953+q4+KaIHP/E2LhDwbbx2sA/09m0E=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/30.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WPmxl1TzBIWVmUX3pLDkQzVRRiHs8sndDmgFwZ/UtJk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/31.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xZAXCw8cp+q5a9aYxpLZDSJZpxd9axBWWbAdzpx0LGg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/32.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mvbWEe//hoQ/QUVyRpRhXRyW1cHXrr4HteOlaH/5O9Q=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/33.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xFuGGJON3Nf1MPQs6Ec3aSV4AR7mFbEtagGGyctX27s=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/34.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZTX4Mch6MrylCgoFQlwzTZ5QSX9KvQJ7BzYXYsJDL+0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/35.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w1WbmMEmZxb6z6SOUrEDBXl5XVnEnm1Qxm3HQifxOhM=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/36.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d+je5Vv+MejyN0V+J6QUkc+vhofsZ0UVpklDN6wvErM=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/37.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2TtF2BPYQKiYU16V/e2iYdo/5QgGfGRB11WeR8bStao=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/38.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SDkgsUwgriijH4I3zifvOM3uQzeOxHz9ToJugBaHM28=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/39.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sz3OPmhZKikT+1kv34psNQHH+hGz73flHRW0qQ83Ypk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/4.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sznfj6cw1mFC0EhxWfokX54tH/5VgT4PFE6lGlL0t6M=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/40.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sr2rBXbTXiRNBJ4ZmAzzCtvjiN+mEr2h3R3AOCVxwwY=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/41.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PafYRp3kczMtJnREkImlwjknJRlzjjxwW5TAyeE0EmE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/42.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FglvYJigeMyTidVQunYa32INFGhMQ8MEbpb6w7+A//Q=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/43.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DX8I1JvhzHigpavZsE0aQFNhTRqtV7smoflYwAXvbRU=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/44.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vbjic4Lqn9D4zTz15W8ffbl2WhSoyjWLIpz8VyZTBXE=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/45.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qogfL8sVATFh+vHmqWBIGesaJGTQ3JXudd/ITfADPcg=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/46.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kOfCamSiwbq7srHzhokyFw5XRFyrJ+qI+IHK98eLWf0=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/47.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZkSRd5R8de89Z/P80LWAkFxZvz/nbOWj5zUXS89vyc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/48.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			brmUZNHe9t3rWTUIejKM/ruBjOxLXf7XnmMa+O+AJC4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/49.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bewJI6jFTNq0z6ONVEgBAvpARJ6ZI5k2VpUPGA755kA=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/5.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qzj0vTm+jzys7So5usMpjVAXkZ8E8ozNxvXv0zdPt3k=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/50.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pEqn4rtkRp6jFK6EHNHXhQBx79QcUE1EADm8p7yuf2o=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/51.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			98USg3ujeL2nVgaOuRRGHVzUSeHjKw0jVGTzn1eFZOM=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/52.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			czXgytIRT314YLwgrQTbMQ+mgpKQUlmGN1BEJfWTP9Y=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/53.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YpeYJNR5WpYryruj3uWW2IZi4m1404hoj+hk5Fu181o=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/54.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dXA/KtKaySseEjiif4AgXS5zkOP5/+a/ahbmLeLgTVs=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/55.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YYFeNtfO3xe5RB9kxiUUCq4TiVZ+9eDtptTALA65vyw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/56.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ls2ZMGmLdWtG20gpl+hAeemqaT+Hs2fMZtkmz3QZbds=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/6.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m1hVWzqOAG6wolOrLhnWZM+8V4yTB7lIIVWW/Fba+mQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/7.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W4OqhivfzxzXpY8lFwE2+hI2OT+0Z3vusr8jOu26cLs=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/8.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WloHYbx/8USs+w7L6tgDsJG7rLvqzjOCKGVWiC6gPWk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/books_data/muslim_books/english/9.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JIsSey2B+Uth5V57PlG8hjazCT0qLh2i+X7sWxwIKaw=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/json/books_data/nasai_books/ar_1.json</key>
 		<dict>
 			<key>hash2</key>
@@ -18163,7 +18813,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZJwnox91j9q5i/pc821YOUGeSZdFYOX7zsWuSD+J2bI=
+			NXQ8kvLbV6ypFddLPaYYUjrE66PUTtedYPWqQexeAYs=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

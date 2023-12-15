@@ -69,6 +69,18 @@ class GeneralController extends GetxController {
         '8': '৮',
         '9': '৯',
       },
+      'اردو': {
+        '0': '۰',
+        '1': '۱',
+        '2': '۲',
+        '3': '۳',
+        '4': '۴',
+        '5': '۵',
+        '6': '۶',
+        '7': '۷',
+        '8': '۸',
+        '9': '۹',
+      },
     };
 
     Map<String, String>? numSet = numberSets['lang'.tr];
@@ -84,11 +96,11 @@ class GeneralController extends GetxController {
     return inputStr;
   }
 
-  FloatingActionButtonLocation checkFloatingRtlLayout() {
+  checkRtlLayout(var rtl, var ltr) {
     if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
-      return FloatingActionButtonLocation.startDocked;
+      return rtl;
     } else {
-      return FloatingActionButtonLocation.endDocked;
+      return ltr;
     }
   }
 

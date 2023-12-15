@@ -54,6 +54,8 @@ class LastRead extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                             color: context.textDarkColor,
                             height: 1.5),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.justify,
                         textDirection: TextDirection.rtl,
                       ),

@@ -32,6 +32,7 @@ class ReadView extends StatelessWidget {
                   color: context.surfaceDarkColor))),
           onTap: () => Navigator.pop(context),
         ),
+        actions: [fontSizeDropDown(context)],
       ),
       body: Column(
         children: [

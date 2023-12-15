@@ -6,6 +6,7 @@ import 'package:another_xlider/models/handler_animation.dart';
 import 'package:another_xlider/models/trackbar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:hijri/hijri_calendar.dart';
 
@@ -80,55 +81,59 @@ Widget hijriDate(BuildContext context) {
   // HijriCalendar.setLocal('ar');
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 16.0),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              sl<GeneralController>().convertNumbers('${today.hDay}'),
-              style: TextStyle(
-                fontSize: orientation(context, 30.0, 20.0),
-                fontFamily: 'kufi',
-                color: context.textDarkColor,
-              ),
-              textAlign: TextAlign.center,
-            ),
-            Text(
-              sl<GeneralController>()
-                  .convertNumbers('${today.hMonth} / ${today.hYear} هـ'),
-              style: TextStyle(
-                fontSize: orientation(context, 20.0, 20.0),
-                fontFamily: 'kufi',
-                color: context.textDarkColor,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SvgPicture.asset('assets/svg/hijri/${today.hMonth}.svg',
-                height: orientation(context, 70.0, 100.0),
-                colorFilter:
-                    ColorFilter.mode(context.textDarkColor, BlendMode.srcIn)),
-            Transform.translate(
-              offset: const Offset(-25, -5),
-              child: Text(
-                today.dayWeName.tr,
+    child: FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                sl<GeneralController>().convertNumbers('${today.hDay}'),
                 style: TextStyle(
-                  fontSize: orientation(context, 22.0, 20.0),
+                  fontSize: orientation(context, 30.0, 30.0),
                   fontFamily: 'kufi',
                   color: context.textDarkColor,
                 ),
                 textAlign: TextAlign.center,
               ),
-            ),
-          ],
-        ),
-      ],
+              Text(
+                sl<GeneralController>()
+                    .convertNumbers('${today.hMonth} / ${today.hYear} هـ'),
+                style: TextStyle(
+                  fontSize: orientation(context, 20.0, 20.0),
+                  fontFamily: 'kufi',
+                  color: context.textDarkColor,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          const Gap(8),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SvgPicture.asset('assets/svg/hijri/${today.hMonth}.svg',
+                  height: orientation(context, 70.0, 100.0),
+                  colorFilter:
+                      ColorFilter.mode(context.textDarkColor, BlendMode.srcIn)),
+              Transform.translate(
+                offset: const Offset(-25, -5),
+                child: Text(
+                  today.dayWeName.tr,
+                  style: TextStyle(
+                    fontSize: orientation(context, 22.0, 20.0),
+                    fontFamily: 'kufi',
+                    color: context.textDarkColor,
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     ),
   );
 }

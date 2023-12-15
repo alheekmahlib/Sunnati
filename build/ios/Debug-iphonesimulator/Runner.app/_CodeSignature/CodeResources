@@ -10,19 +10,19 @@
 		</data>
 		<key>AppIcon60x60@2x.png</key>
 		<data>
-		WBDcNG/0BUOtsKQgKYOLyuqAbAM=
+		N+Rdj96uOeDlBIr8j+QL8vQwOWc=
 		</data>
 		<key>AppIcon76x76@2x~ipad.png</key>
 		<data>
-		Bqtil6RquU1Hfn8gu0IYARWvCIM=
+		M/HxqeaH1u2TmrGJnMSSMMTl3w0=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		+HU/lXbeCHwKdfkgZeYJwJ9Q6kc=
+		ODRPqno4XzEMOP2qLrqrlYYufNg=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		28xWMBQ91UzszfdXY91SqhC7ecg=
+		K04OlgvWE65g20r7W50TsVf42h0=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		RDtBdr+PcJqI9aYkyc/KV9MsLqI=
+		lSRugQy1IlWkgv91QIwSRfJt3oA=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -54,15 +54,15 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		okyIg8U8izrcUQkUrKn49ch7eqY=
+		xkViCrpxgSJea1RJjR+yqoNCoa8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<data>
-		ogQy3hAVXAlE1REapPa70iuFpb0=
+		CCQ9o4pJrk7yRLCbgDQp1CeYeZI=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		rH27PcTnQfaVVHhd32vWNrSN+Ic=
+		UgSH3EyC8VYePVcJo9/uFxooAC4=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
@@ -1448,6 +1448,398 @@
 		<data>
 		WEeSOoJ+bW+yTMNEHNiPcvzoQcQ=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/1.json</key>
+		<data>
+		hSJNaPJ4HUNp767eagQs43kS7Tg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/10.json</key>
+		<data>
+		4nzIMxiU2qjU1sNtqLAVvPiPObE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/11.json</key>
+		<data>
+		+nabnIWVOu8q7E6mikv6EVyJdlE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/12.json</key>
+		<data>
+		WOjkCF1HRG5b++WZ1x+3PaF1p7c=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/13.json</key>
+		<data>
+		2mHociLWQ5sNBLgdHCba3gE0wyc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/14.json</key>
+		<data>
+		MsPSmRT+V4PpCoNb916Uaq5e/90=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/15.json</key>
+		<data>
+		P8XjBSRZC6qGt9E6vmVE8CoW8u0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/16.json</key>
+		<data>
+		DvLGm8Z+mmTLqRFgscTfW4neVyw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/17.json</key>
+		<data>
+		m3n3/lpg7I/GGogE5w9nL0e/+ZQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/18.json</key>
+		<data>
+		5Q19iTA0NNyZ7lkfn1rcx4yzDpU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/19.json</key>
+		<data>
+		zobrLirq3KE6ESCyEJdXv/1lIhk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/2.json</key>
+		<data>
+		nviZLS/Q5yB2LuXWQOUfkYJn6Ig=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/20.json</key>
+		<data>
+		9tXVSMdVgeXa2657EARcymNJ3bo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/21.json</key>
+		<data>
+		whJZhOrOFKMjHeXRqQA7GRq0mvQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/22.json</key>
+		<data>
+		a46e5ork4NlDYWIKYwAtZkDUq0o=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/23.json</key>
+		<data>
+		s3phbKW90dhLDMBgzH8XmoKyDWg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/24.json</key>
+		<data>
+		YY+yixHVlxJM2jelP4WoHz8AlZ8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/25.json</key>
+		<data>
+		Q4pvNP8BveoNN9P0GCwDJez2gmU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/26.json</key>
+		<data>
+		sKGdoxsOoUCvMmGbsHWaHgvukZE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/27.json</key>
+		<data>
+		OVKj1bQzq2SQM0Roa3drs31ycJU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/28.json</key>
+		<data>
+		SFSLbNg5H7rZPTzQxYrNfdbc1z4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/29.json</key>
+		<data>
+		+LybeCeT9VraU1TuDYHND8s0SgQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/3.json</key>
+		<data>
+		JlV1/9MJbU7tIXT/CVFZSjsOj7I=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/30.json</key>
+		<data>
+		QbVplKopxVp/uwk+HHEFmIYo2yU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/31.json</key>
+		<data>
+		2wOQiDbJ8RnOBts7yn7TQlkj3bY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/32.json</key>
+		<data>
+		Dy2/UmCc2FltyKAZqYtiYmg9/1M=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/33.json</key>
+		<data>
+		uH8VgSPD6AcMNzWd3wubiAaLvis=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/34.json</key>
+		<data>
+		SfL5cmnhYNtMBEXrod8RGSf3oXU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/35.json</key>
+		<data>
+		68TiXFjZNu8W/1hnpANTwTwIkR0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/36.json</key>
+		<data>
+		+yXqghzG6d9yeddoJTEOl9Sx4uo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/37.json</key>
+		<data>
+		9324FKzmC6fYA6BVGOnkrK2M5M8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/38.json</key>
+		<data>
+		uekniGWat3T00vW5Ywz+sjjzgKI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/39.json</key>
+		<data>
+		ZEY6EmrKdHhXGWlfPBLKrwXIVys=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/4.json</key>
+		<data>
+		Fx3xEY+3UKyhv23v3flB5W0ZtIs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/40.json</key>
+		<data>
+		mDKjfnDWFUhflijzctRRraUdvzo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/41.json</key>
+		<data>
+		HpOGId/sVTFhKWD6u9pY9+C4hCI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/42.json</key>
+		<data>
+		QaLBJ91dSipr7xQfuXZtGqTo0DY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/43.json</key>
+		<data>
+		EKKPsFikC18VznGUgyheEFrL9hg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/44.json</key>
+		<data>
+		4V8lEzkdXiciCRrEbkVrnmv80QQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/45.json</key>
+		<data>
+		sDoofd6oLAVhHQSwdPFz2sAPwXU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/46.json</key>
+		<data>
+		okUo55qg+ujgz1jAZdQamMjs32k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/47.json</key>
+		<data>
+		kG83LpKrLAyME8cMgoKWgg91r9U=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/48.json</key>
+		<data>
+		RweAYGDflAf4WRvh7TAlbOfDLXU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/49.json</key>
+		<data>
+		dWlDjRRTN2QhrxsN/kf1XRYC1FU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/5.json</key>
+		<data>
+		eg9P7W/aEjON+5DTWWJD1d62pyE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/50.json</key>
+		<data>
+		1CvZczbbwk3fzXZF+WSYTK5woh8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/51.json</key>
+		<data>
+		UvCLH/EI/n4gGB52eE5I2iuS+hY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/52.json</key>
+		<data>
+		fy3/+6scuBeVb5Z4xGjbVITGcN0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/53.json</key>
+		<data>
+		Ue5EAOhL/5eoyc/4MQ6lJMW+xiM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/54.json</key>
+		<data>
+		p12V5Q2HGetpfEij8SECp0OeUSY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/55.json</key>
+		<data>
+		7sTsZmReK66JGABHUlQYy2/bkZs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/56.json</key>
+		<data>
+		KTwmOtjBBk9b8u6vkt8fQMsl74A=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/57.json</key>
+		<data>
+		94fVfn8YV85lalv36Q44H7dYFyw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/58.json</key>
+		<data>
+		Snt8mQjGwXwxKTjjrGezDvuwKT8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/59.json</key>
+		<data>
+		xKUuc4MVhpUCF2D6M2413vQ6Tbs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/6.json</key>
+		<data>
+		dMUKpBo+eIrs67BqHWIUX9qKC00=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/60.json</key>
+		<data>
+		q8coLdz3bO1tB+PVpvwTybrdGXI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/61.json</key>
+		<data>
+		E1HEw5dq5THhxdiw7d1lA/kJsPY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/62.json</key>
+		<data>
+		5wfygc42loCtSn5cTGgxiDQAcas=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/63.json</key>
+		<data>
+		+KCKalRJS4sdFlvsLZuzzqOYjTE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/64.json</key>
+		<data>
+		mwel7xqZyPrvHTwmK7VfqYYCKIg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/65.json</key>
+		<data>
+		8RVrvE0ffB1fCqxJW1GkHpF/Rgg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/66.json</key>
+		<data>
+		yv64BG9cB4q9gYkHQ7hVAwP5O4Q=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/67.json</key>
+		<data>
+		4OlFhMwYJQuZhvLg/1pvVdwYtsA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/68.json</key>
+		<data>
+		i9Q6n7Cmu9FguJrowaAj6wJCHBc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/69.json</key>
+		<data>
+		ydqr/TQOsWEWpzPBvqDmSQUGs0Y=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/7.json</key>
+		<data>
+		/IjfNxTHi33+76qkou+izmlZynI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/70.json</key>
+		<data>
+		Px2tHk2hnEeJ+BYKwxfQ8mkWoOI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/71.json</key>
+		<data>
+		GMe9d917jQ8YJsORd/CE+wiG4tc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/72.json</key>
+		<data>
+		ii0Q8FFBvoEbi0XGeC3UbCcZCsc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/73.json</key>
+		<data>
+		ULE3ms5jyAonQ3fP1AeiWhFipng=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/74.json</key>
+		<data>
+		iY/p2h/QesX8kIbRI6qRq9MViDE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/75.json</key>
+		<data>
+		dWqMdbQVStrTBsuJ6m3ImImaHgo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/76.json</key>
+		<data>
+		12ri/LAWEPoFHGXHmmgLBeBnA/8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/77.json</key>
+		<data>
+		KHrbCkiWL97Oe1D5Zq+yOVbdaIs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/78.json</key>
+		<data>
+		1yNYV4ErHwidM2fNnC48bamw3GI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/79.json</key>
+		<data>
+		Q3S45O39SaIr0Obgt3EGFs7k7Mg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/8.json</key>
+		<data>
+		SYzrVe9v4EIlKHKbikq3XNzP1sc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/80.json</key>
+		<data>
+		1eYdkoqu769U66FCHtJS8IPrVWY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/81.json</key>
+		<data>
+		kuNXzzDbaVfjO2h6EoOpgkOtmfk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/82.json</key>
+		<data>
+		6K6x82BxzQRzpEccuU/6N+/rBGc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/83.json</key>
+		<data>
+		gtsd5lmmAQ4UbaKyXqn21fg0O+A=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/84.json</key>
+		<data>
+		PrkXX2cGXxbw2Du8JKwlEHrjkWA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/85.json</key>
+		<data>
+		JwF1SNKzVF8EBuc3oraBcr5J9KM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/86.json</key>
+		<data>
+		16yKyqLnSo45vMLklRUby7T9rKw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/87.json</key>
+		<data>
+		2W92ZYiHSP0lvhwNhn4waBkF9Bw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/88.json</key>
+		<data>
+		GFWp3aZ6YG5MIJ0KXcfxIHaNzpk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/89.json</key>
+		<data>
+		6DXq2OMK+itiEBmYltmkDNwlQeI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/9.json</key>
+		<data>
+		FRrDi92FWTzeoAI+fwbyRjAcEOA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/90.json</key>
+		<data>
+		PDYtOo6gQgyKiLDZ7qJOUIvkR0o=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/91.json</key>
+		<data>
+		SQzKPTdJBfITf4T4Yw3YqMVwcLE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/92.json</key>
+		<data>
+		bFWvb4VGcmzpJDAQoREybPa4I2Q=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/93.json</key>
+		<data>
+		9jANNYGQQXVKg62clHuliyTz33Q=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/94.json</key>
+		<data>
+		kM99TUnsJxsbnnebL7aRy9xEabA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/95.json</key>
+		<data>
+		mhypFlcaL+PJeSyUUkiOCF7+a8c=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/96.json</key>
+		<data>
+		/dOG+visO+iDuZ9FR2T2L1Dalrk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/97.json</key>
+		<data>
+		XvOCn47PBFWxGbH+L2fu/d/I3dg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/index.json</key>
+		<data>
+		WEeSOoJ+bW+yTMNEHNiPcvzoQcQ=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/en_1.json</key>
 		<data>
 		xsefE8Amc5mb+GFq3TZ4BWnJi/U=
@@ -1833,6 +2225,394 @@
 		F1ekhcVnm2F+nZmu2F0J8pOYrhs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/en_97.json</key>
+		<data>
+		M2B9VE3bKE9aaz71lMTSrD6bXyU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/1.json</key>
+		<data>
+		xsefE8Amc5mb+GFq3TZ4BWnJi/U=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/10.json</key>
+		<data>
+		3B5v6QCtiiEXlNiU/6UfljeUjS4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/11.json</key>
+		<data>
+		5zwP8bVxnrb308TdbxL7Pqqua7Y=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/12.json</key>
+		<data>
+		UjOVq7Z28ww3H6taptlJbakvSuU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/13.json</key>
+		<data>
+		0WrE2BM1iqp0Mn0J6+GqTBUxO0o=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/14.json</key>
+		<data>
+		iON0/Yk9LsUTB07/HPIf1z2GFJk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/15.json</key>
+		<data>
+		biw0gsZcTI3XsUC9wOUxsTDDZAQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/16.json</key>
+		<data>
+		jHV4NsbBIjuqM6hlahp+MvXFNd8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/17.json</key>
+		<data>
+		i6dNpdFLWjpc7xXJSmWaVZ57CuY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/18.json</key>
+		<data>
+		U3fnFHPrioBPRNWC5LGUPTvtqSA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/19.json</key>
+		<data>
+		Z8ih7e9VRZsWHKAROOyy02kCgu0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/2.json</key>
+		<data>
+		fy23cxQGrdOvOgaj9nYLanYebA4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/20.json</key>
+		<data>
+		J8Av4QlK+JzRFd0X1C3+tgguwGc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/21.json</key>
+		<data>
+		YJCA7iqTnpljC7Ylu0+l0Hv2u+0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/22.json</key>
+		<data>
+		roaBgvO8yo1uWM5jCQMfmG4zDP8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/23.json</key>
+		<data>
+		9fMJNLM3kHk2AnveTfn4hfkDQPs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/24.json</key>
+		<data>
+		01gqyPVO4Eoy9MHqsGrliCrnpOI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/25.json</key>
+		<data>
+		BBPTbLPFdcW3ZNXLzUadj5+LP2k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/26.json</key>
+		<data>
+		D/k4o+HIghqjljFp/ccbRMK8ISA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/27.json</key>
+		<data>
+		5cmf9DwHMGK/sz7oNIcVtHgdgKs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/28.json</key>
+		<data>
+		TenckR5ANqc2lHOId8SUGp9R2UQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/29.json</key>
+		<data>
+		x/kiu/T+OPFwxyxWrXyg2Yc0+Oo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/3.json</key>
+		<data>
+		ijIy2MkcV5cjhX79nJA3twrndas=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/30.json</key>
+		<data>
+		YQs6u2zrWMEUwukKfjuNIj6HzbI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/31.json</key>
+		<data>
+		afljICiW3fQCOKmc7ZCSmiyM1xY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/32.json</key>
+		<data>
+		w53nDpRQT0uHdtD5KmiaccCpPiY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/33.json</key>
+		<data>
+		aM5nt02S/Y7WP2foyq6C/5e7nQw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/34.json</key>
+		<data>
+		OEa9HF92LLedlFRR+YnUhD8AB80=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/35.json</key>
+		<data>
+		8EQuN01Fneh+MApbvSgX1RKqWXU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/36.json</key>
+		<data>
+		rwSa7aoCNDavNgYCQ0hvyisLrAI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/37.json</key>
+		<data>
+		s6aSfbTRZ1WqyPQlbdnnHmC9qwc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/38.json</key>
+		<data>
+		8/W1+lGyxgiABo7AciGRb/fqYD0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/39.json</key>
+		<data>
+		rlb9c96JkdP+xOwnd0pXneNtb18=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/4.json</key>
+		<data>
+		pyndIF5oeb4KSO/aCNxWjz2E8Ig=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/40.json</key>
+		<data>
+		DsNKngsFo7WSV4VSQ/yEV1lKYH8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/41.json</key>
+		<data>
+		zXaMUYeFvjZRCpRUeOajFDx3vM0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/42.json</key>
+		<data>
+		Yk7TeEcT90MvuyCr2f9aH95a5/U=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/43.json</key>
+		<data>
+		PxohKMtqiC3LRZjcu9jeYEdooDw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/44.json</key>
+		<data>
+		zU44NL7YAo7Mb7f5ckeQcAkTZJw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/45.json</key>
+		<data>
+		fgQWbkaoOmbe6Ec8UA1WoRzD0Mc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/46.json</key>
+		<data>
+		9TWIjIlLAuj15r5ceWfSY7kX/zg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/47.json</key>
+		<data>
+		2q04yJDfXRSt/SCoeBo+iKoNRwo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/48.json</key>
+		<data>
+		tWzY4dDQzR6IIQKT5EqRMWr5aOw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/49.json</key>
+		<data>
+		MyY2KzkbjRulx24+nKo0TgNWMFE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/5.json</key>
+		<data>
+		A081FTk47oZ8QVc6zmeyty2YIEw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/50.json</key>
+		<data>
+		wgcWMKaGUK9Lyy2rgpJqcOSTNCA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/51.json</key>
+		<data>
+		3Nk9WQJgOVLjY7mne3u/09L4N5g=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/52.json</key>
+		<data>
+		LYT15kRf8bu+v0n+jRhsLrXriLc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/53.json</key>
+		<data>
+		Wj3Acgjo6aTRTiQLdy8YZRb1Jjs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/54.json</key>
+		<data>
+		z/YsclFaUGvAtFqcQGagIVw3LYY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/55.json</key>
+		<data>
+		9T+4PwFdHmvUWzVYQMqJhXmpDlA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/56.json</key>
+		<data>
+		hfWBZS/Ye2t0QB5ztR9R/J1FwTc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/57.json</key>
+		<data>
+		0MRNVk6jchHOo8jfRmpyJ5JJY8w=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/58.json</key>
+		<data>
+		TGKX5RJB8xgV1W5Gn2nAVP0FJoM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/59.json</key>
+		<data>
+		L+W/n8OSJbKvr9bsEfl/iIegTbs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/6.json</key>
+		<data>
+		F/X561odXsZAvHofnxdgjMcvTYU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/60.json</key>
+		<data>
+		0/0q2yR2J6YpUJNBN6Un0VwT8iI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/61.json</key>
+		<data>
+		QLE1ozddp+rtwVIr2KxOTKc9dOo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/62.json</key>
+		<data>
+		ehxAO6FW6i5rSbJPVXtCC55auf8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/63.json</key>
+		<data>
+		FgEAaKKUily2D1ZMDPN1c/hbVRc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/64.json</key>
+		<data>
+		AUrYVrRDGFkmZULZc0uyR7aN6X0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/65.json</key>
+		<data>
+		NoK64amebsaVxfjmVk2ZYO3a9YI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/66.json</key>
+		<data>
+		rJlFwaGE7B0IWLvyoasAu8O9j/4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/67.json</key>
+		<data>
+		+QhssaFLTBi/0UR/KhGUjmH+aCE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/68.json</key>
+		<data>
+		6/Q2x1EJFD5QCLdtXuJoKX9cIwo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/69.json</key>
+		<data>
+		Ilk79OGM0EoORq8nfgdhlPrTOug=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/7.json</key>
+		<data>
+		ui32Xnzn9594xymcX0yD79m1F0E=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/70.json</key>
+		<data>
+		X0x9JZgNHyvQWf2I/Kf/8/y7aNg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/71.json</key>
+		<data>
+		nAj7BUHT9yL8lIh5ZwzAY/xdieY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/72.json</key>
+		<data>
+		OCwjnfpPKeW2klU5HDiKsSBPjBI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/73.json</key>
+		<data>
+		i/cZRAjD6P++vjq+jJyKuBpQwpI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/74.json</key>
+		<data>
+		HV6AaLKaKqV2DHOY68JqdNW1iW0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/75.json</key>
+		<data>
+		k+TUPVzi828cJro1rnWmRuFtFX8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/76.json</key>
+		<data>
+		5ShFmH1HRovJ1EkldqkArGVTdCU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/77.json</key>
+		<data>
+		NQ4HyOOx+AgvIN+Z9lCt5Gdutxw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/78.json</key>
+		<data>
+		8cwwGrc0VOr1QZO+sMly0bhtKHU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/79.json</key>
+		<data>
+		D94ym4UEKB+31mTqiKsaQ/krVXY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/8.json</key>
+		<data>
+		pITz5oHC1BofF50/zpi1JUE2L40=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/80.json</key>
+		<data>
+		RLOLHfUTbVbVrxegTNVWTFBynoQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/81.json</key>
+		<data>
+		63moeJ6ZHiwkwvwsWSM/nGpKxV0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/82.json</key>
+		<data>
+		yonY2Ty0p0ckYUtVJAj69cJqdl0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/83.json</key>
+		<data>
+		isOEW5KPIkT/twHjQ4hPWayRyqs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/84.json</key>
+		<data>
+		PU0xUM7MyfbFO7q12gsyDdFjhyo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/85.json</key>
+		<data>
+		FVDik1MDtdD2SYQJ/ILpypMlFMg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/86.json</key>
+		<data>
+		ACrYQsCHaQwNEpSYqgx/Dz8z0pg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/87.json</key>
+		<data>
+		4pFNtJb6I1dYC5PNGVIuj7/TSks=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/88.json</key>
+		<data>
+		3L8K1iePWC4dDGiPNHh15bmM3+8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/89.json</key>
+		<data>
+		7ghITUhOUcoMIlr/tnnu7QAGuPw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/9.json</key>
+		<data>
+		YTtV3xOYHttBlWjobNRfyahz2oE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/90.json</key>
+		<data>
+		l7UJ+oZ3cD9vpXUq/Sc8cYlTLIM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/91.json</key>
+		<data>
+		wCpIOXI8FvEPiNrlzngvXIGul3I=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/92.json</key>
+		<data>
+		9h5FicOlGsk6rRai2lOXsmACfZk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/93.json</key>
+		<data>
+		NOfiXT0Hqcj55lvwxMaCLSbiWRY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/94.json</key>
+		<data>
+		H6nNKcckO/U5Y0hftUIq8srtChE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/95.json</key>
+		<data>
+		J/5ACw0Sx3SMRUlheysRokVZS20=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/96.json</key>
+		<data>
+		F1ekhcVnm2F+nZmu2F0J8pOYrhs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/97.json</key>
 		<data>
 		M2B9VE3bKE9aaz71lMTSrD6bXyU=
 		</data>
@@ -3752,6 +4532,234 @@
 		<data>
 		6PB+TZ48xcwFRHwjjsW3vGH8WXM=
 		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/0.json</key>
+		<data>
+		pyl4gryQU9+D0yQXRSssm/Q1Uis=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/1.json</key>
+		<data>
+		jfh5tIDSkFqJ444YjomdCxqACjo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/10.json</key>
+		<data>
+		SHTiBJXMsX9CTdkXCOx/BJJGggg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/11.json</key>
+		<data>
+		MO13xtWXjx7bPwGxmcBFwLY/mfA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/12.json</key>
+		<data>
+		OCsEwtyiDguPWw4gk8JikDeQXjE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/13.json</key>
+		<data>
+		68eDVptNLqZC9w0vBlIB6WVeIt8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/14.json</key>
+		<data>
+		Tst9TA3HiBQ7iAbGMzrwEQ/lrYg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/15.json</key>
+		<data>
+		QPZeh5WSOX5EBaeF+u/Lj/kSiZM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/16.json</key>
+		<data>
+		KMe/GywnmsSXup764hsoRUxXhtA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/17.json</key>
+		<data>
+		9puVJTxCuO8S8lpVHjrMx0wgYh4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/18.json</key>
+		<data>
+		pZ6FKiKdqiYeduicnn6G0UAJwNU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/19.json</key>
+		<data>
+		f8Ff9Za6bLthmmlMiT3jGwA/Vms=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/2.json</key>
+		<data>
+		ojz+rJP1Y9pgv+ynrDLGO9TPSz8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/20.json</key>
+		<data>
+		nCstUiWG94NeRK0RxAXneG6Lzuk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/21.json</key>
+		<data>
+		uEOcJoNgsqjHBsNwbKAQ5Cdjj1c=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/22.json</key>
+		<data>
+		Wc39j+Dk+Pn/m1W/fmrX0+8+Ws4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/23.json</key>
+		<data>
+		mzjH3XnbcExiDE7iWi7mxP2++Ig=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/24.json</key>
+		<data>
+		zcBsRkTQ1USDOQuHf4rf2ZeDmO8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/25.json</key>
+		<data>
+		O52i9sFcDZmN5234PxIXAyagyZY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/26.json</key>
+		<data>
+		NFaz+eXScPHiJ/nyroEN39A3XDY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/27.json</key>
+		<data>
+		7tUy2ad7M+E9vgtfFBhIXiwdPqA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/28.json</key>
+		<data>
+		CpjCbMXlLzlLjYE73brjItPbWgM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/29.json</key>
+		<data>
+		oMoEI9IPECk8AzcmkP45R/HeRSs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/3.json</key>
+		<data>
+		jLA5iqd70Ey4URmMA4Qfmk23lMg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/30.json</key>
+		<data>
+		UUjKSWTLG8a+r0DEyernZ0j4Iys=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/31.json</key>
+		<data>
+		HbK3w24eiLWAJn1P3nO/THD2v0E=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/32.json</key>
+		<data>
+		H+oEH8qGDQlXTP1VZ1TxEy+yLjs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/33.json</key>
+		<data>
+		SfTHjzqfwA4haaFR4Tv8v6rzPSA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/34.json</key>
+		<data>
+		aspRRwlKJ5WLLNpuaQQwLj2+CnY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/35.json</key>
+		<data>
+		Q/hsN/W5mz2YUNFbtVNi2gWNAbQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/36.json</key>
+		<data>
+		sGB433e9vzVBqaaS4i8qE2um5yc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/37.json</key>
+		<data>
+		9yrTJ4jhCd958rt+b+vkk5ZllVc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/38.json</key>
+		<data>
+		bezROTv53I5Ucvgc2kBCauevBBM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/39.json</key>
+		<data>
+		4PWBkkKWpbLtJDRlaQWmHzF4Idw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/4.json</key>
+		<data>
+		6W0vnE9+HXJNVPs9CRFPl+rblo0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/40.json</key>
+		<data>
+		I5CPyyyJ2nEXjeS/DJNQYKzCxCE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/41.json</key>
+		<data>
+		0Ei7NrHq15QSQfJ64CyamlDyUS8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/42.json</key>
+		<data>
+		QRSZhkqgYt02ePC7Dg8LGBu1JZ0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/43.json</key>
+		<data>
+		Uo52S1CaQr4cW0ncm5reHa7ajMo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/44.json</key>
+		<data>
+		duC/Li3EyynNqWsyNHF2dUJZj34=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/45.json</key>
+		<data>
+		MdrgJZNXimfbQ9DB1iazjbSPbx8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/46.json</key>
+		<data>
+		mEh3guXxBVcwRq5hIr7Y4/PvjXU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/47.json</key>
+		<data>
+		/20939mbWkELAeB4cXz97wPC6RM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/48.json</key>
+		<data>
+		Mt1TQNTTovS708JgB0AWClOc/OQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/49.json</key>
+		<data>
+		+0GtSTj6rpBhN6rqNdbv+o6FeyI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/5.json</key>
+		<data>
+		SEKFWOAE7fdFXtlqD9+E6/eLoIA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/50.json</key>
+		<data>
+		ZdbHTag6WUra609FUAi+z5qTjIM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/51.json</key>
+		<data>
+		+qg+2d+qlnjbmoMz+meBlRWkFsU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/52.json</key>
+		<data>
+		Z1IdmdEoen5Uv7p7qbkLe43OSXY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/53.json</key>
+		<data>
+		t7o7MtTLDF9FNwc878ulcC1Bpdo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/54.json</key>
+		<data>
+		POFo0EMsxw9rRZDaq3J2ymeLQVY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/55.json</key>
+		<data>
+		SMMHdiLJLGeNH082rgtoaNMDuEY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/56.json</key>
+		<data>
+		f65iPYahXfS/zTJHaBSO0tqeICI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/6.json</key>
+		<data>
+		rC1/U+KF49ynLkJcltbkE8hQ49I=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/7.json</key>
+		<data>
+		byfAeGteFy/5B7XGiqiW1Qj55+I=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/8.json</key>
+		<data>
+		89AIk4atssact/wkgIYhDU/s4Pw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/9.json</key>
+		<data>
+		6PB+TZ48xcwFRHwjjsW3vGH8WXM=
+		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/en_0.json</key>
 		<data>
 		C+mPOvazrK0wzdyisW+KY5aj+hs=
@@ -3977,6 +4985,234 @@
 		AmOWw9B4898v/3v0xdceY8DVe+I=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/en_9.json</key>
+		<data>
+		l+Xp67hWQ6xIM1thOn4vVqG0BoA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/0.json</key>
+		<data>
+		C+mPOvazrK0wzdyisW+KY5aj+hs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/1.json</key>
+		<data>
+		m3lQrfPJHyq0ImfHua2ZvOI0o7k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/10.json</key>
+		<data>
+		yuaPY7oq9hoJX8/csrQ1G0bxnAg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/11.json</key>
+		<data>
+		0Gvm6/bDaf4XjWIHp7yMCJDr2uQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/12.json</key>
+		<data>
+		7nHA1mh5JqMKuB/bQmLmjzFosdQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/13.json</key>
+		<data>
+		YestpzS5rwMv47pyx+Xle+9ZxYs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/14.json</key>
+		<data>
+		JfqYYX9QuOJcOtPZKLdBT1z0ntk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/15.json</key>
+		<data>
+		k8VwUhwbtRoyVXtsiV20F0IjmVw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/16.json</key>
+		<data>
+		aXYvvrTNhjhM7rnEJ4vjK1OqarU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/17.json</key>
+		<data>
+		gq13sWT18hOUumMUy6MGovJeniI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/18.json</key>
+		<data>
+		UmKz4iEy2MO8elC16D0c3X/dvxo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/19.json</key>
+		<data>
+		CjQWsXPc9ve09p4+O84NpGt+V0U=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/2.json</key>
+		<data>
+		0z+z4MY2ydupqWhkdz5MZBcoNbM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/20.json</key>
+		<data>
+		hE01aw6ofzUkGQ0xhhiCfO6Yvek=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/21.json</key>
+		<data>
+		CdQUng6eZSocdFFMxMQFuolbJzA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/22.json</key>
+		<data>
+		9rbstTgNo2ElFe7PxJjYlBGPuG4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/23.json</key>
+		<data>
+		FiE4cTNz/7+opTtMraCZ0HbBhIw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/24.json</key>
+		<data>
+		O0fuTy865gtIc3UVETR9lAn0Xxg=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/25.json</key>
+		<data>
+		kOxnRJwAKJAr9SNaStenaxgTbh0=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/26.json</key>
+		<data>
+		FBR/OTVCWu+zzoiBxjEmiWTXm6k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/27.json</key>
+		<data>
+		fqJ4zQNSHHWY3b+7C6B77WHMAIs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/28.json</key>
+		<data>
+		kZq+nzg2/LRccoDb4DLWPphQtQY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/29.json</key>
+		<data>
+		SXFxB/3soAmlzZybxc+1XHeqGWs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/3.json</key>
+		<data>
+		IhQvV5H5FsUsyBFASfZYvSb+zBs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/30.json</key>
+		<data>
+		69/3tCEiFqr4n+RK9xVX7B6jPe4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/31.json</key>
+		<data>
+		d6EBXU1/b/DplyCjRBDSHUAuigs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/32.json</key>
+		<data>
+		qrf0/hNxMH0rMbCFr5p+iDRtQbU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/33.json</key>
+		<data>
+		a320WVdfRboy6VBNSAzRExK1nog=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/34.json</key>
+		<data>
+		aVeLsvUqRzABiVkSYfijntvqPMQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/35.json</key>
+		<data>
+		MR7xtCg8J116NrAnd5DqDXXMdGs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/36.json</key>
+		<data>
+		vADzNMBgeqSco62U9UMvdTjvIBc=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/37.json</key>
+		<data>
+		PozAz7uH+aGVYq7+wtrOaMFOAu8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/38.json</key>
+		<data>
+		gY0fpKHfdUAvGZPgc2MgvBhfivw=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/39.json</key>
+		<data>
+		A3jaCl1HUbdcNdauSgY1lv+IILY=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/4.json</key>
+		<data>
+		9hPRt7pYucA6O7h1FgrsbsY4V/w=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/40.json</key>
+		<data>
+		hrgfyHvhyuvn8yBsQ7VpPSHK/5E=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/41.json</key>
+		<data>
+		aPk2t0re4wxiVHJH02mA6mh2I7A=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/42.json</key>
+		<data>
+		Wz5KDG5tMjNuYy4jXmUJUWOLUYI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/43.json</key>
+		<data>
+		6f6Tt3dsymS22DyzvGgQmzMGxuQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/44.json</key>
+		<data>
+		hDbDrtKE9Cj3pMc08gy6nCoCDP8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/45.json</key>
+		<data>
+		q5Mp+XB5QToHLTAuVvpvSpCni/k=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/46.json</key>
+		<data>
+		h2JSKSwqDXzRvgthxgOZlyEFmuQ=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/47.json</key>
+		<data>
+		aQ72VCw6CY3nT+rCTRM6EMQFpEs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/48.json</key>
+		<data>
+		JgrFQp10ujjMoRsUe9eOBauEnc8=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/49.json</key>
+		<data>
+		XQLB1LwzPiqNFaGjCyCBg49T9+g=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/5.json</key>
+		<data>
+		cinIKD03Ks4heNKozuvfmN1cnGU=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/50.json</key>
+		<data>
+		GSxL/Is4A1x9dV3xrkr9dVWskss=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/51.json</key>
+		<data>
+		ULw8Ke/LJVhJ276yzWQkFV3vIcs=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/52.json</key>
+		<data>
+		qYH6BdVvlgLQvQXtxE1GSUCDx5g=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/53.json</key>
+		<data>
+		8u9mR3X2CIX+JkoLykUGhLBcTMA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/54.json</key>
+		<data>
+		3HaYDcbJbca9etUOKyXsfA7/4MI=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/55.json</key>
+		<data>
+		+4U/LyZnhLDtCBfGJCsAOfP91oA=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/56.json</key>
+		<data>
+		c9IQfKb/cc0hFyLOctSLBrvB2hk=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/6.json</key>
+		<data>
+		GRpl8gTpcnvFg3vZXvoKQ8RmSCM=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/7.json</key>
+		<data>
+		hujUf5r41IMXDqMU8N8kK8vpNZ4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/8.json</key>
+		<data>
+		AmOWw9B4898v/3v0xdceY8DVe+I=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/9.json</key>
 		<data>
 		l+Xp67hWQ6xIM1thOn4vVqG0BoA=
 		</data>
@@ -5646,7 +6882,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		KMnlDN+efPgeoWXJ5ItX65o9N84=
+		zOWYaJrdv74ndl5uCVd00MdMLxc=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -5662,15 +6898,15 @@
 		</data>
 		<key>Frameworks/FMDB.framework/FMDB</key>
 		<data>
-		t2ZqufQFoLBPHJ2Z2Wt/5xF5FSU=
+		9R9GHvlSAHfJNsMoQJagVxr4jnA=
 		</data>
 		<key>Frameworks/FMDB.framework/Info.plist</key>
 		<data>
-		7PS6IFFAtFOch2xn+N6x68d3tAs=
+		BU2xWA60fYGiPFVwViPjgEDsQwI=
 		</data>
 		<key>Frameworks/FMDB.framework/_CodeSignature/CodeResources</key>
 		<data>
-		jLklFYdkfSYU2acVuDm4/pZqML0=
+		zEyjSQ1kJp3XfkwJ0oByPanxRyw=
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
@@ -5758,108 +6994,162 @@
 		</data>
 		<key>Frameworks/device_info_plus.framework/Info.plist</key>
 		<data>
-		Ts75GKdFGE19FXppkd1XDqgzYbM=
+		igxIFmQDW5em5eoL/QJTm8aowcE=
 		</data>
 		<key>Frameworks/device_info_plus.framework/_CodeSignature/CodeResources</key>
 		<data>
-		418wZUDh7gWSzN1+xDDwR2bXdmc=
+		vYqc6zmcbCdUzU8611TcvQAhnWM=
 		</data>
 		<key>Frameworks/device_info_plus.framework/device_info_plus</key>
 		<data>
-		BVhjYTO/O6Vg4bl7reMUSShWtwA=
+		lt0RGYbOS4UyhueP79VYvMMLQAQ=
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/Info.plist</key>
 		<data>
-		zLozoeZLoeDUYqldCTFkzWwITV4=
+		49l1TCuP5XoM6nG55M8CMk0hAGY=
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/_CodeSignature/CodeResources</key>
 		<data>
-		kTOsKPKPaNvvGYTw1uSUxoNhgMY=
+		avZ2emOOtgvlZM2VuQiS9I88+tE=
 		</data>
 		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
 		<data>
-		nTIQHfc4X16nNSDqBJdQRIZJa5w=
+		W4zvcYQ3ZeGSITy/xnQOVtZ/3sw=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<data>
-		J0pqvSfoeOVYUSVsOU5ryaEUpWg=
+		r8FVyAJ0JXrIOOozIero2YjR89M=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
 		<data>
-		F/OcNdWXT6QgAJCYt4eInfvluCY=
+		5RTTLqkxDEzGi7K77N9wuFQbbts=
 		</data>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
 		<data>
-		qIqN3UMtLGRnWPhdnqppGv39YLo=
+		im3ApCcMligcBqkE0yuYQwxuX38=
 		</data>
 		<key>Frameworks/rate_my_app.framework/Info.plist</key>
 		<data>
-		0rJz7+YG91pznQrM/ptbk1fKH4A=
+		InzyoN9f93I9VSi3wkXZjmBGmR8=
 		</data>
 		<key>Frameworks/rate_my_app.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8gIQUDZoQng59EiK350OznKLObk=
+		MfMvwkiWIdR38ahRxXxQ6rplCYg=
 		</data>
 		<key>Frameworks/rate_my_app.framework/rate_my_app</key>
 		<data>
-		m8pOZQScz1gJJSGMvci4VdmNL2Q=
+		T1E4V90V1CLvwAu2w7v1OHiOoas=
 		</data>
 		<key>Frameworks/share_plus.framework/Info.plist</key>
 		<data>
-		GLtrgDWJYqipUSz4zY//nao1nqw=
+		SctFH8kDR1mzOp7vjfmR/069SCg=
 		</data>
 		<key>Frameworks/share_plus.framework/_CodeSignature/CodeResources</key>
 		<data>
-		7cpbjriSELWoU6nvQMXVBEYbqw8=
+		fL4j7rTBNDGaY8eXeJRi2QrkkCk=
 		</data>
 		<key>Frameworks/share_plus.framework/share_plus</key>
 		<data>
-		pgWySPb0EAQ7Lsi/TF+vYW8gbfQ=
+		959V0UdhqqkkkvE7APPJMNVsGP0=
 		</data>
 		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
 		<data>
-		I3Q1Z91R7Q2ITl2qvx4rD5hiS7E=
+		9O8et1hAkdh4waNcY5lgGbsO4gM=
 		</data>
 		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
 		<data>
-		9XjiSRKf6nZXSdv5udnxtUed2KI=
+		DnrcpEFhyHJ01bK3lB/dbfjbEQY=
 		</data>
 		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
 		<data>
-		Ov8GpxHDOTahpI8plITaFrg/ZmE=
+		N2xh7j4VH/Eq6A7jb1KoZUPO1Pk=
 		</data>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<data>
-		VGZ1+g3PLO5jv0OZjv1Je+4FtRc=
+		Rc36cxNfGShONNMfIDsUfFcOMWg=
 		</data>
 		<key>Frameworks/sqflite.framework/_CodeSignature/CodeResources</key>
 		<data>
-		28bpK0vqKiKhXyZwr0nnJzF96AI=
+		lNKAlf03s7bhZg3QJIz6ydnvbG8=
 		</data>
 		<key>Frameworks/sqflite.framework/sqflite</key>
 		<data>
-		C2z5+NQZE4ZOeN1CZPHhfEhz7FM=
+		RETmTZekltV98sTadCCpeB0QRJU=
 		</data>
 		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
 		<data>
-		E98FFXJkkZQ8/lk75teuMYnlVp4=
+		2UD25URUPKP8gZrD60A9os8o60M=
 		</data>
 		<key>Frameworks/url_launcher_ios.framework/_CodeSignature/CodeResources</key>
 		<data>
-		0PMSgegDaCa+MGdSw6iifKC7S+I=
+		Yj1CmI7RiEO4lcbYJ2tVjMBVBA4=
 		</data>
 		<key>Frameworks/url_launcher_ios.framework/url_launcher_ios</key>
 		<data>
-		p0+O3Mbpt3Wc4AAOx90mggwT9FQ=
+		dc7HZpzsojNP5r3HHtpe72XllPA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Op13evys91hjZZp7r6mcUbLmKek=
+		ejONJa0qMXDDfOCcGSHu12LPB10=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>ar.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Main.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>bfq.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>bfq.lproj/Main.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ur.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ur.lproj/Main.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rcg7GeeTSRscbqD9i0bNnzLlkvw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -5874,28 +7164,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gb4XFIHccaCygD680B3YsMX9V3je40wKPKvJSMIl8k4=
+			I+7BMSZfx+uX1rboXCnabsvWXvA8GaRdAlq+VnV5hts=
 			</data>
 		</dict>
 		<key>AppIcon76x76@2x~ipad.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcfUL25h+P5/MLH/oiVq7LyWgr4G0YxKMGIEPhouVHw=
+			Sk6K390QrfgFC1LTgsPuoStZb/euqD4SKxyNOWm04sg=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DgExpRIrwLX2u4Qzm1oEawfd8JKLhRXz1BB9jDD7d4g=
+			jBwpDLP0cEKcIunjjsDPV5j6KPMhAGfn8USeZTGBpiI=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			by6WshwXWgbEYiAy2bvh0UtjSVa3EwySkNFc1FazGdY=
+			MLYS/rGlRDfjjHWDuWCirDt0zobokkwlMoJohZWe2go=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -5937,7 +7227,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EFRSBGle1Rs6L2eiOUa0UtmlMI5MXgm+j7oeVESrIlI=
+			75eLYJCzjiIbx6Gz90NiETXrAKn187bORCtctdSp+mc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -5951,21 +7241,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+HjzS0sIDSpQEOoB/fhCXF641aAjGsZZbjm/AGOQjT8=
+			IdwAYIJFJwiVAYxUgd2bnw1RuJJfBspnq8/ofzz3Be8=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.bin</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OISjm4BX/YAtjtgjrXe1RoH/laqWk8KFTi2obXroHLg=
+			sqUwPNDZ2eFCqTzY14VfEJ2UvkghqTlLrgOZKtTJ/m4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lVtWjM7PVrbErV3pxyuZ//3tq9A3f9J5CZXuwMGwmyY=
+			Gv+28kCCrhWjnAInYb6jhzRHVLaSVQZUL/SQMlsV1VE=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
@@ -8390,6 +9680,692 @@
 			XAkYSKEKkbsmUUq45HU/pp4yK5/IToew9ss8eAskSeg=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/1.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w+ihDPjNbjcWr5CrJb5PBXonzqxJ+jtjWGggQtHW6K4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/10.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0jT5xQRXmXuLK7z93HaPwiTulJ4xg7swmT6/HhbOvw4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/11.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uFOpPvcTm43RLcViuwLtiO8nsKGm4+UlYGm3vtccVoY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/12.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YTRU3O/xx9tz8BEgoS+9jcIqhqsPOxew8Eur/Fk7RDY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/13.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PDL1BozLdO3ep9L4ZKbIkcOM0ZmLgAYWUDCdX6QpKCI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/14.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o9xw6rFZdhVqcBgyidGTsyAr4cxrKIfOhcJp86hyvLA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/15.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			azufLZ2BO6Jy/IbnspPQswFQC8zos53t+nWQsjQom6Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/16.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xyCJw7NCauVzp7X+tWIe1Apw9GmVljLtXMirC8NPmEI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/17.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lKNZXZ3i4TNgblIF/2sVy1Jsz7dmWJKt6J1UGfkbNrY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/18.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lULHdcLSj8NOFDGSZ24rpfoTCR0kGRrUEWJnnpDUdYY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/19.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rVl9fTAXE+Z1jNXbRS4pEy47nAfVNMQxgZljQ/7+GZg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/2.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cocB/ECkhoAIZFmCKxu0CwX3ZVIiFqeDDQcoIlJH4jQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/20.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			19Ex90LXFUXbBLjCoRvoQQyjuxIf6v9NE2YBXqOeH/A=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/21.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rQ9M+zKRSUmUlqMcxnuWa8m4dlfC6EklsM3Kk1l1nMQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/22.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0M2OM1Q4bduitfw0zVXgLr6uM+qDW4RiWobbT503eVc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/23.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			URXqf4MnUoJ0M1Eds0Nz9WG144J4O6U/ZnVqzpo4l+8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/24.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qklce1CVWggRblO/q01EP0szpr9Oan5NLngap3cfdOg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/25.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YaJryImNKbu9zcukoh9gAwncJ5gI/hzw1QpSAW3JLJY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/26.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W7YISZ1+Ty72dnI7GmBacWDuqVN/E/kT0yUNutOwq4c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/27.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			281Ru2gT47JAfWIQBqXw9mIN/4KQBRg7aKlTgVVUuPM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/28.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ekfUCT/v+fUsnPV7Vsi3ODMAAWRDFqfgDM/XD3tDlFc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/29.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rbJFN2T6jeRa8CehUZ2rLU9IVTkevTGdQaFElxwHMX4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/3.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ItulLPXzGR7MsJ+1b3VFNouOEmHu/r+yVI6GRsbyY7g=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/30.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			so9flaVSjcj70n8qyjWyfBuJLjfVIuvt82aOU1M4yrs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/31.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zRU2wLl1xnG4ycKwdP2J/+tZt4beGhjFQSOgUH6yh9w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/32.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QH0crGhNO+dNI+ki1HXeIiomLYMhbR8cR7XYH7ppofQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/33.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sTvYN3g0fpHxX8p4UcQ1x66bFWdSwIRzIf9NOrI1vRs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/34.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rF+SeyLMSOAPHf9atXe+DcCxvRDX/CHy372+GGyfmSQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/35.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KJbCPBvUmfXGcV2ilYv1H+xclOB6tp5AC8Aj5NaUNkY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/36.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BDpPMledji6QnwDABYDQ9nBdaz+K5wPswlzJkVVKU0s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/37.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gT23yKE4UZ4wh/NhdbgqUJ9CPDONZxiThsAHI9m4dFQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/38.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BHAueh0YCYYuLkRqW1ZODJXPdLQHLXy8UuCVYh5jR/g=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/39.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3f42Odun4HH40ZTt97tfQcR5+Ru4m63CoC1S2EtB7Ss=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/4.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qn0AAiv9jqpoWaKwGM9jZrZ81hfthJi51w44IjakZuw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/40.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			azhPBEIP6eoy9JsfL7FPfiYcgdg/Z6n6rKeVzgCtAb8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/41.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HV8ipQvDuNphSqC4XatS5YQEWQuJqM/JRU10vcc76zM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/42.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uRc5EDKa4x1BeJLUpgy3LoBplb05QQy2C59vikrmBnk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/43.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8n8AqcTzNAlXQSksV61CN32N5Y3YDn36Uo8LClMc3MY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/44.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0h9w1BilIU4R0SnCsUA0bayfBPx2Q5c5AGItL1MC0UQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/45.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I54gFhKcRFZGEbVTCT3IK6xiqgYQ+YlrKh4UZDCIgOc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/46.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7C3Q64nokxNO5m6vICaUDiVwpcRj6DGCd7feIDcc/us=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/47.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WieZSgAsbPxXJfP4+IqRDxH0AdzFyZ20/8YIjSb6BT8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/48.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pJdGbyBl6IhQPXKHsbfxItGBUFNey3q6m8E0ENgsWU0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/49.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N290ZAzBJXj9g8EZQNsaFxn2g4NuWZANtATo7r2N9wM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/5.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1G48yxN5C2lQq/lHFFhoUxGF4RyUUiZWUo09rBFm3iw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/50.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RB22ftwtcOzEZfwXZp7wCiDQIQhz7aDvgFen9tHfd60=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/51.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7b9VNORvFYsBUiv9eWz95gEq8ZAfnxpzyr/3eF2HSrE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/52.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WSOxcPQl9/UtEmykJxTtkmrK0z49Qy0hu6GzIhGSBtk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/53.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DbbeD7co931agD/fk6paKskcmBj5ch19rmEnXOKU8x0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/54.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rMmnQOivoKKjlWlxDd+J5l/LBPspXStCAM02JBCr9ro=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/55.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3hN52dT8WqK6x4ih5eYyWvAit79YgR4m+q/eVGCKrgA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/56.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mMFPVQOG9W6wmvrLEDdsC2Fadl0VQGdGPf8icybifE0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/57.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SQTGwWp3cirZeAT8yY7NcwiPXK2J+CcW97LfzCT7S3s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/58.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L3CBZ1vRhKpOAgcvDtHWa2y1cWAuNKTp2DUUqmthgrY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/59.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cgZBIffkM6iSklsLsutvXRClLADb3QuRH3PYdmkr1Nc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/6.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wYJJElUVzK6qcuXNJqPRc45Lr1lCcd2XQ2hklTN4tVM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/60.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dXTOEREgGB8zx7y3LuMXyEzw0jnF9vkdQZtJgfoRlmk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/61.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tNTRPO3PffGNd6tgRYx4fPh9n99DQ41/mi1NDU3x87w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/62.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pQGHRkln+tF/7bX1ipZQJ30xM2GdwZRbvF3gedHTmDY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/63.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lyAHtPgaE+c+GZIpUzZulfwGmjFxV1JwvGn2YcCD8Ek=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/64.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1/zdRJVkmEDmhcnmqbTEAGCFiUCc1qXM7hFDz9Tttpo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/65.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wEoz7NX/byxPs6bOoBA85uWCtY5VTfxOHfLxCd+IKWw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/66.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NusUOdoKts9sKFQn61KC1cDPxhpQZABNASasiiXJ2dQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/67.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hgNOqO21b0adngVsOcAaUR1FfM1t48/PC91zwIMSmyc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/68.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oDlLq7HNKmuZHmtaZzCUj3Sc0J4wEjkQ5e9I4Br3mns=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/69.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			duHcO7ZwAjkL9WILQVX9523xMJqrOVFr8sMwjn2kIM8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/7.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4QyZRD1S1JU4WFI0XggLFmVtBVxN8mu1rQcLpqgvaM4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/70.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FD06poZBIqwJh48QiVtBLvJSo6QjEi7qlsPfWPPuthY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/71.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pKe/fMb5h95/3Mb0BM9m1ljRZG+6MVzokUI8JoM3rNw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/72.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zVloGHJeKTZLWM4AV6ljTb4dwdMFN29fNgAjON0YgNQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/73.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PIFnLHowNSuftkBHVKgh8LkLVzWchXCfZR7Y9fRmhfI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/74.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z+GMmE6Paex7mmtxILQEw8tyTDjYFsrfNllHTgBiT+k=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/75.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vceKgERstawo4r05Tf1kUoONkE9LSHbSic0vBlU61uQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/76.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MZrZqgPg8ZRbc6rl74F1B64C3M9vPtnViMVjyy+xZmQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/77.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DpA7iAeEJxjgkobNUiTC0sEEVCdES5YmbQ9GDdVubsE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/78.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BzM0K4cdMUYsCEXvb63gUwqXlXipRNkN6gxAjDOpvGI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/79.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8kn4lCLYICKqs0uNMx4HiEqGwDUQ6FDBfAf/47eLEu4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/8.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/895Yif2vT+tlufuVsc+j5B13QijhIlfpZ+zbDaLbgQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/80.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Mz6E8yxJm0rVt44hDgzjdh8+T4AuhoVOj2aEW6Zz3uU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/81.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KCw3uhPKSrwctiOT5rve6QDmdMZtGzTyqEhDZpf3Ic8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/82.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qucY5IW1stIwwdzXmJ21ca1EMLHR7GqYEwFapMBI0Ok=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/83.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SA7Qaidyycf9qNQVCvZZjseadLs6gJAVxyOM/8h+Xn4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/84.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O8y7Pi7XZ0bm4klCHoi1pyVLMEoOTwJ0vQpW1nstbiA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/85.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ji2Jy8D+sMhuAjAw7tyNioQUAkxOD6BkkipdP+gBPFw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/86.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VuqNVgxwrldIOrCQIkIkTbcTTFnLwRiq6rM3gK++icI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/87.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MHbYBwmYvyXxxZwIkyXE86EKXxfWl6dgoVXYBwkHXxU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/88.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GTEHZL6i67K9JBHuXfdMgvdOXMDTaJVTS7qea9sYMZc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/89.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			llvtcIvIDKmX5wSuVVwsHRYskDsqKwq+W0rozUyTxnA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/9.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hvzZvx395dbfM9i/617bakHrc01uDcR2yqGub2aFwK4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/90.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cw9fH8OIH2BigublpofJQQB3QnJVbqSFwU5GX8I3gws=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/91.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2Cqs3jXWDUrfKnA/DNetYRlqMzjIzR3AbWTCpPPGbxw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/92.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9MG3gpKbXYmU3QjjpET292nJbeKv1Z2WT2K/a5N+9tQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/93.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6ryIQ44jal2FqHMKPbYo9FBUPWnLxfuH+NLNx9ZXg98=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/94.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ys1qG1gAIZ4CJRnNRS+4ITiOTPg15k5ZLi4aexpsvbU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/95.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MnnjDXfuZLuyh3OhRbiqeF+hJblyrFWUKpQ5+cE11RU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/96.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3DJ3bER+//SO4FTaW8qYhIOnEISzEkWgvg9l610aIoM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/97.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JvjAPA8ZcnVhsurSATI71JareGsrIa086GbE2wNwkwY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/arabic/index.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XAkYSKEKkbsmUUq45HU/pp4yK5/IToew9ss8eAskSeg=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/en_1.json</key>
 		<dict>
 			<key>hash2</key>
@@ -9063,6 +11039,685 @@
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/en_97.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pI5RBXgFm+14DnqLHmO+1DI9neU4gn1ExVUbJAclIPc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/1.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NBL2rP74G5SNygzZNIJvJf3yfoq+duy9Ppf8+OExxGU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/10.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6pWf10gHsoHKYrSdiYIoTsPlBjLfNcUThVODzqQrnOI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/11.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q1FU4CmK+hGLdFe/mFpqweUuiCUjRhaRrhpWPFxSLzU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/12.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			msN/4+iIc2ub2yyK5XM2bUXwMYGeerOhkZkRVlhYkF4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/13.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4J0YaDbZdGvhVKUqFKWudPK8UgzpYQSXFpzPmDyMziw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/14.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dc4u9r0ApHfGaij2W8fPBbmx3TaI/g6RtamgPYrgmt0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/15.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VsOcmUrER+IAz/L2DYfH6xn2jkinMWixhYxnE4Rn2oU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/16.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nP+/8w7dgckn/+hnGuG7+C+kVJFqIM4pSzTK4S8olbw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/17.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ffd73WEc701fPbgxWWG44GQoD1icdstXTJUatqvubH8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/18.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MSuCttx+W517iAK2uoIjg3HaeNI8Q+aJ6P/dTjBs7JA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/19.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DkzlY4Yv8eJFysgBe1cHg9q+KXUNMhGP91bch4+DHoo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/2.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EvfbupGK+lofiQ22/+UMmzV6n/2uTw35x4Mo60O/nD4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/20.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xUQMyoVNgL7lNJLhYsmMG4IBB91GgXmR63JfyhSIq+4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/21.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EneLPqm/k+rx6dyu/gW3kcbHKwZcObJtRFaMOag+Ieg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/22.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			n4jZoNVGE05++ICUN2xmwD8HVcKvVstWiHjMbVihkbw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/23.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6kmIN9UQv45ce2+f+08snc1QcRkgF/BOq/dG8bQ1Piw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/24.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yFQfohhBmAipbGYUpgo1HOirlVFijOZ161KzD/t24P4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/25.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AwTnsdzz8FUB8DgZUk4ERSYUmZyav7qRwNABu6klQbY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/26.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zcaryXn9xnlCZkqJNaasF00DFjya4pY2IZa++mhJthE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/27.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Q/EcCE118JGfCdtyLjCnQ7kX8rZETg6ELhIXkKVusxg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/28.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qAq4j+oWdho613Lq0pu3ZH5zPGfZHoNWnpMLVrytA9I=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/29.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MCm9gqEowum+n6zXqvwUlfhctW1V2jq02pxk59ZdFT8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/3.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PooYEQTmnDkVTXxyznkAFCx+PSRAwNkdh65nQnseqG8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/30.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			r9YB4Ye8XaMYtNvaVwU+1onpJg5KejHz445oxj7DfyQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/31.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yBod8hZ99ftdxHbeULIpIM8gxPhuOY0+maoPJ8KQSRs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/32.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qr3r9W2p10sUcz75rDrQBfDCv0KvNAOhn9OD8x48Pi8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/33.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tqrBy0vTL6ZZJqZnDrikU2tigCPxJ9E7moF/Vl0qRwE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/34.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yjLFdz6r55j7/FVOelP8Bx2gtK10Mj6xuz8jce372To=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/35.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZIlYPlpthtxI4OqC3JGdJNoH0DK6J38rwY4m6tC7l0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/36.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			llXjrS5IAZy2PodHUkqXaLInx5Sb1kM73qQv5sq7ZYQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/37.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			73df1/uE4mM/Kif0NQ3ImkP6IIV4R4ei+ZT/RavavGU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/38.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OhSzyXXjKVFoonnbIgbOsb4Ks6tjnNyWGjEoFNnzNgI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/39.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			khqs7HExS/lkud3Ez51nr216cgfGVWzbI4+4wLARGQA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/4.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uuw9KtYNmX8Q74IoW83bvO6pxSuKkhwXIdxS2xksXUQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/40.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Xh7v/AiUkHbT+e+IJ0ba+XD5tQkdTEl61Ol7ov9ffxg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/41.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			77WNba2R+9oFvTe01sDoPC4S+w4FLmX7hOuzqIZHdFM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/42.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hm5I+TvA5KnAmxER6hUc4BTR7qoePVzXvo1M2cc1FHg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/43.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			O54t4Jd4QVm6YSlnx+BAEfg5BC4PSbzXQSVavjZ9dx0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/44.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tE2vTZu4FMmZ3RkoJcB3sAbJ/llBQfv7TU9SOfi3V/M=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/45.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9+2/CR83dXxNvILUatYc4I/9rv7Wt0YuQClPI+wwx5A=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/46.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z6YcFtwZMqhLrxH0QNCYp0V5LAqPGDDIrbCWTShw4Pc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/47.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ujqskkli0qHZ4naaN3irc6izlnBbt2JPO6Ubf3Kzhcs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/48.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cpMOF/vzc+p0LI1YwbnMMeL/Ywm7WBVzSmTkEtfWd6s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/49.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			auc2f6N8JgYMVJkBYpf+9zlg5FxmORKRDjkBZmrSZTk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/5.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QuL/oiKbDac/c/esLI9UF62kJycPqSMtN2AxrijMzd0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/50.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SLQE7wKHdH6nDrZskRhKPiicRe0iJx0xnq0YtqyieYY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/51.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xf92vsZ0DoomRLsl6uL8bQDj4AoT5I+c03x2tncz7gQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/52.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			45++mxYNFWrBTfy1UYGIg9wEZVzY1Xz/7dkQ45AV0YM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/53.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rpgHDq9EJThPbzZSncXwn+syTmNrSp4i7XpDtnKPMWc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/54.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hExUH+IlE+dDU67zyQRTsKfRxTUvO/eXE3gl+Zbu5gs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/55.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5sR15pQWuuYi5KtKYpKFIp4jHT5fDa0ZgSibwzpaO1w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/56.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RrKfxZFbOjDWJ51wU0Y/C5DvevXVM0QuEkjz9OjkHmg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/57.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w/axCfUW2k33LmmkNv6rMHA20HG5mX1EN1eTV9LCisY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/58.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qo5GCoxxcJoeo6G6tgYS5IqiX13KYmLOya1lrCAqQFo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/59.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wsvlavv5G5fFpLXpcmbx0O7yR1g2Gf/iULqs9ePVeK8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/6.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			odgIR9bkwYwkqTYRUJUs1lcIy9ejL/GLiEUdXn0w598=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/60.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x2f4nTk4IkZOUZG0MSe2ki73fdeXq9kN85hzEg5a34A=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/61.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VD1kczfeBTkTqP0Le3qtp6dB1l6v25j/R379JubuBbo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/62.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tqD/hPeD1LoYqgwDOuFCjTgU8HEFivuZkk2T4IHq6QQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/63.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YQ6yA+7TpJ/FPiOox9alrn1cd/gOSDo5ycuwZAcVSXA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/64.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W517CkiOZ3hc6Y3GL8j/G83ObMi+xcVKImzr7jH8Kkc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/65.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5kT+shIWVwZOJCRW5iWKnIW6SzzUkSBIAwg2PPlF9zM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/66.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dDL/mlomNghO+ZK5rb6R1tovByIOqr/hws5GoRAWnMo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/67.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fm+dUugsIv4Tn6NPh9bBXsr2/MFqsgPUg9RecqvyJXQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/68.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MELpS+66z4lRovVsB0T7tyNonWbmT9FC3sVUuahIJQY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/69.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DCDRkvtisi1P6PFSoTPGCB29b+dfZUuqN1aLrxE7k0I=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/7.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hHHSrnixX9n3W8NrrpZhPhsj/3GoSxWx7b7YxwPSr5E=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/70.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			24Vu4fRQZ0scMqMNd2n099Oip6O2VfVe7SpmofvRKqU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/71.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bmOX+2gHJedy7R2kZhO4uhhWBmnqoqfBm1PTM1lj9tM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/72.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			slZB0onATxSvoL2l7O1+33lXkNpQ9n4R53+TZwStTAo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/73.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3ImpRw0e6bMCSry3k6U50OIZhRF96LgbecuZ1FG4J90=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/74.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			My6DiFsXByNjP9zf1J59a4qXRLTBj02dsFFPC6cZsKg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/75.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			olozgm+DgAEwqp+lAQdX0In7e10zIv4K/u58Twvva9I=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/76.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fg5Up3NBdemPEvA+A74sIiAQeF7Il9gBkbXHRBd1BRA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/77.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/h8KK+JyRDHExTGqufw2Fq2zoEOU3taVhVyeqHlXilw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/78.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Y+17bRzVRx1xVpBXyPeWpdoUtoqxBqg9+mAIwYhIk5s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/79.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hw/Qw1Ma0lFUDhln8d75qfv9ETwJkCsfIQmOA7k6U9w=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/8.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2JNjXPp1iczgXC9u0EXe9Lr5TOaPCUw84PJIIiilmmY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/80.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b4P4Vi6UDJRsoaySmGfiySRou0w8AQTvsXux9qaqWxs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/81.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VW3AoCZDY9pOHVgowouf7AuUe0hLXXN+8LHcgA9abBk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/82.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9r3ZW+cfJxrtGREBBrQv1Z/pSBpKE0z3OIJ37ynOagU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/83.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MiUFygCR6UYGjhQqmRq7Ibimbf8lLbFJVduyt3xw7xU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/84.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZJpuvv2i9loo+CJJPeMlD72sTXcYbSKf7wsmeFJYW34=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/85.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ba53SWypGSPnrklCbSNnTvvdPqNdKuSJP3gjk8SSOz0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/86.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9dN+L6PpgpUZ9QMsyhuOgK6KTX94cLyJw8YZ1fc1lIU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/87.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZKaxPRti6vG9k0JquyEomvINjmLJ/fqWlmudFnmWUWc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/88.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bdaRDxG9xUMky9swDCYbGfF6GL+d06ziaXa2j/pOLRI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/89.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			V+TcL14ZtGT9BWDcJBn5sV/ZTbVuKa9OdJ0KDJYRfmo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/9.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R2Vt3QbiC4prmdCexuShMUptmH9clZDMzqrZ3YRNfA8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/90.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BNLUAeEMOM7d4iVJNHNHO0gm2aPGPeLDvvksy9PTd40=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/91.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			a3NHB4xwPxkUutuRMiVvy2NBotQVzqQGm1IpXWBjlok=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/92.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oshDXj5GLfvAUhVhkndDkguyFEhv5EoO7jTURdVLbGw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/93.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IMV/JrNfjelPO/fpNCIBzIY+AQR+e/wmeQ8mkSTLs9s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/94.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xje48w+LHO+ZmelK/ovj2AJEg76kVFVdq95K1W64AwY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/95.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wwuutjb0kuUQ9RaZx3n92TMSslie2K5xRpMXp8dSQEA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/96.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			I6/TThZKRHSAXc7aywtudcgk2w62c+f5A16nxyYq2+0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/bukhari_books/english/97.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -12422,6 +15077,405 @@
 			8w4X36amsELzf1QYx/k8prdKPTNFKEA/vy2xe9TQ46o=
 			</data>
 		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/0.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uWYqdbLUgurIBMd91j23/g5UUZtwdHqUYDc3k9FhteY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/1.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uSo6S5xQ8pfoLTwteMKuh4kHJycihU4Ngt6H6toboaM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/10.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			y/0vwowkOn7VrvtagFVwBaJ2+CphEdI+v7rAPozye2o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/11.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mIK5Rm7QdryKnFUPUZ7+OeAjy0yVfBz+/BqnBDqv2Bk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/12.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zSNud0wgq7tYLGC2K97qqg7D9oy3CVXX5wnJGb/yycI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/13.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6ytzvTHZHe11wO8P5hM0hqTKW92RI0AKC/X65FOzNEg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/14.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WwhIpRkqyFVe74rf4uhN946D0NyQndFkL85r/SEphHY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/15.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gKOVExvSBpsYGotLuA1YNJtwdsiiqAkDwYw2w8hL+s4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/16.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o5x/K/Uq6zMsUJ1zpKK71uM0+xuIkFHgWzdlqRjwKTA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/17.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			25MKdJfYbdXh6dybdKwTs39aQWawsxgJEjWlAzlrONA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/18.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oOjWdhEhWlugxjs4UB/OXBiONo02VerTpYs3ul9fQY8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/19.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XWg8mHZMBD3fMro/SDkhOoI7aA+OErJc0NTUhq1v0LI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/2.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/iJCYVyM0Lt2oPNZewioX6xKtQsDni3q47XTBziNT88=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/20.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N3Xo2rSbK0gJSDhCQB5mMHyQC1mZeL30oz6ir70XOqc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/21.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Uvk+OlVNI/+pNNHZAOiHmQbTuJw3NqpTAeGNG3VsJC4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/22.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ld9BLLTfa285o1LbH2jI+Nsgk2cc624b5YlgEJ6zrF4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/23.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PjwX409ETojg2rhL9l76eHksxl6a9ZvunmcfdCE4etU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/24.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+JKzBLSEi5RO5K5DF6CnlzNaRQKcB4JKKIT9pEkxPuE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/25.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aRNhoI5fMMaSvs0LoXklOY2AlOKjtUJseDCO8/HlKXU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/26.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NX8HOo35iMgxwIL3P+O/krYUGmters04s8HriNkmtW4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/27.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o6nifa/OAQQ3VNQyLtaDyWF0S0duZIRJjXQrE9mrjjU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/28.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WAX1N6g6yswLSzXl30KDTjqcklWYT+O/dill++LwGKc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/29.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			srZmAbvdPj7SRnCXhPkVJpH2pICl8FvjeiXZtHwjvQQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/3.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yAhWOqlq4gVma/QK/S3e66zs3urTfc74Wt5b1K7Dni0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/30.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qsvjm8ZuFbMtQkOAQPEDUYdU2JWYUJ+nwIQS2NtB5Dg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/31.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8TiD2BZI6PZJceoJEv5XWEjxZ/pMV3e92U/91ECuNxI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/32.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aoj5gFY8MVphZex4V5qhHOyfdv6XApIcyW1pe7LYDko=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/33.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8fYUfQVefyZQpi2w0ZlZVwJSawynoBzlkpz8G+mGGUE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/34.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aw9cvGz/YnRBy5TAW/uEMePCQP6UeAsLrzqplqTRw28=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/35.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T/bUvw96aQSuVFo85kJHpYyY3WQSWAvC17aM2v7bMmg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/36.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fYwkwphgB4DM8OS5IqxmtKyfme4UfUZGl5akxoI+K1c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/37.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1ky6darwp2mopStz/PJd9rO/CtkHws8b7udxzTbd5Bc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/38.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uIxL2dDqZeUeIVO38w5BnNCsi+hCFuwxeeLYIO/mKHA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/39.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w0+nVTU6YNW1kLR1dvFbzruqSJUfMhczhEAjfXlzGlM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/4.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/4EgNes6yK1RhDAcnfzI5bVBJhbmcNFnmhYxyn2DPDI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/40.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9778U/jesXXgnFYpC6ohDzc7JxfVgRMj28x8Is3nxtE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/41.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HZlbzR2ubaiapIywylMue/YESSwlXf1BODyHSkzFbaM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/42.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qsVvWYS0u2BAJWr/d7USBHUshqJrNzg6glQnrhppW/k=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/43.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pzu3+JSq0r6RAASJ8XCZ1Hg4+Z4AFApA6gCP/ofDK1A=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/44.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			F92LGSWHdUehpw7/6OIa0UZBwX3j4dM2WaHd4K603RE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/45.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lljDdr8WPqG8NvlvV1XowGiqZIWybma0U93slLnhB80=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/46.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FGVdG5x8+TNNGFJKPWHLbJk5MobUnhy/sA/ksEl3BLg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/47.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			coAm7pbc2JGXqB1aNvjeR0L1iAlzTwqNNdTihmhGFXg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/48.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CNWzqIzyBZ2Fe/gygAxGy/santcBA1XNrUYHoE9Y7Rg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/49.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4GOWnXlagijWwGclDlaRqDWjmtJpxzQv1tAgsepsUEU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/5.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fB64CuwYOSwuyj9PNaSGbbRnealnWpZiq8/iDm//77Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/50.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+Ju262U78IstlqycRtUSuKFBFMk5U+NuBflW3n4quJw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/51.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CkRd3OUl5OSvhTi4k3IM8pl1AhVBi29vjw0isJkuzmE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/52.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0SU3ge4sJmrEda+WyxFafIrP8S3bei/XiZ0I4vWjTsE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/53.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qw9C4M/P/TSm4ih0gQ/bznpWpdHu2pTu2d2vBrSuDEA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/54.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DgciflwkVmDYabhQ3Y+gfOcXt2pVcH5DsFSTiIx51Q4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/55.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uv2Ym75IWNp79AM71OtlfZAPUshOx52OXht+TkeEM3c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/56.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9jLMIQvH4rouOetujcOo8jymoVMTp53oZAPlW+I8iEA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/6.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3Q5CzbEfr4z5rcuwmQqakzDIkDGelPCcNToumjUAqP8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/7.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vMBo+rPMZPlmrI6lQAJ2AlYuJSPw8RHnBmVUjmV+Qjs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/8.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bOg4z3/Us+/7l02Jjoh0SWGcAJpjTLREyQvbqEQJjbA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/arabic/9.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8w4X36amsELzf1QYx/k8prdKPTNFKEA/vy2xe9TQ46o=
+			</data>
+		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/en_0.json</key>
 		<dict>
 			<key>hash2</key>
@@ -12815,6 +15869,405 @@
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/en_9.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JIsSey2B+Uth5V57PlG8hjazCT0qLh2i+X7sWxwIKaw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/0.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XVdsXScCAOkHJ6PNQ703IvgLH6lj5Y9ekXulmjVBssI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/1.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yxiy3lgETbAat66hXLXsAmysSM9pk3i1ten1qKm9W7c=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/10.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iUOBGKog3QRH08VN137NHPgUGKTAVt2OIwXKnuXRGOc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/11.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aktNKjaASHsRiEyRN2EXTxn8AXuo404NZR5Uf4ODHuE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/12.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7nFvO/Jp3jeY7Pb1cg0Xrs4cfUB+alFkAWeX70qagpg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/13.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			41AlvPEueuANOkST5HNe8WlvhNKIL76OXWz48k95k1Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/14.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jrQ/ShGKOuTcx5d/hdA+JhTWOJBH8A9GIf/rKPmaWKw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/15.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8GL+kTsT7Id+rhH2J8FjizomiikqFcV8ukz2dIG3hAw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/16.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fiO+ZoYIiZZKiI4jWAL4ifkXqfHTIgGOcJQpwlF3M+s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/17.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fxiS/zowikw52vON0xCH+36R6/FZNagZvtBMJ6ixlLg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/18.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			L50bnzI3V7F5PH2X6eZ0/DFCboxdYGuHTjEWC5NcpTo=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/19.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4SDgGNOXhqEwfcSZNFTtSxFySAeb33Ogc8x/zUoqXhU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/2.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kU21NlZVAWRSFHSX6ajRgt5x+3NqdPtGVP+Z7uhV7UI=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/20.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			P2cp404hWghQCQ438pjYr06gL0BX+f1uKTr1i5Emwyc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/21.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			aISuLEGBRu1IptkFEBu7tT58titzNI0lWY3m7K10Qz0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/22.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			piFgU7J8ukDmvwGv8FidNNbAQrKY1F1+yBNyO+/VrUA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/23.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			20blXabwq+NkebKWblNrSCEvVHtg+98ap2xLtDjE5rs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/24.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S730VUXFQRSxRxHiQPFtPI9DKi4JRT29pZOQ08sEbww=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/25.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zwqx1aE21Wo9ERs1jY5YgD+8JF980W9h04PyRlToRe8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/26.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PpDCKV492Rg1cPFQqcXprKJf4iLxE0mi7JW7cmLzz9Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/27.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5dyrs7Ck/cU3rgmhlt9D01R9Qbv6PrkmQJDwH1BijVQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/28.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JK9Z0/gyEdbNuCwYbnT5XZoMOmlYznSZK4gKiatkJns=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/29.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tIrUZC3/44ZV+Rboy/jHM9RXLZE9wxiVgbbqrf2Rd2M=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/3.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			94bCNO9Iyn4f953+q4+KaIHP/E2LhDwbbx2sA/09m0E=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/30.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WPmxl1TzBIWVmUX3pLDkQzVRRiHs8sndDmgFwZ/UtJk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/31.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xZAXCw8cp+q5a9aYxpLZDSJZpxd9axBWWbAdzpx0LGg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/32.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mvbWEe//hoQ/QUVyRpRhXRyW1cHXrr4HteOlaH/5O9Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/33.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xFuGGJON3Nf1MPQs6Ec3aSV4AR7mFbEtagGGyctX27s=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/34.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZTX4Mch6MrylCgoFQlwzTZ5QSX9KvQJ7BzYXYsJDL+0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/35.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w1WbmMEmZxb6z6SOUrEDBXl5XVnEnm1Qxm3HQifxOhM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/36.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d+je5Vv+MejyN0V+J6QUkc+vhofsZ0UVpklDN6wvErM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/37.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2TtF2BPYQKiYU16V/e2iYdo/5QgGfGRB11WeR8bStao=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/38.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SDkgsUwgriijH4I3zifvOM3uQzeOxHz9ToJugBaHM28=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/39.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sz3OPmhZKikT+1kv34psNQHH+hGz73flHRW0qQ83Ypk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/4.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sznfj6cw1mFC0EhxWfokX54tH/5VgT4PFE6lGlL0t6M=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/40.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Sr2rBXbTXiRNBJ4ZmAzzCtvjiN+mEr2h3R3AOCVxwwY=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/41.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PafYRp3kczMtJnREkImlwjknJRlzjjxwW5TAyeE0EmE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/42.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FglvYJigeMyTidVQunYa32INFGhMQ8MEbpb6w7+A//Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/43.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DX8I1JvhzHigpavZsE0aQFNhTRqtV7smoflYwAXvbRU=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/44.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vbjic4Lqn9D4zTz15W8ffbl2WhSoyjWLIpz8VyZTBXE=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/45.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qogfL8sVATFh+vHmqWBIGesaJGTQ3JXudd/ITfADPcg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/46.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kOfCamSiwbq7srHzhokyFw5XRFyrJ+qI+IHK98eLWf0=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/47.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZkSRd5R8de89Z/P80LWAkFxZvz/nbOWj5zUXS89vyc=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/48.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			brmUZNHe9t3rWTUIejKM/ruBjOxLXf7XnmMa+O+AJC4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/49.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bewJI6jFTNq0z6ONVEgBAvpARJ6ZI5k2VpUPGA755kA=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/5.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qzj0vTm+jzys7So5usMpjVAXkZ8E8ozNxvXv0zdPt3k=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/50.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pEqn4rtkRp6jFK6EHNHXhQBx79QcUE1EADm8p7yuf2o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/51.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			98USg3ujeL2nVgaOuRRGHVzUSeHjKw0jVGTzn1eFZOM=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/52.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			czXgytIRT314YLwgrQTbMQ+mgpKQUlmGN1BEJfWTP9Y=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/53.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YpeYJNR5WpYryruj3uWW2IZi4m1404hoj+hk5Fu181o=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/54.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dXA/KtKaySseEjiif4AgXS5zkOP5/+a/ahbmLeLgTVs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/55.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YYFeNtfO3xe5RB9kxiUUCq4TiVZ+9eDtptTALA65vyw=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/56.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ls2ZMGmLdWtG20gpl+hAeemqaT+Hs2fMZtkmz3QZbds=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/6.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m1hVWzqOAG6wolOrLhnWZM+8V4yTB7lIIVWW/Fba+mQ=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/7.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W4OqhivfzxzXpY8lFwE2+hI2OT+0Z3vusr8jOu26cLs=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/8.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WloHYbx/8USs+w7L6tgDsJG7rLvqzjOCKGVWiC6gPWk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/json/books_data/muslim_books/english/9.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -15737,7 +19190,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZJwnox91j9q5i/pc821YOUGeSZdFYOX7zsWuSD+J2bI=
+			NXQ8kvLbV6ypFddLPaYYUjrE66PUTtedYPWqQexeAYs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -15765,21 +19218,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GOUaavNJQAeaxxVVSIIGawPnkIyr8KVwvzINpZTPxQs=
+			ABRrVZM5uUqpk7ktqt/RA91Mf7fgH1ID35KrCuEWgcA=
 			</data>
 		</dict>
 		<key>Frameworks/FMDB.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ARCGfnhQ1bMGm15ENnMiBdN0zMSHzexi4E3r1nxH8q4=
+			60DCAk7guJ6UVVpJWmTSNkqA6vho+y/kU61n3OCBENc=
 			</data>
 		</dict>
 		<key>Frameworks/FMDB.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1GnY7AS/caIhYcrQ4HXKj2oWnN0E3twqC2J+YJtzmMQ=
+			f7aZ2yGqnCke+H6N5R6PRLIjM0hgU1lGb0HMWyBAiic=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Flutter</key>
@@ -15933,169 +19386,223 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			14wooIM17VY1pW4CsRBnm4ZilEl4/9jaXjY7nZbHBdU=
+			N0jMW+I/6eH+urIotDS68bz0GSqlQiLXPYLPbSn0Ghc=
 			</data>
 		</dict>
 		<key>Frameworks/device_info_plus.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Sj5uSFJOPLisEGlJY1MKURwEAiWpRWyrDlFGhTGYGA=
+			SLqSVNuudJXSgyRdBLi+tqOcF9nVAvN3eCDAmnAE10Q=
 			</data>
 		</dict>
 		<key>Frameworks/device_info_plus.framework/device_info_plus</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YVlCndk/iNqJnMc1b7+9rbur4rgjsJn9u+qrraSZc/0=
+			I4b5YbB5HRq86W3FTAsEbPkgE1KDpTS81jsXq3VBjcg=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_native_splash.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aIlZ0AREcxxLWhMYvWVMcrakZriU8I6RUzeMFNOTFk8=
+			BWw8RN/QNSm2hFIG6hcZXGFW+O2yam2BmAEYgSBsIP4=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_native_splash.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rM8FOZZDh/ZKI1XFgJdifdU2QgZ0hZSiOynlJb1Qv4Y=
+			DstBWCZNNfK8Nsv3/gupa0vMxfYqbslGtwo5gE5yacQ=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_native_splash.framework/flutter_native_splash</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ftE/xJRWXpHflD59ZdIFuFU0N9bgEKXL+iytjwQWZX0=
+			vCkKf9GRo+lqyGdPHG8RKiEmhVv/EKqDCnMixPUmVFg=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V6IH0GgcUp8zNTBjvHxD/ltRDTH5IF3/puZg5p6IoIc=
+			bg0RlaiCjT3/yfjN4K0dcM95lOv+3ulbcXuAV4mmgPE=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6MXxVmeBwbmt+4/s9dVh9y/8do3L463AreaGV95fT5o=
+			Gdp7w5tcSWZK7zWe+XxuNka0meM3JcuAN1h+G9I9uNA=
 			</data>
 		</dict>
 		<key>Frameworks/path_provider_foundation.framework/path_provider_foundation</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h91nGF8RKheXy2RFG2I9ZxJ4DRjzjkX8xtBLACe1SNg=
+			fqN8v4ZhDZTF+NEdCwjSWd4QiEnbQpO/beI8RFLjYh0=
 			</data>
 		</dict>
 		<key>Frameworks/rate_my_app.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5MYi5rpVQbi6TAdEl4L6/k0JbVv3g23rjeeAOfe5do4=
+			xOgEQz6MZu4pdNLNRk3YugSGJeHPtgWMn7io5dnI1Gk=
 			</data>
 		</dict>
 		<key>Frameworks/rate_my_app.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XSMa5+/x0qV5lMYTbjJ1RoFpvsrnhCC/0bYObtJS29Q=
+			OaSICZXiu9E5v6DSOwpk4WNdCHEzHc44PVHMkyx5vgQ=
 			</data>
 		</dict>
 		<key>Frameworks/rate_my_app.framework/rate_my_app</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nBbSUgdokXm4REIaPPBJHqLQm5p2P2fR/bZgV7l4QP0=
+			/l8kmW/nUOy3sWzPIGd/XjMHAe/rzxGQf2kSfODjVzc=
 			</data>
 		</dict>
 		<key>Frameworks/share_plus.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9R5LaAuxnrgXtwljIYcVtn0eiSJJVjt28OTuuL0zNWU=
+			PjFWnKCcKiEcOjS/oG5XQuBQhUIW7wwt32P4N/fM1EU=
 			</data>
 		</dict>
 		<key>Frameworks/share_plus.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mw2gITJQIZV2Zcjwsv2QMLT0jEaN0ol2cnSBYeepy54=
+			ijujH7RYJZELxkdcfx708angkuar9hE46a6DDADMKYM=
 			</data>
 		</dict>
 		<key>Frameworks/share_plus.framework/share_plus</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5yOJkneDvjVWbSRruNufrh3IP/adliVQxc9Q2C3Ev9s=
+			PeITQ96oNsabGxOUMcev3zqHXCDob6ZaUhXWRJBnZOg=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences_foundation.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YlaE+2OOkiFPl1OZmrR57SblHIH6xo8CTx/TCjYgQhk=
+			V+190skPXLUhVj6lbPJL4HMtda+pQQig5XjVlKKT5h8=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences_foundation.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			94G0k4ViA8IuRoHH0j6ek1vr8dDiz4MnI7I2Ca8no/0=
+			KHo+gie0g2ghLoAZhqORNC45kLpTpLfwCDcg0MBzpZQ=
 			</data>
 		</dict>
 		<key>Frameworks/shared_preferences_foundation.framework/shared_preferences_foundation</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vkcl7gN3rl0TWK6F52i2EeyPpI/KhzcLh4KSgkN6dCA=
+			iTWmlPGFBwx1vQeIpuVbMTVygd4ECmeBNt0asPc3Y+E=
 			</data>
 		</dict>
 		<key>Frameworks/sqflite.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ONESyQyiwQoJHX66UERmWV41bDr0JvWAi1rXTEizbzQ=
+			Ar3R36TdmWQLFSkLLMvk2nLzePnd/4w2mSIOYOmTD3o=
 			</data>
 		</dict>
 		<key>Frameworks/sqflite.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3AlU88zZE0Z5eOI6faA5OGtgwfIQvp72ODOylokpnyU=
+			gySfbhvi0jP1N0ReB1/flcq/9u2pA7IbwgAAL+XXYOo=
 			</data>
 		</dict>
 		<key>Frameworks/sqflite.framework/sqflite</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			53T4RYg4JnFCKC4/BtWjwRrr0ZnG0Ot8YBrUBdX1wgA=
+			JSHeMWPrmbldZCDVjh69W4UG0DzNp3umrrBzXrZ1tGA=
 			</data>
 		</dict>
 		<key>Frameworks/url_launcher_ios.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hG0PeQg0K45G1Nvah3kt5SVDf9d07SbAArQHaMolhjU=
+			0YKs4c5oJn7EEFKEYPOjM+pkPkopa5iPvl+rDVgZHAA=
 			</data>
 		</dict>
 		<key>Frameworks/url_launcher_ios.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nP5O6EVFTbHQEGN0djNcMVN2rjtYjOkupwL1iUIgiNY=
+			XnNaxWgJBiUzwpl0aesLnoFt5ZF6ZDjDk3QPgDj4f4o=
 			</data>
 		</dict>
 		<key>Frameworks/url_launcher_ios.framework/url_launcher_ios</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OsNBefK+95h+c+RummG4cSbXyqSSopzBeZ1doE/niBA=
+			fShmyBu+zlBenOF8cfXqQf7B0A8xu6l9u9iCg5BqFFY=
 			</data>
+		</dict>
+		<key>ar.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ar.lproj/Main.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>bfq.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>bfq.lproj/Main.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ur.lproj/LaunchScreen.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ur.lproj/Main.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AbpHGcgLb+kRsJGnwFEktk7uzpZOCcBY74+YBdrKVGs=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

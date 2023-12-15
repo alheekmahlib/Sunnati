@@ -2,19 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../../../core/services/services_locator.dart';
-import '../../../../core/utils/constants/lists.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
+import '../../../controllers/books_controller.dart';
 import '../../../controllers/searchController.dart';
+import '/core/utils/constants/extensions.dart';
 import 'check_box_tile.dart';
 
 class SearchOptions extends StatelessWidget {
-  const SearchOptions({super.key});
-
+  SearchOptions({super.key});
+  final booksCtrl = sl<BooksController>();
   @override
   Widget build(BuildContext context) {
+    final booksNames = booksCtrl.currentCollection.booksNames;
     sl<SearchControllers>().checkboxesController = GroupButtonController(
       selectedIndexes: sl<SearchControllers>().booksSelected,
     );
@@ -57,10 +58,10 @@ class SearchOptions extends StatelessWidget {
                         options: const GroupButtonOptions(
                           groupingType: GroupingType.column,
                         ),
-                        buttons: booksList,
+                        buttons: booksNames,
                         buttonIndexedBuilder: (selected, index, context) {
                           return CheckBoxTile(
-                            title: booksList[index]['name'],
+                            title: booksNames[index]['book_name'],
                             selected: selected,
                             onTap: () {
                               if (!selected) {

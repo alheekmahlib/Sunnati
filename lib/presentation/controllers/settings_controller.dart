@@ -74,13 +74,13 @@ class SettingsController extends GetxController {
     //   'font': 'naskh',
     //   'font2': 'naskh'
     // },
-    // {
-    //   'lang': 'ur',
-    //   'appLang': 'ایپ کی زبان',
-    //   'name': 'اردو',
-    //   'font': 'urdu',
-    //   'font2': 'urdu'
-    // },
+    {
+      'lang': 'ur',
+      'appLang': 'ایپ کی زبان',
+      'name': 'اردو',
+      'font': 'urdu',
+      'font2': 'urdu'
+    },
     // {
     //   'lang': 'so',
     //   'appLang': 'Luqadda Appka',

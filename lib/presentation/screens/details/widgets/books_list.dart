@@ -17,6 +17,7 @@ class BooksList extends StatelessWidget {
       context,
       ListView.builder(
           shrinkWrap: true,
+          primary: false,
           itemCount: booksNames.length,
           itemBuilder: (context, i) {
             return GestureDetector(
@@ -32,16 +33,19 @@ class BooksList extends StatelessWidget {
                     flex: 8,
                     child: whiteContainer(
                       context,
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          booksNames[i]['book_name'],
-                          style: TextStyle(
-                            fontFamily: 'naskh',
-                            fontSize: 20,
-                            color: ThemeProvider.themeOf(context).id == 'dark'
-                                ? Colors.white
-                                : Theme.of(context).primaryColorDark,
+                      Directionality(
+                        textDirection: TextDirection.rtl,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(
+                            booksNames[i]['book_name'],
+                            style: TextStyle(
+                              fontFamily: 'naskh',
+                              fontSize: 20,
+                              color: ThemeProvider.themeOf(context).id == 'dark'
+                                  ? Colors.white
+                                  : Theme.of(context).primaryColorDark,
+                            ),
                           ),
                         ),
                       ),

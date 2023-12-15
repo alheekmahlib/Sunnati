@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:theme_provider/theme_provider.dart';
 
 import '../../presentation/controllers/settings_controller.dart';
 import '../../presentation/screens/ourApp/ourApps_screen.dart';
@@ -33,16 +32,16 @@ class SettingsList extends StatelessWidget {
                 )),
             child: Column(
               children: [
-                Text(
-                  'appLang'.tr,
-                  style: TextStyle(
-                    fontFamily: sl<SettingsController>().languageFont.value,
-                    fontSize: 18,
-                    color: ThemeProvider.themeOf(context).id == 'dark'
-                        ? Colors.white
-                        : Theme.of(context).primaryColorDark,
-                  ),
-                ),
+                Obx(() {
+                  return Text(
+                    'appLang'.tr,
+                    style: TextStyle(
+                      fontFamily: sl<SettingsController>().languageFont.value,
+                      fontSize: 18,
+                      color: context.surfaceDarkColor,
+                    ),
+                  );
+                }),
                 const LanguageList(),
               ],
             ),
@@ -59,77 +58,67 @@ class SettingsList extends StatelessWidget {
                 )),
             child: Column(
               children: [
-                Text(
-                  'changeTheme'.tr,
-                  style: TextStyle(
-                    fontFamily: sl<SettingsController>().languageFont.value,
-                    fontSize: 18,
-                    color: ThemeProvider.themeOf(context).id == 'dark'
-                        ? Colors.white
-                        : Theme.of(context).primaryColorDark,
-                  ),
-                ),
+                Obx(() {
+                  return Text(
+                    'changeTheme'.tr,
+                    style: TextStyle(
+                      fontFamily: sl<SettingsController>().languageFont.value,
+                      fontSize: 18,
+                      color: context.surfaceDarkColor,
+                    ),
+                  );
+                }),
                 whiteContainer(context, const ThemeChange(), width: width)
               ],
             ),
           ),
           Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: beigeContainer(
+            padding: const EdgeInsets.all(16.0),
+            child: beigeContainer(
                 context,
                 whiteContainer(
-                    context,
-                    whiteContainer(
-                      context,
-                      InkWell(
-                        child: SizedBox(
-                          height: 45,
-                          child: Row(
-                            children: [
-                              Expanded(
-                                  flex: 2,
-                                  child: alheekmah_logo(context,
-                                      width: 60.0,
-                                      color: context.surfaceDarkColor)),
-                              vDivider(context),
-                              Expanded(
-                                flex: 8,
-                                child: Text(
-                                  'ourApps'.tr,
-                                  style: TextStyle(
-                                    fontFamily: 'kufi',
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                    color: context.surfaceDarkColor,
-                                  ),
-                                ),
+                  context,
+                  InkWell(
+                    child: SizedBox(
+                      height: 45,
+                      child: Row(
+                        children: [
+                          Expanded(
+                              flex: 3,
+                              child: alheekmah_logo(context,
+                                  width: 60.0,
+                                  color: context.surfaceDarkColor)),
+                          vDivider(context),
+                          Expanded(
+                            flex: 6,
+                            child: Text(
+                              'ourApps'.tr,
+                              style: TextStyle(
+                                fontFamily: 'kufi',
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: context.surfaceDarkColor,
                               ),
-                              const Spacer(),
-                              Expanded(
-                                flex: 1,
-                                child: Icon(
-                                  Icons.arrow_forward_ios_outlined,
-                                  color: context.surfaceDarkColor,
-                                ),
-                              ),
-                              const Spacer(),
-                              Expanded(
-                                flex: 1,
-                                child: Icon(
-                                  Icons.arrow_forward_ios_outlined,
-                                  color: context.surfaceDarkColor,
-                                  size: 18,
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
-                        ),
-                        onTap: () {
-                          Navigator.push(context, animatRoute(const OurApps()));
-                        },
+                          const Spacer(),
+                          Expanded(
+                            flex: 1,
+                            child: Icon(
+                              Icons.arrow_forward_ios_outlined,
+                              color: context.surfaceDarkColor,
+                              size: 18,
+                            ),
+                          ),
+                        ],
                       ),
-                    )),
-              )),
+                    ),
+                    onTap: () {
+                      Navigator.push(context, animatRoute(const OurApps()));
+                    },
+                  ),
+                )),
+          ),
         ],
       ),
     ));

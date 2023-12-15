@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:sunti/presentation/screens/splashScreen/widgets/splash_title.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 import '../../../core/services/services_locator.dart';
@@ -16,161 +17,124 @@ class OurApps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     sl<OurAppsController>().fetchApps();
-    return Scaffold(
-      backgroundColor: ThemeProvider.themeOf(context).id == 'dark'
-          ? Theme.of(context).colorScheme.background
-          : Theme.of(context).canvasColor,
-      body: Directionality(
-        textDirection: TextDirection.rtl,
-        child: orientation(
-            context,
-            Stack(
-              alignment: Alignment.center,
-              children: [
-                Align(
-                  alignment: Alignment.center,
-                  child: container(
-                    context,
-                    const OurAppsBuild(),
-                    false,
-                    height: orientation(context, 450.0.h, 300.0.h),
-                    width: MediaQuery.sizeOf(context).width,
-                  ),
-                ),
-                Align(
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: ThemeProvider.themeOf(context).id == 'dark'
+            ? Theme.of(context).colorScheme.background
+            : Theme.of(context).canvasColor,
+        body: Directionality(
+          textDirection: TextDirection.rtl,
+          child: orientation(
+              context,
+              Stack(
+                alignment: Alignment.center,
+                children: [
+                  Align(
                     alignment: Alignment.center,
-                    child: Transform.translate(
-                        offset: orientation(
-                            context, Offset(0, -200.h), Offset(0, -130.h)),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            sunti_logo(
-                              context,
-                              width: 80.0.w,
-                            ),
-                            const Gap(16),
-                            beigeContainer(
-                                context,
-                                whiteContainer(
-                                  context,
-                                  Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: Text(
-                                      'فعليكم بسُنَّتي وسُنَّةِ الخُلَفاءِ الرَّاشِدينَ المَهْدِيِّينَ',
-                                      style: TextStyle(
-                                          fontFamily: 'kufi',
-                                          color: context.surfaceDarkColor,
-                                          fontSize: 14),
-                                      textAlign: TextAlign.center,
-                                    ),
-                                  ),
-                                ),
-                                width: 300.0),
-                          ],
-                        ))),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
-                    padding: orientation(
-                        context,
-                        const EdgeInsets.symmetric(vertical: 64.0).r,
-                        const EdgeInsets.symmetric(vertical: 32.0).r),
-                    child: alheekmah_logo(context,
-                        width: 80.w, color: context.surfaceDarkColor),
+                    child: container(
+                      context,
+                      const OurAppsBuild(),
+                      false,
+                      height: orientation(context, 450.0.h, 300.0.h),
+                      width: MediaQuery.sizeOf(context).width,
+                    ),
                   ),
-                ),
-                Align(
-                  alignment: Alignment.topRight,
-                  child: Padding(
-                      padding: const EdgeInsets.only(top: 48.0, right: 16.0).r,
-                      child: GestureDetector(
-                        onTap: () => Navigator.pop(context),
-                        child: arrow_back(
-                          context,
-                          width: 26,
-                          color: context.surfaceDarkColor,
-                        ),
-                      )),
-                ),
-              ],
-            ),
-            Stack(
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(
-                      flex: 4,
-                      child: Column(
-                        children: [
-                          Align(
-                            alignment: Alignment.topRight,
-                            child: Padding(
-                                padding: const EdgeInsets.only(
-                                    top: 48.0, right: 56.0),
-                                child: GestureDetector(
-                                  onTap: () => Navigator.pop(context),
-                                  child: arrow_back(
-                                    context,
-                                    width: 26,
-                                    color: context.surfaceDarkColor,
-                                  ),
-                                )),
-                          ),
-                          Column(
+                  Align(
+                      alignment: Alignment.center,
+                      child: Transform.translate(
+                          offset: orientation(
+                              context, Offset(0, -200.h), Offset(0, -130.h)),
+                          child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               sunti_logo(
                                 context,
-                                width: 80.0,
+                                width: 80.0.w,
                               ),
                               const Gap(16),
-                              beigeContainer(
-                                  context,
-                                  whiteContainer(
-                                    context,
-                                    const Padding(
-                                      padding: EdgeInsets.all(8.0),
-                                      child: Text(
-                                        'فعليكم بسُنَّتي وسُنَّةِ الخُلَفاءِ الرَّاشِدينَ المَهْدِيِّينَ',
-                                        style: TextStyle(
-                                            fontFamily: 'kufi',
-                                            color: Color(0xff3C2A21),
-                                            fontSize: 14),
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ),
-                                  ),
-                                  width: 300.0),
+                              const SplashTitle(),
                             ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      flex: 4,
-                      child: whiteContainer(
-                        context,
-                        const OurAppsBuild(),
-                        height: 300.0,
-                        width: MediaQuery.sizeOf(context).width,
-                      ),
-                    )
-                  ],
-                ),
-                Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 32.0),
-                    child: alheekmah_logo(
-                      context,
-                      width: 80,
+                          ))),
+                  Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 48.0).r,
+                      child: alheekmah_logo(context,
+                          width: 80.w, color: context.surfaceDarkColor),
                     ),
                   ),
-                ),
-              ],
-            )),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Padding(
+                        padding:
+                            const EdgeInsets.only(top: 48.0, right: 16.0).r,
+                        child: GestureDetector(
+                          onTap: () => Navigator.pop(context),
+                          child: arrow_back(
+                            context,
+                            width: 26,
+                            color: context.surfaceDarkColor,
+                          ),
+                        )),
+                  ),
+                ],
+              ),
+              Stack(
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(
+                        flex: 4,
+                        child: Column(
+                          children: [
+                            Align(
+                              alignment: Alignment.topRight,
+                              child: Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 16.0, vertical: 16.0),
+                                  child: GestureDetector(
+                                    onTap: () => Navigator.pop(context),
+                                    child: arrow_back(
+                                      context,
+                                      width: 26,
+                                      color: context.surfaceDarkColor,
+                                    ),
+                                  )),
+                            ),
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                sunti_logo(
+                                  context,
+                                  width: 80.0,
+                                ),
+                                const Gap(16),
+                                const SplashTitle(),
+                              ],
+                            ),
+                            const Gap(64),
+                            alheekmah_logo(
+                              context,
+                              width: 80,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        flex: 4,
+                        child: whiteContainer(
+                          context,
+                          const OurAppsBuild(),
+                          height: 300.0,
+                          width: MediaQuery.sizeOf(context).width,
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              )),
+        ),
       ),
     );
   }

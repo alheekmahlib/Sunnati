@@ -43,7 +43,8 @@ class Search extends StatelessWidget {
                   Radius.circular(8.0),
                 )),
             child: Padding(
-              padding: const EdgeInsets.only(top: 32.0),
+              padding: orientation(context, const EdgeInsets.only(top: 32.0),
+                  const EdgeInsets.only(top: 16.0)),
               child: Column(
                 children: [
                   Text(
@@ -58,7 +59,10 @@ class Search extends StatelessWidget {
                   ),
                   Container(
                     width: MediaQuery.sizeOf(context).width,
-                    margin: const EdgeInsets.symmetric(vertical: 32.0),
+                    margin: orientation(
+                        context,
+                        const EdgeInsets.symmetric(vertical: 32.0),
+                        const EdgeInsets.symmetric(vertical: 8.0)),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -145,8 +149,7 @@ class Search extends StatelessWidget {
                             child: setting_lines(context),
                           ),
                           onTap: () {
-                            optionsModalBottomSheet(
-                                context, const SearchOptions(),
+                            optionsModalBottomSheet(context, SearchOptions(),
                                 height: orientation(context, height * .8,
                                     platformView(height, height * .5)));
                           },

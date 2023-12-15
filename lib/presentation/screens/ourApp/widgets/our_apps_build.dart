@@ -107,8 +107,8 @@ class OurAppsBuild extends StatelessWidget {
                                       Theme.of(context).colorScheme.background,
                                   infoTextStyle: TextStyle(
                                       color: context.surfaceDarkColor,
-                                      fontSize: 12,
-                                      fontFamily: 'kufi'),
+                                      fontSize: 16,
+                                      fontFamily: 'naskh'),
                                   contentPadding: const EdgeInsets.all(16.0),
                                   contentBorderRadius: const BorderRadius.all(
                                       Radius.circular(4)),
