@@ -171,5 +171,45 @@
   "@aboutAzkaryApp3": {
     "type": "text",
     "placeholders": {}
+  },
+  "sixBooks": "الكتب الستة",
+  "@sixBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nineBooks": "الكتب التسعة",
+  "@nineBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherBooks": "كتب أخرى",
+  "@otherBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "start": "أبدأ",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithNumber": "رقم الحديث",
+  "@hadithNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadith": "الحديث",
+  "@hadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithWithTranslate": "الحديث مع الترجمة",
+  "@hadithWithTranslate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translationOfHadith": "ترجمة الحديث",
+  "@translationOfHadith": {
+    "type": "text",
+    "placeholders": {}
   }
 }

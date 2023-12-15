@@ -171,5 +171,45 @@
   "@aboutAzkaryApp3": {
     "type": "text",
     "placeholders": {}
+  },
+  "sixBooks": "The Six Books",
+  "@sixBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nineBooks": "The Nine Books",
+  "@nineBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherBooks": "Other Books",
+  "@otherBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "start": "Start",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithNumber": "Hadith Number",
+  "@hadithNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadith": "Hadith",
+  "@hadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithWithTranslate": "Hadith With Translate",
+  "@hadithWithTranslate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translationOfHadith": "Translation of the Hadith",
+  "@translationOfHadith": {
+    "type": "text",
+    "placeholders": {}
   }
 }

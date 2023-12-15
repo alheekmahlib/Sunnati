@@ -23,10 +23,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			U8XxRGTBo+CBOFj95oxbHmWk+KM=
+			y+CvAbwkMYgUJs4QqOtQKGG5NnY=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"53c5f14464c1a3e0813858fde68c5b1e65a4f8a3"</string>
+			<string>cdhash H"cbe0af01bc2431881426ce10a8eb502861b93676"</string>
 		</dict>
 		<key>Frameworks/FMDB.framework</key>
 		<dict>
@@ -41,10 +41,10 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Uhpe+wAz1WGs+hd+ImFDWGsd6rc=
+			rrv5diHKk9WlOhe+DKwNuSdV2dA=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"521a5efb0033d561acfa177e226143586b1deab7"</string>
+			<string>cdhash H"aebbf97621ca93d5a53a17be0cac0db92755d9d0"</string>
 		</dict>
 		<key>Frameworks/desktop_window.framework</key>
 		<dict>

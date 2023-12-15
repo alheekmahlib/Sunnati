@@ -5,8 +5,8 @@ import '../../../core/utils/constants/lists.dart';
 import '../../../core/widgets/widgets.dart';
 import 'widgets/books_cover.dart';
 
-class Books extends StatelessWidget {
-  const Books({super.key});
+class BooksScreen extends StatelessWidget {
+  const BooksScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

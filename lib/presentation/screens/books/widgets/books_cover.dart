@@ -6,6 +6,7 @@ import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
+import '../../../controllers/general_controller.dart';
 import '../../details/collection_details_screen.dart';
 
 class BooksCover extends StatelessWidget {

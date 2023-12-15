@@ -13,14 +13,14 @@ class GeneralController extends GetxController {
   RxInt selected = 0.obs;
   RxString greeting = ''.obs;
   TimeNow timeNow = TimeNow();
-  RxBool isExpanded = false.obs;
+  // RxBool isExpanded = false.obs;
   RxDouble fontSizeArabic = 24.0.obs;
   PageController controller = PageController();
   GlobalKey<SliderDrawerState> key = GlobalKey<SliderDrawerState>();
   final ArabicNumbers arabicNumbers = ArabicNumbers();
   final prefs = sl<SharedPreferences>();
 
-  String get currentLang => prefs.getString(AppConstants.LANGUAGE_CODE) ?? 'en';
+  String get currentLang => prefs.getString(AppConstants.LANGUAGE_CODE) ?? 'ar';
   Future<void> setCurrentlang(String newLangCode) async =>
       await prefs.setString(AppConstants.LANGUAGE_CODE, newLangCode);
 

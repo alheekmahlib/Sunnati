@@ -5,7 +5,7 @@ import '../../../../core/utils/constants/extensions.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
-import 'hadith_inArabic.dart';
+import 'hadith_in_arabic.dart';
 import 'hadith_translate.dart';
 
 class ChapterTitle extends StatelessWidget {
@@ -52,7 +52,8 @@ class ChapterTitle extends StatelessWidget {
                                       context,
                                       Text(
                                         booksCtrl.currentBookChapters[index][0]
-                                            .bookName, // 'باب',
+                                                .babName ??
+                                            'باب', // 'باب',
                                         style: TextStyle(
                                           fontFamily: 'naskh',
                                           fontSize: 24,

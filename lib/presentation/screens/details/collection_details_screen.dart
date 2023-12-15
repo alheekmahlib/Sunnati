@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:sunti/presentation/controllers/general_controller.dart';
 
 import '../../../core/services/services_locator.dart';
@@ -28,15 +29,16 @@ class CollectionDetailsScreen extends StatelessWidget {
         systemOverlayStyle: SystemUiOverlayStyle.dark,
         backgroundColor: Theme.of(context).primaryColorDark,
         leading: GestureDetector(
+            onTap: Get.back,
             child: sl<GeneralController>().checkWidgetRtlLayout(
-          Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: arrow_back(
-                context,
-                width: 26,
-                color: context.iconsDarkColor,
-              )),
-        )),
+              Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  child: arrow_back(
+                    context,
+                    width: 26,
+                    color: context.iconsDarkColor,
+                  )),
+            )),
         leadingWidth: 58,
         actions: [
           Padding(

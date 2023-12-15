@@ -95,14 +95,10 @@ class HadithArabicModel extends HadithBaseModel {
 class HadithEnglishModel extends HadithBaseModel {
   final int englishURN;
   final String? grade1;
-  final String grade2;
-  final String comments;
 
   HadithEnglishModel({
     required this.englishURN,
     required this.grade1,
-    required this.grade2,
-    required this.comments,
     required String collection,
     required int volumeNumber,
     required int bookNumber,
@@ -134,8 +130,6 @@ class HadithEnglishModel extends HadithBaseModel {
     return HadithEnglishModel(
       englishURN: json['englishURN'],
       grade1: json['grade1'],
-      grade2: json['grade2'],
-      comments: json['comments'],
       collection: json['collection'],
       volumeNumber: json['volumeNumber'],
       bookNumber: json['bookNumber'],

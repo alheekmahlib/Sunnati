@@ -1844,7 +1844,7 @@
 /Users/helal/.pub-cache/hosted/pub.dev/xml-6.3.0/lib/src/xml_events/visitor.dart
 /Users/helal/.pub-cache/hosted/pub.dev/xml-6.3.0/lib/xml_events.dart
 /Users/helal/.pub-cache/hosted/pub.dev/yaml-3.1.2/LICENSE
-/Users/helal/Development/FlutterProjects/sunnati/DOES_NOT_EXIST_RERUN_FOR_WILDCARD813383953
+/Users/helal/Development/FlutterProjects/sunnati/DOES_NOT_EXIST_RERUN_FOR_WILDCARD691837021
 /Users/helal/Development/FlutterProjects/sunnati/assets/fonts/Kufam-Italic-VariableFont_wght.ttf
 /Users/helal/Development/FlutterProjects/sunnati/assets/fonts/Kufam-Regular.ttf
 /Users/helal/Development/FlutterProjects/sunnati/assets/fonts/Kufam-VariableFont_wght.ttf
@@ -3178,8 +3178,11 @@
 /Users/helal/Development/FlutterProjects/sunnati/assets/locales/ar.json
 /Users/helal/Development/FlutterProjects/sunnati/assets/locales/bn.json
 /Users/helal/Development/FlutterProjects/sunnati/assets/locales/en.json
+/Users/helal/Development/FlutterProjects/sunnati/assets/locales/ur.json
+/Users/helal/Development/FlutterProjects/sunnati/assets/lottie/bookmark.json
 /Users/helal/Development/FlutterProjects/sunnati/assets/lottie/search_loading.json
 /Users/helal/Development/FlutterProjects/sunnati/assets/lottie/share.json
+/Users/helal/Development/FlutterProjects/sunnati/assets/lottie/shareLottie.json
 /Users/helal/Development/FlutterProjects/sunnati/assets/lottie/splash_loading.json
 /Users/helal/Development/FlutterProjects/sunnati/assets/svg/24-hours.svg
 /Users/helal/Development/FlutterProjects/sunnati/assets/svg/alheekmah_logo.svg
@@ -3279,7 +3282,7 @@
 /Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/books/widgets/book_other_name.dart
 /Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/books/widgets/books_cover.dart
 /Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/books/widgets/chapter_title.dart
-/Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/books/widgets/hadith_inArabic.dart
+/Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/books/widgets/hadith_in_arabic.dart
 /Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/books/widgets/hadith_translate.dart
 /Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/details/collection_details_screen.dart
 /Users/helal/Development/FlutterProjects/sunnati/lib/presentation/screens/details/widgets/about_book.dart

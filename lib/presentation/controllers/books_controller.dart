@@ -87,15 +87,15 @@ Home Screen:
 - [ ] get “hadith of the day”.
 
   Books Screen:
-- [ ] get all books.
+- [✅] get all books.
 
 - book main view:
-- [ ] get book details such as title and about the book etc..	
-- [ ] get book chapters.
+- [✅] get book details such as title and about the book etc..	
+- [✅] get book chapters.
 
 - book view:
-- [ ] get “babs” of the chapter.
-- [ ] get “babs” translation.
+- [✅] get “babs” of the chapter.
+- [✅] get “babs” translation.
 - [ ] make read more locked with the bab.
 - [ ] bookmark the “bab” and show isBookmarked.
 
@@ -197,22 +197,27 @@ extension Utils on BooksController {
 
   Future<void> getHadithsForTheCurrentBookFor2ndLang() async {
     tempHadithsForSecondLang.clear();
-    final currentLang = getCurrentLangName();
+    String currentLang = getCurrentLangName();
+    if (currentLang == 'ar') currentLang = 'en';
     final String secondJsonPath =
         '$currentBookDir/${currentLang}_$currentBookNumber.json';
+    String jsonAsString = '';
     try {
-      final data = json
-          .decode(await rootBundle.loadString(secondJsonPath, cache: false));
+      jsonAsString = await rootBundle.loadString(secondJsonPath, cache: false);
+    } catch (e) {
+      log('$e');
+    }
+    if (jsonAsString != '') {
+      final data = json.decode(jsonAsString);
+
       tempHadithsForSecondLang.value = List.generate(data.length, (i) {
         return switch (currentLang) {
-          'english' => HadithEnglishModel.fromJson(data[i]),
-          'urdu' => HadithUrduModel.fromJson(data[i]),
-          'bangla' => HadithBanglaModel.fromJson(data[i]),
-          _ => HadithEnglishModel.fromJson(data[i]),
+          'en' => HadithEnglishModel.fromJson(data[i]),
+          'ar' => HadithUrduModel.fromJson(data[i]),
+          'ba' => HadithBanglaModel.fromJson(data[i]),
+          _ => HadithArabicModel.fromJson(data[i]),
         };
       });
-    } catch (e) {
-      log("error");
     }
   }
 

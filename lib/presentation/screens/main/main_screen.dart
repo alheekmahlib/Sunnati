@@ -80,7 +80,7 @@ class MainScreen extends StatelessWidget {
               },
               children: [
                 const HomeScreen(),
-                const Books(),
+                const BooksScreen(),
                 BookmarksScreen(),
               ],
             ),
