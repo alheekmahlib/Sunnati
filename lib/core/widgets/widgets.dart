@@ -276,7 +276,7 @@ customSnackBar(BuildContext context, String text) {
     behavior: SnackBarBehavior.floating,
     backgroundColor: context.surfaceDarkColor,
     content: SizedBox(
-      height: 45,
+      height: 35,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -288,8 +288,8 @@ customSnackBar(BuildContext context, String text) {
             flex: 7,
             child: Text(
               text,
-              style: const TextStyle(
-                  color: Colors.white,
+              style: TextStyle(
+                  color: context.titleDarkColor,
                   fontFamily: 'kufi',
                   fontStyle: FontStyle.italic,
                   fontSize: 16),

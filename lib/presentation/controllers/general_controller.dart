@@ -99,4 +99,25 @@ class GeneralController extends GetxController {
       return RotatedBox(quarterTurns: 2, child: myWidget);
     }
   }
+
+  String copyHadith(String bookName, String bookOtherName, String chapterName,
+      int hadithNumber) {
+    return '''$bookName\n'''
+        '''$bookOtherName\n'''
+        '''$chapterName\n\n'''
+        '''تجربة\n'''
+        '''رقم الحديث: $hadithNumber''';
+  }
+
+  String copyHadithWithTranslate(String arAndEnName, String bookOtherName,
+      String chapterName, int hadithNumber) {
+    return '''$arAndEnName\n'''
+        '''$bookOtherName\n'''
+        '''$chapterName\n\n'''
+        '''تجربة\n'''
+        '''رقم الحديث: $hadithNumber\n\n'''
+        '''${'translationOfHadith'.tr}\n'''
+        '''test\n'''
+        '''${'hadithNumber'.tr}: $hadithNumber''';
+  }
 }

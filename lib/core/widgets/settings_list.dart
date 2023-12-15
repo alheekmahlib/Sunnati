@@ -79,6 +79,7 @@ class SettingsList extends StatelessWidget {
                 context,
                 whiteContainer(
                   context,
+<<<<<<< HEAD
                   InkWell(
                     child: SizedBox(
                       height: 45,
@@ -96,6 +97,38 @@ class SettingsList extends StatelessWidget {
                                 fontFamily: 'kufi',
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
+=======
+                  whiteContainer(
+                    context,
+                    InkWell(
+                      child: SizedBox(
+                        height: 45,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 2,
+                                child: alheekmah_logo(context,
+                                    width: 60.0,
+                                    color: context.surfaceDarkColor)),
+                            vDivider(context),
+                            Expanded(
+                              flex: 8,
+                              child: Text(
+                                'ourApps'.tr,
+                                style: TextStyle(
+                                  fontFamily: 'kufi',
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                  color: context.surfaceDarkColor,
+                                ),
+                              ),
+                            ),
+                            const Spacer(),
+                            Expanded(
+                              flex: 1,
+                              child: Icon(
+                                Icons.arrow_forward_ios_outlined,
+>>>>>>> f0b4a98f57540cb3bbb17b7dde54e9a760253be4
                                 color: context.surfaceDarkColor,
                               ),
                             ),

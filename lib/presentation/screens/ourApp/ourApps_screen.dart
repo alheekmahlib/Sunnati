@@ -54,13 +54,13 @@ class OurApps extends StatelessWidget {
                                 context,
                                 whiteContainer(
                                   context,
-                                  const Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                  Padding(
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Text(
                                       'فعليكم بسُنَّتي وسُنَّةِ الخُلَفاءِ الرَّاشِدينَ المَهْدِيِّينَ',
                                       style: TextStyle(
                                           fontFamily: 'kufi',
-                                          color: Color(0xff3C2A21),
+                                          color: context.surfaceDarkColor,
                                           fontSize: 14),
                                       textAlign: TextAlign.center,
                                     ),
@@ -76,10 +76,8 @@ class OurApps extends StatelessWidget {
                         context,
                         const EdgeInsets.symmetric(vertical: 64.0).r,
                         const EdgeInsets.symmetric(vertical: 32.0).r),
-                    child: alheekmah_logo(
-                      context,
-                      width: 80.w,
-                    ),
+                    child: alheekmah_logo(context,
+                        width: 80.w, color: context.surfaceDarkColor),
                   ),
                 ),
                 Align(

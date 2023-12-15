@@ -3,7 +3,6 @@ import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
 import 'package:sunti/presentation/controllers/share_controller.dart';
-import 'package:theme_provider/theme_provider.dart';
 
 import '../../services/services_locator.dart';
 import '../../utils/constants/lottie.dart';
@@ -35,7 +34,10 @@ Future<void> showHadithOptionsBottomSheet(
           Stack(
             alignment: Alignment.center,
             children: [
-              button_curve(context),
+              Transform.translate(
+                offset: const Offset(0, 1),
+                child: button_curve(context),
+              ),
               GestureDetector(
                 child: close(context, height: 30.0),
                 onTap: () => Navigator.pop(context),
@@ -53,22 +55,11 @@ Future<void> showHadithOptionsBottomSheet(
               alignment: Alignment.center,
               child: Stack(
                 children: [
-                  Align(
-                    alignment: Alignment.topCenter,
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Container(
-                          width: MediaQuery.sizeOf(context).width,
-                          height: 60,
-                          margin: const EdgeInsets.all(16.0),
-                          decoration: BoxDecoration(
-                              color: Theme.of(context).primaryColorDark,
-                              borderRadius:
-                                  const BorderRadius.all(Radius.circular(8))),
-                        ),
-                        shareLottie(height: 90.0)
-                      ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 16.0),
+                    child: Align(
+                      alignment: Alignment.topCenter,
+                      child: shareLottie(height: 60.0),
                     ),
                   ),
                   Padding(
@@ -101,34 +92,23 @@ Future<void> showHadithOptionsBottomSheet(
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          const Icon(
-                                            Icons.text_fields,
-                                            color: Color(0xff91a57d),
-                                            size: 24,
+                                          Expanded(
+                                            flex: 2,
+                                            child: Icon(
+                                              Icons.text_fields,
+                                              color: context.surfaceDarkColor,
+                                              size: 24,
+                                            ),
                                           ),
-                                          SizedBox(
-                                            width: orientation(
-                                                context,
-                                                MediaQuery.sizeOf(context)
-                                                        .width *
-                                                    .7,
-                                                MediaQuery.sizeOf(context)
-                                                        .width /
-                                                    1 /
-                                                    3),
+                                          Expanded(
+                                            flex: 8,
                                             child: Text(
                                               hadithText,
                                               style: TextStyle(
-                                                  color: ThemeProvider.themeOf(
-                                                                  context)
-                                                              .id ==
-                                                          'dark'
-                                                      ? Theme.of(context)
-                                                          .canvasColor
-                                                      : Theme.of(context)
-                                                          .primaryColorDark,
+                                                  color:
+                                                      context.surfaceDarkColor,
                                                   fontSize: 16,
-                                                  fontFamily: 'uthmanic2'),
+                                                  fontFamily: 'naskh'),
                                               maxLines: 4,
                                               overflow: TextOverflow.ellipsis,
                                               textDirection: TextDirection.rtl,
@@ -235,27 +215,21 @@ Future<void> showHadithOptionsBottomSheet(
                                                     ),
                                                     child: Obx(
                                                       () => GestureDetector(
-                                                        child: SizedBox(
-                                                          width:
-                                                              MediaQuery.sizeOf(
-                                                                      context)
-                                                                  .width,
-                                                          child: Text(
-                                                            e,
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'kufi',
-                                                              fontSize: 18,
-                                                              color: hadithShare
-                                                                          .shareTransValue
-                                                                          .value ==
-                                                                      selectedIndex
-                                                                  ? Theme.of(
-                                                                          context)
-                                                                      .primaryColorDark
-                                                                  : const Color(
-                                                                      0xffcdba72),
-                                                            ),
+                                                        child: Text(
+                                                          e,
+                                                          style: TextStyle(
+                                                            fontFamily: 'kufi',
+                                                            fontSize: 18,
+                                                            color: hadithShare
+                                                                        .shareTransValue
+                                                                        .value ==
+                                                                    selectedIndex
+                                                                ? context
+                                                                    .surfaceDarkColor
+                                                                : context
+                                                                    .surfaceDarkColor
+                                                                    .withOpacity(
+                                                                        .4),
                                                           ),
                                                         ),
                                                         onTap: () {

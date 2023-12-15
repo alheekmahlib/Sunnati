@@ -87,78 +87,74 @@ class MainScreen extends StatelessWidget {
           ),
         ),
         bottomNavigationBar: Obx(
-          () => Directionality(
-            textDirection: TextDirection.ltr,
-            child: StylishBottomBar(
-              items: [
-                BottomBarItem(
+          () => StylishBottomBar(
+            items: [
+              BottomBarItem(
+                icon: Opacity(
+                    opacity:
+                        sl<GeneralController>().selected.value == 0 ? 1 : .5,
+                    child: home(context)),
+                selectedIcon: home(context),
+                // selectedColor: Colors.teal,
+                backgroundColor: Theme.of(context).colorScheme.surface,
+                title: Text(
+                  'home'.tr,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontFamily: 'kufi',
+                    color: Theme.of(context).colorScheme.surface,
+                  ),
+                ),
+              ),
+              BottomBarItem(
+                icon: Opacity(
+                    opacity:
+                        sl<GeneralController>().selected.value == 1 ? 1 : .5,
+                    child: books(context)),
+                selectedIcon: books(context),
+                backgroundColor: Theme.of(context).colorScheme.surface,
+                title: Text(
+                  'books'.tr,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontFamily: 'kufi',
+                    color: Theme.of(context).colorScheme.surface,
+                  ),
+                ),
+              ),
+              BottomBarItem(
                   icon: Opacity(
                       opacity:
-                          sl<GeneralController>().selected.value == 0 ? 1 : .5,
-                      child: home(context)),
-                  selectedIcon: home(context),
-                  // selectedColor: Colors.teal,
+                          sl<GeneralController>().selected.value == 2 ? 1 : .5,
+                      child: bookmark(context)),
+                  selectedIcon: bookmark(context),
                   backgroundColor: Theme.of(context).colorScheme.surface,
                   title: Text(
-                    'home'.tr,
+                    'bookmark'.tr,
                     style: TextStyle(
                       fontSize: 16,
                       fontFamily: 'kufi',
                       color: Theme.of(context).colorScheme.surface,
                     ),
-                  ),
-                ),
-                BottomBarItem(
-                  icon: Opacity(
-                      opacity:
-                          sl<GeneralController>().selected.value == 1 ? 1 : .5,
-                      child: books(context)),
-                  selectedIcon: books(context),
-                  backgroundColor: Theme.of(context).colorScheme.surface,
-                  title: Text(
-                    'books'.tr,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontFamily: 'kufi',
-                      color: Theme.of(context).colorScheme.surface,
-                    ),
-                  ),
-                ),
-                BottomBarItem(
-                    icon: Opacity(
-                        opacity: sl<GeneralController>().selected.value == 2
-                            ? 1
-                            : .5,
-                        child: bookmark(context)),
-                    selectedIcon: bookmark(context),
-                    backgroundColor: Theme.of(context).colorScheme.surface,
-                    title: Text(
-                      'bookmark'.tr,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'kufi',
-                        color: Theme.of(context).colorScheme.surface,
-                      ),
-                    )),
-              ],
-              hasNotch: true,
-              fabLocation: StylishBarFabLocation.end,
-              currentIndex: sl<GeneralController>().selected.value,
-              onTap: (index) {
-                sl<GeneralController>().controller.jumpToPage(index);
-                sl<GeneralController>().selected.value = index;
-              },
-              option: AnimatedBarOptions(
-                barAnimation: BarAnimation.liquid,
-                iconStyle: IconStyle.animated,
-              ),
-              backgroundColor: Theme.of(context).primaryColorDark,
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(20.0),
-                topRight: Radius.circular(20.0),
-              ),
-              elevation: 80,
+                  )),
+            ],
+            hasNotch: true,
+            fabLocation: StylishBarFabLocation.end,
+            currentIndex: sl<GeneralController>().selected.value,
+            onTap: (index) {
+              sl<GeneralController>().controller.jumpToPage(index);
+              sl<GeneralController>().selected.value = index;
+            },
+            option: AnimatedBarOptions(
+              barAnimation: BarAnimation.liquid,
+              iconStyle: IconStyle.animated,
             ),
+            backgroundColor: Theme.of(context).primaryColorDark,
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(20.0),
+              topRight: Radius.circular(20.0),
+            ),
+            elevation: 80,
           ),
         ),
         floatingActionButton: SizedBox(
@@ -185,7 +181,7 @@ class MainScreen extends StatelessWidget {
                 11,
                 12,
                 13,
-                14
+                14,
               ];
             },
             backgroundColor: Theme.of(context).primaryColorDark,

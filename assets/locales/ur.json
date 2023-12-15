@@ -1,0 +1,215 @@
+{
+  "appName": "میرا دین",
+  "@appName": {
+    "description": "The App Name"
+  },
+  "lastRead": "آخر پڑھائی",
+  "@lastRead": {
+    "description": "The Last Read"
+  },
+  "appLang": "ایپ کی زبان",
+  "@appLang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lang": "اردو",
+  "@lang": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "bookmark": "پسندیدہ",
+  "@bookmark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "search": "تلاش",
+  "@search": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "searchHintText": "حدیث کی تلاش کریں",
+  "@searchHintText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastSearch": "آخری تلاش",
+  "@lastSearch": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "save": "محفوظ کریں",
+  "@save": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "changeTheme": "موڈ تبدیل کریں",
+  "@changeTheme": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "brown": "بھورا موڈ",
+  "@brown": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dark": "ڈارک موڈ",
+  "@dark": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "books": "کتب",
+  "@books": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "home": "ہوم",
+  "@home": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "copiedHadith": "حدیث کا نقل کیا گیا",
+  "@copiedHadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareText": "متن کے طور پر",
+  "@shareText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImage": "تصویر کے طور پر",
+  "@shareImage": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "shareImageWTrans": "آگے مزید مواد کے ساتھ تصویر کے طور پر",
+  "@shareImageWTrans": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readMore": "مزید پڑھیں",
+  "@readMore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "readLess": "کم پڑھیں",
+  "@readLess": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutBook": "کتاب کے بارے میں",
+  "@aboutBook": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Saturday": "ہفتہ",
+  "@Saturday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Sunday": "اتوار",
+  "@Sunday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Monday": "پیر",
+  "@Monday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Tuesday": "منگل",
+  "@Tuesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Wednesday": "بدھ",
+  "@Wednesday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Thursday": "جمعرات",
+  "@Thursday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "Friday": "جمعہ",
+  "@Friday": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "morning": "اللہ آپ کو صبح بخیر دے",
+  "@morning": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "evening": "اللہ آپ کو شام بخیر دے",
+  "@evening": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyHadith": "آج کی حدیث",
+  "@dailyHadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "skip": "چھوڑیں",
+  "@skip": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "ourApps": "ہمارے ایپس",
+  "@ourApps": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutQuranApp3": "◉ یہ ایپلیکیشن آپ کو قرآن کی تلاوت کرنے کا ممکن بناتا ہے جیسا کہ آپ مصحف میں پڑھ رہے ہیں، اور آپ اسے عمودی اور افقی حالت میں پڑھ سکتے ہیں۔\n◉ اس کے علاوہ، آپ تبدیل ہونے والے حالت میں پڑھ سکتے ہیں جو آپ کو جیسا چاہیے بڑھانے اور گھٹانے کا امکان دیتا ہے۔\n◉ ایپلیکیشن میں قرآن کی آیات میں متنی تلاش کا خاصیت ہے جس کے ذریعے آپ فوراً تلاش کر سکتے ہیں اور نتائج کو صفحات کے ساتھ دیکھ سکتے ہیں، اضافہ ہے کے آپ صفحہ پر جا سکتے ہیں۔\n◉ پڑھائیں کے لیے نشانیاں شامل کریں تاکہ قارئ یہ صفحہ حفظ کر سکے اور جب چاہیں اس پر واپس چلے جائیں۔\n◉ ملاحظات شامل کریں۔\n◉ ہر آیت کو مختلف قارئین کی آواز میں سننے کا امکان ہے۔\n◉ ایپلیکیشن ہر آیت کا تفسیر فراہم کرتا ہے، اور آپ تفاسیر کے درمیان تبدیلی کر سکتے ہیں اور تفسیر کا حجم بھی تبدیل کر سکتے ہیں۔\n◉ سورۃ کا اشاریہ۔\n◉ سورۃوں کے درمیان آسانی سے چلیں۔\n◉ ایپلیکیشن قارئ کو وقف کی علامات پڑھنے کا امکان دیتا ہے۔\n◉ ایپ آپ کو مکمل حصن المسلم پڑھنے اور حصہ وار تقسیم کرنے کا امکان دیتا ہے تاکہ قارئ کو بھانپنا آسان ہو، اور آپ کسی بھی ذکر کو منتخب کر کے اسے محفوظ کر سکتے ہیں۔\n◉ ایپ قارئ کو رنگین انداز مختلفوں کی موڈز میں تبدیلی دینے کا امکان دیتی ہے، جیسا کہ ڈارک موڈ جو پس منظر کو سیاہ اور خطوط کو سفید رنگ میں بدلتا ہے تاکہ قارئ کو کم روشنی کی حالت میں پڑھنے میں مکمل آرام ہو۔",
+  "@about_app3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "aboutAzkaryApp3": "◉ یہ ایپ آپ کو آپکی مفضل ذکرات کو خصوصی فہرست میں محفوظ کرنے کی امکان فراہم کرتی ہے، جس سے یہ آسان ہو جاتا ہے کہ آپ انہیں ہر وقت آسانی سے دیکھ سکیں اور چکھیں۔\n◉ آپ کو خواندگی کیلئے آسانی کے لئے فونٹ کا حجم کو کنٹرول کرنے اور بڑھانے یا چھوٹا کرنے کا امکان ہے۔\n◉ اس کے علاوہ، ایپ تین مختلف یوزر انٹرفیس کے انداز میں - سبز، نیلا، اور ڈارک - دیتی ہے، جو آپ کو ایپ کی شکل کو آپکی ترجیحات کے مطابق تخصیص دینے کا اختیار دیتی ہے۔\n◉ \"أذكاري من الكتاب والسنة\" کی خصوصیت میں ایک اور خصوصیت یہ ہے کہ آپ آسانی سے اپنے دوستوں اور خاندان کے ساتھ ذکرات شیئر کرسکتے ہیں۔\n◉ آپ مواد کو ٹیکسٹ کے ذریعے یا ذکرات پر مبنی تصویر بھیج کر شیئر کر سکتے ہیں، جس سے دوسرین کے ساتھ تعلق بنانے اور مواصلاتی تجربہ کو زیادہ رنگین اور گہرا بنایا جا سکتا ہے۔\n◉ آپ اپنی مفضل وقتوں کو منتخب کر سکتے ہیں جب آپ ذکرات پڑھنا پسند کریں گے، اور ایپ آپکو ان وقتوں میں براہ کرم یاد دلائے گی۔",
+  "@aboutAzkaryApp3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "sixBooks": "چھ سطحی کتب",
+  "@sixBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "nineBooks": "نو سطحی کتب",
+  "@nineBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "otherBooks": "دیگر کتب",
+  "@otherBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "start": "شروع",
+  "@start": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithNumber": "حدیث کا نمبر",
+  "@hadithNumber": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadith": "حدیث",
+  "@hadith": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "hadithWithTranslate": "ترجمہ کے ساتھ حدیث",
+  "@hadithWithTranslate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "translationOfHadith": "حدیث کا ترجمہ",
+  "@translationOfHadith": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

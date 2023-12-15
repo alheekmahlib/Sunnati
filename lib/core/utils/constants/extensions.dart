@@ -6,6 +6,10 @@ extension Dimensions on BuildContext {
       ? Colors.white
       : Theme.of(this).primaryColorDark;
 
+  Color get titleDarkColor => ThemeProvider.themeOf(this).id == 'dark'
+      ? Theme.of(this).primaryColorDark
+      : Theme.of(this).colorScheme.surface;
+
   Color get beigeDarkColor => ThemeProvider.themeOf(this).id == 'dark'
       ? Theme.of(this).primaryColor
       : Theme.of(this).colorScheme.surface;
