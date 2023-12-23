@@ -6,7 +6,6 @@ import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
 import 'hadith_in_arabic.dart';
-import 'hadith_translate.dart';
 
 class ChapterTitle extends StatelessWidget {
   ChapterTitle({super.key});
@@ -77,25 +76,7 @@ class ChapterTitle extends StatelessWidget {
                                             .currentBookChapters[index][i],
                                         // secondHadith: booksCtrl
                                         //     .tempHadithsForSecondLang[i]
-
-                                        secondHadith: booksCtrl
-                                            .tempHadithsForSecondLang
-                                            .firstWhere((h) =>
-                                                h.matchingArabicURN ==
-                                                booksCtrl
-                                                    .currentBookChapters[index]
-                                                        [i]
-                                                    .arabicURN),
                                       ),
-                                      HadithTranslate(
-                                          hadithTranslation: booksCtrl
-                                              .tempHadithsForSecondLang
-                                              .firstWhere((h) =>
-                                                  h.matchingArabicURN ==
-                                                  booksCtrl
-                                                      .currentBookChapters[
-                                                          index][i]
-                                                      .arabicURN)),
                                     ],
                                   );
                                 }),

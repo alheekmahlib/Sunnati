@@ -5,20 +5,20 @@ import 'package:sunti/core/utils/constants/extensions.dart';
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/widgets/text_overflow_detector.dart';
 import '../../../../core/widgets/widgets.dart';
+import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
 import '../../../controllers/settings_controller.dart';
-import '../data/models/hadith_model.dart';
 
 class HadithTranslate extends StatelessWidget {
-  final HadithBaseModel hadithTranslation;
-  const HadithTranslate({super.key, required this.hadithTranslation});
+  final int currentHadithURN;
+  const HadithTranslate({super.key, required this.currentHadithURN});
 
   @override
   Widget build(BuildContext context) {
     return whiteContainer(
       context,
       ReadMoreLess(
-        text: hadithTranslation.hadithText,
+        text: sl<BooksController>().getHadithTranslationByURN(currentHadithURN),
         textStyle: TextStyle(
           fontSize: sl<GeneralController>().fontSizeArabic.value - 10,
           fontFamily: sl<SettingsController>().languageFont.value,

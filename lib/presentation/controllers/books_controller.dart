@@ -4,11 +4,16 @@ import 'dart:developer' show log;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../core/services/services_locator.dart';
+import '../../core/utils/constants/assets_data.dart';
 import '../../core/utils/constants/lists.dart';
+import '../screens/books/data/models/ar_hadith_model.dart';
+import '../screens/books/data/models/bn_hadith_model.dart';
 import '../screens/books/data/models/collection_model.dart';
-import '../screens/books/data/models/hadith_model.dart';
+import '../screens/books/data/models/en_hadith_model.dart';
+import '../screens/books/data/models/ur_hadith_model.dart';
 import 'general_controller.dart';
 
 class BooksController extends GetxController {
@@ -18,15 +23,25 @@ class BooksController extends GetxController {
 
   final List<Collection> _allCollections = [];
 
-  List<HadithArabicModel> _tempArabicHadiths = [];
-  RxList<HadithBaseModel> tempHadithsForSecondLang = <HadithBaseModel>[].obs;
+  final List<ARHadithModel> _tempArabicHadiths = [];
+  RxList<ENHadithModel> tempEnglishHadiths = <ENHadithModel>[].obs;
 
   int currentCollectionIndex = 0;
   int currentBookNumber = 1;
 
+  /// * [Boxes]
+  final arabicHadithsBox =
+      Hive.lazyBox<ARHadithModel>(AssetsData.arabicHadithsBox);
+  final englishHadithsBox =
+      Hive.lazyBox<ENHadithModel>(AssetsData.englishHadithsBox);
+  final urduHadithsBox = Hive.lazyBox<URHadithModel>(AssetsData.urduHadithsBox);
+  final banglaHadithsBox =
+      Hive.lazyBox<BNHadithModel>(AssetsData.banglaHadithsBox);
+
   @override
   void onInit() async {
     await loadBooksData();
+    await storeJsonDataToHive();
     super.onInit();
   }
 
@@ -41,8 +56,8 @@ class BooksController extends GetxController {
 
   List<Collection> get allCollections => _allCollections;
   set currentBookChapters(hadiths) {}
-  List<List<HadithArabicModel>> get currentBookChapters {
-    final Map<String, List<HadithArabicModel>> groupedMap = {};
+  List<List<ARHadithModel>> get currentBookChapters {
+    final Map<String, List<ARHadithModel>> groupedMap = {};
     for (var hadith in _tempArabicHadiths) {
       if (groupedMap.containsKey(hadith.babNumber)) {
         groupedMap[hadith.babNumber]!.add(hadith);
@@ -51,7 +66,7 @@ class BooksController extends GetxController {
       }
     }
     log('message');
-    final List<List<HadithArabicModel>> hadiths = [];
+    final List<List<ARHadithModel>> hadiths = [];
     hadiths.addAll(groupedMap.values);
     return hadiths;
   }
@@ -59,18 +74,6 @@ class BooksController extends GetxController {
   // * [All Books]
   String get currentBookDir =>
       'assets/json/books_data/${_allCollections[currentCollectionIndex].name}_books';
-  // Future<List<String>> getCurrentCollectionBooks() async{
-  //   try {
-  //     final String data =
-  //         await rootBundle.loadString('assets/json/collections.json');
-  //     final List jsonData = json.decode(data);
-  //     _allCollections
-  //         .assignAll((jsonData).map((item) => Collection.fromJson(item)));
-  //     log("Collections Length: ${_allCollections.length}");
-  //   } catch (e) {
-  //     log('Error loading data: $e');
-  //   }
-  // };
 
   String get currentBookName => currentCollection.booksNames.firstWhere(
       (e) => int.parse(e['book_number']) == currentBookNumber)["book_name"];
@@ -78,7 +81,11 @@ class BooksController extends GetxController {
   Collection get currentCollection => _allCollections[currentCollectionIndex];
 
   //* book chapters
-  List<HadithArabicModel> get arabicHadiths => _tempArabicHadiths;
+  List<ARHadithModel> get arabicHadiths => _tempArabicHadiths;
+
+  String getHadithTranslationByURN(int arabicURN) {
+    return 'TODO'; //TODO:
+  }
 
 /*
 
@@ -88,6 +95,7 @@ Home Screen:
 
   Books Screen:
 - [✅] get all books.
+- [ ] sort books
 
 - book main view:
 - [✅] get book details such as title and about the book etc..	
@@ -120,13 +128,11 @@ enum Authors {
   ahmad,
   darimi,
   forty,
-  nawawi40,
   riyadussalihin,
   mishkat,
   adab,
   shamail,
   bulugh,
-  hisn,
 }
 
 extension MoreDetails on Collection {
@@ -164,13 +170,17 @@ extension Utils on BooksController {
       final String data =
           await rootBundle.loadString('assets/json/collections.json');
       final List jsonData = json.decode(data);
-      _allCollections
-          .assignAll((jsonData).map((item) => Collection.fromJson(item)));
+      _allCollections.assignAll(
+          jsonData.map((item) => Collection.fromJson(item)).toList());
       log("Collections Length: ${_allCollections.length}");
     } catch (e) {
       log('Error loading data: $e');
     }
   }
+
+  void setCurrentCollectionByAuthorName(String authorName) =>
+      currentCollectionIndex =
+          _allCollections.indexWhere((c) => c.name == authorName);
 
   String getCurrentLangName() {
     final lang = generalCtrl.currentLang.toLowerCase();
@@ -184,23 +194,47 @@ extension Utils on BooksController {
     // };
   }
 
-  Future<List<HadithArabicModel>> getHadithsForTheCurrentBook() async {
-    final String arJsonPath = '$currentBookDir/ar_$currentBookNumber.json';
+  Future<void> storeJsonDataToHive() async {
+    final collectionsBox = Hive.box<Collection>(AssetsData.collectionsBox);
+    final arabicHadithsBox =
+        Hive.lazyBox<ARHadithModel>(AssetsData.arabicHadithsBox);
+    for (final col in _allCollections) {
+      // [1] Collectionsف٥
+      collectionsBox.put(col.name, col);
+      // [2] Hadiths
+      for (final book in col.booksNames) {
+        currentBookNumber = int.parse(book['book_number']);
+        setCurrentCollectionByAuthorName(col.name);
+        final hadiths = await getHadithsForTheCurrentBook();
+        for (final h in hadiths) {
+          arabicHadithsBox.put(
+              '${col.name}_${currentBookNumber}_${h.hadithNumber}', h);
+          log('${col.name}_${currentBookNumber}_${h.hadithNumber}');
+        }
+      }
+    }
+  }
+
+  Future<List<ARHadithModel>> getHadithsForTheCurrentBook(
+      [String? bookNumber]) async {
+    final String arJsonPath =
+        '$currentBookDir/ar_${bookNumber ?? currentBookNumber}.json';
 
     final data =
         json.decode(await rootBundle.loadString(arJsonPath, cache: false));
     final hadiths =
-        List.generate(data.length, (i) => HadithArabicModel.fromJson(data[i]));
-    _tempArabicHadiths = hadiths;
+        List.generate(data.length, (i) => ARHadithModel.fromJson(data[i]));
+    // _tempArabicHadiths = hadiths;
     return hadiths;
   }
 
-  Future<void> getHadithsForTheCurrentBookFor2ndLang() async {
-    tempHadithsForSecondLang.clear();
+  Future<void> getHadithsForTheCurrentBookFor2ndLang(
+      [String? bookNumber]) async {
+    tempEnglishHadiths.clear();
     String currentLang = getCurrentLangName();
     if (currentLang == 'ar') currentLang = 'en';
     final String secondJsonPath =
-        '$currentBookDir/${currentLang}_$currentBookNumber.json';
+        '$currentBookDir/${currentLang}_${bookNumber ?? currentBookNumber}.json';
     String jsonAsString = '';
     try {
       jsonAsString = await rootBundle.loadString(secondJsonPath, cache: false);
@@ -209,23 +243,25 @@ extension Utils on BooksController {
     }
     if (jsonAsString != '') {
       final data = json.decode(jsonAsString);
-
-      tempHadithsForSecondLang.value = List.generate(data.length, (i) {
+      tempEnglishHadiths.value = List.generate(data.length, (i) {
         return switch (currentLang) {
-          'en' => HadithEnglishModel.fromJson(data[i]),
-          'ar' => HadithUrduModel.fromJson(data[i]),
-          'ba' => HadithBanglaModel.fromJson(data[i]),
-          _ => HadithArabicModel.fromJson(data[i]),
+          'en' => ENHadithModel.fromJson(data[i]),
+          // 'ar' => URHadithModel.fromJson(data[i]),
+          // 'ba' => BNHadithModel.fromJson(data[i]),
+          _ => ENHadithModel.fromJson(data[i]),
         };
       });
     }
   }
 
   Future<void> getAndSetHadiths() async {
-    await Future.wait([
-      getHadithsForTheCurrentBook(),
-      getHadithsForTheCurrentBookFor2ndLang()
-    ]);
-    currentBookChapters = _tempArabicHadiths;
+    for (final book in currentCollection.booksNames) {
+      final hadith = await arabicHadithsBox
+          .get('${currentCollection.name}_${book['book_number']}_1}');
+      if (hadith != null) _tempArabicHadiths.add(hadith);
+    }
+    log((await arabicHadithsBox.getAt(1))!.hadithText);
+
+    log('hadiths length => ${_tempArabicHadiths.length}');
   }
 }

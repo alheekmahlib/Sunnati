@@ -4,64 +4,60 @@ description: Hadiths App
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-
 version: 1.0.0+1
 
 environment:
   sdk: '>=3.1.2 <4.0.0'
 
 dependencies:
+  another_xlider: ^3.0.1
+  arabic_numbers: ^1.0.0
+
+  cupertino_icons: ^1.0.6
+  desktop_window: ^0.4.0
+  device_info_plus: ^9.1.1
+  expansion_tile_card: ^3.0.0
+  flare_flutter: ^3.0.2
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-
-
-  cupertino_icons: ^1.0.6
-  lottie: ^2.6.0
-  flutter_svg: ^2.0.7
-  get_it: ^7.6.4
-  get: ^4.6.6
-  theme_provider: ^0.6.0
-  rate_my_app: ^2.0.0
-  sqflite_common_ffi: ^2.3.0+2
-  sqflite: ^2.3.0
-  desktop_window: ^0.4.0
-  stylish_bottom_bar: ^1.0.3
-  flutter_slider_drawer: ^2.1.3
   flutter_screenutil: ^5.9.0
-  intl: ^0.18.1
-  hijri: ^3.0.0
-  arabic_numbers: ^1.0.0
-  flare_flutter: ^3.0.2
-  expansion_tile_card: ^3.0.0
+  flutter_slider_drawer: ^2.1.3
   flutter_staggered_animations: ^1.1.1
-  another_xlider: ^3.0.1
+  flutter_svg: ^2.0.7
+  gap: ^3.0.1
+  get: ^4.6.6
+  get_it: ^7.6.4
   get_storage: ^2.1.1
-  shared_preferences: ^2.2.2
   group_button: ^5.3.3
-  share_plus: ^7.2.1
-  image: ^4.1.3
-  path_provider: ^2.1.1
+  hijri: ^3.0.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  hive_generator: ^2.0.1
   horizontal_stepper_step: ^0.0.5
   http: ^1.1.2
-  url_launcher: ^6.2.1
-  device_info_plus: ^9.1.1
-  gap: ^3.0.1
-  screenshot: ^2.1.0
+  image: ^4.1.3
   info_popup: ^4.3.1
+  intl: ^0.18.1
+  lottie: ^2.6.0
+  path_provider: ^2.1.1
+  rate_my_app: ^2.0.0
+  screenshot: ^2.1.0
+  share_plus: ^7.2.1
+  shared_preferences: ^2.2.2
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0+2
+  stylish_bottom_bar: ^1.0.3
+  theme_provider: ^0.6.0
+  url_launcher: ^6.2.1
 
 dev_dependencies:
+  flutter_lints: ^2.0.3
+  flutter_native_splash: ^2.3.3
   flutter_test:
     sdk: flutter
-
-
-  flutter_lints: ^2.0.3
-  build_runner: ^2.4.6
-  flutter_native_splash: ^2.3.3
+  build_runner: ^2.4.7
+  hive_generator: ^2.0.1
 
 flutter_native_splash:
   color: "#F7F1EC"
@@ -75,12 +71,10 @@ flutter_native_splash:
     image_dark: assets/images/sunti_logo.png
     icon_background_color_dark: "#F7F1EC"
 
-
 flutter:
 
   generate: true
   uses-material-design: true
-
 
   # To add assets to your application, add an assets section, like this:
   assets:
@@ -108,13 +102,10 @@ flutter:
     - assets/json/books_data/shamail_books/
     - assets/json/books_data/tirmidhi_books/
   #   - images/a_dot_ham.jpeg
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a

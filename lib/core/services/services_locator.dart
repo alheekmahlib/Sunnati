@@ -1,3 +1,4 @@
+import 'dart:developer' show log;
 import 'dart:io' show Platform;
 
 import 'package:desktop_window/desktop_window.dart';
@@ -17,7 +18,13 @@ import '../../presentation/controllers/searchController.dart';
 import '../../presentation/controllers/settings_controller.dart';
 import '../../presentation/controllers/share_controller.dart';
 import '../../presentation/controllers/splashScreen_controller.dart';
+import '../../presentation/screens/books/data/models/ar_hadith_model.dart';
+import '../../presentation/screens/books/data/models/bn_hadith_model.dart';
 import '../../presentation/screens/books/data/models/bookmark_model.dart';
+import '../../presentation/screens/books/data/models/collection_lang.dart';
+import '../../presentation/screens/books/data/models/collection_model.dart';
+import '../../presentation/screens/books/data/models/en_hadith_model.dart';
+import '../../presentation/screens/books/data/models/ur_hadith_model.dart';
 import '../utils/constants/assets_data.dart';
 import '../utils/helpers/ui_helper.dart';
 import 'shared_pref_services.dart';
@@ -35,16 +42,42 @@ class ServicesLocator {
         sl.registerSingleton<SharedPrefServices>(SharedPrefServices(v));
       });
 
-  Future<void> setupHive() async {
-    await Hive.initFlutter();
-    Hive.registerAdapter(BookmarkAdapter());
-    await Hive.openBox<Bookmark>(AssetsData.bookmarkBox);
+  Future<void> _initHive() async {
+    try {
+      await Hive.initFlutter();
+
+      Hive.registerAdapter(BookmarkAdapter());
+      await Hive.openBox<Bookmark>(AssetsData.bookmarkBox);
+
+      /// must be initilized before the [Collection] because it depends on it
+      Hive.registerAdapter(CollectionLangAdapter());
+      await Hive.openBox<CollectionLang>(AssetsData.collectionLangBox);
+      Hive.registerAdapter(CollectionAdapter());
+      await Hive.openBox<Collection>(AssetsData.collectionsBox);
+
+      /// [end]
+
+      Hive.registerAdapter(ARHadithModelAdapter());
+      await Hive.openLazyBox<ARHadithModel>(AssetsData.arabicHadithsBox);
+
+      Hive.registerAdapter(ENHadithModelAdapter());
+      await Hive.openLazyBox<ENHadithModel>(AssetsData.englishHadithsBox);
+
+      Hive.registerAdapter(BNHadithModelAdapter());
+      await Hive.openLazyBox<BNHadithModel>(AssetsData.banglaHadithsBox);
+
+      Hive.registerAdapter(URHadithModelAdapter());
+      await Hive.openLazyBox<URHadithModel>(AssetsData.urduHadithsBox);
+      log('Hive initilized successfully');
+    } catch (e) {
+      log('$e');
+    }
   }
 
   Future<void> init() async {
     await Future.wait([
+      _initHive(),
       _initPrefs(),
-      setupHive(),
     ]);
 
     // Controllers

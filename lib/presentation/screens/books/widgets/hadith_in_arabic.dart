@@ -9,19 +9,21 @@ import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/share/hadith_to_images.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/bookmark_controller.dart';
+import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
+import '../data/models/ar_hadith_model.dart';
 import '../data/models/bookmark_model.dart';
-import '../data/models/hadith_model.dart';
 
 class HadithInArabic extends StatelessWidget {
-  final HadithArabicModel arabicHadith;
-  final HadithBaseModel secondHadith;
-  const HadithInArabic(
-      {super.key, required this.arabicHadith, required this.secondHadith});
+  final ARHadithModel arabicHadith;
+  // final ENHadithModel secondHadith;
+  HadithInArabic({super.key, required this.arabicHadith});
+
+  final generalCtrl = sl<GeneralController>();
+  final booksCtrl = sl<BooksController>();
 
   @override
   Widget build(BuildContext context) {
-    final general = sl<GeneralController>();
     return whiteContainer(
         context,
         Column(
@@ -46,7 +48,8 @@ class HadithInArabic extends StatelessWidget {
                             1,
                             arabicHadith.bookNumber,
                             arabicHadith.hadithText,
-                            secondHadith.hadithText,
+                            booksCtrl.getHadithTranslationByURN(
+                                arabicHadith.arabicURN),
                           );
                         },
                       ),
@@ -67,7 +70,7 @@ class HadithInArabic extends StatelessWidget {
                                   color: context.surfaceDarkColor),
                             ),
                             onTap: () => Clipboard.setData(ClipboardData(
-                                    text: general.copyHadith(
+                                    text: generalCtrl.copyHadith(
                                         arabicHadith.bookName,
                                         arabicHadith.bookName,
                                         arabicHadith.bookName,
@@ -84,7 +87,7 @@ class HadithInArabic extends StatelessWidget {
                                   color: context.surfaceDarkColor),
                             ),
                             onTap: () => Clipboard.setData(ClipboardData(
-                                    text: general.copyHadithWithTranslate(
+                                    text: generalCtrl.copyHadithWithTranslate(
                                         arabicHadith.bookName,
                                         arabicHadith.bookName,
                                         arabicHadith.babName ?? '',

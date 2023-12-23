@@ -1,15 +1,30 @@
+import 'package:hive/hive.dart';
+
 import 'collection_lang.dart';
 
+part 'collection_model.g.dart';
+
+@HiveType(typeId: 1)
 class Collection {
+  @HiveField(1)
   final String name;
+  @HiveField(2)
   final String bookName;
+  @HiveField(3)
   final String arAndEnName;
+  @HiveField(4)
   final int bookNumber;
+  @HiveField(5)
   final bool hasBooks;
+  @HiveField(6)
   final bool hasChapters;
+  @HiveField(7)
   final List<CollectionLang> collection;
+  @HiveField(8)
   final int totalHadith;
+  @HiveField(9)
   final int totalAvailableHadith;
+  @HiveField(10)
   final List<Map<String, dynamic>> booksNames;
 
   Collection({
