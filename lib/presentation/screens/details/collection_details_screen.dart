@@ -47,7 +47,8 @@ class CollectionDetailsScreen extends StatelessWidget {
               child: search(context),
               onTap: () {
                 sl<SearchControllers>().booksSelected = [
-                  currentCollection.bookNumber
+                  sl<BooksController>().getCurrentCollectionIndexAuthorName(
+                      currentCollection.bookName)
                 ];
                 screenModalBottomSheet(
                   context,

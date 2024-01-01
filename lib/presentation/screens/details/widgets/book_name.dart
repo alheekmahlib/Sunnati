@@ -17,7 +17,7 @@ class BookName extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(16),
           child: book_name(
-              context, '${currentCollection.bookNumber}', context.textDarkColor,
+              context, '${currentCollection.id}', context.textDarkColor,
               height: 90),
         ),
         Text(

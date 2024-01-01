@@ -4,17 +4,16 @@ import 'dart:developer' show log;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:hive_flutter/hive_flutter.dart';
 
 import '../../core/services/services_locator.dart';
-import '../../core/utils/constants/assets_data.dart';
+import '../../core/utils/constants/enums.dart';
 import '../../core/utils/constants/lists.dart';
 import '../screens/books/data/models/ar_hadith_model.dart';
-import '../screens/books/data/models/bn_hadith_model.dart';
 import '../screens/books/data/models/collection_model.dart';
 import '../screens/books/data/models/en_hadith_model.dart';
-import '../screens/books/data/models/ur_hadith_model.dart';
+import '/objectbox.g.dart';
 import 'general_controller.dart';
+import 'objectbox.dart';
 
 class BooksController extends GetxController {
   // final prefs = sl<SharedPreferences>();
@@ -26,22 +25,31 @@ class BooksController extends GetxController {
   final List<ARHadithModel> _tempArabicHadiths = [];
   RxList<ENHadithModel> tempEnglishHadiths = <ENHadithModel>[].obs;
 
-  int currentCollectionIndex = 0;
+  int _currentCollectionIndex = 0;
+  int get currentCollectionIndex => _currentCollectionIndex;
+  set currentCollctionIndex(int index) => _currentCollectionIndex = index;
+  int getCollectionIndexByName(String collectionName) => Authors.values
+      .indexWhere((Authors author) => author.name == collectionName);
+  set setCurrentCollectionIndexAuthorName(String authorName) =>
+      _currentCollectionIndex = Authors.values
+          .indexWhere((Authors author) => author.name == authorName);
+  int getCurrentCollectionIndexAuthorName(String authorName) =>
+      _currentCollectionIndex = Authors.values
+          .indexWhere((Authors author) => author.name == authorName);
   int currentBookNumber = 1;
 
   /// * [Boxes]
-  final arabicHadithsBox =
-      Hive.lazyBox<ARHadithModel>(AssetsData.arabicHadithsBox);
-  final englishHadithsBox =
-      Hive.lazyBox<ENHadithModel>(AssetsData.englishHadithsBox);
-  final urduHadithsBox = Hive.lazyBox<URHadithModel>(AssetsData.urduHadithsBox);
-  final banglaHadithsBox =
-      Hive.lazyBox<BNHadithModel>(AssetsData.banglaHadithsBox);
+  late Store store;
+
+  void _setStore(Store store) => this.store = store;
 
   @override
   void onInit() async {
+    _setStore((await ObjBox.create()).store);
     await loadBooksData();
-    await storeJsonDataToHive();
+    await Future.delayed(const Duration(milliseconds: 500));
+    await storeJsonDataToObjectBox();
+
     super.onInit();
   }
 
@@ -55,7 +63,6 @@ class BooksController extends GetxController {
   // * [All Collections]
 
   List<Collection> get allCollections => _allCollections;
-  set currentBookChapters(hadiths) {}
   List<List<ARHadithModel>> get currentBookChapters {
     final Map<String, List<ARHadithModel>> groupedMap = {};
     for (var hadith in _tempArabicHadiths) {
@@ -65,18 +72,21 @@ class BooksController extends GetxController {
         groupedMap[hadith.babNumber] = [hadith];
       }
     }
-    log('message');
+    log('chapters loaded');
     final List<List<ARHadithModel>> hadiths = [];
     hadiths.addAll(groupedMap.values);
     return hadiths;
   }
 
   // * [All Books]
-  String get currentBookDir =>
+  String get currentBookPath =>
       'assets/json/books_data/${_allCollections[currentCollectionIndex].name}_books';
+  String get currentBookHiveKey =>
+      '${_allCollections[currentCollectionIndex].name}_$currentBookNumber';
 
-  String get currentBookName => currentCollection.booksNames.firstWhere(
-      (e) => int.parse(e['book_number']) == currentBookNumber)["book_name"];
+  String get currentBookName => currentCollection.booksNames
+      .firstWhere((e) => int.parse(e.bookNumber) == currentBookNumber)
+      .bookName;
   // * [Book Screen]
   Collection get currentCollection => _allCollections[currentCollectionIndex];
 
@@ -117,29 +127,11 @@ Serach Tap:
 */
 }
 
-enum Authors {
-  bukhari,
-  muslim,
-  nasai,
-  abudawud,
-  tirmidhi,
-  ibnmajah,
-  malik,
-  ahmad,
-  darimi,
-  forty,
-  riyadussalihin,
-  mishkat,
-  adab,
-  shamail,
-  bulugh,
-}
-
 extension MoreDetails on Collection {
   String get currentBookAbout =>
       sl<BooksController>()
           .currentCollection
-          .collection
+          .collectionLangs
           .firstWhereOrNull((collection) =>
               collection.lang == sl<GeneralController>().currentLang)
           ?.shortIntro ??
@@ -170,72 +162,80 @@ extension Utils on BooksController {
       final String data =
           await rootBundle.loadString('assets/json/collections.json');
       final List jsonData = json.decode(data);
-      _allCollections.assignAll(
-          jsonData.map((item) => Collection.fromJson(item)).toList());
+      _allCollections.assignAll(jsonData.toList().map((item) =>
+          Collection.fromJson(item, getCollectionIndexByName(item['name']))));
       log("Collections Length: ${_allCollections.length}");
     } catch (e) {
       log('Error loading data: $e');
     }
   }
 
-  void setCurrentCollectionByAuthorName(String authorName) =>
-      currentCollectionIndex =
-          _allCollections.indexWhere((c) => c.name == authorName);
+  String get currentLangName => generalCtrl.currentLang.toLowerCase();
 
-  String getCurrentLangName() {
-    final lang = generalCtrl.currentLang.toLowerCase();
-    return lang;
-    // return switch (lang) {
-    //   'ar' => 'arabic',
-    //   'en' => 'english',
-    //   'bn' => 'bangla',
-    //   'ur' => 'urdu',
-    //   _ => 'arabic'
-    // };
+  Future<bool> doesAssetExist(String assetPath) async {
+    try {
+      // Attempt to load the asset
+      await rootBundle.load(assetPath);
+      return true; // Asset exists
+    } catch (_) {
+      return false; // Asset doesn't exist
+    }
   }
 
-  Future<void> storeJsonDataToHive() async {
-    final collectionsBox = Hive.box<Collection>(AssetsData.collectionsBox);
-    final arabicHadithsBox =
-        Hive.lazyBox<ARHadithModel>(AssetsData.arabicHadithsBox);
+  Future<void> storeJsonDataToObjectBox() async {
+    // final Directory dir = await getApplicationDocumentsDirectory();
+
+    final collectionsBox = store.box<Collection>();
     for (final col in _allCollections) {
-      // [1] Collectionsف٥
-      collectionsBox.put(col.name, col);
+      col.booksNames.sort((a, b) => a.bookNumber.compareTo(b.bookNumber));
+      collectionsBox.put(col);
       // [2] Hadiths
+      setCurrentCollectionIndexAuthorName = col.name;
       for (final book in col.booksNames) {
-        currentBookNumber = int.parse(book['book_number']);
-        setCurrentCollectionByAuthorName(col.name);
-        final hadiths = await getHadithsForTheCurrentBook();
-        for (final h in hadiths) {
-          arabicHadithsBox.put(
-              '${col.name}_${currentBookNumber}_${h.hadithNumber}', h);
-          log('${col.name}_${currentBookNumber}_${h.hadithNumber}');
-        }
+        _getHadithsForTheCurrentBook(col.name, book.bookNumber);
+        log('${col.name}_${book.bookNumber}');
       }
     }
   }
 
-  Future<List<ARHadithModel>> getHadithsForTheCurrentBook(
-      [String? bookNumber]) async {
-    final String arJsonPath =
-        '$currentBookDir/ar_${bookNumber ?? currentBookNumber}.json';
+  Future<List<ARHadithModel>> getAndSetHadithsForCurrentbook() async => store
+      .box<ARHadithModel>()
+      .query(ARHadithModel_.bookNumber.equals(currentBookNumber))
+      .build()
+      .findAsync();
 
-    final data =
-        json.decode(await rootBundle.loadString(arJsonPath, cache: false));
-    final hadiths =
-        List.generate(data.length, (i) => ARHadithModel.fromJson(data[i]));
-    // _tempArabicHadiths = hadiths;
-    return hadiths;
+  Future<List<ARHadithModel>> _getHadithsForTheCurrentBook(
+      String collectionName, String bookNumber) async {
+    if (bookNumber == '0') {
+      log('Collection $collectionName has Book number 0');
+    }
+    final String arJsonPath = '$currentBookPath/ar_$bookNumber.json';
+    if (!await doesAssetExist(arJsonPath)) return [];
+    final arabicHadithsBox = store.box<ARHadithModel>();
+    try {
+      final data =
+          json.decode(await rootBundle.loadString(arJsonPath, cache: false));
+      final hadiths = List.generate(
+          data.length,
+          (i) => ARHadithModel.fromJson(data[i], i,
+              _allCollections.firstWhere((col) => col.name == collectionName)));
+      arabicHadithsBox.putMany(hadiths);
+      return hadiths;
+    } catch (e) {
+      log('Error loading data: $e');
+    }
+    return [];
   }
 
   Future<void> getHadithsForTheCurrentBookFor2ndLang(
       [String? bookNumber]) async {
     tempEnglishHadiths.clear();
-    String currentLang = getCurrentLangName();
+    String currentLang = currentLangName;
     if (currentLang == 'ar') currentLang = 'en';
     final String secondJsonPath =
-        '$currentBookDir/${currentLang}_${bookNumber ?? currentBookNumber}.json';
+        '$currentBookPath/${currentLang}_${bookNumber ?? currentBookNumber}.json';
     String jsonAsString = '';
+    if (!await doesAssetExist(secondJsonPath)) return;
     try {
       jsonAsString = await rootBundle.loadString(secondJsonPath, cache: false);
     } catch (e) {
@@ -245,23 +245,25 @@ extension Utils on BooksController {
       final data = json.decode(jsonAsString);
       tempEnglishHadiths.value = List.generate(data.length, (i) {
         return switch (currentLang) {
-          'en' => ENHadithModel.fromJson(data[i]),
+          'en' => ENHadithModel.fromJson(data[i], i),
           // 'ar' => URHadithModel.fromJson(data[i]),
           // 'ba' => BNHadithModel.fromJson(data[i]),
-          _ => ENHadithModel.fromJson(data[i]),
+          _ => ENHadithModel.fromJson(data[i], i),
         };
       });
     }
   }
 
-  Future<void> getAndSetHadiths() async {
-    for (final book in currentCollection.booksNames) {
-      final hadith = await arabicHadithsBox
-          .get('${currentCollection.name}_${book['book_number']}_1}');
-      if (hadith != null) _tempArabicHadiths.add(hadith);
-    }
-    log((await arabicHadithsBox.getAt(1))!.hadithText);
-
-    log('hadiths length => ${_tempArabicHadiths.length}');
+  Future<List<ARHadithModel>> getAndSetHadiths() async {
+    final arabicHadithsBox = store.box<ARHadithModel>();
+    final List<ARHadithModel> hadiths = await arabicHadithsBox
+        .query(ARHadithModel_.bookNumber.equals(currentBookNumber))
+        .build()
+        .findAsync();
+    _tempArabicHadiths
+      ..clear()
+      ..addAll(hadiths);
+    log('Total hadiths so far: ${_tempArabicHadiths.length}');
+    return hadiths;
   }
 }

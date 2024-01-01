@@ -1,14 +1,11 @@
-import 'package:hive_flutter/adapters.dart';
+import 'package:objectbox/objectbox.dart';
 
-part 'collection_lang.g.dart';
-
-@HiveType(typeId: 2)
+@Entity()
 class CollectionLang {
-  @HiveField(1)
+  @Id(assignable: true)
+  int? id;
   final String lang;
-  @HiveField(2)
   final String title;
-  @HiveField(3)
   final String shortIntro;
 
   CollectionLang({

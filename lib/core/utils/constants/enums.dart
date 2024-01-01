@@ -9,11 +9,9 @@ enum Authors {
   ahmad,
   darimi,
   forty,
-  nawawi40,
   riyadussalihin,
   mishkat,
   adab,
   shamail,
   bulugh,
-  hisn,
 }

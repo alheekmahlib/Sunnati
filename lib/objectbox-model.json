@@ -1,0 +1,484 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6709973114131400938",
+      "lastPropertyId": "16:3611431526245435897",
+      "name": "ARHadithModel",
+      "properties": [
+        {
+          "id": "1:3728592436646840414",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:1526200980059140279",
+          "name": "volumeNumber",
+          "type": 6
+        },
+        {
+          "id": "3:6624412957064288154",
+          "name": "bookNumber",
+          "type": 6
+        },
+        {
+          "id": "4:4316448228105827736",
+          "name": "bookName",
+          "type": 9
+        },
+        {
+          "id": "5:7760962924843601955",
+          "name": "babNumber",
+          "type": 9
+        },
+        {
+          "id": "6:3867337150400311621",
+          "name": "babName",
+          "type": 9
+        },
+        {
+          "id": "7:1868920890882606963",
+          "name": "hadithNumber",
+          "type": 6
+        },
+        {
+          "id": "8:9119110901469355556",
+          "name": "hadithText",
+          "type": 9
+        },
+        {
+          "id": "9:7221702112426362583",
+          "name": "bookID",
+          "type": 9
+        },
+        {
+          "id": "10:1776619628027327052",
+          "name": "ourHadithNumber",
+          "type": 6
+        },
+        {
+          "id": "11:393963206733633761",
+          "name": "matchingArabicURN",
+          "type": 6
+        },
+        {
+          "id": "12:6774749768739157793",
+          "name": "lastUpdated",
+          "type": 9
+        },
+        {
+          "id": "13:4556560770867787133",
+          "name": "arabicURN",
+          "type": 6
+        },
+        {
+          "id": "14:679429849129206021",
+          "name": "annotations",
+          "type": 30
+        },
+        {
+          "id": "15:8180778648771454577",
+          "name": "grade1",
+          "type": 9
+        },
+        {
+          "id": "16:3611431526245435897",
+          "name": "collectionId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:7143072694409737776",
+          "relationTarget": "Collection"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5539769780335496849",
+      "lastPropertyId": "15:8956539385137643883",
+      "name": "BNHadithModel",
+      "properties": [
+        {
+          "id": "1:4790904639727497638",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5419555521182088669",
+          "name": "collectionId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:2021068556375464510",
+          "relationTarget": "Collection"
+        },
+        {
+          "id": "3:2323607482820665990",
+          "name": "volumeNumber",
+          "type": 6
+        },
+        {
+          "id": "4:2809339447341830235",
+          "name": "bookNumber",
+          "type": 6
+        },
+        {
+          "id": "5:2221506358807286527",
+          "name": "bookName",
+          "type": 9
+        },
+        {
+          "id": "6:7721142154098507896",
+          "name": "babNumber",
+          "type": 9
+        },
+        {
+          "id": "7:3256996667404842990",
+          "name": "babName",
+          "type": 9
+        },
+        {
+          "id": "8:4641351440140811591",
+          "name": "hadithNumber",
+          "type": 6
+        },
+        {
+          "id": "9:271221375637863578",
+          "name": "hadithText",
+          "type": 9
+        },
+        {
+          "id": "10:2114154275745158117",
+          "name": "bookID",
+          "type": 9
+        },
+        {
+          "id": "11:1873731370342180928",
+          "name": "ourHadithNumber",
+          "type": 6
+        },
+        {
+          "id": "12:4825694006861391349",
+          "name": "matchingArabicURN",
+          "type": 6
+        },
+        {
+          "id": "13:5937822654480555203",
+          "name": "lastUpdated",
+          "type": 9
+        },
+        {
+          "id": "14:8589973548962247880",
+          "name": "banglaURN",
+          "type": 6
+        },
+        {
+          "id": "15:8956539385137643883",
+          "name": "grade1",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:59935922569576759",
+      "lastPropertyId": "3:2227862694701428639",
+      "name": "BookObjModel",
+      "properties": [
+        {
+          "id": "1:5362343807417798045",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:4060958173497627936",
+          "name": "bookName",
+          "type": 9
+        },
+        {
+          "id": "3:2227862694701428639",
+          "name": "bookNumber",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1561678104814154253",
+      "lastPropertyId": "8:1431702436221486932",
+      "name": "Collection",
+      "properties": [
+        {
+          "id": "1:734450944888121794",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:2368257316710094699",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:3526818442367122504",
+          "name": "bookName",
+          "type": 9
+        },
+        {
+          "id": "4:1561769386204257561",
+          "name": "arAndEnName",
+          "type": 9
+        },
+        {
+          "id": "5:2515372291622768408",
+          "name": "hasBooks",
+          "type": 1
+        },
+        {
+          "id": "6:2905853428288683191",
+          "name": "hasChapters",
+          "type": 1
+        },
+        {
+          "id": "7:1472665015127329556",
+          "name": "totalHadith",
+          "type": 6
+        },
+        {
+          "id": "8:1431702436221486932",
+          "name": "totalAvailableHadith",
+          "type": 6
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:3383574135876907300",
+          "name": "collectionLangs",
+          "targetId": "5:8457838776780920989"
+        },
+        {
+          "id": "2:1152706552093172835",
+          "name": "booksNames",
+          "targetId": "3:59935922569576759"
+        }
+      ]
+    },
+    {
+      "id": "5:8457838776780920989",
+      "lastPropertyId": "4:8673798086372019663",
+      "name": "CollectionLang",
+      "properties": [
+        {
+          "id": "1:3612859577233213429",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:4089370826839793042",
+          "name": "lang",
+          "type": 9
+        },
+        {
+          "id": "3:7741837385627137252",
+          "name": "title",
+          "type": 9
+        },
+        {
+          "id": "4:8673798086372019663",
+          "name": "shortIntro",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "6:5132595873638839905",
+      "lastPropertyId": "15:4691555079253169507",
+      "name": "ENHadithModel",
+      "properties": [
+        {
+          "id": "1:8777275329962413331",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:5250175049987853707",
+          "name": "collectionId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "3:4402243143303435483",
+          "relationTarget": "Collection"
+        },
+        {
+          "id": "3:4893408869694736094",
+          "name": "volumeNumber",
+          "type": 6
+        },
+        {
+          "id": "4:2737845274630535770",
+          "name": "bookNumber",
+          "type": 6
+        },
+        {
+          "id": "5:2641342996350655892",
+          "name": "bookName",
+          "type": 9
+        },
+        {
+          "id": "6:9104838225358404554",
+          "name": "babNumber",
+          "type": 9
+        },
+        {
+          "id": "7:8099050547547560160",
+          "name": "babName",
+          "type": 9
+        },
+        {
+          "id": "8:214151361371048379",
+          "name": "hadithNumber",
+          "type": 6
+        },
+        {
+          "id": "9:5683936991386174642",
+          "name": "hadithText",
+          "type": 9
+        },
+        {
+          "id": "10:931130474235954521",
+          "name": "bookID",
+          "type": 9
+        },
+        {
+          "id": "11:4570017894757853706",
+          "name": "ourHadithNumber",
+          "type": 6
+        },
+        {
+          "id": "12:4714042696489851617",
+          "name": "matchingArabicURN",
+          "type": 6
+        },
+        {
+          "id": "13:3666476636812208495",
+          "name": "lastUpdated",
+          "type": 9
+        },
+        {
+          "id": "14:4775045480598328845",
+          "name": "englishURN",
+          "type": 6
+        },
+        {
+          "id": "15:4691555079253169507",
+          "name": "grade1",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "7:4484317253542638023",
+      "lastPropertyId": "15:1971942636078523669",
+      "name": "URHadithModel",
+      "properties": [
+        {
+          "id": "1:5551113054672979870",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:6168157335140005376",
+          "name": "collectionId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "4:5050936784559328790",
+          "relationTarget": "Collection"
+        },
+        {
+          "id": "3:4306383885213225717",
+          "name": "volumeNumber",
+          "type": 6
+        },
+        {
+          "id": "4:4067048712412525898",
+          "name": "bookNumber",
+          "type": 6
+        },
+        {
+          "id": "5:2311925087521291462",
+          "name": "bookName",
+          "type": 9
+        },
+        {
+          "id": "6:5605767066536412311",
+          "name": "babNumber",
+          "type": 9
+        },
+        {
+          "id": "7:888868147049768868",
+          "name": "babName",
+          "type": 9
+        },
+        {
+          "id": "8:6149920359860267706",
+          "name": "hadithNumber",
+          "type": 6
+        },
+        {
+          "id": "9:1563656179116452183",
+          "name": "hadithText",
+          "type": 9
+        },
+        {
+          "id": "10:9020183355188936509",
+          "name": "bookID",
+          "type": 9
+        },
+        {
+          "id": "11:4748905374434062704",
+          "name": "ourHadithNumber",
+          "type": 6
+        },
+        {
+          "id": "12:1831191165827828849",
+          "name": "matchingArabicURN",
+          "type": 6
+        },
+        {
+          "id": "13:4979497568400549426",
+          "name": "lastUpdated",
+          "type": 9
+        },
+        {
+          "id": "14:4450897327999616874",
+          "name": "urduURN",
+          "type": 6
+        },
+        {
+          "id": "15:1971942636078523669",
+          "name": "grade1",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "7:4484317253542638023",
+  "lastIndexId": "4:5050936784559328790",
+  "lastRelationId": "2:1152706552093172835",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

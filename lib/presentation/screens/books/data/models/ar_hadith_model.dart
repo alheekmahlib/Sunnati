@@ -1,55 +1,28 @@
-import 'package:hive/hive.dart';
+import 'package:objectbox/objectbox.dart';
 
-part 'ar_hadith_model.g.dart';
+import 'collection_model.dart';
 
-@HiveType(typeId: 3)
-class ARHadithModel extends HiveObject {
-  @HiveField(0)
-  final String collection;
-
-  @HiveField(1)
+@Entity()
+class ARHadithModel {
+  @Id(assignable: true)
+  int id;
   final int volumeNumber;
-
-  @HiveField(2)
   final int bookNumber;
-
-  @HiveField(3)
   final String bookName;
-
-  @HiveField(4)
   final String babNumber;
-
-  @HiveField(5)
   final String? babName;
-
-  @HiveField(6)
   final int hadithNumber;
-
-  @HiveField(7)
   final String hadithText;
-
-  @HiveField(8)
   final String bookID;
-
-  @HiveField(9)
   final int ourHadithNumber;
-
-  @HiveField(10)
   final int matchingArabicURN;
-
-  @HiveField(11)
   final String lastUpdated;
-
-  @HiveField(12)
   final int arabicURN;
-
-  @HiveField(13)
   final List<String>? annotations;
-
-  @HiveField(14)
   final String? grade1;
-
+  ToOne<Collection> collection = ToOne<Collection>();
   ARHadithModel({
+    required this.id,
     required this.arabicURN,
     required this.annotations,
     required this.grade1,
@@ -66,9 +39,10 @@ class ARHadithModel extends HiveObject {
     required this.matchingArabicURN,
     required this.lastUpdated,
   });
-
-  factory ARHadithModel.fromJson(Map<String, dynamic> json) {
+  factory ARHadithModel.fromJson(
+      Map<String, dynamic> json, int id, Collection collection) {
     return ARHadithModel(
+      id: id,
       arabicURN: json['arabicURN'],
       annotations: json['annotations'] != null
           ? RegExp('"([^"]*)"')
@@ -78,7 +52,7 @@ class ARHadithModel extends HiveObject {
               .toList()
           : null,
       grade1: json['grade1'],
-      collection: json['collection'],
+      collection: ToOne<Collection>()..target = collection,
       volumeNumber: json['volumeNumber'],
       bookNumber: json['bookNumber'],
       bookName: json['bookName'],

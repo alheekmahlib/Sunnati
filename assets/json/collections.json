@@ -3,7 +3,6 @@
     "name": "bukhari",
     "bookName": "صحيح البخاري",
     "arAndEnName": "صحيح البخاري - Sahih al-Bukhari",
-    "bookNumber": "0",
     "hasBooks": true,
     "hasChapters": true,
     "books_names": [
@@ -425,7 +424,6 @@
     "name": "muslim",
     "bookName": "صحيح مسلم",
     "arAndEnName": "صحيح مسلم - Sahih Muslim",
-    "bookNumber": "1",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -687,7 +685,6 @@
     "name": "nasai",
     "bookName": "سنن النسائي",
     "arAndEnName": "سنن النسائي - Sunan an-Nasai",
-    "bookNumber": "2",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -925,7 +922,6 @@
     "name": "abudawud",
     "bookName": "سنن أبي داود",
     "arAndEnName": "سنن أبي داود - Sunan Abi Dawud",
-    "bookNumber": "3",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -1131,7 +1127,6 @@
     "name": "tirmidhi",
     "bookName": "جامع الترمذي",
     "arAndEnName": "جامع الترمذي - Jami` at-Tirmidhi",
-    "bookNumber": "4",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -1361,7 +1356,6 @@
     "name": "ibnmajah",
     "bookName": "سنن ابن ماجه",
     "arAndEnName": "سنن ابن ماجه - Sunan Ibn Majah",
-    "bookNumber": "5",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -1547,7 +1541,6 @@
     "name": "malik",
     "bookName": "موطأ مالك",
     "arAndEnName": "موطأ مالك - Muwatta Malik",
-    "bookNumber": "6",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -1825,7 +1818,6 @@
     "name": "ahmad",
     "bookName": "مسند أحمد",
     "arAndEnName": "مسند أحمد - Musnad Ahmad",
-    "bookNumber": "7",
     "hasBooks": true,
     "hasChapters": false,
     "collection": [
@@ -1891,7 +1883,6 @@
     "name": "darimi",
     "bookName": "سنن الدارمي",
     "arAndEnName": "سنن الدارمي - Sunan ad-Darimi",
-    "bookNumber": "8",
     "hasBooks": true,
     "hasChapters": true,
     "collection": [
@@ -2021,7 +2012,6 @@
     "name": "forty",
     "bookName": "الأربعينات",
     "arAndEnName": "الأربعينات - Forty Hadith",
-    "bookNumber": "9",
     "hasBooks": true,
     "hasChapters": false,
     "collection": [

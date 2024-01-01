@@ -1,52 +1,28 @@
-import 'package:hive/hive.dart';
+import 'package:objectbox/objectbox.dart';
 
-part 'ur_hadith_model.g.dart';
+import 'collection_model.dart';
 
-@HiveType(typeId: 5)
-class URHadithModel extends HiveObject {
-  @HiveField(0)
-  final String collection;
-
-  @HiveField(1)
+@Entity()
+class URHadithModel {
+  @Id(assignable: true)
+  int id;
+  ToOne<Collection> collection = ToOne<Collection>();
   final int volumeNumber;
-
-  @HiveField(2)
   final int bookNumber;
-
-  @HiveField(3)
   final String bookName;
-
-  @HiveField(4)
   final String babNumber;
-
-  @HiveField(5)
   final String? babName;
-
-  @HiveField(6)
   final int hadithNumber;
-
-  @HiveField(7)
   final String hadithText;
-
-  @HiveField(8)
   final String bookID;
-
-  @HiveField(9)
   final int ourHadithNumber;
-
-  @HiveField(10)
   final int matchingArabicURN;
-
-  @HiveField(11)
   final String lastUpdated;
-
-  @HiveField(12)
   final int urduURN;
-
-  @HiveField(13)
   final String? grade1;
 
   URHadithModel({
+    required this.id,
     required this.urduURN,
     required this.grade1,
     required this.collection,
@@ -63,8 +39,9 @@ class URHadithModel extends HiveObject {
     required this.lastUpdated,
   });
 
-  factory URHadithModel.fromJson(Map<String, dynamic> json) {
+  factory URHadithModel.fromJson(Map<String, dynamic> json, int id) {
     return URHadithModel(
+      id: id,
       urduURN: json['urduURN'],
       grade1: json['grade1'],
       collection: json['collection'],

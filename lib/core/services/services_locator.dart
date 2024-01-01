@@ -21,11 +21,10 @@ import '../../presentation/controllers/splashScreen_controller.dart';
 import '../../presentation/screens/books/data/models/ar_hadith_model.dart';
 import '../../presentation/screens/books/data/models/bn_hadith_model.dart';
 import '../../presentation/screens/books/data/models/bookmark_model.dart';
-import '../../presentation/screens/books/data/models/collection_lang.dart';
-import '../../presentation/screens/books/data/models/collection_model.dart';
 import '../../presentation/screens/books/data/models/en_hadith_model.dart';
 import '../../presentation/screens/books/data/models/ur_hadith_model.dart';
 import '../utils/constants/assets_data.dart';
+import '../utils/constants/enums.dart';
 import '../utils/helpers/ui_helper.dart';
 import 'shared_pref_services.dart';
 
@@ -49,25 +48,17 @@ class ServicesLocator {
       Hive.registerAdapter(BookmarkAdapter());
       await Hive.openBox<Bookmark>(AssetsData.bookmarkBox);
 
-      /// must be initilized before the [Collection] because it depends on it
-      Hive.registerAdapter(CollectionLangAdapter());
-      await Hive.openBox<CollectionLang>(AssetsData.collectionLangBox);
-      Hive.registerAdapter(CollectionAdapter());
-      await Hive.openBox<Collection>(AssetsData.collectionsBox);
+      for (var author in Authors.values) {
+        // authors hadiths in ar
+        await Hive.openLazyBox<List<ARHadithModel>>('${author.name}_ar');
+        // authors hadiths in en
+        await Hive.openLazyBox<List<ENHadithModel>>('${author.name}_en');
+        // authors hadiths in ur
+        await Hive.openLazyBox<List<URHadithModel>>('${author.name}_ur');
+        // authors hadiths in bn
+        await Hive.openLazyBox<List<BNHadithModel>>('${author.name}_bn');
+      }
 
-      /// [end]
-
-      Hive.registerAdapter(ARHadithModelAdapter());
-      await Hive.openLazyBox<ARHadithModel>(AssetsData.arabicHadithsBox);
-
-      Hive.registerAdapter(ENHadithModelAdapter());
-      await Hive.openLazyBox<ENHadithModel>(AssetsData.englishHadithsBox);
-
-      Hive.registerAdapter(BNHadithModelAdapter());
-      await Hive.openLazyBox<BNHadithModel>(AssetsData.banglaHadithsBox);
-
-      Hive.registerAdapter(URHadithModelAdapter());
-      await Hive.openLazyBox<URHadithModel>(AssetsData.urduHadithsBox);
       log('Hive initilized successfully');
     } catch (e) {
       log('$e');

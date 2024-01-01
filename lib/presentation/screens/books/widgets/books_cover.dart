@@ -6,7 +6,6 @@ import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
-import '../../../controllers/general_controller.dart';
 import '../../details/collection_details_screen.dart';
 
 class BooksCover extends StatelessWidget {
@@ -108,8 +107,8 @@ class BooksCover extends StatelessWidget {
                               ),
                             ),
                             onTap: () {
-                              booksCtrl.currentCollectionIndex =
-                                  collectionGroup[index].bookNumber;
+                              booksCtrl.setCurrentCollectionIndexAuthorName =
+                                  collectionGroup[index].name;
                               Navigator.of(context)
                                   .push(animatRoute(CollectionDetailsScreen()));
                             },

@@ -12,12 +12,12 @@ class BooksList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    final booksNames = booksCtrl.currentCollection.booksNames;
+    final booksNames = booksCtrl.currentCollection.booksNames.toList();
     return beigeContainer(
       context,
       ListView.builder(
           shrinkWrap: true,
-          itemCount: booksNames.length,
+          itemCount: booksNames.length ?? 0,
           itemBuilder: (context, i) {
             return GestureDetector(
               child: Row(
@@ -35,7 +35,8 @@ class BooksList extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          booksNames[i]['book_name'],
+                          booksNames[i].bookName, //ToDo
+                          // '',
                           style: TextStyle(
                             fontFamily: 'naskh',
                             fontSize: 20,
@@ -51,7 +52,7 @@ class BooksList extends StatelessWidget {
               ),
               onTap: () {
                 booksCtrl.currentBookNumber =
-                    int.tryParse(booksNames[i]['book_number']) ?? 404;
+                    int.parse(booksNames[i].bookNumber); //ToDo
                 Navigator.of(context).push(animatRoute(
                   const ReadView(),
                 ));
