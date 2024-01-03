@@ -58,7 +58,7 @@ class BooksController extends GetxController {
     chaptersListViewController.value.addListener(() async {
       if (chaptersListViewController.value.position.maxScrollExtent ==
           chaptersListViewController.value.offset) {
-        getAndSetMoreHadiths();
+        await getAndSetMoreHadiths();
       } else {
         log('position.maxScrollExtent=> ${chaptersListViewController.value.position.maxScrollExtent}');
       }
@@ -241,7 +241,6 @@ extension Utils on BooksController {
     }
     if (jsonAsString != '') {
       final data = json.decode(jsonAsString);
-
       switch (currentLang) {
         case 'en':
           tempEnglishHadiths.value = List.generate(data.length,
