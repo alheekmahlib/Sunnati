@@ -7,7 +7,7 @@ import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/widgets.dart';
 import '../../controllers/books_controller.dart';
-import '../../controllers/searchController.dart';
+import '../../controllers/search_controller.dart';
 import '../search/screen/search_screen.dart';
 import '/core/utils/constants/extensions.dart';
 import 'widgets/about_book.dart';
@@ -46,9 +46,9 @@ class CollectionDetailsScreen extends StatelessWidget {
             child: GestureDetector(
               child: search(context),
               onTap: () {
-                sl<SearchControllers>().booksSelected = [
-                  sl<BooksController>().getCurrentCollectionIndexAuthorName(
-                      currentCollection.bookName)
+                sl<SearchControllers>().selectedCollections = [
+                  sl<BooksController>()
+                      .getCollectionIdByAuthorName(currentCollection.bookName)
                 ];
                 screenModalBottomSheet(
                   context,

@@ -39,12 +39,13 @@ class BNHadithModel {
     required this.lastUpdated,
   });
 
-  factory BNHadithModel.fromJson(Map<String, dynamic> json, int id) {
+  factory BNHadithModel.fromJson(
+      Map<String, dynamic> json, int id, int collectionId) {
     return BNHadithModel(
       id: id,
       banglaURN: json['banglaURN'],
       grade1: json['grade1'],
-      collection: json['collection'],
+      collection: ToOne<Collection>()..targetId = collectionId,
       volumeNumber: json['volumeNumber'],
       bookNumber: json['bookNumber'],
       bookName: json['bookName'],

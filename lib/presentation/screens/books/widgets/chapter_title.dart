@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sunti/core/services/services_locator.dart';
 
 import '../../../../core/utils/constants/extensions.dart';
@@ -6,27 +7,37 @@ import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
 import 'hadith_in_arabic.dart';
+import 'hadith_translate.dart';
 
-class ChapterTitle extends StatelessWidget {
-  ChapterTitle({super.key});
-  final booksCtrl = sl<BooksController>();
+class ChaptersView extends StatelessWidget {
+  const ChaptersView({super.key});
+  // final booksCtrl = sl<BooksController>();
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-        future: booksCtrl.getAndSetHadiths(),
-        builder: (context, snap) {
-          return snap.connectionState != ConnectionState.done && !snap.hasData
-              ? const Center(child: CircularProgressIndicator.adaptive())
-              : Column(
-                  /// عدد ابواب الكتاب
-                  children: List.generate(
-                    booksCtrl.currentBookChapters.length,
-                    (index) => Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16.0, vertical: 8.0),
-                      child: beigeContainer(
+    sl<BooksController>().clearHadithsAndGetNewOnes();
+    return GetX<BooksController>(
+      builder: (booksCtrl) => booksCtrl.arabicHadiths.isEmpty
+          ? const Center(child: CircularProgressIndicator.adaptive())
+          : SizedBox(
+              height: MediaQuery.sizeOf(context).height + 60,
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 10,
+                    child: ListView.builder(
+                      /// عدد ابواب الكتاب
+                      controller: booksCtrl.chaptersListViewController.value,
+                      itemCount: booksCtrl.currentBookChapters.length,
+                      shrinkWrap:
+                          false, // Must be false so the ScorllController can listen..
+                      primary: false,
+                      itemBuilder: (context, index) => Padding(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 16.0, vertical: 8.0),
+                        child: beigeContainer(
                           context,
                           Column(
+                            // mainAxisSize: MainAxisSize.min,
                             children: [
                               Row(
                                 mainAxisSize: MainAxisSize.min,
@@ -77,15 +88,27 @@ class ChapterTitle extends StatelessWidget {
                                         // secondHadith: booksCtrl
                                         //     .tempHadithsForSecondLang[i]
                                       ),
+                                      HadithTranslate(
+                                          currentHadithURN: booksCtrl
+                                              .currentBookChapters[index][i]
+                                              .arabicURN),
                                     ],
                                   );
                                 }),
-                              )
+                              ),
                             ],
-                          )),
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                );
-        });
+                  const Expanded(
+                    flex: 2,
+                    child: Center(child: CircularProgressIndicator.adaptive()),
+                  ),
+                ],
+              ),
+            ),
+    );
   }
 }

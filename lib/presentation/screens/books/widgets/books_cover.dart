@@ -107,8 +107,8 @@ class BooksCover extends StatelessWidget {
                               ),
                             ),
                             onTap: () {
-                              booksCtrl.setCurrentCollectionIndexAuthorName =
-                                  collectionGroup[index].name;
+                              booksCtrl.currentCollctionId =
+                                  collectionGroup[index].id;
                               Navigator.of(context)
                                   .push(animatRoute(CollectionDetailsScreen()));
                             },

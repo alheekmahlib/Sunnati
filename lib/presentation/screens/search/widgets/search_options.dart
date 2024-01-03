@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
 
-import '/core/utils/constants/extensions.dart';
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/lists.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
-import '../../../controllers/searchController.dart';
+import '../../../controllers/books_controller.dart';
+import '../../../controllers/search_controller.dart';
+import '/core/utils/constants/extensions.dart';
 import 'check_box_tile.dart';
 
 class SearchOptions extends StatelessWidget {
@@ -16,7 +17,7 @@ class SearchOptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     sl<SearchControllers>().checkboxesController = GroupButtonController(
-      selectedIndexes: sl<SearchControllers>().booksSelected,
+      selectedIndexes: sl<SearchControllers>().selectedCollections,
     );
     return Padding(
       padding: const EdgeInsets.all(24.0),
@@ -65,18 +66,24 @@ class SearchOptions extends StatelessWidget {
                             onTap: () {
                               if (!selected) {
                                 sl<SearchControllers>()
-                                    .checkboxesController
-                                    .selectIndex(index);
+                                  ..selectCollectionById(sl<BooksController>()
+                                      .getCollectionIdByAuthorName(
+                                          booksList[index]['name']))
+                                  ..checkboxesController.selectIndex(index);
+
                                 return;
                               }
                               sl<SearchControllers>()
-                                  .checkboxesController
-                                  .unselectIndex(index);
+                                ..unslectCollectionById(sl<BooksController>()
+                                    .getCollectionIdByAuthorName(
+                                        booksList[index]['name']))
+                                ..checkboxesController.unselectIndex(index);
                             },
                           );
                         },
-                        onSelected: (val, i, selected) =>
-                            debugPrint('Button: $val index: $i $selected'),
+                        onSelected: (val, i, selected) {
+                          debugPrint('Button: $val index: $i $selected');
+                        },
                       ),
                     ),
                   ],

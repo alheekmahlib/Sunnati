@@ -46,9 +46,10 @@ class Collection {
       totalHadith: json['totalHadith'],
       totalAvailableHadith: json['totalAvailableHadith'],
       booksNames: ToMany<BookObjModel>(
-          items: List<BookObjModel>.from(json['books_names']
-              .map((j) => BookObjModel.fromJson(j))
-              .toList())), // TODO Sort the values
+          items: List<BookObjModel>.from(
+              json['books_names'].map((j) => BookObjModel.fromJson(j)).toList())
+            ..sort((a, b) =>
+                a.bookNumber.compareTo(b.bookNumber))), // TODO Sort the values
     );
   }
 }

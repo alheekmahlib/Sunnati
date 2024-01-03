@@ -40,7 +40,7 @@ class ARHadithModel {
     required this.lastUpdated,
   });
   factory ARHadithModel.fromJson(
-      Map<String, dynamic> json, int id, Collection collection) {
+      Map<String, dynamic> json, int id, int collectionId) {
     return ARHadithModel(
       id: id,
       arabicURN: json['arabicURN'],
@@ -52,7 +52,7 @@ class ARHadithModel {
               .toList()
           : null,
       grade1: json['grade1'],
-      collection: ToOne<Collection>()..target = collection,
+      collection: ToOne<Collection>()..targetId = collectionId,
       volumeNumber: json['volumeNumber'],
       bookNumber: json['bookNumber'],
       bookName: json['bookName'],

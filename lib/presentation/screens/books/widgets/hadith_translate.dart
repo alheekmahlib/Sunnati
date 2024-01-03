@@ -17,22 +17,25 @@ class HadithTranslate extends StatelessWidget {
   Widget build(BuildContext context) {
     return whiteContainer(
       context,
-      ReadMoreLess(
-        text: sl<BooksController>().getHadithTranslationByURN(currentHadithURN),
-        textStyle: TextStyle(
-          fontSize: sl<GeneralController>().fontSizeArabic.value - 10,
-          fontFamily: sl<SettingsController>().languageFont.value,
-          color: context.textDarkColor,
+      Obx(
+        () => ReadMoreLess(
+          text:
+              sl<BooksController>().getHadithTranslationByURN(currentHadithURN),
+          textStyle: TextStyle(
+            fontSize: sl<GeneralController>().fontSizeArabic.value - 10,
+            fontFamily: sl<SettingsController>().languageFont.value,
+            color: context.textDarkColor,
+          ),
+          textAlign: TextAlign.justify,
+          readMoreText: 'readMore'.tr,
+          readLessText: 'readLess'.tr,
+          buttonTextStyle: TextStyle(
+            fontSize: 12,
+            fontFamily: 'kufi',
+            color: context.textDarkColor,
+          ),
+          iconColor: context.textDarkColor,
         ),
-        textAlign: TextAlign.justify,
-        readMoreText: 'readMore'.tr,
-        readLessText: 'readLess'.tr,
-        buttonTextStyle: TextStyle(
-          fontSize: 12,
-          fontFamily: 'kufi',
-          color: context.textDarkColor,
-        ),
-        iconColor: context.textDarkColor,
       ),
     );
   }

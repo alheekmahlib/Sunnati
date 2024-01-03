@@ -39,12 +39,13 @@ class URHadithModel {
     required this.lastUpdated,
   });
 
-  factory URHadithModel.fromJson(Map<String, dynamic> json, int id) {
+  factory URHadithModel.fromJson(
+      Map<String, dynamic> json, int id, int collectionId) {
     return URHadithModel(
       id: id,
       urduURN: json['urduURN'],
       grade1: json['grade1'],
-      collection: json['collection'],
+      collection: ToOne<Collection>()..targetId = collectionId,
       volumeNumber: json['volumeNumber'],
       bookNumber: json['bookNumber'],
       bookName: json['bookName'],

@@ -5,8 +5,9 @@ import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/lottie.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
 import '../../../../core/widgets/widgets.dart';
-import '../../../controllers/searchController.dart';
+import '../../../controllers/search_controller.dart';
 import '../widgets/search_options.dart';
+import '../widgets/search_result_item.dart';
 import '/core/utils/constants/extensions.dart';
 
 class Search extends StatelessWidget {
@@ -168,6 +169,59 @@ class Search extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
+                        'Results'.tr, //FIXME: need translation
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontFamily: 'kufi',
+                          color: context.surfaceDarkColor,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Obx(() {
+                    return sl<SearchControllers>().searchResults.isEmpty
+                        ? Text('Opps.. No Maching Results!',
+                            style: TextStyle(
+                              fontSize: 14.0,
+                              fontFamily: 'kufi',
+                              color: context.surfaceDarkColor,
+                            ))
+                        : ListView.builder(
+                            shrinkWrap: true,
+                            itemCount:
+                                sl<SearchControllers>().searchResults.length,
+                            itemBuilder: (context, index) {
+                              final item =
+                                  sl<SearchControllers>().searchResults[index];
+                              return Text(
+                                item.hadithText
+                                    .replaceAll(RegExp(r'<[^>]*>'), ''),
+                                // RegExp(r'<[^>]*>"')
+                                //         .firstMatch(item.hadithText)
+                                //         .toString() ??
+                                //     '',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  fontFamily: 'kufi',
+                                  color: context.surfaceDarkColor,
+                                ),
+                              );
+                              // return SearchResultItem(
+                              //     item: SearchItem(
+                              //         item.hadithText,
+                              //         DateTime.now()
+                              //             .millisecondsSinceEpoch
+                              //             .toString()));
+                            },
+                          );
+                  }),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
                         'lastSearch'.tr,
                         style: TextStyle(
                           fontSize: 16.0,
@@ -177,97 +231,20 @@ class Search extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Expanded(
-                    child: Obx(() {
-                      return sl<SearchControllers>().searchHistory.isEmpty
-                          ? searchLoading(height: 100.0)
-                          : ListView.builder(
-                              itemCount:
-                                  sl<SearchControllers>().searchHistory.length,
-                              itemBuilder: (context, index) {
-                                final item = sl<SearchControllers>()
-                                    .searchHistory[index];
-                                return Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      vertical: 8.0, horizontal: 16.0),
-                                  child: beigeContainer(
-                                      context,
-                                      whiteContainer(
-                                        context,
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            Expanded(
-                                              flex: 2,
-                                              child: Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceAround,
-                                                children: [
-                                                  search(context),
-                                                  customDivider(context,
-                                                      height: 25, width: 2),
-                                                ],
-                                              ),
-                                            ),
-                                            Expanded(
-                                              flex: 7,
-                                              child: Column(
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    item.query,
-                                                    style: TextStyle(
-                                                      fontSize: 14.0,
-                                                      fontFamily: 'kufi',
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      color: context
-                                                          .textDarkColor
-                                                          .withOpacity(.7),
-                                                    ),
-                                                  ),
-                                                  Text(
-                                                    item.timestamp,
-                                                    style: TextStyle(
-                                                      fontSize: 12.0,
-                                                      fontFamily: 'kufi',
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      color: context
-                                                          .textDarkColor
-                                                          .withOpacity(.5),
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                            Expanded(
-                                              flex: 1,
-                                              child: IconButton(
-                                                  onPressed: () => sl<
-                                                          SearchControllers>()
-                                                      .removeSearchItem(
-                                                          sl<SearchControllers>()
-                                                                  .searchHistory[
-                                                              index]),
-                                                  icon: Icon(
-                                                    Icons.delete,
-                                                    size: 20,
-                                                    color: context
-                                                        .surfaceDarkColor,
-                                                  )),
-                                            )
-                                          ],
-                                        ),
-                                      )),
-                                );
-                              },
-                            );
-                    }),
-                  ),
+                  Obx(() {
+                    return sl<SearchControllers>().searchHistory.isEmpty
+                        ? searchLoading(height: 100.0)
+                        : ListView.builder(
+                            shrinkWrap: true,
+                            itemCount:
+                                sl<SearchControllers>().searchHistory.length,
+                            itemBuilder: (context, index) {
+                              final item =
+                                  sl<SearchControllers>().searchHistory[index];
+                              return SearchResultItem(item: item);
+                            },
+                          );
+                  }),
                 ],
               ),
             ),

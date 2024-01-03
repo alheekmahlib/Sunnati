@@ -14,7 +14,7 @@ import '../../presentation/controllers/books_controller.dart';
 import '../../presentation/controllers/general_controller.dart';
 import '../../presentation/controllers/onboarding_controller.dart';
 import '../../presentation/controllers/ourApps_controller.dart';
-import '../../presentation/controllers/searchController.dart';
+import '../../presentation/controllers/search_controller.dart';
 import '../../presentation/controllers/settings_controller.dart';
 import '../../presentation/controllers/share_controller.dart';
 import '../../presentation/controllers/splashScreen_controller.dart';

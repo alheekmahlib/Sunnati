@@ -39,12 +39,13 @@ class ENHadithModel {
     required this.lastUpdated,
   });
 
-  factory ENHadithModel.fromJson(Map<String, dynamic> json, int id) {
+  factory ENHadithModel.fromJson(
+      Map<String, dynamic> json, int id, int collectionId) {
     return ENHadithModel(
       id: id,
       englishURN: json['englishURN'],
       grade1: json['grade1'],
-      collection: json['collection'],
+      collection: ToOne<Collection>()..targetId = collectionId,
       volumeNumber: json['volumeNumber'],
       bookNumber: json['bookNumber'],
       bookName: json['bookName'],

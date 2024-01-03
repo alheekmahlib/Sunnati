@@ -11,7 +11,7 @@ import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/settings_list.dart';
 import '../../../core/widgets/widgets.dart';
 import '../../controllers/general_controller.dart';
-import '../../controllers/searchController.dart';
+import '../../controllers/search_controller.dart';
 import '../../controllers/settings_controller.dart';
 import '../bookmark_screen/bookmarks_screen.dart';
 import '../books/books_screen.dart';
@@ -166,7 +166,7 @@ class MainScreen extends StatelessWidget {
                 context,
                 Search(),
               );
-              sl<SearchControllers>().booksSelected = [
+              sl<SearchControllers>().selectedCollections = [
                 0,
                 1,
                 2,

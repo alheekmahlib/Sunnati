@@ -48,8 +48,9 @@ class ReadView extends StatelessWidget {
                     topRight: Radius.circular(20.0),
                   )),
               child: SingleChildScrollView(
+                primary: false,
                 child: Column(
-                  children: [BookOtherName(), ChapterTitle()],
+                  children: [BookOtherName(), const ChaptersView()],
                 ),
               ),
             ),
