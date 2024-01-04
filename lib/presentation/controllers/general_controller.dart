@@ -111,6 +111,14 @@ class GeneralController extends GetxController {
     }
   }
 
+  checkRtlLayout(var rtl, var ltr) {
+    if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
+      return rtl;
+    } else {
+      return ltr;
+    }
+  }
+
   String copyHadith(String bookName, String bookOtherName, String chapterName,
       int hadithNumber) {
     return '''$bookName\n'''

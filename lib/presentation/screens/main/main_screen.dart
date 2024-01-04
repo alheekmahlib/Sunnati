@@ -24,66 +24,66 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double height = MediaQuery.sizeOf(context).height;
-    sl<SettingsController>().loadLang();
-    sl<GeneralController>().updateGreeting();
-    bool isNeedSafeArea = MediaQuery.viewPaddingOf(context).bottom > 0;
-    return Directionality(
-      textDirection: TextDirection.ltr,
+    final general = sl<GeneralController>();
+    final settings = sl<SettingsController>();
+    settings.loadLang();
+    general.updateGreeting();
+    return SafeArea(
       child: Scaffold(
         extendBody: false,
         backgroundColor: Theme.of(context).primaryColorDark,
-        body: Padding(
-          padding: orientation(
+        body: SliderDrawer(
+          key: general.key,
+          splashColor: Theme.of(context).primaryColorDark,
+          slideDirection: orientation(
               context,
-              isNeedSafeArea
-                  ? const EdgeInsets.only(top: 64.0)
-                  : const EdgeInsets.only(top: 16.0),
-              const EdgeInsets.all(0)),
-          child: SliderDrawer(
-            key: sl<GeneralController>().key,
-            splashColor: Theme.of(context).primaryColorDark,
-            slideDirection: orientation(context, SlideDirection.TOP_TO_BOTTOM,
-                SlideDirection.LEFT_TO_RIGHT),
-            sliderOpenSize: platformView(
-                orientation(
-                    context, height / 1 / 2 * 1.1, height / 1 / 2 * 1.5),
-                height / 1 / 2 * 1.1),
-            isCupertino: true,
-            isDraggable: true,
-            appBar: SliderAppBar(
-              appBarColor: Theme.of(context).primaryColorDark,
-              appBarPadding: orientation(
-                  context,
-                  const EdgeInsets.symmetric(horizontal: 16.0),
-                  const EdgeInsets.symmetric(horizontal: 40.0)),
-              drawerIconColor: Theme.of(context).colorScheme.secondary,
-              drawerIcon: IconButton(
-                icon: Icon(
-                  Icons.menu,
-                  size: 24.h,
-                  color: Theme.of(context).colorScheme.surface,
-                ),
-                onPressed: () =>
-                    sl<GeneralController>().key.currentState?.toggle(),
-              ),
-              appBarHeight: 40.h,
-              title: Container(),
-              trailing: sunti_icon(context,
-                  height: 20, color: context.iconsDarkColor),
-            ),
-            slider: const SettingsList(),
-            child: PageView(
-              controller: sl<GeneralController>().controller,
-              onPageChanged: (index) {
-                sl<GeneralController>().selected.value = index;
-                print('selected ${sl<GeneralController>().selected.value}');
-              },
+              SlideDirection.TOP_TO_BOTTOM,
+              general.checkRtlLayout(
+                  SlideDirection.RIGHT_TO_LEFT, SlideDirection.LEFT_TO_RIGHT)),
+          sliderOpenSize: platformView(
+              orientation(context, height * .6, height * .8),
+              height / 1 / 2 * 1.1),
+          isCupertino: true,
+          isDraggable: true,
+          appBar: SliderAppBar(
+            appBarColor: Theme.of(context).primaryColorDark,
+            appBarPadding: const EdgeInsets.symmetric(horizontal: 16.0),
+            drawerIcon: const SizedBox.shrink(),
+            appBarHeight: 40.h,
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const HomeScreen(),
-                const BooksScreen(),
-                BookmarksScreen(),
+                IconButton(
+                  icon: Icon(
+                    Icons.menu,
+                    size: 24.h,
+                    color: Theme.of(context).colorScheme.surface,
+                  ),
+                  onPressed: () => general.key.currentState?.toggle(),
+                ),
+                Padding(
+                  padding: orientation(
+                      context,
+                      const EdgeInsets.symmetric(horizontal: 0.0),
+                      const EdgeInsets.symmetric(horizontal: 32.0)),
+                  child: sunti_icon(context,
+                      height: 18, color: context.iconsDarkColor),
+                ),
               ],
             ),
+          ),
+          slider: const SettingsList(),
+          child: PageView(
+            controller: general.controller,
+            onPageChanged: (index) {
+              general.selected.value = index;
+              print('selected ${general.selected.value}');
+            },
+            children: [
+              const HomeScreen(),
+              const BooksScreen(),
+              BookmarksScreen(),
+            ],
           ),
         ),
         bottomNavigationBar: Obx(
@@ -91,8 +91,7 @@ class MainScreen extends StatelessWidget {
             items: [
               BottomBarItem(
                 icon: Opacity(
-                    opacity:
-                        sl<GeneralController>().selected.value == 0 ? 1 : .5,
+                    opacity: general.selected.value == 0 ? 1 : .5,
                     child: home(context)),
                 selectedIcon: home(context),
                 // selectedColor: Colors.teal,
@@ -108,8 +107,7 @@ class MainScreen extends StatelessWidget {
               ),
               BottomBarItem(
                 icon: Opacity(
-                    opacity:
-                        sl<GeneralController>().selected.value == 1 ? 1 : .5,
+                    opacity: general.selected.value == 1 ? 1 : .5,
                     child: books(context)),
                 selectedIcon: books(context),
                 backgroundColor: Theme.of(context).colorScheme.surface,
@@ -124,8 +122,7 @@ class MainScreen extends StatelessWidget {
               ),
               BottomBarItem(
                   icon: Opacity(
-                      opacity:
-                          sl<GeneralController>().selected.value == 2 ? 1 : .5,
+                      opacity: general.selected.value == 2 ? 1 : .5,
                       child: bookmark(context)),
                   selectedIcon: bookmark(context),
                   backgroundColor: Theme.of(context).colorScheme.surface,
@@ -140,10 +137,10 @@ class MainScreen extends StatelessWidget {
             ],
             hasNotch: true,
             fabLocation: StylishBarFabLocation.end,
-            currentIndex: sl<GeneralController>().selected.value,
+            currentIndex: general.selected.value,
             onTap: (index) {
-              sl<GeneralController>().controller.jumpToPage(index);
-              sl<GeneralController>().selected.value = index;
+              general.controller.jumpToPage(index);
+              general.selected.value = index;
             },
             option: AnimatedBarOptions(
               barAnimation: BarAnimation.liquid,
@@ -188,7 +185,9 @@ class MainScreen extends StatelessWidget {
             child: search(context),
           ),
         ),
-        floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
+        floatingActionButtonLocation: general.checkRtlLayout(
+            FloatingActionButtonLocation.startDocked,
+            FloatingActionButtonLocation.endDocked),
       ),
     );
   }
