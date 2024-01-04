@@ -92,6 +92,17 @@ class GeneralController extends GetxController {
     }
   }
 
+  Widget checkFloatingRtlWidget(Widget myWidget) {
+    if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
+      return RotatedBox(
+        quarterTurns: 90,
+        child: myWidget,
+      );
+    } else {
+      return myWidget;
+    }
+  }
+
   RotatedBox checkWidgetRtlLayout(Widget myWidget) {
     if (sl<ShareController>().isRtlLanguage('lang'.tr)) {
       return RotatedBox(quarterTurns: 0, child: myWidget);

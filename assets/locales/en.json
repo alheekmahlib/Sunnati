@@ -211,5 +211,15 @@
   "@translationOfHadith": {
     "type": "text",
     "placeholders": {}
+  },
+  "organizingBooks": "Please wait, the books are being arranged now.",
+  "@organizingBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "results": "The results",
+  "@results": {
+    "type": "text",
+    "placeholders": {}
   }
 }

@@ -211,5 +211,15 @@
   "@translationOfHadith": {
     "type": "text",
     "placeholders": {}
+  },
+  "organizingBooks": "براہ کرم انتظار کریں، کتب ابھی ترتیب دی جا رہی ہیں۔",
+  "@organizingBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "results": "نتائج",
+  "@results": {
+    "type": "text",
+    "placeholders": {}
   }
 }

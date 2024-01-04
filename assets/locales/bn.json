@@ -211,5 +211,15 @@
   "@translationOfHadith": {
     "type": "text",
     "placeholders": {}
+  },
+  "organizingBooks": "অনুগ্রহ করে অপেক্ষা করুন, এখন বইগুলি বিন্যাস করা হচ্ছে।",
+  "@organizingBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "results": "ফলাফলগুলি",
+  "@results": {
+    "type": "text",
+    "placeholders": {}
   }
 }

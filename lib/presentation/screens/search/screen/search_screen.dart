@@ -169,7 +169,7 @@ class Search extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
-                        'Results'.tr, //FIXME: need translation
+                        'results'.tr,
                         style: TextStyle(
                           fontSize: 16.0,
                           fontFamily: 'kufi',

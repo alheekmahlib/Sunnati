@@ -211,5 +211,15 @@
   "@translationOfHadith": {
     "type": "text",
     "placeholders": {}
+  },
+  "organizingBooks": "يرجى الأنتظار، يتم ترتيب الكتب الآن",
+  "@organizingBooks": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "results": "النتائج",
+  "@results": {
+    "type": "text",
+    "placeholders": {}
   }
 }
