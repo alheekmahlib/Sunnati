@@ -48,7 +48,9 @@ class BooksController extends GetxController {
   void _setStore(Store store) => this.store = store;
 
   // int currentHadithsQueryOffset = 0;
-  RxBool loadingMoreBooks = false.obs;
+  bool _hasMoreBooks = true;
+  final RxBool _loadingMoreBooks = false.obs;
+  RxBool get loadingMoreBooks => (_loadingMoreBooks.value && _hasMoreBooks).obs;
 
   @override
   void onInit() async {
@@ -57,11 +59,11 @@ class BooksController extends GetxController {
     await Future.delayed(const Duration(milliseconds: 500));
     await storeJsonDataToObjectBox();
     chaptersListViewController.value.addListener(() {
-      if (loadingMoreBooks.isFalse &&
+      if (_loadingMoreBooks.isFalse &&
           chaptersListViewController.value.position.maxScrollExtent ==
               chaptersListViewController.value.offset) {
-        loadingMoreBooks.toggle();
-        getAndSetMoreHadiths().then((_) => loadingMoreBooks.toggle());
+        _loadingMoreBooks.toggle();
+        getAndSetMoreHadiths().then((_) => _loadingMoreBooks.toggle());
       }
     });
     super.onInit();
@@ -259,7 +261,9 @@ extension Utils on BooksController {
   Future<void> getAndSetMoreHadiths([bool firstTime = false]) async {
     await Future.wait([
       getAndSetArabicHadithsForCurrentbook().then((v) {
-        return tempArabicHadiths.addAll(v);
+        _hasMoreBooks = v.isEmpty ? false : true;
+        log('fff ${v.length}');
+        tempArabicHadiths.addAll(v);
       }),
       // TODO: check if the pagination works as expected for all languages
       getAndSetEnglishHadithsForCurrentbook()

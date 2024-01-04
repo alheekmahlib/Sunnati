@@ -104,7 +104,7 @@ class ChaptersView extends StatelessWidget {
                             bottomRight: Radius.circular(8)),
                       );
                     }),
-                    Obx(() => booksCtrl.loadingMoreBooks.isFalse
+                    Obx(() => booksCtrl.loadingMoreBooks.value
                         ? const Padding(
                             padding: EdgeInsets.symmetric(vertical: 16),
                             child: Center(
