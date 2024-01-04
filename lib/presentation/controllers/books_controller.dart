@@ -48,6 +48,7 @@ class BooksController extends GetxController {
   void _setStore(Store store) => this.store = store;
 
   // int currentHadithsQueryOffset = 0;
+  RxBool loadingMoreBooks = false.obs;
 
   @override
   void onInit() async {
@@ -55,12 +56,12 @@ class BooksController extends GetxController {
     await loadBooksData();
     await Future.delayed(const Duration(milliseconds: 500));
     await storeJsonDataToObjectBox();
-    chaptersListViewController.value.addListener(() async {
-      if (chaptersListViewController.value.position.maxScrollExtent ==
-          chaptersListViewController.value.offset) {
-        await getAndSetMoreHadiths();
-      } else {
-        log('position.maxScrollExtent=> ${chaptersListViewController.value.position.maxScrollExtent}');
+    chaptersListViewController.value.addListener(() {
+      if (loadingMoreBooks.isFalse &&
+          chaptersListViewController.value.position.maxScrollExtent ==
+              chaptersListViewController.value.offset) {
+        loadingMoreBooks.toggle();
+        getAndSetMoreHadiths().then((_) => loadingMoreBooks.toggle());
       }
     });
     super.onInit();

@@ -164,16 +164,18 @@ Route animatRoute(Widget myWidget) {
 }
 
 Widget beigeContainer(BuildContext context, Widget myWidget,
-    {double? height, double? width}) {
+    {double? height, double? width, BorderRadius? customBorderRadius}) {
   return Container(
     height: height,
     width: width,
     padding: const EdgeInsets.symmetric(horizontal: 2.0, vertical: 2.0),
     decoration: BoxDecoration(
-        color: context.beigeDarkColor,
-        borderRadius: const BorderRadius.all(
-          Radius.circular(8.0),
-        )),
+      color: context.beigeDarkColor,
+      borderRadius: customBorderRadius ??
+          const BorderRadius.all(
+            Radius.circular(8.0),
+          ),
+    ),
     child: myWidget,
   );
 }

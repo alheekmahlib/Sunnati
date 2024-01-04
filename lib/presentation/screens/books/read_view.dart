@@ -6,7 +6,6 @@ import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/extensions.dart';
 import '../../../core/utils/constants/svg_picture.dart';
 import '../../../core/widgets/widgets.dart';
-import 'widgets/book_other_name.dart';
 import 'widgets/chapter_title.dart';
 
 // read hadiths inside the book and chapters
@@ -47,12 +46,7 @@ class ReadView extends StatelessWidget {
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0),
                   )),
-              child: SingleChildScrollView(
-                primary: false,
-                child: Column(
-                  children: [BookOtherName(), const ChaptersView()],
-                ),
-              ),
+              child: const ChaptersView(),
             ),
           ),
         ],

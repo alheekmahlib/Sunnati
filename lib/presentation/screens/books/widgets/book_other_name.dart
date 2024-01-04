@@ -9,8 +9,9 @@ class BookOtherName extends StatelessWidget {
   final booksCtrl = sl<BooksController>();
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32.0, vertical: 32.0),
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(vertical: 32.0),
       child: Text(
         booksCtrl.currentBookName,
         style: TextStyle(
