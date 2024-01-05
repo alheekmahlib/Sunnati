@@ -7,4 +7,5 @@ const String LANGUAGE_FONT = 'languageFont';
 const String FONT_SIZE = 'FONT_SIZE';
 const String SEARCH_HISTORY = "search_history";
 const String IS_FIRST_TIME = "is_first_time";
+const String IS_FIRST_TIME_ORG = "IS_FIRST_TIME_ORG";
 const String TRANS = "trans";
