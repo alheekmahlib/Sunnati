@@ -48,29 +48,19 @@ class MainScreen extends StatelessWidget {
           appBar: SliderAppBar(
             appBarColor: Theme.of(context).primaryColorDark,
             appBarPadding: const EdgeInsets.symmetric(horizontal: 16.0),
-            drawerIcon: const SizedBox.shrink(),
-            appBarHeight: 40.h,
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                IconButton(
-                  icon: Icon(
-                    Icons.menu,
-                    size: 24.h,
-                    color: Theme.of(context).colorScheme.surface,
-                  ),
-                  onPressed: () => general.key.currentState?.toggle(),
-                ),
-                Padding(
-                  padding: orientation(
-                      context,
-                      const EdgeInsets.symmetric(horizontal: 0.0),
-                      const EdgeInsets.symmetric(horizontal: 32.0)),
-                  child: sunti_icon(context,
-                      height: 18, color: context.iconsDarkColor),
-                ),
-              ],
+            drawerIcon: IconButton(
+              icon: Icon(
+                Icons.menu,
+                size: 24.h,
+                color: Theme.of(context).colorScheme.surface,
+              ),
+              onPressed: () =>
+                  sl<GeneralController>().key.currentState?.toggle(),
             ),
+            appBarHeight: 40.h,
+            title: Container(),
+            trailing:
+                sunti_icon(context, height: 20, color: context.iconsDarkColor),
           ),
           slider: const SettingsList(),
           child: PageView(

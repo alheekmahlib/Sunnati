@@ -5,6 +5,7 @@ import 'package:sunti/core/utils/constants/extensions.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 import '../../../../core/services/services_locator.dart';
+import '../../../../core/widgets/beige_container.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
 
@@ -14,9 +15,8 @@ class AboutBook extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
-    return beigeContainer(
-      context,
-      ExpansionTileCard(
+    return BeigeContainer(
+      myWidget: ExpansionTileCard(
         elevation: 0.0,
         initialElevation: 0.0,
         expandedTextColor: context.surfaceDarkColor,

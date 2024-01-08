@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:get/get.dart';
 import 'package:sunti/core/utils/constants/extensions.dart';
+import 'package:sunti/presentation/controllers/general_controller.dart';
 
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
-import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
 import '../../details/collection_details_screen.dart';
 
@@ -20,17 +21,20 @@ class BooksCover extends StatelessWidget {
     return SizedBox(
       width: MediaQuery.sizeOf(context).width,
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(
-              title,
-              style: TextStyle(
-                fontSize: 15.0,
-                fontFamily: 'kufi',
-                fontWeight: FontWeight.w600,
-                color: context.surfaceDarkColor,
+          Align(
+            alignment: sl<GeneralController>()
+                .checkRtlLayout(Alignment.centerRight, Alignment.centerLeft),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                title.tr,
+                style: TextStyle(
+                  fontSize: 15.0,
+                  fontFamily: 'kufi',
+                  fontWeight: FontWeight.w600,
+                  color: context.surfaceDarkColor,
+                ),
               ),
             ),
           ),
@@ -115,8 +119,8 @@ class BooksCover extends StatelessWidget {
                                 onTap: () {
                                   booksCtrl.currentCollctionId =
                                       collectionGroup[index].id;
-                                  Navigator.of(context).push(
-                                      animatRoute(CollectionDetailsScreen()));
+                                  Get.to(CollectionDetailsScreen(),
+                                      transition: Transition.downToUp);
                                 },
                               ),
                             ),

@@ -12,6 +12,8 @@ import 'package:theme_provider/theme_provider.dart';
 
 import '../../utils/constants/lottie.dart';
 import '../../utils/constants/svg_picture.dart';
+import '../beige_container.dart';
+import '../white_container.dart';
 import '../widgets.dart';
 
 ArabicNumbers arabicNumber = ArabicNumbers();
@@ -631,9 +633,8 @@ Future<void> showHadithOptionsBottomSheet(
                   child: ListView(
                     children: [
                       GestureDetector(
-                        child: beigeContainer(
-                          context,
-                          Column(
+                        child: BeigeContainer(
+                          myWidget: Column(
                             children: [
                               Text(
                                 'shareText'.tr,
@@ -645,9 +646,8 @@ Future<void> showHadithOptionsBottomSheet(
                                     fontSize: 16,
                                     fontFamily: 'kufi'),
                               ),
-                              whiteContainer(
-                                  context,
-                                  Padding(
+                              WhiteContainer(
+                                  myWidget: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -711,9 +711,8 @@ Future<void> showHadithOptionsBottomSheet(
                           Expanded(
                             flex: 4,
                             child: GestureDetector(
-                              child: beigeContainer(
-                                context,
-                                Column(
+                              child: BeigeContainer(
+                                myWidget: Column(
                                   children: [
                                     Text(
                                       'shareImage'.tr,
@@ -751,9 +750,8 @@ Future<void> showHadithOptionsBottomSheet(
                           Expanded(
                             flex: 4,
                             child: GestureDetector(
-                              child: beigeContainer(
-                                context,
-                                Column(
+                              child: BeigeContainer(
+                                myWidget: Column(
                                   children: [
                                     Text(
                                       'shareImageWTrans'.tr,

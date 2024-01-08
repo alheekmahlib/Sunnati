@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 import 'package:primer_progress_bar/primer_progress_bar.dart';
-import 'package:sunti/core/widgets/widgets.dart';
 
 import '../../../core/services/services_locator.dart';
 import '../../../core/utils/constants/svg_picture.dart';
+import '../../../core/widgets/white_container.dart';
 import '../../controllers/splashScreen_controller.dart';
 
 class OrganizingBooks extends StatelessWidget {
@@ -93,30 +93,28 @@ class OrganizingBooks extends StatelessWidget {
                         ),
                       ),
                       const Gap(16),
-                      whiteContainer(
-                          context,
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Row(
-                              children: [
-                                Expanded(
-                                    flex: 1,
-                                    child: sunti_iconR(context, width: 20)),
-                                Expanded(
-                                  flex: 8,
-                                  child: Text(
-                                    "تنويه: هذه العملية تظهر مرة واحدة عند تثبيت التطبيق.",
-                                    style: TextStyle(
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onPrimary,
-                                        fontSize: 12,
-                                        fontFamily: 'kufi'),
-                                  ),
-                                ),
-                              ],
+                      WhiteContainer(
+                          myWidget: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          children: [
+                            Expanded(
+                                flex: 1,
+                                child: sunti_iconR(context, width: 20)),
+                            Expanded(
+                              flex: 8,
+                              child: Text(
+                                "تنويه: هذه العملية تظهر مرة واحدة عند تثبيت التطبيق.",
+                                style: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.onPrimary,
+                                    fontSize: 12,
+                                    fontFamily: 'kufi'),
+                              ),
                             ),
-                          ))
+                          ],
+                        ),
+                      ))
                     ],
                   ),
                 ),

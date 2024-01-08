@@ -50,10 +50,7 @@ class CollectionDetailsScreen extends StatelessWidget {
                   sl<BooksController>()
                       .getCollectionIdByAuthorName(currentCollection.bookName)
                 ];
-                screenModalBottomSheet(
-                  context,
-                  Search(),
-                );
+                Get.bottomSheet(Search(), isScrollControlled: true);
               },
             ),
           )
@@ -72,6 +69,7 @@ class CollectionDetailsScreen extends StatelessWidget {
           child: orientation(
             context,
             ListView(
+              primary: false,
               children: [
                 BookName(),
                 Padding(

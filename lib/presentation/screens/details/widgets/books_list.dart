@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:theme_provider/theme_provider.dart';
 
 import '../../../../core/services/services_locator.dart';
+import '../../../../core/widgets/beige_container.dart';
+import '../../../../core/widgets/white_container.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/books_controller.dart';
 import '../../books/read_view.dart';
@@ -13,9 +16,9 @@ class BooksList extends StatelessWidget {
   Widget build(BuildContext context) {
     double width = MediaQuery.sizeOf(context).width;
     final booksNames = booksCtrl.currentCollection.booksNames.toList();
-    return beigeContainer(
-      context,
-      ListView.builder(
+    return BeigeContainer(
+      myWidget: ListView.builder(
+          primary: false,
           shrinkWrap: true,
           itemCount: booksNames.length ?? 0,
           itemBuilder: (context, i) {
@@ -30,9 +33,8 @@ class BooksList extends StatelessWidget {
                   )),
                   Expanded(
                     flex: 8,
-                    child: whiteContainer(
-                      context,
-                      Padding(
+                    child: WhiteContainer(
+                      myWidget: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           booksNames[i].bookName, //ToDo
@@ -53,9 +55,7 @@ class BooksList extends StatelessWidget {
               onTap: () {
                 booksCtrl.currentBookNumber =
                     int.parse(booksNames[i].bookNumber); //ToDo
-                Navigator.of(context).push(animatRoute(
-                  const ReadView(),
-                ));
+                Get.to(const ReadView(), transition: Transition.downToUp);
               },
             );
           }),

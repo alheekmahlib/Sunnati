@@ -6,6 +6,7 @@ import 'package:sunti/presentation/controllers/onboarding_controller.dart';
 
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/lists.dart';
+import '../../../../core/widgets/beige_container.dart';
 import '../../../../core/widgets/widgets.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -138,9 +139,8 @@ class OnboardingScreen extends StatelessWidget {
                           child: Wrap(
                             children: [
                               Center(
-                                child: beigeContainer(
-                                  context,
-                                  Padding(
+                                child: BeigeContainer(
+                                  myWidget: Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Image.asset(
                                       platformView(

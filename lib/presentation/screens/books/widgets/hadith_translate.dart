@@ -4,7 +4,7 @@ import 'package:sunti/core/utils/constants/extensions.dart';
 
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/widgets/text_overflow_detector.dart';
-import '../../../../core/widgets/widgets.dart';
+import '../../../../core/widgets/white_container.dart';
 import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
 import '../../../controllers/settings_controller.dart';
@@ -15,9 +15,8 @@ class HadithTranslate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return whiteContainer(
-      context,
-      Obx(
+    return WhiteContainer(
+      myWidget: Obx(
         () => ReadMoreLess(
           text:
               sl<BooksController>().getHadithTranslationByURN(currentHadithURN),

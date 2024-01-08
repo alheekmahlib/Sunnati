@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import '../../../../core/utils/constants/extensions.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
-import '../../../../core/widgets/widgets.dart';
+import '../../../../core/widgets/beige_container.dart';
 
 class DailyHadith extends StatelessWidget {
   const DailyHadith({super.key});
@@ -13,9 +13,8 @@ class DailyHadith extends StatelessWidget {
     double width = MediaQuery.sizeOf(context).width;
     return Directionality(
       textDirection: TextDirection.ltr,
-      child: beigeContainer(
-        context,
-        Column(
+      child: BeigeContainer(
+        myWidget: Column(
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 8.0),

@@ -3,7 +3,8 @@ import 'package:get/get.dart';
 import 'package:sunti/core/services/services_locator.dart';
 
 import '../../../../core/utils/constants/extensions.dart';
-import '../../../../core/widgets/widgets.dart';
+import '../../../../core/widgets/beige_container.dart';
+import '../../../../core/widgets/white_container.dart';
 import '../../../controllers/books_controller.dart';
 import '../../../controllers/general_controller.dart';
 import 'book_other_name.dart';
@@ -38,9 +39,8 @@ class ChaptersView extends StatelessWidget {
                 child: Column(children: [
                   if (index == 0) BookOtherName(),
                   ...[
-                    beigeContainer(
-                        context,
-                        Row(
+                    BeigeContainer(
+                        myWidget: Row(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Expanded(
@@ -59,9 +59,8 @@ class ChaptersView extends StatelessWidget {
                             ),
                             Expanded(
                               flex: 8,
-                              child: whiteContainer(
-                                context,
-                                Text(
+                              child: WhiteContainer(
+                                myWidget: Text(
                                   booksCtrl.currentBookChapters[index][0]
                                           .babName ??
                                       'باب', // 'باب',
@@ -84,9 +83,8 @@ class ChaptersView extends StatelessWidget {
                     // children:
                     ...List.generate(
                         booksCtrl.currentBookChapters[index].length, (i) {
-                      return beigeContainer(
-                        context,
-                        Column(
+                      return BeigeContainer(
+                        myWidget: Column(
                           children: [
                             HadithInArabic(
                               arabicHadith: booksCtrl.currentBookChapters[index]

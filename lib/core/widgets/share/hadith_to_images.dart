@@ -7,6 +7,8 @@ import 'package:sunti/presentation/controllers/share_controller.dart';
 import '../../services/services_locator.dart';
 import '../../utils/constants/lottie.dart';
 import '../../utils/constants/svg_picture.dart';
+import '../beige_container.dart';
+import '../white_container.dart';
 import '../widgets.dart';
 import 'share_translateToImage.dart';
 
@@ -67,9 +69,8 @@ Future<void> showHadithOptionsBottomSheet(
                     child: ListView(
                       children: [
                         GestureDetector(
-                          child: beigeContainer(
-                            context,
-                            Column(
+                          child: BeigeContainer(
+                            myWidget: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
@@ -83,9 +84,8 @@ Future<void> showHadithOptionsBottomSheet(
                                         fontFamily: 'kufi'),
                                   ),
                                 ),
-                                whiteContainer(
-                                    context,
-                                    Padding(
+                                WhiteContainer(
+                                    myWidget: Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.min,
@@ -138,9 +138,8 @@ Future<void> showHadithOptionsBottomSheet(
                             Expanded(
                               flex: 4,
                               child: GestureDetector(
-                                child: beigeContainer(
-                                  context,
-                                  Column(
+                                child: BeigeContainer(
+                                  myWidget: Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
@@ -164,9 +163,8 @@ Future<void> showHadithOptionsBottomSheet(
                                               color: Theme.of(context)
                                                   .colorScheme
                                                   .background,
-                                              child: whiteContainer(
-                                                context,
-                                                Padding(
+                                              child: WhiteContainer(
+                                                myWidget: Padding(
                                                   padding: const EdgeInsets
                                                       .symmetric(vertical: 4.0),
                                                   child: Row(

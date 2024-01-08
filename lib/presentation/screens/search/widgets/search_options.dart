@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
+import 'package:sunti/presentation/screens/search/widgets/group_button.dart';
 
 import '../../../../core/services/services_locator.dart';
-import '../../../../core/utils/constants/lists.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
+import '../../../../core/widgets/beige_container.dart';
 import '../../../../core/widgets/widgets.dart';
-import '../../../controllers/books_controller.dart';
 import '../../../controllers/search_controller.dart';
 import '/core/utils/constants/extensions.dart';
-import 'check_box_tile.dart';
 
 class SearchOptions extends StatelessWidget {
   const SearchOptions({super.key});
@@ -19,12 +18,14 @@ class SearchOptions extends StatelessWidget {
     sl<SearchControllers>().checkboxesController = GroupButtonController(
       selectedIndexes: sl<SearchControllers>().selectedCollections,
     );
-    return Padding(
-      padding: const EdgeInsets.all(24.0),
+    return SizedBox(
+      height: MediaQuery.sizeOf(context).height,
+      width: MediaQuery.sizeOf(context).width,
       child: Column(
         children: [
           Padding(
-            padding: const EdgeInsets.only(bottom: 32.0),
+            padding: orientation(context, const EdgeInsets.only(bottom: 32.0),
+                const EdgeInsets.all(0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -37,62 +38,30 @@ class SearchOptions extends StatelessWidget {
                     color: context.surfaceDarkColor,
                   ),
                 ),
-                GestureDetector(
-                  child: close(context, height: 25.0),
-                  onTap: () => Navigator.pop(context),
-                ),
+                orientation(
+                    context,
+                    GestureDetector(
+                      child: close(context, height: 25.0),
+                      onTap: () => Navigator.pop(context),
+                    ),
+                    const SizedBox.shrink())
               ],
             ),
           ),
           Flexible(
-            child: beigeContainer(
-                context,
-                ListView(
-                  children: [
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: GroupButton(
-                        controller:
-                            sl<SearchControllers>().checkboxesController,
-                        isRadio: false,
-                        options: const GroupButtonOptions(
-                          groupingType: GroupingType.column,
-                        ),
-                        buttons: booksList,
-                        buttonIndexedBuilder: (selected, index, context) {
-                          return CheckBoxTile(
-                            title: booksList[index]['name'],
-                            selected: selected,
-                            onTap: () {
-                              if (!selected) {
-                                sl<SearchControllers>()
-                                  ..selectCollectionById(sl<BooksController>()
-                                      .getCollectionIdByAuthorName(
-                                          booksList[index]['name']))
-                                  ..checkboxesController.selectIndex(index);
-
-                                return;
-                              }
-                              sl<SearchControllers>()
-                                ..unslectCollectionById(sl<BooksController>()
-                                    .getCollectionIdByAuthorName(
-                                        booksList[index]['name']))
-                                ..checkboxesController.unselectIndex(index);
-                            },
-                          );
-                        },
-                        onSelected: (val, i, selected) {
-                          debugPrint('Button: $val index: $i $selected');
-                        },
-                      ),
-                    ),
-                  ],
-                ),
-                width: MediaQuery.sizeOf(context).width),
+            child: BeigeContainer(
+              myWidget: ListView(
+                children: const [
+                  GroupButtonWidget(),
+                ],
+              ),
+              height: MediaQuery.sizeOf(context).height,
+              width: MediaQuery.sizeOf(context).width,
+            ),
           ),
           Container(
             width: MediaQuery.sizeOf(context).width,
-            padding: const EdgeInsets.only(top: 24.0, bottom: 16.0),
+            // padding: const EdgeInsets.only(top: 24.0, bottom: 16.0),
             child: ElevatedButton(
               style: ButtonStyle(
                 backgroundColor:

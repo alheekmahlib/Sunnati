@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/services/services_locator.dart';
 import '../../../../core/utils/constants/extensions.dart';
+import '../../../../core/widgets/beige_container.dart';
 import '../../../../core/widgets/widgets.dart';
 import '../../../controllers/bookmark_controller.dart';
 
@@ -20,9 +21,8 @@ class BookmarkCard extends StatelessWidget {
         sl<BookmarkController>().bookmark.length,
         (bookNameIndex) => Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-          child: beigeContainer(
-            context,
-            Column(
+          child: BeigeContainer(
+            myWidget: Column(
               children: [
                 Text(
                   bookmark[bookNameIndex].bookName,
@@ -88,9 +88,8 @@ class BookmarkCard extends StatelessWidget {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: beigeContainer(
-                                          context,
-                                          Center(
+                                      child: BeigeContainer(
+                                          myWidget: Center(
                                             child: Text(
                                               bookmark[chapterIndex]
                                                   .chapterTitle,

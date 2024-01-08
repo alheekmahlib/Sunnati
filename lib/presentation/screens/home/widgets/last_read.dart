@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 
 import '../../../../core/utils/constants/extensions.dart';
 import '../../../../core/utils/constants/svg_picture.dart';
-import '../../../../core/widgets/widgets.dart';
+import '../../../../core/widgets/beige_container.dart';
 
 class LastRead extends StatelessWidget {
   const LastRead({super.key});
@@ -15,9 +15,8 @@ class LastRead extends StatelessWidget {
       textDirection: TextDirection.ltr,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 16.0),
-        child: beigeContainer(
-          context,
-          Column(
+        child: BeigeContainer(
+          myWidget: Column(
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 8.0),
